@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>LaunchCode&#039;s CS50x - St. Louis</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/cs50x-stlouis/">
+                LaunchCode&#039;s CS50x - St. Louis
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/calendar/">
+                                        Calendar
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/how-to-take-this-class/">
+                                        How To Take This Class
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/helpful-resources/">
+                                        Helpful Resources
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://cs50.io/">
+                                        CS50 IDE
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://labs.vocareum.com/home/login.php">
+                                        Vocareum
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://piazza.com/wustl/spring2016/cs50x">
+                                        Piazza
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://docs.google.com/document/d/1rQNoQcbbn6K9kcaFMiS-vE2Uw1Qi2V8EQOPuZv1YMMk/edit?usp=sharing">
+                                        Student Guide
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h5 id="web-track">Web Track</h5>
+<p><a href="../../class3">Back to Class 3</a></p>
+<h1 id="studio-flicklist-3">Studio: FlickList 3</h1>
+<p>Today you will add a little bit more functionality to the project, but the main improvements will be aesthetic. You will Bootstrapify the page, using the Bootstrap library to apply a bunch of nice styles, as well as a responsive Bootstrap Grid layout.</p>
+<h3 id="demo">Demo</h3>
+<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html" target="_blank">FlickList 3 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
+<p>Note the following additions since last time:</p>
+<ul>
+<li>Watchlist items have an &quot;I watched it&quot; button, which allows the user to cross that movie off their list.</li>
+<li>Watchlist items have pictures!</li>
+<li>The page layout changes responsively with the size of the screen. When the widnow is sufficiently wide, the browse list shows up in its own column, to the right of of the Watchlist. Otherwise, the browse list is positioned below the Watchlist as before. (Try this now if you haven't already. Open the demo and play modify the window size, and observe how the page layout responds.)</li>
+<li>Various stylistic changes</li>
+</ul>
+<h3 id="starter-code">Starter Code</h3>
+<p>First, fetch the studio3 branch from upstream:</p>
+<pre><code class="language-nohighlight">$ git fetch upstream studio3
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 21 (delta 6), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+From https://github.com/LaunchCodeEducation/flicklist
+ * branch            studio2    -&gt; FETCH_HEAD
+   74b1223..fe10c4f  studio2    -&gt; upstream/studio3</code></pre>
+<p>Then, checkout a new local branch:</p>
+<pre><code class="language-nohighlight">$ git checkout -b studio3-my-work upstream/studio3
+Branch studio3-my-work set up to track remote branch studio3 from upstream.
+Switched to a new branch 'studio3-my-work'</code></pre>
+<h3 id="a-brief-tour">A Brief Tour</h3>
+<p>Let's look briefly at what has changed in each of our files:</p>
+<h5 id="indexhtml">index.html</h5>
+<p>In <code>index.html</code>, the only important change is that we have wrapped our two <code>&lt;section&gt;</code>s together inside a <code>&lt;div&gt;</code> tag with a class of &quot;main-content&quot;. We have also removed the &quot;big-header&quot; id from the <code>&lt;header&gt;</code> at the top of our page. Since we'll be using Bootstrap to style this header, we no longer need to give it an id. </p>
+<h5 id="flicklistjs">flicklist.js</h5>
+<p>The only change in <code>flicklist.js</code> is that the <code>api</code> object at the top of the file now has an extra property:</p>
+<pre><code class="language-js">var api = {
+  root: "https://api.themoviedb.org/3",
+  token: "TODO", // TODO 0 add your api key
+
+  /**
+   * Given a movie object, returns the url to its poster image
+   */
+  posterUrl: function(movie) {
+    // TODO 4b
+    // implement this function
+
+    return "http://images5.fanpop.com/image/photos/25100000/movie-poster-rapunzel-and-eugene-25184488-300-450.jpg" 
+  }
+}</code></pre>
+<p>The object now has three properties: <code>api.root</code>, <code>api.token</code>, and <code>api.posterUrl</code>. But <code>posterUrl</code> is a tad special, because rather than a simple primitive type like a string or int, <code>api.posterUrl</code> is a function!</p>
+<p>You can call this function like you would call any other:</p>
+<pre><code class="language-js">var myMovie = {}; // pretend we have some movie object lying around
+var url = api.posterUrl(myMovie);
+console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/movie-poster-rapunzel-and-eugene-25184488-300-450.jpg</code></pre>
+<p>One of your tasks will be to implement this function so that it returns, for a given movie, the url to a jpg somewhere on the internet where that movie's poster image lives.</p>
+<h5 id="stylescss">styles.css</h5>
+<p>We've made a few small changes here, like making the backgorund color of the browse section black, and adjusting a jew margin and padding values. </p>
+<p>Notice that in some cases we use a new unit of measurement, the percent, for specifying values. For example, all sections now have a `padding: 2%;&quot; rule. Using 2% rather than a rigid pixel value means that the exact padding changes depending on the width of the container of the section. This helps make our page more responsive, because a certain number of pixels, like say 20px, might seem too small when the screen is very large, but might be too much once the screen is very small.</p>
+<p>Finally, notice that we specify <code>&lt;hr&gt;</code> elements to have a border color of <code>rgba(128,128,128,0.2)</code>. This gives the <code>&lt;hr&gt;</code> a translucent gray color.</p>
+<h3 id="assignment">Assignment</h3>
+<p>The source code has a bunch of TODOs. There are more total tasks than in previous studios, but many of them are very small. </p>
+<p>Work your way, in order, through the following tasks:</p>
+<h4 id="0-api-key">0. API key</h4>
+<p>As usual, add your api key to the object near the top of <code>flicklist.js</code>.</p>
+<h4 id="1-an-quoti-watched-itquot-button">1. An &quot;I watched it&quot; Button</h4>
+<p>In flicklist.js, inside the <code>render</code> function, add a button to each Watchlist item. When clicked, the appropriate movie should be removed from <code>model.watchlistItems</code>, and <code>render</code> should be called again.</p>
+<p>To remove the item from the array, you can use a new array function called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice</a>. You'll also need to use <code>indexOf</code> again (you should be familiar with this function from the previous studio), in order to determine where to splice from the array.</p>
+<h4 id="2-bootstrap-makeover-party">2. Bootstrap Makeover Party</h4>
+<p>Bootstrap comes with a ton of nice pre-made CSS styles &quot;right out of the box&quot;. We simply need to give our elements the appropriate class names, and they will automagically change appearence. There are a bunch of places all around the project where you will do this.</p>
+<h5 id="2a-include-the-library">2a. Include the Library</h5>
+<p>The first step is to simply include the Bootstrap library in our project, at the top of <code>index.html</code>. </p>
+<p>On their website, Bootstrap even <a href="http://getbootstrap.com/getting-started/" target="_blank">provides us</a> the exact <code>&lt;link&gt;</code> tag we need to copy/paste into our project in order to grab the library from their CDN:</p>
+<pre><code class="language-html">&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"&gt;</code></pre>
+<h5 id="2b-style-the-page-header">2b. Style the Page Header</h5>
+<p>The first Bootstrap class we'll use is <a href="http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp" target="_blank">Jumbotron</a>, which is used for creating a big, bold, attention-grabbing block of text. Use it to style the <code>&lt;header&gt;</code> at the top of the page. </p>
+<p>Next, add the &quot;text-muted&quot; class to the subtitle, so it stands out a little less.</p>
+<h5 id="2c-customize-the-jumbotron">2c. Customize the Jumbotron</h5>
+<p>In addition to just using Bootstrap classes as they are, we can also customize them to fit our needs. Doing so is as simple as adding our own CSS selector for <code>.jumbotron</code>, and specifying whatever styles we want to overwrite. </p>
+<p>Do that now, in <code>styles.css</code>. Make the jumbotron class have centered text (rather than left-aligned). </p>
+<p>Also, the jumbotron by default has a margin of 30 pixels. This is going to become a little much if the user is on a smaller screen. Change the bottom margin to a value of <code>1%</code>. This both reduces the margin, and makes it &quot;fluid&quot;, calculating it as a percentage of the width, rather than a fixed value.</p>
+<p>Finally, note that this customization only works because in the head of <code>index.html</code>, we include our own stylesheet AFTER including Bootstrap. </p>
+<h5 id="2d-style-the-browse-list">2d. Style the Browse List</h5>
+<p>This task involves changing code in both <code>index.html</code> and <code>flicklist.js</code>.</p>
+<p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/list-group/" target="_blank">Bootstrap Lists</a> and <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> for guidance.</p>
+<h5 id="2e-style-the-form">2e. Style the Form</h5>
+<p>For guidance, read more about <a href="http://v4-alpha.getbootstrap.com/components/input-group/" target="_blank">Boostrap Input Groups</a>, especially <a href="http://v4-alpha.getbootstrap.com/components/input-group/#button-addons" target="_blank">Button Addons</a>.</p>
+<h5 id="2f-style-the-watchlist">2f. Style the Watchlist</h5>
+<p>This one's very simple. In index.html, just give the watchlist <code>&lt;ul&gt;</code> a class of <a href="http://getbootstrap.com/css/#inline" target="_blank">list-inline</a>. Remember that whole <code>"inline-block"</code> shenanigans we did last time? This class was made specifically for lists like the kind we're doing here.</p>
+<h5 id="2g-style-the-watchlist-items">2g. Style the Watchlist Items</h5>
+<p>In <code>flicklist.js</code>, restyle the watchlist items using <a href="http://getbootstrap.com/components/#panels-heading" target="_blank">Bootstrap Panels</a>.</p>
+<h5 id="2h-customize-the-watchlist-items">2h. Customize the Watchlist Items</h5>
+<p>Let's customize these things a little more. Each <code>&lt;li&gt;</code> should have:</p>
+<ul>
+<li>no padding at all</li>
+<li>a little bit of margin on the right and bottom edges</li>
+<li>a width of exactly 160 pixels</li>
+</ul>
+<h5 id="2i-style-the-quoti-watched-itquot-buttons">2i. Style the &quot;I watched it&quot; Buttons</h5>
+<p>Make 'em red. Here is the section on <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> again.</p>
+<h5 id="2j-customize-the-quoti-watched-itquot-buttons">2j. Customize the &quot;I watched it&quot; Buttons</h5>
+<p>In <code>flicklist.js</code>, add some additional styles to these buttons. We want the button to fill the entire width of its container, and sit 10px below its upper neighbor.</p>
+<h4 id="3-responsive-grid-layout">3. Responsive Grid Layout</h4>
+<p>Now let's implement the grid layout. When the page is sufficiently wide, we want the browselist to show up to the right of the Watchlist, rather than below it. </p>
+<h5 id="3a-implement-the-grid">3a. Implement the Grid</h5>
+<p>In <code>index.html</code>, add another <code>&lt;div&gt;</code> inside the main content div, but still wrapped around both sections. This new div should have a class of &quot;row&quot;. </p>
+<p>Next, give each section a class of &quot;col-?-?&quot; (the question marks are for oyu to figure out). You want the watchlist to take up 5/12 of the width of the screen, and the browselist to take up the remaining 7/12. The &quot;breakpoint&quot; should be tablet devices-- in other words, if the user is on an iPad or anything smaller, then the column layout switches back to normal, with the browselist on its own block below the watchlist.</p>
+<p>Resize your window and see if it's working properly. At a certain point, the layout should switch back and forth.</p>
+<p>Read more on <a>Bootstrap Grids</a> for guidance.</p>
+<h5 id="3b-add-a-meta-viewport-tag">3b. Add a Meta Viewport Tag</h5>
+<p>Open up the developer tools and click the little icon of a tablet and a phone. This will allow you to simiulate varous devices in the browser.</p>
+<p>Uh-oh! Things don't look so great for these devices. Why not? Our layout is responsive...</p>
+<p>It turns out there is one more little tag we need to add to the top of our html file:</p>
+<h5 id="3c-center-items-in-the-watchlist">3c. Center items in the Watchlist</h5>
+<p>Notice how on some really skinny screens, like the iPhone5, there is only enough horizontal space to fit one Watchlist item per block. It looks especially silly because the items are all floating to the left, so there is a lot of space to their right. We can fix this by simply applying a <code>text-align: center</code> style to the <code>&lt;ul&gt;</code> container. </p>
+<p>Now the items center themselves!</p>
+<pre><code class="language-html">&lt;meta name=viewport content="width=device-width, initial-scale=1"&gt;</code></pre>
+<p>From now on, this is another one of those tags that you probably want to include in all your HMTL right from the beginning. This sets the width of the page's viewport to be equal to the width of the user's device. Read more <a href="https://developers.google.com/speed/docs/insights/ConfigureViewport#additional-information">here</a>.</p>
+<h4 id="4-poster-images">4. Poster Images</h4>
+<p>The last task to tackle is to add poster images to the Watchlist items. This involves two parts:</p>
+<h5 id="4a-add-image-element-to-watchlist-item">4a. Add Image Element to Watchlist Item</h5>
+<p>Inside <code>render</code>, use jQuery to make an <code>&lt;img&gt;</code> element, and set its <code>src</code> attribute equal to the result calling of the <code>posterUrl</code> function inside the <code>api</code> object at the top of the file. When calling the function, don't forget to pass your movie in as an argument. </p>
+<p>Once you have the element, append it inside the &quot;body&quot; portion of the Bootstrap panel (rather than the &quot;heading&quot; portion).</p>
+<p>Also, give the image element a class of &quot;img-responsive&quot;. This is another Bootstrap class that does some work for us, for example setting the element's width to be 100% of its container (and not more! otherwise it will stick out past the bounds of the container).</p>
+<h5 id="4b-implement-the-posterurl-function">4b. Implement the posterUrl function</h5>
+<p>Now we have to actually implement that function. Currently it just returns a hard-coded url. We want to examine the movie that was passed in, and figure out what the actual url should be. </p>
+<p>To help you figure that out, here are three example urls to real movie posters:</p>
+<ul>
+<li><a href="http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg">http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg</a></li>
+<li><a href="http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg">http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg</a></li>
+<li><a href="http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg">http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg</a></li>
+</ul>
+<p>Use a console.log statement to print a movie object and poke around and see if you can find anything that might help construct the full url for a particular movie.</p>
+<h4 id="5-remove-dead-code">5. Remove Dead Code</h4>
+<p>There's a chunk of CSS code we no longer need after switching to Bootstrap. For example, Bootstrap automatically applies some transparency to disabled buttons. </p>
+<p>All the rest of the CSS at the bottom of the file is obsolete. Go ahead and delete it!</p>
+<h3 id="how-to-submit">How to Submit</h3>
+<p>As usual, first, commit your work on Git and push to a new branch on your GitHub repo. Then, submit a link to your repo on Vocareum.</p>
+<h5 id="commit-and-push">Commit and Push</h5>
+<p>If you run the <code>git status</code> command, you should see that you now have <em>unstaged</em> changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio3-my-work
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        modified:   css/styes.css
+        modified:   index.html
+        modified:   js/flicklist.js
+
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+<p>We can stage these changes with the <code>add</code> command:</p>
+<pre><code class="language-nohighlight">$ git add --all</code></pre>
+<p>The <code>--all</code> adds all of the unstaged files, so you don't have to type them one by one.</p>
+<p>If you check your status again now, you should see:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio3-my-work
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+        modified:   css/styes.css
+        modified:   index.html
+        modified:   js/flicklist.js</code></pre>
+<p>All the files are now staged for committing. Go ahead and make a commit, using the -m flag to remind your future self (and others looking at your code) what changes you made during this commit:</p>
+<pre><code class="language-nohighlight">$ git commit -m "finish FlickList 3 studio"
+[studio2-my-work 46db232] finish FlickList 3 studio
+ 3 files changed, 3 insertions(+), 3 deletions(-)</code></pre>
+<p>The convention is to write your commit messages using the present tense rather than past tense (e.g. &quot;finish&quot; rather than &quot;finished&quot;).</p>
+<p>If you check your status one more time, you should see this:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio3-my-work
+nothing to commit, working directory clean</code></pre>
+<p>Finally, <em>push</em> your changes to your remote repo:</p>
+<pre><code class="language-nohighlight">$ git push origin studio3-my-work
+Counting objects: 62, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 2.36 KiB | 0 bytes/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+To https://github.com/jharvard/flicklist.git
+ * [new branch]      studio3-my-work -&gt; studio3-my-work</code></pre>
+<p>If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says &quot;Branch: master&quot;. Click that dropdown and you should see an option for &quot;studio3-my-work&quot;. Click on that branch, and you should now see the code you just worked on. Copy the current url in your browser's address bar (you are about to paste that url into Vocareum).</p>
+<h5 id="submit-on-vocareum">Submit on Vocareum</h5>
+<p>On Vocareum, click the assignment titled <strong>Studio: FlickList 3</strong>. In your <code>/work</code> directory you should see a file called <code>studio3.txt</code>. Open up this file and fill in the link to your work on GitHub.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

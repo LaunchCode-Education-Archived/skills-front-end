@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>LaunchCode&#039;s CS50x - St. Louis</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/cs50x-stlouis/">
+                LaunchCode&#039;s CS50x - St. Louis
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/calendar/">
+                                        Calendar
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/how-to-take-this-class/">
+                                        How To Take This Class
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/helpful-resources/">
+                                        Helpful Resources
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://cs50.io/">
+                                        CS50 IDE
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://labs.vocareum.com/home/login.php">
+                                        Vocareum
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://piazza.com/wustl/spring2016/cs50x">
+                                        Piazza
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://docs.google.com/document/d/1rQNoQcbbn6K9kcaFMiS-vE2Uw1Qi2V8EQOPuZv1YMMk/edit?usp=sharing">
+                                        Student Guide
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h5 id="web-track">Web Track</h5>
+<p><a href="../../class6">Back to Class 6</a></p>
+<h1 id="studio-flicklist-5">Studio: FlickList 5</h1>
+<p>In today's (final!) studio, you will add some finishing touches to the project. The changes are mostly cosmetic, but they will require you to refactor a significant chunk of your html and javascript code.</p>
+<h3 id="demo">Demo</h3>
+<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/636afdd8442225455cef24ea4a8560705a17313c/index.html" target="_blank">FlickList 5 Demo</a> (note: I noticed some weird behavior with this demo on Safari, so be sure to open it up in Chrome). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
+<p>Note the following additions since last time:</p>
+<ul>
+<li>The proverbial furniture has been rearranged. The two sections (watchlist and browse) are no longer arranged in side-by-side columns; instead the browse section has moved back to its former home, below the watchlist section.</li>
+<li>The browse section is way different. Rather than displaying all the movies at once inside a list, now only one movie is shown at a time. The user can cycle through movies using a fancy UI &quot;carousel&quot;, which displays the movie posters along with buttons for sliding back and forth between movies. Each time the carousel slides, the movie title and description update to reflect the newly active movie whose poster has slid into view. </li>
+<li>The browse section layout uses the Bootstrap grid system, in fact a <em>nested</em> grid: At the macro level, the section is split into (A) a column on the left for the movie info and carousel, and (B) a column on the right for the search form. Diving into that first column, it is further subdivided into (A-1) a column on the left for the movie title and overview, and (A-2) a column on the right for the carousel and the &quot;Add to Watchlist&quot; button.</li>
+</ul>
+<h3 id="starter-code">Starter Code</h3>
+<p>Same procedure as usual. First, fetch the studio5 branch from upstream:</p>
+<pre><code class="language-nohighlight">$ git fetch upstream studio5
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 21 (delta 6), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+From https://github.com/LaunchCodeEducation/flicklist
+ * branch            studio5    -&gt; FETCH_HEAD
+   74b1223..fe10c4f  studio5    -&gt; upstream/studio5</code></pre>
+<p>Then, checkout a new local branch:</p>
+<pre><code class="language-nohighlight">$ git checkout -b studio5-my-work upstream/studio5
+Branch studio5-my-work set up to track remote branch studio5 from upstream.
+Switched to a new branch 'studio5-my-work'</code></pre>
+<h3 id="a-brief-tour">A Brief Tour</h3>
+<p>Here's what has changed since last time:</p>
+<h5 id="indexhtml">index.html</h5>
+<p>The two-column layout has already been removed for you. Notice how the two sections are no longer inside a &quot;row&quot; div, and no longer have class names like &quot;col-md-7&quot;, and the &quot;main-content&quot; div no longer has a class of &quot;fluid-container&quot;. </p>
+<p>There is some additional code in the script at the bottom of the page. More on that later.</p>
+<h5 id="flicklistjs">flicklist.js</h5>
+<p>Nothing new here.</p>
+<h5 id="stylescss">styles.css</h5>
+<p>A couple minor changes, not worth talking about.</p>
+<h3 id="assignment">Assignment</h3>
+<p>For this studio, there are some tasks that do not explicitly have TODO comments in the source code (it would be too messy / ambiguous as to where to place the comment). So follow the steps as outlined here:</p>
+<h4 id="0-api-key">0. API key</h4>
+<p>You know what to do.</p>
+<h4 id="1-rearrange-to-use-grid">1. Rearrange to use grid</h4>
+<p>For starters, let's just try to implement this new grid layout in the browse section. In <code>index.html</code>, build out the following structure:</p>
+<pre><code class="language-nohighglight">+-----------------------------------------------------------------------------------------------------+
+|                                           Browse Section                                            |
+| +-----------------------------------------------------------+ +-----------------------------------+ |
+| |         Container A (67% width)                           | |          Container B (33%)        | |
+| | +------------------------------+ +----------------------+ | |      (header and search form)     | |
+| | |     Conainer A-1 (58%)       | | Container A-2 (42%)  | | |                                   | |
+| | |                              | |                      | | |                                   | |
+| | +------------------------------+ +----------------------+ | |                                   | |
+| +-----------------------------------------------------------+ +-----------------------------------+ |
++-----------------------------------------------------------------------------------------------------+</code></pre>
+<p>This will involve adding some things, moving some things, and deleting some things. </p>
+<p>Eventually the poster image carousel will live in Container A-2, and over in Container A-1 we will display the title and overview of the the currently visible movie poster. But for now, just ignore that, and implement this scaffolding. </p>
+<p>A few things to point out:</p>
+<ul>
+<li>Note that your search form (&quot;Search by Topic&quot;) and header (&quot;Browse Movies&quot;) should be placed inside Container B.</li>
+<li>Give Container A-1 an attribute of <code>id="browse-info"</code></li>
+<li>Place A-1 and A-2 inside a Bootstrap <a href="http://getbootstrap.com/components/#wells" target="_blank">well</a> by wrapping the entire row that holds A-1 and A-2 inside a wrapper div with <code>class="well"</code></li>
+<li>Don't be afraid of breaking what you currently have. </li>
+<li>Google &quot;Bootstrap Grid&quot; if you need a refresher.</li>
+<li>Feel free to open the Studio Demo in your browser and inspect its HTML with the dev tools.</li>
+</ul>
+<h4 id="2-add-some-dummy-data">2. Add Some Dummy Data</h4>
+<p>Next, let's hard-code some fake content into your HTML page. Later you will delete this and use jQuery to add the real content dynamically, but this intermediate step should help clarify how to do that.</p>
+<p>In <code>index.html</code>, add the following content:</p>
+<ul>
+<li>inside Container A-1, place an <code>&lt;h4&gt;</code> element with the text &quot;Twilight&quot;, followed by an <code>&lt;hr/&gt;</code>, followed by a fake overview paragraph about Twilight. Make sure your overview paragraph is an accurate description of the plot of the movie, jk.</li>
+<li>inside Container A-2, add a placeholder <code>&lt;img&gt;</code> (with an &quot;src&quot; equal to &quot;<a href="https://pbs.twimg.com/profile_images/378800000576832113/3e69602eab961fd19b89cc65ea9bd2e8.jpeg">https://pbs.twimg.com/profile_images/378800000576832113/3e69602eab961fd19b89cc65ea9bd2e8.jpeg</a>&quot;), followed by a button that says &quot;Add to Watchlist&quot; and has an attribute of <code>id="add-to-watchlist"</code>.</li>
+</ul>
+<h4 id="3-create-the-carousel">3. Create the Carousel</h4>
+<p>Now for the fun part: inside Container A-2, create a Bootstrap Carousel. How the heck does one do that? It's essentially just like the other Bootstrap components we've already seen, but more complex, and composed of multiple elements rather than just one. You simply create some elements and wire them up with them the right class and id names and other attributes, and Bootstrap will work behind the scenes to make everything function properly. </p>
+<p>Actually, for this task we are going to need to include Bootstrap's javascript library (we currently only have their CSS). So the first step is to head to <a href="http://getbootstrap.com/getting-started/#download-cdn" target="_blank">the bootstrap site</a> and copy/paste their &quot;Latest compiled and minified JavaScript&quot; into the top of <code>index.html</code>.</p>
+<p>Now it's time to create the carousel. Check out <a href="http://codepen.io/jesselaunchcode/pen/ZWZyeX" target="_blank">this Codepen example</a> (which I made, and which mirrors exactly what you want to do (make sure you expand the &quot;html&quot; window on Codepen so you don't go insane trying to read from a tiny box)), and also <a href="http://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank">this W3 Schools example</a> (which has some extra stuff we don't care about, but provides explanations of the various parts, which you should read). </p>
+<p>Build your carousel, and fill it with 3 movie poster images, using posters from the internet <a href="http://sumnersunsettheatre.com/wp-content/uploads/Minions-poster.jpg" target="_blank">like this</a>. Give your carousel an attribute of <code>id=browse-carousel</code> Make sure to also include the left and right &quot;data slide&quot; buttons, and make sure they work.</p>
+<p>Finally add this rule to your <code>styles.css</code> file:</p>
+<pre><code class="language-css">#browse-carousel {
+    max-width: 300px;
+    margin: auto;
+}</code></pre>
+<p>which will ensure that the carousel does not get annoyingly large, and is centered horizontally in its container.</p>
+<h4 id="4-new-model-property">4. New Model Property</h4>
+<p>Now that you have the page layout and the carousel all set up, it's time to feed your app the actual movie data. You will do this by refactoring some of your javascript code in <code>flicklist.js</code>.</p>
+<p>The big change is that we no longer want the browse section to display a <em>list</em> of movies. We only want to display one at a time. Our underlying model should still use a list (i.e. <code>model.browseItems</code>) because we want to keep track of all the movies and have them around-- it's just that user will only visibily see one at a time. </p>
+<p>This means that our <code>model</code> object will need a third property. Not only do we need to keep track of the list of browse items, we also need to keep track of <em>which item</em>, at any given moment, is the &quot;active&quot; one on display. </p>
+<p>Add another property to the <code>model</code> variable. Name the property <code>activeMovieIndex</code>, and set it equal to <code>0</code>. This number represents which item from the browseItems array is currently active. So for example, because we start off with <code>0</code>, this means the first item in the array is the active movie.</p>
+<h5 id="5-refactor-the-render-function">5. Refactor the render Function</h5>
+<p>The old <code>render</code> function, when adding the content to the browse section, iterates over each item in <code>model.browselist</code>. This doesn't really make sense anymore since we only want to display one browse item at any given time.</p>
+<h5 id="5a-delete-the-old-code">5a. Delete the old Code!</h5>
+<p>Go ahead and delete this whole block of code:</p>
+<pre><code class="language-js">model.browseItems.forEach(function(movie) {
+  ...
+});
+</code></pre>
+<p>Gasp! (Actually, just comment it out. But cut and paste it to the bottom of the file or somewhere else out of the way.)</p>
+<h5 id="5b-figure-out-the-current-active-movie">5b. Figure out the Current Active Movie</h5>
+<p>Now let's get started building a fresh implementation of displaying the browse section. You should still be inside the <code>render</code> function, in the same place where the dust is still settling from decimating the old code.</p>
+<p>First, we will need to know which movie object is the currently active one. Make a variable:</p>
+<pre><code class="language-js">var activeMovie =   // TODO fill this in</code></pre>
+<p>and give it the correct value. (Remember, you have a list of browse items, and you have a number telling you which index is the active index).</p>
+<h5 id="5c-title-and-overview">5c. Title and Overview</h5>
+<p>Next, replace the hard-coded &quot;Twilight&quot; content with the actual title and overview for the currently active movie. (Remember, you gave the container an id of &quot;browse-info&quot;.)</p>
+<h5 id="5d-revive-the-quotadd-to-watchlistquot-button">5d. Revive the &quot;Add to Watchlist&quot; Button</h5>
+<p>Previously we created a new button for each browse item, but now we just have one permanent button which you have already added to the HTML page. But that button doesn't work and is ugly. Bring it back to life!</p>
+<p>Your old code looked like this:</p>
+<pre><code class="language-js">var button = $("&lt;button&gt;&lt;/button&gt;")
+   .text("Add to Watchlist")
+   .attr("class", "btn btn-primary")
+   .click(function() {
+     model.watchlistItems.push(movie);
+     render();
+   })
+   .prop("disabled", model.watchlistItems.indexOf(movie) !== -1);</code></pre>
+<p>You pretty much want to do all that same stuff here. The only difference is that instead of <em>creating a new button</em> and storing it in a variable, you just need to modify the existing button (Remember, you gave it an id attribute).</p>
+<h5 id="5e-fill-the-carousel">5e. Fill the Carousel</h5>
+<p>Now let's fill the carousel with movie poster images. Here's some starter code:</p>
+<pre><code class="language-js">// fill carousel with posters
+var posters = model.browseItems.map(function(movie) {
+ // TODO 
+ // return a list item with an img inside  
+});
+$("TODO").append(posters);</code></pre>
+<p>As you can see, we are mapping over the browseItems to create an array of elements. Then we are appending those elements into the carousel. </p>
+<p>Inside the <code>map</code> callback, you should break that down into two steps: first, create a poster image (you can look up to remember how you did that in the watchlist), and then append it into an <code>&lt;li&gt;</code>. Remember, your <code>&lt;li&gt;</code> needs to have a special class name of <code>"item"</code> in order for the Bootstrap carousel to recognize it.</p>
+<p>You also must fill in that jQuery selector to make sure you are appending the list items into the apropriate place.</p>
+<h5 id="5f-activate-the-correct-poster-item">5f. Activate the Correct Poster Item</h5>
+<p>The carousel also requires that exactly one list item also has a class of <code>"active"</code>.</p>
+<p>Here's a freebie:</p>
+<pre><code class="language-js">posters[model.activeMovieIndex].addClass("active");</code></pre>
+<p>Just add the above line. But don't paste it, type it out yourself!</p>
+<h5 id="6-respond-to-carousel-sliding">6. Respond to Carousel Sliding</h5>
+<p>Your page should now have a working carousel with actual movie data in it. </p>
+<p>There is still one bug, which is that whenever the carousel slides to show a new movie poster, the rest of the app fails to respond. The title, overview, and everything else continue to show the previous movie.</p>
+<p>To solve this problem we must, actively respond whenever the carousel has slid to a new movie. We have already started this for you in the script at the bottom of <code>index.html</code>:</p>
+<pre><code class="language-js">$("#browse-carousel").on("slid.bs.carousel", function() {
+   console.log("the carousel just slid!");
+   var newIndex = $("#browse-carousel").find(".active").index();
+   // TODO 
+   // update the model and then re-render
+});</code></pre>
+<p>This code block uses a jQuery function called <code>on</code> which allows us to register a callback that will be executed whenever a certain event happens. In our case the event is the carousel sliding, which Bootstrap makes available under the name &quot;slid.bs.carousel&quot;. This is just like a normal button with a <code>click</code> handler, but the <code>on</code> function lets you specify any event, not just a click. In fact, you actually can use <code>on</code> with buttons. The following two code blocks are equivalent:</p>
+<pre><code class="language-js">$("#mybutton").on("click", function() {
+   console.log("somebody clicked my button!");
+});</code></pre>
+<pre><code class="language-js">$("#mybutton").click(function() {
+   console.log("somebody clicked my button!");
+});</code></pre>
+<p>Anyway, whenever the carousel has slid to a new position, that annonymous function will be executed. We've left a TODO in there for you. The goal is to update the model (remember that your model must keep track of the current active movie index), and then re-render everything. In the line above the TODO, we've already done the hard part of figuring out what the new carousel index is, by using some new jQuery functions, <code>find</code> and <code>index</code>, whose purpose you can hopefully infer from their usage here.</p>
+<p>Once you've got this working, your page should update its content whenever the carousel slides!</p>
+<h5 id="7-css">7. CSS</h5>
+<p>The last step is to add some CSS and make everything look tidy. No guidance on this one! You got this. Just compare your version to the demo and rig up some CSS rules to make it work.</p>
+<p>One hint, regarding your carousel: remember that a <code>&lt;ul&gt;</code>, by default, has some padding on the left side.</p>
+<h3 id="how-to-submit">How to Submit</h3>
+<p>As usual, commit your work on Git and push to a new branch on your GitHub repo. Then, submit a link to your repo on Vocareum.</p>
+<h5 id="commit-and-push">Commit and Push</h5>
+<p>If you run the <code>git status</code> command, you should see that you now have <em>unstaged</em> changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio5-my-work
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        modified:   css/styes.css
+        modified:   index.html
+        modified:   js/flicklist.js
+
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+<p>We can stage these changes with the <code>add</code> command:</p>
+<pre><code class="language-nohighlight">$ git add --all</code></pre>
+<p>The <code>--all</code> adds all of the unstaged files, so you don't have to type them one by one.</p>
+<p>If you check your status again now, you should see:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio5-my-work
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+        modified:   css/styes.css
+        modified:   index.html
+        modified:   js/flicklist.js</code></pre>
+<p>All the files are now staged for committing. Go ahead and make a commit, using the -m flag to remind your future self (and others looking at your code) what changes you made during this commit:</p>
+<pre><code class="language-nohighlight">$ git commit -m "finish FlickList 5 studio"
+[studio2-my-work 46db232] finish FlickList 5 studio
+ 2 files changed, 2 insertions(+), 2 deletions(-)</code></pre>
+<p>The convention is to write your commit messages using the present tense rather than past tense (e.g. &quot;finish&quot; rather than &quot;finished&quot;).</p>
+<p>If you check your status one more time, you should see this:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio5-my-work
+nothing to commit, working directory clean</code></pre>
+<p>Finally, <em>push</em> your changes to your remote repo:</p>
+<pre><code class="language-nohighlight">$ git push origin studio5-my-work
+Counting objects: 62, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 2.36 KiB | 0 bytes/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+To https://github.com/jharvard/flicklist.git
+ * [new branch]      studio5-my-work -&gt; studio5-my-work</code></pre>
+<p>If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says &quot;Branch: master&quot;. Click that dropdown and you should see an option for &quot;studio2-my-work&quot;. Click on that branch, and you should now see the code you just worked on. Copy the current url in your browser's address bar (you are about to paste that url into Vocareum).</p>
+<h5 id="submit-on-vocareum">Submit on Vocareum</h5>
+<p>On Vocareum, click the assignment titled <strong>Studio: FlickList 5</strong>. In your <code>/work</code> directory you should see a file called <code>studio5.txt</code>. Open up this file and fill in the link to your work on GitHub.</p>
+<h4 id="publish-your-work-using-github-pages">Publish your Work using Github Pages!</h4>
+<p>Lastly, let's put your work on display so you can show it off! Github has a feature called Github Pages, which makes it really easy to host your front-end projects on the real, live internet. You simply need to give your repository a branch with with the special name &quot;gh-pages&quot;. </p>
+<p>Let's do that now. First, create the new branch locally:</p>
+<pre><code class="language-nohighlight">$ git checkout -b gh-pages
+Switched to a new branch 'gh-pages'</code></pre>
+<p>(Notice that we didn't specify where the new branch should copy from, so by default it used the current studio5-my-work branch, which is what we want).</p>
+<p>Now we want to push this branch up to your remote repository. There is one slight complication, which is that when you forked our LaunchCodeEducation/flicklist repo back in Studio 0, your fork also received all of our branches, including our own gh-pages branch. So your remote in fact already has a (out of date) gh-pages branch. So first, delete that one:</p>
+<pre><code class="language-nohighlight">$ git push --delete origin gh-pages
+To https://github.com/jharvard/flicklist.git
+ - [deleted]         gh-pages</code></pre>
+<p>and now you can then push this local one:</p>
+<pre><code class="language-nohighlight">$ git push origin gh-pages
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 686 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To https://github.com/jharvard/flicklist.git
+ * [new branch]      gh-pages -&gt; gh-pages</code></pre>
+<p>Now you (or anyone) can view your project! Just visit this url <a href="http://jharvard.github.io/flicklist">http://jharvard.github.io/flicklist</a> (where jharvard is your username).</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

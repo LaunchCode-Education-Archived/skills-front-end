@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>LaunchCode&#039;s CS50x - St. Louis</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/cs50x-stlouis/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/cs50x-stlouis/">
+                LaunchCode&#039;s CS50x - St. Louis
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/calendar/">
+                                        Calendar
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/how-to-take-this-class/">
+                                        How To Take This Class
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/cs50x-stlouis/helpful-resources/">
+                                        Helpful Resources
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://cs50.io/">
+                                        CS50 IDE
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://labs.vocareum.com/home/login.php">
+                                        Vocareum
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://piazza.com/wustl/spring2016/cs50x">
+                                        Piazza
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://docs.google.com/document/d/1rQNoQcbbn6K9kcaFMiS-vE2Uw1Qi2V8EQOPuZv1YMMk/edit?usp=sharing">
+                                        Student Guide
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h5 id="web-track">Web Track</h5>
+<p><a href="../../class1">Back to class 1</a></p>
+<h1 id="studio-flicklist-1">Studio: FlickList 1</h1>
+<p>In <a href="../flicklist-0">the previous Studio</a>, you forked the project repository and added your API key to the source code.</p>
+<p>Today, you will start adding some real functionality to the code base. By the end of this studio, users will see a browseable list of movies on the screen. Each movie will have a &quot;Add to Watchlist&quot; button, which, when clicked, will cause that movie to show up on another area of the screen where the user's Watchlist is displayed.</p>
+<h3 id="demo">Demo</h3>
+<p>Here is what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/ba335b0509258c7e4dc51779f9baa536f914c07b/index.html" target="_blank">FlickList 1 Demo</a>. Take a minute to play around with the demo so you understand what your goal is.</p>
+<h3 id="git-yer-hands-on-some-starter-code">Git Yer Hands on Some Starter Code</h3>
+<p>Navigate to the proper directory:</p>
+<pre><code class="language-nohighlight">$ cd ~/workspace/web-track/studios/flicklist</code></pre>
+<p>Your git status should be clean of any unstaged changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio0-my-work
+nothing to commit, working directory clean</code></pre>
+<p>(We are assuming you will still be on the <code>studio0-my-work</code> branch from last time. But if you're on a different branch, that's fine, as long as you see &quot;nothing to commit, working directory clean&quot;. If you do have unstaged or uncommitted changes, commit them now. If you need guidance, see <a href="../flicklist-0#how-to-submit">here</a>.)</p>
+<p>Now let's fetch the <code>studio1</code> branch from the upstream repo:</p>
+<pre><code class="language-nohighlight">$ git fetch upstream studio1
+From https://github.com/LaunchCodeEducation/flicklist
+ * branch            studio1    -&gt; FETCH_HEAD</code></pre>
+<p>and then checkout a new local branch with the contents of upstream/studio1</p>
+<pre><code class="language-nohighlight">$ git checkout -b studio1-my-work upstream/studio1
+Branch studio1-my-work set up to track remote branch studio1 from upstream.
+Switched to a new branch 'studio1-my-work'</code></pre>
+<p>(Just an aside: The <code>-b</code> flag allows you to create and switch to a branch in one line. It's just a fancier version of this:</p>
+<pre><code class="language-nohighlight">$ git branch studio1-my-work upstream/studio1
+Branch studio1-my-work set up to track remote branch studio1 from upstream.
+$ git checkout studio1-my-work
+Switched to a new branch 'studio1-my-work'</code></pre>
+<p>You can use whichever you feel more comfortable with.)</p>
+<h3 id="a-brief-tour">A Brief Tour</h3>
+<p>Welcome to the studio1 branch!</p>
+<p>Your folder structure should look the same as last time:</p>
+<pre><code class="language-nohighlight">$ tree
+.
+├── index.html
+└── js
+    └── flicklist.js
+
+1 directory, 2 files</code></pre>
+<p>But the contents of those files is a little different. Let's take a look. Open up <code>index.html</code> and <code>flicklist.js</code> in your IDE.</p>
+<h5 id="indexhtml">index.html</h5>
+<p>The body of the document now has three main parts:</p>
+<ul>
+<li>a <code>&lt;header&gt;</code> to display the project title and tagline</li>
+<li>a <code>&lt;section&gt;</code> to display the movies that are on the user's watchlist</li>
+<li>a TODO, where you will implement another <code>&lt;section&gt;</code>, this one to display a browsable list of popular movies</li>
+</ul>
+<p>The <code>&lt;header&gt;</code> and <code>&lt;section&gt;</code> tags might look unfamiliar to you. They are relatively new additions to the HTML language. Similar to the <code>&lt;div&gt;</code>, these tags serve as a container for other tags, so you can group your document into chunks. The difference is that a <code>&lt;div&gt;</code> does not indicate <em>what kind of content</em> it contains, whereas these new tags do: the <code>&lt;header&gt;</code> indicates that it is meant to serve as a title or heading above some other content; the <code>&lt;section&gt;</code> indicates a discrete section of your document. Using these tags instead of <code>&lt;div&gt;</code>s makes it more immediately obvious how your document is structured and what kind of role each of the various chunks is playing. As much as possible, it is generally best practice to make your HTML &quot;semantically meaningful&quot; like this. You will learn a bit more about &quot;Semantic HTML&quot; in later Prep Work.</p>
+<p>You might also notice that although the top of this file is almost the same as last time, there is one small change-- we've added is this line:</p>
+<pre><code class="language-html">&lt;meta charset="utf-8"/&gt;</code></pre>
+<p>What this does is explicitly defines that our document should use the Unicode character encoding. If curious, you can read more about character encoding <a href="http://www.w3.org/International/questions/qa-what-is-encoding" target="_blank">here</a>. Generally try to remember to add this line in your HTML, or you might get some strange results when your page attempts to display obscure characters. But for now, don't waste a ton of brainpower worrying about this topic.</p>
+<h5 id="flicklistjs">flicklist.js</h5>
+<p>Let's now talk <code>flicklist.js</code>. </p>
+<p>The beginning of the file still contains that <code>api</code> object, one of whose properties, <code>token</code>, currently has a value of <code>"TODO"</code>, which you should once again replace with your personal api key.</p>
+<p>There is another object nearby, called <code>model</code>. This is where we will store all the data we need to keep track of. You can see that this object has two properties:</p>
+<ul>
+<li><code>watchlistItems</code>, an array (initially empty) that represents all the movies on the user's watchlist</li>
+<li><code>browseItems</code>, an array (also initally empty) that holds all the movies we want to make available to the user for browsing.</li>
+</ul>
+<p>Moving down the page, the <code>discoverMovies</code> function is very similar to the function called <code>testTheAPI</code> from last time: it makes an AJAX request to TheMovieDB's API, and after receiving a response, logs it to the console. But there is now a little bit more code inside that <code>success</code> function:</p>
+<ul>
+<li>First of all, there is a TODO! We want you to write a line here such that, whenever a response comes back from the API, you update the <code>model</code> variable so that its <code>.browseItems</code> property is equal to the list of movies in the response.</li>
+<li>After updating the model, we invoke a function called <code>callback</code>. Where did that function come from? It turns out it was passed into us as an argument to <code>discoverMovies</code>. A very powerful feature of JS is the ability to pass functions around as arguments to other functions. The idea of a <a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" target="_blank">callback</a> is that whoever is invoking <code>discoverMovies</code> can pass in a block of code to specify what should happen after the response comes back.</li>
+</ul>
+<p>To see this in action, scroll down to the bottom of the file, and you'll see where <code>discoverMovies</code> is used. When the document is loaded, we execute this line:</p>
+<pre><code class="language-js">discoverMovies(render);</code></pre>
+<p>which invokes <code>discoverMovies</code> and passes in something called <code>render</code> as the callback. In other words, we are saying: Go fetch some results from the API, and when you get a response back, invoke this other function called <code>render</code>. </p>
+<p>Scroll up a bit, and you'll see that the <code>render</code> function is defined directly above. The purpose of this function is to re-display everything in the DOM based on the current information stored in the <code>model</code> variable. It is mostly empty so far, but contains a handful of TODOs. </p>
+<h5 id="debugger-walkthrough">Debugger Walkthrough</h5>
+<p>To help wrap your head around all this, do the following exercise:</p>
+<ol>
+<li>Preview the page in the Chrome browser</li>
+<li>Open the developer tools</li>
+<li>Click the &quot;Sources Tab&quot;</li>
+<li>Locate <code>flicklist.js</code> and click on that. You should see the source code appear.</li>
+<li>Expand the sub-window displaying the source code to be a little bigger, so you can actually see the code.</li>
+<li>Add breakpoints to the following lines: 
+<ul>
+<li>line 21</li>
+<li>line 27</li>
+<li>line 45</li>
+<li>line 69</li>
+</ul></li>
+<li>Refresh the page.</li>
+<li>You should hit your first breakpoint (line 69.) Click the continue button and you should hit another breakpoint. At each breakpoint, click the Step-Over button a few times to get a feel for what's happening, and then click Continue button and observe which section of code fires next.</li>
+</ol>
+<h3 id="assignment">Assignment</h3>
+<p>Work your way through the TODOs in the starter code. Each task is numbered, indicating the order in which you should work on them. The tasks are as follows:</p>
+<h5 id="0-add-your-api-key-to-the">0. Add your API key to the <code>api</code> variable</h5>
+<p>Just like last time.</p>
+<h5 id="1-add-a-browsing-section">1. Add a browsing section</h5>
+<p>In <code>index.html</code>, add another <code>&lt;section&gt;</code> very similar to the watchlist section above. You should give your section an <code>id</code> so that you can refer to it later and manipulate its contents. You should also put an empty <code>&lt;ul&gt;</code> inside, where you will later insert those list items for the browsable movies.</p>
+<h5 id="2-update-the-model-when-ajax-request-succeeds">2. Update the model when AJAX request succeeds</h5>
+<p>Inside the <code>discoverMovies</code> function, when a successul response comes back, we are currently logging the response to the console, but we are not actually doing anythign useful with the data. Your job is to update the <code>model</code> variable, filling its <code>.browseItems</code> property with the newly received list of movies.</p>
+<h5 id="3-insert-a-list-item-for-each-movie-on-the-browse-list">3. Insert a list item for each movie on the browse list</h5>
+<p>The rest of your TODOs are inside the <code>render</code> function. For these, jQuery is your best friend. </p>
+<p>On this one, we are asking you to create a list item <code>&lt;li&gt;</code> for each movie in the browse list, and append that list item to the <code>&lt;ul&gt;</code> inside the browse section on the document. The list item for now should jsut contain the title of the movie.</p>
+<p>You might be wondering: we had you assign an id to the section, but not the <code>&lt;ul&gt;</code> inside the section, so how can you obtain a reference to the <code>&lt;ul&gt;</code>? Just like CSS, jQuery allows you to traverse the DOM using <a>descendant selectors</a>, for example:</p>
+<pre><code class="language-js">$("#essay p")</code></pre>
+<p>yields all <code>&lt;p&gt;</code> tags who are descendents (children, or children's children...) of the element whose id is &quot;essay&quot;. </p>
+<p>To complete this task, you will need to make use of jQuery's <a href="http://api.jquery.com/append/" target="_blank">append</a> and <a href="http://api.jquery.com/text/" target="_blank">text</a> functions. </p>
+<p>The following code demonstrates how to add a link to the bottom of every descendant paragraph inside the &quot;essay&quot; element:</p>
+<pre><code class="language-js">var googleLink = $("&lt;a&gt;&lt;/a&gt;").text("Click me!").attr("href", "google.com");
+$("#essay p").append(googleLink);</code></pre>
+<p>Ultimately, you should be generating HTML that looks something like this:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Night Before Christmas&lt;/p&gt;
+  &lt;li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Morning After Christmas&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eyes Wide Shut&lt;/p&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+<h5 id="4-each-browse-list-item-should-contain-a-button">4. Each browse list item should contain a button</h5>
+<p>Once you have list items displaying the titles of all the movies, the next step is to add a button to each item. The button should say &quot;Add to watchlist&quot;.</p>
+<p>This step should be pretty simple. Just append another item inside the list item, after the movie title.</p>
+<h5 id="5-add-click-handlers-to-the-buttons">5. Add click handlers to the buttons</h5>
+<p>Once those buttons are showing up, your next task is to make them actually do something. Use jQuery's <a href="http://api.jquery.com/click/" target="_blank">click</a> function to register a &quot;click handler&quot; on each button. This is another one of those functions where you pass in a &quot;callback&quot;, in order to specify exactly what should happen when the click event occurs. You'll want to pass in a function that accomplishes two things: appends to <code>model.browseItems</code> whichever movie was clicked, and then re-invokes <code>render</code>. Here is an example of a button whose click handler contains an &quot;annonymous function&quot; that accomplishes some tasks: </p>
+<pre><code class="language-js">var myButton = $("&lt;button&gt;&lt;/button&gt;").text("Click if you dare");
+myButton.click(function() {
+  console.log("You clicked my button!");
+  console.log("I love you!");
+  releaseTheHounds();
+});</code></pre>
+<p>Whenever <code>myButton</code> is clicked, the console will log &quot;You clicked my button!&quot;, followed by &quot;I love you!&quot;, and then some other function called <code>releaseTheHounds</code> will execute.</p>
+<h5 id="6-insert-a-list-item-for-each-movie-on-the-watchlist">6. Insert a list item for each movie on the Watchlist</h5>
+<p>Now that your buttons wired up and pushing new movies onto <code>model.watchlistItems</code>, the next step is to render those watchlist movies on the screen so the user can see them. </p>
+<p>Create a similar <code>forEach</code> loop to iterate over <code>model.watchlistItems</code> and append content to the <code>&lt;ul&gt;</code> inside the watchlist <code>&lt;section&gt;</code>.</p>
+<p>Once you've finished, you should start to see movies appearing on the watchlist whenever you click the buttons! You will probably notice some weird behavior, where the same movie shows up multiple times after a few clicks. You might also notice that the browse list is grwoing longer and longer! You will tackle that next.</p>
+<h5 id="7-clear-out-the-old-list-elements-before-re-rendering">7. Clear out the old list elements before re-rendering</h5>
+<p>You're seeing repeats of the same movies because each time <code>render</code> is executed, it re-renders <em>every</em> movie in the watchlist, not just the newly added movie. Similarly, the browse list is re-appending every single movie onto the DOM, even though they were already there.</p>
+<p>To fix this, simply add some code at the beginning of the function which clears both lists. Use jQuery's <a href="http://api.jquery.com/empty/" target="_blank">empty</a> function, which deletes all the child nodes of an element. </p>
+<p>You may think this is an inefficient way having the browser render stuff, and in fact, you are right. After all, why should we delete all 20 items from the browse list, only to re-add them an instant later? Fortunately, the operations we are doing here are small enough that the inefficiency won't lead to a drop in performance significant enough to hurt the user experience. And the benefit of this monolithic <code>render</code> function is that we don't have to worry about which particular event we are responding to (Did a response come back from the API? Did the user just click a button? Which button?). All we have to worry about is, given the current state of the model, this is what our view should look like. The mental simplicity that this system affords us will grow more and more valuable as our program grows in complexity. </p>
+<h3 id="how-to-submit">How to Submit</h3>
+<h5 id="commit-and-push-on-git">Commit and Push on Git</h5>
+<p>If you run the <code>git status</code> command, you should see that you now have <em>unstaged</em> changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio1-my-work
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        modified:   index.html
+        modified:   js/flicklist.js
+
+no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+<p>We can stage these changes with the <code>add</code> command:</p>
+<pre><code class="language-nohighlight">$ git add --all</code></pre>
+<p>The <code>--all</code> adds all (both of) the unstaged files, so you don't have to type them one by one.</p>
+<p>If you check your status again now, you should see:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio1-my-work
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+        modified:   index.html
+        modified:   js/flicklist.js</code></pre>
+<p>Both files are now staged for committing. Go ahead and make a commit, using the -m flag to remind your future self (and others looking at your code) what changes you made during this commit:</p>
+<pre><code class="language-nohighlight">$ git commit -m "finish FlickList 1 studio"
+[studio1-my-work 46db232] finish FlickList 1 studio
+ 2 files changed, 2 insertions(+), 2 deletions(-)</code></pre>
+<p>The convention is to write your commit messages using the present tense rather than past tense (e.g. &quot;finish&quot; rather than &quot;finished&quot;).</p>
+<p>If you check your status one more time, you should see this:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch studio1-my-work
+nothing to commit, working directory clean</code></pre>
+<p>Finally, <em>push</em> your changes to your remote repo:</p>
+<pre><code class="language-nohighlight">$ git push origin studio1-my-work
+Counting objects: 62, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 2.36 KiB | 0 bytes/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+To https://github.com/jharvard/flicklist.git
+ * [new branch]      studio1-my-work -&gt; studio1-my-work</code></pre>
+<p>If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says &quot;Branch: master&quot;. Click that dropdown and you should see an option for &quot;studio1-my-work&quot;. Click on that branch, and you should now see the code you just worked on. Copy the current url in your browser's address bar (you are about to paste that url into Vocareum).</p>
+<h5 id="submit-on-vocareum">Submit on Vocareum</h5>
+<p>On Vocareum, click on the assignment called <strong>Studio: FlickList 1</strong>.</p>
+<p>You should see a file called <code>studio1.txt</code>. In this file, provide us a link to the work you just pushed to GitHub. Then click &quot;Submit&quot;.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
