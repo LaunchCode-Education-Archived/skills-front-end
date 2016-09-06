@@ -1,4 +1,4 @@
-# Web Track
+# Skill Track: Front-end
 
 ### Synopsis
 
