@@ -12,10 +12,17 @@ Over the course of building this project, you will solidify your comfort with th
 
 Class | Date | Prep Work | During Class | Topics
 |------|----|----------|--------------|-------|
-Class 0 | 4/21 | [Class 0 Prep](./materials/class0-prep) | [In Class](./materials/class0) | Git, Chrome dev tools, themoviedb API |
-Class 1 | 4/26 | [Class 1 Prep](./materials/class1-prep) | [In Class](./materials/class1) | review of AJAX, and jQuery DOM manipulations; branches in Git |
-Class 2 | 4/28 | [Class 2 Prep](./materials/class2-prep) | [In Class](./materials/class2) | Semantic HTML; CSS (box model, other essentials), functional JS, more AJAX |
-Class 3 | 5/3 | [Class 3 Prep](./materials/class3-prep) | [In Class](./materials/class3) | Bootstrap; Responsiveness |
-Class 4 | 5/5 | [Class 4 Prep](./materials/class4-prep) | [In Class](./materials/class4) |  (office hours)  |
-Class 5 | 5/10 | [Class 5 Prep](./materials/class5-prep) | [In Class](./materials/class5) | more functional JS; Chaining API calls, surviving "callback hell" |
-Class 6 | 5/12 | Class 6 Prep | [In Class](./materials/class6) | nested grids in Bootstrap; the Bootstrap carousel component; jQuery bind |
+Class 1 | 9/26 | [Class 1 Prep](./materials/class1-prep) | [In Class](./materials/class1) | 
+Class 2 | 9/29 | [Class 2 Prep](./materials/class2-prep) | [In Class](./materials/class2) |
+Class 3 | 10/3 | [Class 3 Prep](./materials/class3-prep) | [In Class](./materials/class3) | 
+Class 4 | 10/6 | [Class 4 Prep](./materials/class4-prep) | [In Class](./materials/class4) |  
+Class 5 | 10/10 | [Class 5 Prep](./materials/class5-prep) | [In Class](./materials/class5) |
+Class 6 | 10/13 | [Class 6 Prep](./materials/class6-prep) | [In Class](./materials/class6) |
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 8 | 10/17 | [Class 8 Prep](./materials/class8-prep) | [In Class](./materials/class8) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
