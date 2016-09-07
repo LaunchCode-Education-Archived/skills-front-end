@@ -1,15 +1,15 @@
 ##### [Web Track](../..)
 
-# Class 6
+# Class 0
+
+Before coming to class today please complete [Class 0 Prep](../class0-prep).
 
 ### During Class
 
-It's your last day of class!
+Today is mostly just a set-up day. We will do a walkthrough demo of the entire Studio from start to finish. The Studio will involve registering for a key with the API we'll be using, as well as diving right into the deep end of using Git on the command line.
 
-* First, work on today's studio: [FlickList 5](../studios/flicklist-5)
-* Afterwards, we will <a href="https://youtu.be/htpsYP1s4c0" target="_blank">go over the staff solution to the studio</a>.
+* Studio: [FlickList 0](../studios/flicklist-0)
 
-### Where to go From Here
+### Homework
 
-[Now What?](../now-what)
-
+* [Prep for Class 1](../class1-prep)
