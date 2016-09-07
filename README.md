@@ -12,17 +12,17 @@ Over the course of building this project, you will solidify your comfort with th
 
 Class | Date | Prep Work | During Class | Topics
 |------|----|----------|--------------|-------|
-Class 1 | 9/26 | [Class 1 Prep](./materials/class1-prep) | [In Class](./materials/class1) | 
+Class 1 | 9/26 | [Class 1 Prep](./materials/class1-prep) | [In Class](./materials/class1) |
 Class 2 | 9/29 | [Class 2 Prep](./materials/class2-prep) | [In Class](./materials/class2) |
-Class 3 | 10/3 | [Class 3 Prep](./materials/class3-prep) | [In Class](./materials/class3) | 
+Class 3 | 10/3 | [Class 3 Prep](./materials/class3-prep) | [In Class](./materials/class3) |
 Class 4 | 10/6 | [Class 4 Prep](./materials/class4-prep) | [In Class](./materials/class4) |  
 Class 5 | 10/10 | [Class 5 Prep](./materials/class5-prep) | [In Class](./materials/class5) |
 Class 6 | 10/13 | [Class 6 Prep](./materials/class6-prep) | [In Class](./materials/class6) |
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 8 | 10/17 | [Class 8 Prep](./materials/class8-prep) | [In Class](./materials/class8) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
-Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) | 
+Class 7 | 10/17 | [Class 7 Prep](./materials/class7-prep) | [In Class](./materials/class7) |
+Class 8 | 10/17 | [Class 8 Prep](./materials/class8-prep) | [In Class](./materials/class8) |
+Class 9 | 10/19 | [Class 9 Prep](./materials/class9-prep) | [In Class](./materials/class9) |
+Class 10 | 10/110 | [Class 10 Prep](./materials/class10-prep) | [In Class](./materials/class10) |
+Class 11 | 10/111 | [Class 11 Prep](./materials/class11-prep) | [In Class](./materials/class11) |
+Class 12 | 10/112 | [Class 12 Prep](./materials/class12-prep) | [In Class](./materials/class12) |
+Class 13 | 10/113 | [Class 13 Prep](./materials/class13-prep) | [In Class](./materials/class13) | 
+Class 14 | 10/114 | [Class 14 Prep](./materials/class14-prep) | [In Class](./materials/class14) |
