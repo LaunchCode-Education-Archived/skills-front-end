@@ -5,7 +5,7 @@ Before coming to Class 1, please complete the following tasks:
 
 ## Javascript Basics
 
-For the first few weeks, we will be using an interactive textbook called *Eloquent Javascript*. Before you begin reading, please quickly read over the [Notes](./#notes) below.
+For the first few weeks, we will be using an interactive textbook called [Eloquent Javascript](eloquentjavasccript.net). Before you begin reading, please quickly read over the [Notes](./#notes) below.
 
 Did you read the notes? Great, time to dive into learning some Javascript!
 
