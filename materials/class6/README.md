@@ -1,4 +1,3 @@
-##### [Web Track](../..)
 
 # Class 6
 
