@@ -32,7 +32,7 @@ Most of the book's chapters contain exercises at the end. Do them! The bare mini
 
 ### Time Estimates
 
-The intention of the *Time Estimate* column in the table above is to give you a **very rough** approximation of how large and time-intensive each task is. The **only purpose** of this is to help you plan your schedule. Take it with a grain of salt. If you end up spending four times as long on something, please don't get angry at us, or down on yourself, or anything else negative. Thanx!
+The intention of the *Time Estimate* column in the table above is to give you a **very rough** approximation of how large and time-intensive each task is. The **only purpose** of this is to help you plan your schedule. Take it with a grain of salt. If a task ends up taking you four times as long as what the table said, please don't get angry at us, or down on yourself, or anything else negative. Thanx!
 
 
 [eloquent-intro]: http://eloquentjavascript.net/00_intro.html
