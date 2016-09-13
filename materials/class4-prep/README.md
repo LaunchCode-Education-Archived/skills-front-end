@@ -16,9 +16,11 @@ Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minute
 
 ### jQuery
 
+You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but these functions are a little verbose (long and wordy). If you want to combine a few operations to do something complicated, all that verbosity adds up to a clumsy experience. jQuery is a Javascript library that provides a terse but very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations.
+
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 5 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
+Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 6 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
 
 
 
