@@ -5,19 +5,32 @@ Before coming to Class 1, please complete the following tasks:
 
 ## Intro to Javascript
 
+Let's dive right into learning Javascript! We will be using an interactive textbook called *Eloquent Javascript*. But before you begin, quickly read the [Notes](./#notes) below.
+
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Interactive Book | [EloquentJS -- Introduction ][eloquent-intro] | 20 minutes |
-Read | Interactive Book | [EloquentJS 1 -- Values, Types an Operators][eloquent1] | 2 hours |
-Read | Interactive Book | [EloquentJS 2 -- Program Structure][eloquent2] | 2 hours |
-Read | Interactive Book | [EloquentJS 3 -- Functions][eloquent3] | 2 hours |
-
+Read | Interactive Book | [EloquentJS -- Introduction ][eloquent-intro] | 10 minutes | In the Intro, the author Marijn Haverbeke expounds on the nature of his book, the nature of code, and the nature of the universe.
+Read | Interactive Book | [EloquentJS 1 -- Values, Types an Operators][eloquent1] | 30 minutes | This chapter covers all the basics: simple math, strings, datatypes, printing, boolean operators, etc.
+Read | Interactive Book | [EloquentJS 2 -- Program Structure][eloquent2] | 1.5 hours | In chapter 2 you will learn how to build simple programs using control-flow structures like variables, functions, conditionals and loops.
+Read | Interactive Book | [EloquentJS 3 -- Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on abunhc of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
 
 ## Notes
 
-Note that all the code snippets in Eloquent Javascript are "active". You can (and should) run the code and see what happens. You also can (and should) edit the code to play around and test your understanding:
+There are a few things we want to point out about Prep Work in general, and the Eloquent Javascript book in particular:
+
+### Time Estimates
+
+The intention of the *Time Estimate* column in the table above is to give you a **very rough** approximation of how large and time-intensive each task is. The **only purpose** of this is to help you plan your schedule. Take it with a grain of salt. If you end up spending four times as long on something, please don't get angry at us, or down on yourself, or anything else negative. Thanx!
+
+### Active Code
+
+Note that all the code snippets in Eloquent Javascript are "active". Whenever you see a code snippet, you can (and should) run the code and see what happens. You also can (and should) edit the code and then re-run it, to play around and test your understanding:
 
 <img src=http://g.recordit.co/dWDRoTUSq2.gif />
+
+### Exercises
+
+Most of the book's chapters contain exercises at the end. Do them! The bare minimum expectation is that you **complete at least 1 exercise for each reading** (unless there are none). To "complete" an exercise means either you solve it, or you struggle with it for 30 - 60 minutes, give or take. And in either case, you should also go and look at the author's solution afterwords, which can be found at [eloquentjavascript.net/code](eloquentjavascript.net/code). If you have time, you should do additional exercises beyond the minimum 1.
 
 
 [eloquent-intro]: http://eloquentjavascript.net/00_intro.html
