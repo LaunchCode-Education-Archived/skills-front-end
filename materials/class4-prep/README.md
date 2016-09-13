@@ -4,13 +4,26 @@
 
 Before coming to Class 4, please complete the following tasks:
 
-### Nothing
 
-Task | Resource Type | Link | Instructions
------|---------------|------|-------------
-Chill | The Universe | <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=0ahUKEwiw8O7G-77MAhUFvIMKHTNWCCQQtwIINTAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AFQjCNEPGa2VKuL0GefK_nkQoh9csTD8OA" target="_blank">Dont Click This It's A Rick Roll</a> | Take some time to relax and/or get caught up on previous Studios, Prep Work, and Problem Sets.
+### Quick Review of CSS Selectors
 
-### Something
-Task | Resource Type | Link | Instructions
------|---------------|------|-------------
-Read | Online Book | <a href="http://eloquentjavascript.net" target="_blank">Eloquent JavaScript</a> | If you're itching for more material, curl up with this awesome interactive book on Javascript
+The main topic for this Prep Work is a Javascript library called jQuery. But first, let's quickly review a little bit of CSS. You might have already done the Codecademy lesson below in a previous Unit. But before moving on to jQuery, it will be helpful to review a familiar example of how selectors work.
+
+Task | Resource Type | Link | Time Estimate |Instructions
+-----|---------------|------|---------------|------------
+Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minutes | This lesson introduces "selectors", which allow you to specify exactly *which* elements you want to apply a style to.
+
+
+### jQuery
+
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|-------------
+Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 5 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
+
+
+
+
+[css-selectors]: https://www.codecademy.com/en/courses/web-beginner-en-WF0CF/resume?curriculum_id=50579fb998b470000202dc8b
+
+
+[udacity-jquery]: https://classroom.udacity.com/courses/ud245/lessons/3314378535/concepts/33166386820923#

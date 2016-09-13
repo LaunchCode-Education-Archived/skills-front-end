@@ -1,4 +1,4 @@
-##### [Web Track](../..)
+
 
 # Class 1 Prep
 
@@ -23,4 +23,3 @@ Do | Interactive Course | <a href="https://www.udacity.com/course/intro-to-jquer
 Task | Resource Type | Link | Instructions
 -----|---------------|------|-------------
 Read | Article | <a href="https://www.atlassian.com/git/tutorials/using-branches/" target="_blank">Using Branches</a> | Read this article for an intro to the concept of *branches* in Git.
-
