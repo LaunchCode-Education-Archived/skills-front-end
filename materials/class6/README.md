@@ -1,8 +1,8 @@
 ##### [Web Track](../..)
 
-# Class 0
+# Class 6
 
-Before coming to class today please complete [Class 0 Prep](../class0-prep).
+Before coming to class today please complete [Class 6 Prep](../class6-prep).
 
 ### During Class
 
@@ -12,4 +12,4 @@ Today is mostly just a set-up day. We will do a walkthrough demo of the entire S
 
 ### Homework
 
-* [Prep for Class 1](../class1-prep)
+* [Prep for Class 7](../class7-prep)
