@@ -5,7 +5,7 @@ Before coming to Class 1, please complete the following tasks:
 
 ## Javascript Basics
 
-For the first few weeks, we will be using an interactive textbook called [Eloquent Javascript](https://eloquentjavasccript.net). Before you begin reading, please quickly read over the [Notes](./#notes) below.
+For the first few weeks, we will be using an interactive textbook called [Eloquent Javascript](http://eloquentjavascript.net). Before you begin reading, please quickly read over the [Notes](./#notes) below.
 
 Did you read the notes? Great, time to dive into learning some Javascript!
 
@@ -28,7 +28,7 @@ Note that all the code snippets in Eloquent Javascript are "active". Whenever yo
 
 ### Exercises
 
-Most of the book's chapters contain exercises at the end. Do them! The bare minimum expectation is that you **complete at least 1 exercise for each reading** (unless there are none). To "complete" an exercise means either you solve it, or you struggle with it for 30 - 60 minutes, give or take. And in either case, you should also go and look at the author's solution afterwords, which can be found at [www.eloquentjavascript.net/code](https://eloquentjavascript.net/code). If you have time, you should do additional exercises beyond the minimum 1.
+Most of the book's chapters contain exercises at the end. Do them! The bare minimum expectation is that you **complete at least 1 exercise for each reading** (unless there are none). To "complete" an exercise means either you solve it, or you struggle with it for 30 - 60 minutes, give or take. And in either case, you should also go and look at the author's solution afterwords, which can be found at [www.eloquentjavascript.net/code](http://eloquentjavascript.net/code). If you have time, you should do additional exercises beyond the minimum 1.
 
 ### Time Estimates
 
