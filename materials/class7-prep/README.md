@@ -1,23 +1,34 @@
 
+# Class 7 Prep
 
-# Class 1 Prep
+Before coming to Class 7, please complete the following tasks:
 
-Before coming to Class 1, please complete the following tasks:
 
-### Expedited Review
+### Chrome Developer Tools
+Task | Resource Type | Link | Time Estimate | Instructions
+|----|---------------|------|---------------|---------------|
+Do | Interactive Course | [Code School -- Discover Dev Tools][dev-tools] | 2 hours | Work your way through this interactive tutorial on how to harness the power of the Chrome Browser's developer tools.
 
-In case you are behind, these are the important things to catch up on:
+[dev-tools]: http://discover-devtools.codeschool.com
 
+### Git and GitHub
+
+The following sections are optional if you've already worked with Git in one of our previous units or courses. But you might want a Git review anyway.
+
+### Git
 Task | Resource Type | Link | Instructions
------|---------------|------|-------------
-Do | Studio (Module 8) | <a href="../../../../cs50/unit3-web/module8/materials/studios/googlymoogly" target="_blank">Googly Moogly</a> | If you get stuck, see the <a href="../../../../cs50/unit3-web/module8/materials/class1-prep" target="_blank">Prep Work</a> for Module 8 / Class 1.
-Do | Studio (Module 8) | <a href="../../../../cs50/unit3-web/module8/materials/studios/ajaxson-5" target="_blank">AJAXson 5</a> | If you get stuck, see the <a href="../../../../cs50/unit3-web/module8/materials/class2-prep" target="_blank">Prep Work</a> for Module 8 / Class 2.
-Do | Prep Work | <a href="../class0-prep" target="_blank">Class 0 Prep</a> | If you have not already done the Prep Work for Class 0 of this Track, try to speed through it now. It's not as large as a typical Prep Work.
+|----|---------------|------|-------------|
+Read | Article | <a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">What is Version Control</a> | This article introduces the concept of "version control" and why it is useful for software development.
+Read | Article | <a href="https://www.atlassian.com/git/tutorials/what-is-git" target="_blank">What is Git</a> | This article talks in detail about a particular version control system called Git, which we will be using heavily during the Web Track.
+Read | Article | <a href="http://blog.mwaysolutions.com/2015/07/16/a-short-introduction-to-git/" target="_blank">A Short Intro to Git</a> | For good measure, read one more brief overview of Git and the concept of version control in general.
+Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-workflow/resume" target="_blank">Codecademy / Git Workflow | Practice the basics of using Git on the command line.
+Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-backtracking/resume" target="_blank">Codecademy / Git Workflow | Practice using Git to undo your changes and go back to previous versions of your work.
 
-### jQuery
+### GitHub
 Task | Resource Type | Link | Instructions
------|---------------|------|-------------
-Do | Interactive Course | <a href="https://www.udacity.com/course/intro-to-jquery--ud245" target="_blank">Udacity / Intro to jQuery</a> | Take this online course on the basics of using jQuery to manipulate the DOM of your HTML page. (You will need to sign up for an account with Udacity if you don't have one already).
+|----|---------------|------|-------------|
+Do | Tutorial | <a href="https://guides.github.com/activities/hello-world/" target="_blank">Github Guides / Hello World</a> | This tutorial provides a brief intro to using the website GitHub to share and collaborate on Git repositories.
+
 
 ### Git Branches
 Task | Resource Type | Link | Instructions
