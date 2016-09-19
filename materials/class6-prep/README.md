@@ -12,4 +12,7 @@ Do | Exercise | [Setup](../exercises/setup) | Here we guide you through a couple
 ### AJAX
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|--------------
-Do   | Interactive Course | [Udacity: Intro to AJAX][https://www.udacity.com/course/intro-to-ajax--ud110] | 6 hours |
+Do   | Interactive Course | [Udacity: Intro to AJAX][intro-to-ajax] | 6 hours |
+
+
+[intro-to-ajax]: https://www.udacity.com/course/intro-to-ajax--ud110
