@@ -1,4 +1,4 @@
-# Skill Track: Front-end
+# Skill Track: Front-end Web
 
 Welcome! This skill track is a specialization in front-end web development. The term *front-end* (at least in the context of web development) refers to the fact that your code runs in the browser **on the user's computer**, as opposed to the *back-end* code which runs on a server computer somewhere else.
 
