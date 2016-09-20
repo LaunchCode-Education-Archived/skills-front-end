@@ -20,5 +20,5 @@ Class 13 | Thu 11/10 | [Class 13 Prep](./materials/class13-prep) | [In Class](./
 Class 14 | Mon 11/14 | [Class 14 Prep](./materials/class14-prep) | [In Class](./materials/class14) | (work day) | | [Fire in the Hole!][fire-in-the-hole]
 
 
-[ajaxson-5]: ../materials/assignments/ajaxson-5
-[fire-in-the-hole]: ../materials/assignments/fire-in-the-hole
+[ajaxson-5]: ./materials/assignments/ajaxson-5
+[fire-in-the-hole]: ./materials/assignments/fire-in-the-hole
