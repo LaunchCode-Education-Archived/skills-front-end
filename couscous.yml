@@ -18,7 +18,7 @@ menu:
             text: Schedule
             relativeUrl: schedule/
         vocareum:
-            text: Grades and Submitting
+            text: Submit Your Work
             absoluteUrl: https://labs.vocareum.com/home/login.php
             attributes: target="_blank"
         piazza:
