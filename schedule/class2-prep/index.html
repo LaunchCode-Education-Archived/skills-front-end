@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>LaunchCode Front-end Web</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/skills-front-end/">
+                LaunchCode Front-end Web
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/skills-front-end/materials/schedule/">
+                                        Schedule
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://labs.vocareum.com/home/login.php">
+                                        Submit Your Work
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://piazza.com/">
+                                        Discussion Forum
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="class-2-prep">Class 2 Prep</h1>
+<p>Before coming to <a href="../class2">Class 2</a>, please complete the following tasks:</p>
+<h3 id="javascript-and-the-browser">Javascript and the Browser</h3>
+<p>What is Javascript used for? The original (and still predominant) purpose of Javascript is to run inside the user's internet browser, allowing a webpage to interact with the user in fancy and elaborate ways. Today we will learn about Javascript in its natural habitat, the browser.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Time Estimate</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>Interactive Book</td>
+<td><a href="http://eloquentjavascript.net/12_browser.html">EloquentJS 12 -- Javascript and the Browser</a></td>
+<td>30 minutes</td>
+<td>This chapter outlines a brief history of Javascript and its relationship to the web.</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>Interactive Book</td>
+<td><a href="http://eloquentjavascript.net/04_data.html">EloquentJS 4 -- Data Structures: Objects and Arrays</a></td>
+<td>4 hours</td>
+<td>Before moving on to see how Javascript works in the browser, you will need to learn about collections: arrays and objects. This chapter is a little intense: arrays are not very different from arrays or lists in other languages, but objects are a huge and gnarly topic in Javascript. For now, the most important takeaway about Javascript objects is simply that they allow you to create a larger piece of data by clustering together a few smaller pieces of data.</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>Interactive Book</td>
+<td><a href="http://eloquentjavascript.net/13_dom.html">EloquentJS 13 -- The Document Object Model</a></td>
+<td>3 hours</td>
+<td>The D.O.M is a Javascript object representing all the HTML on the page as a big &quot;tree&quot; of elements. Any time you want to interact with the user in some fancy way, you will do so by writing Javascript code that inspects or modifies the D.O.M. in some way.</td>
+</tr>
+</tbody>
+</table>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
