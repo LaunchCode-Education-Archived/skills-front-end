@@ -16,7 +16,7 @@ menu:
     items:
         schedule:
             text: Schedule
-            relativeUrl: materials/schedule/
+            relativeUrl: schedule/
         vocareum:
             text: Submit Your Work
             absoluteUrl: https://labs.vocareum.com/home/login.php
