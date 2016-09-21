@@ -16,6 +16,18 @@ Read | Interactive Book | [EloquentJS 1 -- Values, Types an Operators][eloquent1
 Read | Interactive Book | [EloquentJS 2 -- Program Structure][eloquent2] | 1.5 hours | In chapter 2 you will learn how to build simple programs using control-flow structures like variables, functions, conditionals and loops.
 Read | Interactive Book | [EloquentJS 3 -- Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on abunhc of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
 
+## Git Review (optional)
+
+You have already seen some of these resources in Unit 2. But you might find it useful to go through them again.
+
+Task | Resource Type | Link | Instructions
+|----|---------------|------|-------------|
+Read | Article | [What is Version Control?][what-is-version-control] | This article introduces the concept of "version control" and why it is useful for software development.
+Read | Article | [A Short Introduction to Git][a-short-introduction-to-git] | This article talks in detail about a particular version control system called Git, which we will be using heavily throughout this class.
+Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-workflow/resume" target="_blank">Codecademy / Git Workflow | Practice the basics of using Git on the command line.
+Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-backtracking/resume" target="_blank">Codecademy / Git Workflow | Practice using Git to undo your changes and go back to previous versions of your work.
+Do | Tutorial | <a href="https://guides.github.com/activities/hello-world/" target="_blank">Github Guides / Hello World</a> | This tutorial provides a brief intro to using the website GitHub to share and collaborate on Git repositories.
+
 ## Notes
 
 There are a few things we want to point out about the Eloquent Javascript book and about Prep Work in general:
