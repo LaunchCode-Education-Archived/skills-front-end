@@ -2,28 +2,31 @@
 
 Before coming to class 5, please complete the following tasks:
 
-### Forms
+
+
+### Quick Review of CSS Selectors
+
+The main topic for this Prep Work is a Javascript library called jQuery. But first, let's quickly review a little bit of CSS. You might have already done the Codecademy lesson below in a previous Unit. But before moving on to jQuery, it will be helpful to review a familiar example of how selectors work.
+
+Task | Resource Type | Link | Time Estimate |Instructions
+-----|---------------|------|---------------|------------
+Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minutes | This lesson introduces "selectors", which allow you to specify exactly *which* elements you want to apply a style to.
+
+
+### jQuery
+
+You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but these functions are a little verbose (long and wordy). If you want to combine a few operations to do something complicated, all that verbosity adds up to a clumsy experience. jQuery is a Javascript library that provides a very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations. jQuery does additional things as well, but its biggest role is to make it easier to do fancy things with the DOM.
+
+Eloquent Javascript does not talk about jQuery, so we will use a short Udacity course.
 
 Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|--------------
-Read | Interactive Book | [EloquentJS 18 -- Forms][eloquent18] | 2.5 hours |
+-----|---------------|------|---------------|-------------
+Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 6 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
 
 
-### Client-side Validation
 
-in other-words, a script which checks whether the form was properly filled out, and does this locally **before** bothering to send a request over to the server.
 
-Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|--------------
-Follow-Along | Walkthrough | [CS50 -- form-0][form-0] | In this walkthrough, David creates a demo page with a registration form for users to sign up for something.
-Follow-Along | Walkthrough | [CS50 -- form-1][form-1] | Here we improve our registration form by adding a script that performs client-side validation on the form. You will also want to copy register.php
-Follow-Along | Walkthrough | [CS50 -- form-2][form-2] | Once again we refactor to use the jQuery `document.ready()` function, as we did in the
+[css-selectors]: https://www.codecademy.com/en/courses/web-beginner-en-WF0CF/resume?curriculum_id=50579fb998b470000202dc8b
 
-[eloquent18]: http://eloquentjavascript.net/18_forms.html
-[form-0]: https://www.youtube.com/watch?v=U7W2U8qRI3I&list=PLhQjrBD2T382FjybRNOXyEdsjP9CNKJgb&index=7
-[form-1]: https://www.youtube.com/watch?v=r2iaKDH79oQ&index=8&list=PLhQjrBD2T382FjybRNOXyEdsjP9CNKJgb
-[form-2]: https://www.youtube.com/watch?v=eViManaIKkQ&index=9&list=PLhQjrBD2T382FjybRNOXyEdsjP9CNKJgb
 
-### Talking to the Outside World
-
-Thus far, you have only seen Javascript contained in a relatively sheltered bubble, cooped up inside the browser sandbox. Aside from using the DOM to communicate with the user, or using `console.log` statements to talk to the coder, your Javascript code is isolated. Today you will see how Javascript can make HTTP requests to talk to the rest of the world.
+[udacity-jquery]: https://classroom.udacity.com/courses/ud245/lessons/3314378535/concepts/33166386820923#
