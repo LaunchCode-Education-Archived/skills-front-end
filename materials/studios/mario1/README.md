@@ -1,6 +1,6 @@
 # Studio: Mario 1
 
-For today's studio and a few more to follow, we will do a Javascript version of the classic "Mario" problem, borrowed from our friends at CS50.
+For today's studio, and a few more to follow, we will do a Javascript version of the classic "Mario" problem, borrowed from our friends at CS50.
 
 Before we get started, please enjoy this humorous meme about Mario to put you at ease and remind you that we are hip and friendly:
 
