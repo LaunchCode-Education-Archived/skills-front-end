@@ -11,22 +11,23 @@ Did you read the notes? Great, time to dive into learning some Javascript!
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Interactive Book | [EloquentJS -- Introduction ][eloquent-intro] | 10 minutes | In the Intro, the author Marijn Haverbeke expounds on the nature of his book, the nature of code, and the nature of the universe.
-Read | Interactive Book | [EloquentJS 1 -- Values, Types an Operators][eloquent1] | 30 minutes | This chapter covers all the basics: simple math, strings, datatypes, printing, boolean operators, etc.
-Read | Interactive Book | [EloquentJS 2 -- Program Structure][eloquent2] | 1.5 hours | In chapter 2 you will learn how to build simple programs using control-flow structures like variables, functions, conditionals and loops.
-Read | Interactive Book | [EloquentJS 3 -- Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on abunhc of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
+Read | Interactive Book | [EloquentJS: Introduction ][eloquent-intro] | 10 minutes | In the Intro, the author Marijn Haverbeke expounds on the nature of his book, the nature of code, and the nature of the universe.
+Read | Interactive Book | [EloquentJS 1: Values, Types an Operators][eloquent1] | 30 minutes | This chapter covers all the basics: simple math, strings, datatypes, printing, boolean operators, etc.
+Read | Interactive Book | [EloquentJS 2: Program Structure][eloquent2] | 1.5 hours | In chapter 2 you will learn how to build simple programs using control-flow structures like variables, functions, conditionals and loops.
+Read | Interactive Book | [EloquentJS 3: Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on abunhc of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
 
 ## Git Review (optional)
 
 You have already seen some of these resources in Unit 2. But you might find it useful to go through them again.
 
-Task | Resource Type | Link | Instructions
-|----|---------------|------|-------------|
-Read | Article | [What is Version Control?][what-is-version-control] | This article introduces the concept of "version control" and why it is useful for software development.
-Read | Article | [A Short Introduction to Git][a-short-introduction-to-git] | This article talks in detail about a particular version control system called Git, which we will be using heavily throughout this class.
-Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-workflow/resume" target="_blank">Codecademy / Git Workflow | Practice the basics of using Git on the command line.
-Do | Interactive Course | <a href="https://www.codecademy.com/en/courses/learn-git/lessons/git-backtracking/resume" target="_blank">Codecademy / Git Workflow | Practice using Git to undo your changes and go back to previous versions of your work.
-Do | Tutorial | <a href="https://guides.github.com/activities/hello-world/" target="_blank">Github Guides / Hello World</a> | This tutorial provides a brief intro to using the website GitHub to share and collaborate on Git repositories.
+Task | Resource Type | Link | Time Estimate | Instructions
+|----|---------------|------|---------------|-------------
+Read | Article | [What is Version Control?][what-is-version-control] | 10 minutes | This article introduces the concept of "version control" and why it is useful for software development.
+Read | Article | [What is Git?][what-is-git] | 10 minutes | This article talks in detail about a particular version control system called Git, which we will be using heavily throughout this class.
+Do | Interactive Course | [Codecademy: Git Workflow][codecademy1] | 30 minutes | Practice the basics of using Git on the command line.
+Do | Interactive Course | [Codecademy: Git Backtracking][codecademy2] | 30 minutes | Practice using Git to undo your changes and go back to previous versions of your work.
+Do | Tutorial | [Github Guides: Hello World][github-hello-world] | 30 minutes | This tutorial provides a brief intro to using the website GitHub to share and collaborate on Git repositories.
+
 
 ## Notes
 
@@ -36,7 +37,7 @@ There are a few things we want to point out about the Eloquent Javascript book a
 
 Note that all the code snippets in Eloquent Javascript are "active". Whenever you see a code snippet, you can (and should) run the code and see what happens. You also can (and should) edit the code and then re-run it, to play around and test your understanding:
 
-<img src=http://g.recordit.co/dWDRoTUSq2.gif />
+![Active Code](http://g.recordit.co/dWDRoTUSq2.gif)
 
 ### Exercises
 
@@ -51,3 +52,8 @@ The intention of the *Time Estimate* column in the table above is to give you a 
 [eloquent1]: http://eloquentjavascript.net/01_values.html
 [eloquent2]: http://eloquentjavascript.net/02_program_structure.html
 [eloquent3]: http://eloquentjavascript.net/03_functions.html
+[what-is-version-control]: https://www.atlassian.com/git/tutorials/what-is-version-control
+[what-is-git]: https://www.atlassian.com/git/tutorials/what-is-git
+[codecademy1]: https://www.codecademy.com/en/courses/learn-git/lessons/git-workflow/resume
+[codecademy2]: https://www.codecademy.com/en/courses/learn-git/lessons/git-backtracking/resume
+[github-hello-world]: https://guides.github.com/activities/hello-world/
