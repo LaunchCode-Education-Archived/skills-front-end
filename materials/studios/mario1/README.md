@@ -6,7 +6,9 @@ Before we get started, please enjoy this humorous meme about Mario:
 
 ![Oh Mario you are so silly](https://s-media-cache-ak0.pinimg.com/564x/8e/57/97/8e57973c609cf14479731598acb76a89.jpg)
 
-Turtles and such, simply uproarious, gets me every time. Now then.
+Turtles and such, simply uproarious, gets me every time.
+
+Now then.
 
 ## Obtaining the Starter Code
 
