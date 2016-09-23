@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>LaunchCode Front-end Web</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/skills-front-end/">
+                LaunchCode Front-end Web
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/skills-front-end/schedule/">
+                                        Schedule
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://labs.vocareum.com/home/login.php">
+                                        Submit Your Work
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="http://piazza.com/">
+                                        Discussion Forum
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="studio-mario-2">Studio: Mario 2</h1>
+<p>In Mario 1, you implemented a function to print a &quot;pyramid&quot; to the developer console. Today, you will put that pyramid where it truly belongs: on your web page! To render the pyramid to the page, you will use Javascript to programatically insert it into the DOM.</p>
+<h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
+<ol>
+<li>
+<p>Navigate into your <code>mario-js</code> directory.</p>
+</li>
+<li>
+<p>Make sure you do not have any uncommitted changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch mario1
+Your branch is ahead of 'origin/mario1' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean</code></pre>
+<p>It should say &quot;working directory clean&quot;.</p>
+<p>If you <em>do</em> have uncommitted changes, then <code>add</code> and <code>commit</code> them now.</p>
+<p>Also note once again that you can ignore this part:</p>
+<blockquote>
+<p>Your branch is ahead of 'origin/mario1' by 1 commit.
+(use &quot;git push&quot; to publish your local commits)</p>
+</blockquote>
+<p>because for Studios you do not care about staying in sync with the remote repository.</p>
+</li>
+<li>
+<p>Switch to the <code>mario2</code> branch:</p>
+<pre><code class="language-nohighlight">$ git checkout mario2
+Switched to branch 'mario2'
+Your branch is up-to-date with 'origin/mario2'.</code></pre>
+<p>This switches your project to a &quot;branched off&quot; version of the project named <code>mario2</code>, where we have placed all the starter code for today's studio.</p>
+<p>If you look at your files now, you will see that they have changed. Cool! We will continue to use this branching system to give you starter code on future studios.</p>
+</li>
+</ol>
+<h2 id="take-a-look">Take a Look</h2>
+<p>View the <code>mario.html</code> page in a browser window, you will see that the text on the page has changed since last time. It now says:</p>
+<blockquote>
+<p>Behold this wonderful pyramid!</p>
+</blockquote>
+<p>The user is no longer instructed to open the Dev Tools console, because the pyramid is supposed to show up directly on the page. But, of course, instead of a pyramid, we see the same notice as last time:</p>
+<blockquote>
+<p>Uh oh! the pyramid is still under construction.</p>
+</blockquote>
+<p>Now, if you do happen to open up the Console, you <em>will</em> see a pyramid show up down there. And that's because <code>mario.js</code> does include the solution to the previous studio.</p>
+<p>Open up <code>mario.js</code> and take a look. You will see a fully implemented function that prints a pyramid to the console. The only difference is that the name of the function has changed from <code>printPyramid</code> to <code>drawPyramid</code>, and the &quot;drawing&quot; part is still unfinished. That's your job!</p>
+<p>Before getting started, quickly look at <code>mario.html</code>. Observe that inside the <code>&lt;body&gt;</code> is a <code>&lt;div&gt;</code> whose <code>id</code> attribute is equal to <code>"pyramid"</code>. We have placed this element here as a &quot;container&quot; which is sitting there waiting to be &quot;injected&quot; with the actual contents of the pyramid.</p>
+<h2 id="your-task">Your Task</h2>
+<ol>
+<li>
+<p>Complete the <code>TODO</code> at the bottom of the loop inside <code>drawPyramid</code>, so that each row gets inserted into to the DOM as a child element of the container <code>&lt;div id="pyramid"&gt;</code>.</p>
+<p>In the scope of this loop, we have provided you with a variable called <code>rowStr</code>, containing a string for the current row (you can see it being printed with <code>console.log(rowStr)</code>). So you already have the string. You just need to add that string to the DOM.</p>
+<p>Create a <code>&lt;p&gt;</code> element and set its text to be the string, and then insert that paragraph element as a child of the the container <code>&lt;div&gt;</code> on <code>mario.html</code>.</p>
+</li>
+<li>Once you have the pyramid showing up, delete the &quot;Under Construction&quot; notice from the container <code>&lt;div&gt;</code>. Of course, the normal thing to do would be to delete those lines directly from your <code>mario.html</code> page. But just to get some more practice, <code>**don't do that**</code>. Instead, add another line to your <code>drawPyramid</code> function so that it programatically deletes the <code>&lt;div id="notice"&gt;</code>.</li>
+</ol>
+<h2 id="committing-your-changes">Committing Your Changes</h2>
+<ol>
+<li>
+<p>Add your new changes:</p>
+<pre><code class="language-nohighlight">$ git add mario.js</code></pre>
+</li>
+<li>
+<p>Then commit, along with a descriptive message.</p>
+<pre><code class="language-nohighlight">$ git commit -m "render pyramid to the DOM instead of the console"</code></pre>
+<p><em>Note</em> that in the commit message above, we use the <em>present tense</em> rather than the past tense (e.g. &quot;rendered&quot;). This might feel weird but is technically the preferred way of doing commit messages in Git.</p>
+</li>
+</ol>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
