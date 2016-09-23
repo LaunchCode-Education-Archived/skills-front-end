@@ -51,15 +51,15 @@
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="studio-mario-1">Studio: Mario 1</h1>
 <p>For today's studio, and a few more to follow, we will do a Javascript version of the classic &quot;Mario&quot; problem, borrowed from our friends at CS50.</p>
-<p>Before we get started, please enjoy this humorous meme about Mario to put you at ease and remind you that we are hip and friendly:</p>
+<p>Before we get started, please enjoy this humorous meme about Mario:</p>
 <p><img src="https://s-media-cache-ak0.pinimg.com/564x/8e/57/97/8e57973c609cf14479731598acb76a89.jpg" alt="Oh Mario you are so silly" /></p>
-<p>Great!</p>
+<p>Turtles and such, simply uproarious, gets me every time. Now then.</p>
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <p>In this Unit, you will use Git to work on exercises and check out the starter code for those exercises. This page will provide a detailed walkthrough of the steps involved in that process for today's studio.</p>
 <p>Here is how to grab the starter code:</p>
 <ol>
 <li>
-<p>Navigate to the parent directory where you want to keep your work for this class. For example, maybe something like <code>~/Documents/launchcode/front-end/</code>. </p>
+<p>Navigate to the parent directory where you want to keep your work for this class. For example, maybe something like <code>~/Documents/launchcode/front-end/</code>.</p>
 </li>
 <li>
 <p>Clone the Git repository that contains the starter code for this studio:</p>
@@ -111,12 +111,15 @@ function printPyramid(height) {
 <p>Your job is to implement the <code>printPyramid</code> function, using <code>console.log</code> statements to print a half-pyramid, like the one above, to the console. You can use a <code>"#"</code> symbol for each &quot;brick&quot;.</p>
 <p>The height of your pyramid should match the <code>height</code> argument that was passed in to the function. The pyramid in the image above has a height of 8. A pyramid of height 5 would result in a console that looks like this:</p>
 <p><img src="./images/pyramid5.png" alt="Pyramid Height 5" /></p>
-<h2 id="tips">Tips</h2>
+<h2 id="tips-and-notes">Tips and Notes</h2>
 <ul>
 <li>
 <p>Notice, of course, that the pyramid slopes up to the right, and that the top row of the pyramid should be 2-bricks wide.</p>
 </li>
-<li>Be aware that in Javascript, a <code>console.log</code> statement automatically adds a newline character to the end of your string, so the next statement will start on the next line. This means that for each row of your pyramid, you will need to print that row all at once, rather than one character at a time.</li>
+<li>
+<p>Be aware that in Javascript, a <code>console.log</code> statement automatically adds a newline character to the end of your string, so the next statement will start on the next line. This means that for each row of your pyramid, you will need to print that row all at once, rather than one character at a time.</p>
+</li>
+<li>Once you get it working, try passing in a different <code>height</code> argument rather than <code>5</code>, and you should of course see a different-sized result.</li>
 </ul>
 <h2 id="committing-your-changes">Committing Your Changes</h2>
 <p>Once you have finished, make sure you &quot;save&quot; your changes. In Git-land, this is a two-step process, <code>add</code>, and then <code>commit</code>:</p>
@@ -150,7 +153,7 @@ Changes to be committed:
 </li>
 <li>
 <p><strong>Commit</strong></p>
-<p>Now you are ready to <code>commit</code> the changes you have added. </p>
+<p>Now you are ready to <code>commit</code> the changes you have added.</p>
 <p>When committing, you must also include a descriptive message of what you have changed. You can specify the message by including a <code>-m</code> flag, followed by the message in qutotation marks. For example:</p>
 <pre><code class="language-nohighlight">$ git commit -m "implemented the printPyramid function"</code></pre>
 <p>This descriptive message will allow other collaborators, and your future self, to easily see the history of the project.</p>
@@ -161,11 +164,11 @@ Your branch is ahead of 'origin/mario1' by 1 commit.
 nothing to commit, working directory clean</code></pre>
 <p>For these studios, the important part is the last line:</p>
 <pre><code class="language-nohighlight">nothing to commit, working directory clean</code></pre>
-<p>The other part is explaining that we are now one commit &quot;ahead of&quot; the remote repository on Github. But for these studios, we don't really care about staying in sync with the remote repo.</p>
+<p>The other part is explaining that we are now one commit &quot;ahead of&quot; the remote repository on Github. But for these studios, we don't really care about staying in sync with the remote repo. To be clear, <strong>you do not need to use <code>git push</code></strong>. You can ignore the terminal's suggestion.</p>
 </li>
 </ol>
 <p>That's it! Congrats on finishing your first Javascript studio!</p>
-<p>*NB, the reason the commit process is broken into two steps is because sometimes you might have modified multiple files, and you might not want to register all the changes as one big commit. You may want to break it up into multiple commits, with a reasonable message for each change. So the <code>add</code> command gives you the opportunity to specify exactly which files your want to include in a specific commit. </p>
+<p>*NB, the reason the commit process is broken into two steps is because sometimes you might have modified multiple files, and you might not want to register all the changes as one big commit. You may want to break it up into multiple commits, with a reasonable message for each change. So the <code>add</code> command gives you the opportunity to specify exactly which files your want to include in a specific commit.</p>
                 </section>
 
             </div>

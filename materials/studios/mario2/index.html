@@ -92,6 +92,7 @@ Your branch is up-to-date with 'origin/mario2'.</code></pre>
 </blockquote>
 <p>Now, if you do happen to open up the Console, you <em>will</em> see a pyramid show up down there. And that's because <code>mario.js</code> does include the solution to the previous studio.</p>
 <p>Open up <code>mario.js</code> and take a look. You will see a fully implemented function that prints a pyramid to the console. The only difference is that the name of the function has changed from <code>printPyramid</code> to <code>drawPyramid</code>, and the &quot;drawing&quot; part is still unfinished. That's your job!</p>
+<p><em>Note</em> also that instead of spaces (<code>" "</code>), we are using periods (<code>"."</code>). We'll talk about that more further down. For now, just think of them as grains swirling in the desert wind.</p>
 <p>Before getting started, quickly look at <code>mario.html</code>. Observe that inside the <code>&lt;body&gt;</code> is a <code>&lt;div&gt;</code> whose <code>id</code> attribute is equal to <code>"pyramid"</code>. We have placed this element here as a &quot;container&quot; which is sitting there waiting to be &quot;injected&quot; with the actual contents of the pyramid.</p>
 <h2 id="your-task">Your Task</h2>
 <ol>
@@ -102,6 +103,7 @@ Your branch is up-to-date with 'origin/mario2'.</code></pre>
 </li>
 <li>Once you have the pyramid showing up, delete the &quot;Under Construction&quot; notice from the container <code>&lt;div&gt;</code>. Of course, the normal thing to do would be to delete those lines directly from your <code>mario.html</code> page. But just to get some more practice, <code>**don't do that**</code>. Instead, add another line to your <code>drawPyramid</code> function so that it programatically deletes the <code>&lt;div id="notice"&gt;</code>.</li>
 </ol>
+<p><em>Note:</em> What's up with the periods instead of spaces? Well, just try switching back now and see what happens. As you have seen before, HTML tends to compress whitespace. This is often very convenient, but in this particular case, it messes up the alignment of our pyramid. A more reasonable thing to do, rather than use a period character, would be to use an HTML-encoded space character. We will use this technique in the next studio.</p>
 <h2 id="committing-your-changes">Committing Your Changes</h2>
 <ol>
 <li>
