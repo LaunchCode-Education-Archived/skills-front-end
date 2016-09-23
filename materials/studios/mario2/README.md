@@ -52,6 +52,8 @@ Now, if you do happen to open up the Console, you *will* see a pyramid show up d
 
 Open up `mario.js` and take a look. You will see a fully implemented function that prints a pyramid to the console. The only difference is that the name of the function has changed from `printPyramid` to `drawPyramid`, and the "drawing" part is still unfinished. That's your job!
 
+*Note* also that instead of spaces (`" "`), we are using periods (`"."`). We'll talk about that more further down. For now, just think of them as grains swirling in the desert wind.
+
 Before getting started, quickly look at `mario.html`. Observe that inside the `<body>` is a `<div>` whose `id` attribute is equal to `"pyramid"`. We have placed this element here as a "container" which is sitting there waiting to be "injected" with the actual contents of the pyramid.
 
 ## Your Task
@@ -63,6 +65,8 @@ Before getting started, quickly look at `mario.html`. Observe that inside the `<
     Create a `<p>` element and set its text to be the string, and then insert that paragraph element as a child of the the container `<div>` on `mario.html`.
 
 2. Once you have the pyramid showing up, delete the "Under Construction" notice from the container `<div>`. Of course, the normal thing to do would be to delete those lines directly from your `mario.html` page. But just to get some more practice, `**don't do that**`. Instead, add another line to your `drawPyramid` function so that it programatically deletes the `<div id="notice">`.
+
+*Note:* What's up with the periods instead of spaces? Well, just try switching back now and see what happens. As you have seen before, HTML tends to compress whitespace. This is often very convenient, but in this particular case, it messes up the alignment of our pyramid. A more reasonable thing to do, rather than use a period character, would be to use an HTML-encoded space character. We will use this technique in the next studio.
 
 ## Committing Your Changes
 
