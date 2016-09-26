@@ -10,8 +10,8 @@ Thus far, we have had this cool generic function which is able to draw a pyramid
 
     ```nohighlight
     $ git status
-    On branch mario3
-    Your branch is ahead of 'origin/mario3' by 1 commit.
+    On branch mario2
+    Your branch is ahead of 'origin/mario2' by 1 commit.
       (use "git push" to publish your local commits)
     nothing to commit, working directory clean
     ```
