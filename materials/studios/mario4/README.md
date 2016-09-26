@@ -44,12 +44,12 @@ Preview `mario.html` in your browser. The page looks the same as last time, but 
 
 Try typing and submitting each of the following inputs:
 
-- 12
+- "12"
 - "Luigi"
-- -3
-- nothing
-- 500
-- 8
+- "-3"
+- (nothing)
+- "500"
+- "8"
 
 As you can see, some of these cases were handled very appropriately, but there are still some gaps left for you to fill in.
 
