@@ -36,17 +36,9 @@ Ok, you are all set. Go forth and code!
 
 ## Submit Your Work
 
-Congratulations on conquering the Pyramid Slide!
-
-#### Woo!
-
-First thing's first, enjoy a cold one:
-
-<img src="http://i.imgur.com/pmC3Kch.gif"/>
+Once you have finished, follow the steps below to submit your work so you can receive credit.
 
 #### Commit and Push
-
-Now submit your work so you can receive credit.
 
 1. First, `add` and `commit` your changes.
 2. Now your local repo is one commit ahead of your remote repo (the one that your created on Github.com). To sync them, `push` your local changes up to the remote:
@@ -81,6 +73,15 @@ Then click Submit!
 #### Demo for a TF
 
 Finally, to receive credit, find a TF and demo your project for them.
+
+#### Woo!
+
+Congratulations on conquering the Pyramid Slide!
+
+Time to enjoy a cold one:
+
+<img src="http://i.imgur.com/pmC3Kch.gif"/>
+
 
 [dolphin-cay]: https://www.carnival.com/~/media/Images/PreSales/Excursions/Ports_M-Q/NAS/424042/Pictures/atlantis-dolphin-cay-deep-water-swim-and-aquaventure-nassau-the-bahamas-13.jpg
 
