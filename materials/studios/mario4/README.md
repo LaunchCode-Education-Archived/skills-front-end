@@ -9,7 +9,7 @@ Last time, we added to our page an input field and a button so that the user cou
 
 Today we will address these issues by adding some validation logic to make sure the user's input is sensible before drawing the pyramid, and to provide helpful error messages when the input is not sensible.
 
-The front-end is a great place to validate a user's input, because on the front-end you can provide instant feedback. In this particular project, the point is somewhat moot because everything happens on the front-end. But imagine if we added some back-end functionality which required sending the user's pyramid height over to a server. In that situation, we wouldn't want to make the user wait 2 seconds, only to learn that she did something wrong and needs to try again.
+In this particular project, the whole "client-side validation" point is somewhat moot because there *is no* server-side code and everything happens on the front-end. But imagine if we added some back-end functionality which required sending the user's pyramid height over to a server. In that situation, we certainly wouldn't want to make the user wait a while before telling her she did something wrong and needs to try again.
 
 ## Obtaining the Starter Code
 
