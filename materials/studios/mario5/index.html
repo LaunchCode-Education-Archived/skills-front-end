@@ -49,16 +49,8 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="studio-mario-4">Studio: Mario 4</h1>
-<p>Last time, we added to our page an input field and a button so that the user could specify exactly how tall of a pyramid she wants drawn. You might have noticed, however, that the text box provides plenty of opportunities for the user to type things that don't make sense:</p>
-<ul>
-<li>words instead of numbers</li>
-<li>negative numbers</li>
-<li>nothing at all</li>
-<li>etc.</li>
-</ul>
-<p>Today we will address these issues by adding some validation logic to make sure the user's input is sensible before drawing the pyramid, and to provide helpful error messages when the input is not sensible.</p>
-<p>The front-end is a great place to validate a user's input, because on the front-end you can provide instant feedback. In this particular project, the point is somewhat moot because everything happens on the front-end. But imagine if we added some back-end functionality which required sending the user's pyramid height over to a server. In that situation, we wouldn't want to make the user wait 2 seconds, only to learn that she did something wrong and needs to try again.</p>
+                    <h1 id="studio-mario-5">Studio: Mario 5</h1>
+<p>Today you won't be adding any new features to the project. Instead you will refactor the existing codebase to use jQuery instead of &quot;vanilla&quot; Javascript for manipulating the DOM.</p>
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <ol>
 <li>
@@ -67,62 +59,74 @@
 <li>
 <p>Make sure you do not have any uncommitted changes:</p>
 <pre><code class="language-nohighlight">$ git status
-On branch mario3
-Your branch is ahead of 'origin/mario3' by 1 commit.
+On branch mario4
+Your branch is ahead of 'origin/mario4' by 1 commit.
   (use "git push" to publish your local commits)
 nothing to commit, working directory clean</code></pre>
 <p>It should say &quot;working directory clean&quot;.</p>
 <p>If you <em>do</em> have uncommitted changes, then <code>add</code> and <code>commit</code> them now.</p>
 </li>
 <li>
-<p>Switch to the <code>mario4</code> branch:</p>
-<pre><code class="language-nohighlight">$ git checkout mario4
-Switched to branch 'mario4'
-Your branch is up-to-date with 'origin/mario4'.</code></pre>
+<p>Switch to the <code>mario5</code> branch:</p>
+<pre><code class="language-nohighlight">$ git checkout mario5
+Switched to branch 'mario5'
+Your branch is up-to-date with 'origin/mario5'.</code></pre>
 </li>
 </ol>
 <h2 id="take-a-look">Take a Look</h2>
 <h4 id="preview">Preview</h4>
-<p>Preview <code>mario.html</code> in your browser. The page looks the same as last time, but you will notice that we have already started doing some validation.</p>
-<p>Try typing and submitting each of the following inputs:</p>
-<ul>
-<li>&quot;12&quot;</li>
-<li>&quot;Luigi&quot;</li>
-<li>&quot;-3&quot;</li>
-<li>(nothing)</li>
-<li>&quot;500&quot;</li>
-<li>&quot;8&quot;</li>
-</ul>
-<p>As you can see, some of these cases were handled very appropriately, but there are still some gaps left for you to fill in.</p>
+<p>If you open up the page in a browser, you will see that it looks the same as last time, but it doesn't function anymore. You can type in the textbox, but nothing happens when you submit the form. That's because we have started the refactoring process, and left some gaps for you to fill in.</p>
 <h4 id="code-changes">Code Changes</h4>
-<p>Now let's briefly look over the code. Notice the following changes:</p>
+<p>Let's look over the code. Notice the following changes:</p>
 <ul>
-<li>In <code>mario.html</code>, there are a few new CSS styles defined in the <code>&lt;style&gt;</code> tag. These cause the error message to have red text, and the input field to have a red border.</li>
-<li>In <code>mario.html</code>, we are using a <code>&lt;form&gt;</code> with an <code>&lt;input type="submit"/&gt;</code> instead of a <code>&lt;button&gt;</code>.</li>
-<li>In <code>mario.js</code>, we are handling the form's <code>onsubmit</code> event using an &quot;anonymous&quot; function defined right in the middle of the statement, rather than last time, when we used a named function (named <code>determineHeightAndThenDrawPyramid</code>).</li>
-<li>That anonymous handler function is much longer now than last time, largely because we have started to introduce validation logic.</li>
-<li>There are a few <code>TODO</code>s in there.</li>
-<li>There are two new functions, <code>displayError</code> and <code>clearError</code>. These functions simply toggle on and off, respectively, the visibility of an error message on the page. The <code>displayError</code> function is finished, but <code>clearError</code> contains a <code>TODO</code> for you.</li>
+<li>
+<p>At the bottom of <code>mario.html</code>, we have an additional <code>&lt;script&gt;</code> tag right before the one that loads <code>mario.js</code>. This script imports the jQuery library so that we can use jQuery's methods in our own code.</p>
+</li>
+<li>
+<p>We have refactored a few lines of code to use jQuery syntax: </p>
+<ul>
+<li>
+<p>registering the form's submission event handler:</p>
+<pre><code class="language-js">$("#draw-form").submit( function(event) { // lots of code ... } );</code></pre>
+</li>
+<li>
+<p>The <code>clearError</code> function is implemented using jQuery.</p>
+</li>
+<li>At the bottom of <code>drawPyramid</code>, we use jQuery to create a <code>&lt;p&gt;</code> element whose inner HTML is equal to the string for the current row.</li>
+</ul>
+</li>
 </ul>
 <h2 id="your-task">Your Task</h2>
+<p>First, note that we provide a few helpful links in the <a href="./#tips">Tips</a> section below.</p>
+<p>Now go ahead and complete the following tasks:</p>
 <ol>
 <li>
-<p>Currently, if the user types nothing at all, they will receive an error message of <em>&quot;That's not a valid height.&quot;</em> That kind of makes sense, but we can do better. In this scenario, it probably makes more sense to say something <em>&quot;Please provide a height.&quot;</em>.</p>
-<p>Add an additional condition inside the anonymous <code>onsubmit</code> function, to check for the specific case where the user typed nothing at all. If the condition is true, give the user a more appropriate error message.</p>
+<p>At the end of the loop in <code>drawPyramid</code>, we have created a <code>&lt;p&gt;</code> element with the string content. But there is no longer any code to insert the element onto the page. Use jQuery to append the element as a child of the <code>&lt;div id="pyramid"&gt;</code>.</p>
 </li>
 <li>
-<p>Currently, the user will receive the <em>&quot;That's not a valid height.&quot;</em> error if she types something that cannot be parsed and wrangled into an integer. But <strong>any integer</strong> is allowed. Let's restrict that a little further so that negative numbers, and zero as well, for that matter, are considered invalid heights.</p>
-<p>Expand the conditional statement surrounding the <em>&quot;That's not a valid height.&quot;</em> message so that only positive non-zero heights are allowed.</p>
+<p>Now you should be seeing a new pyramid added to the screen whenever you submit the form. Next, reimplement the &quot;clearing away&quot; of the previous pyramid so that they don't accumulate. At the beginning of <code>drawPyramid</code>, add some jQuery code to remove all the content inside the <code>#pyramid</code> container div.</p>
 </li>
 <li>
-<p>Notice that if the user triggers an error, and then corrects her error and re-submits the form (for example: types &quot;foo&quot; and submits and then types &quot;12&quot; and re-submits), the pyramid will draw correctly, but the old error message will not have gone away.</p>
-<p>Notice that at the beginning of the same <code>onsubmit</code> handler function, there is in fact a call to a function called <code>clearError</code>. So that sounds like it should do exactly what we need to do! The only problem is that the body of that function is empty aside from a <code>TODO</code> comment.</p>
-<p>Implement the <code>clearError</code> function so that it makes any currently visible errors disappear from the screen. This involves two things:</p>
-<pre><code>1. Remove any text from that red label.
-2. Make sure the input element **does not** have a class of `invalid-field`.</code></pre>
-<p>For reference, you can look at the <code>displayError</code> function. You want to do essentially the opposite of what that function does.</p>
+<p>Currently the pyramids always have a height of 5, no matter what the user types. Let's fix that. Inside the <code>submit</code> handler callback, replace the hard-coded <code>"5"</code> with some jQuery code to extract the actual value from the <code>&lt;input&gt;</code>.</p>
 </li>
+<li>The last thing to bring back is the error messages. When the user types something &quot;bad&quot;, we currently don't provide any useful feedback. Fill in the implementation of <code>displayError</code> so that the user once again is able to see what she did wrong. You can use our implementation of <code>clearError</code> as a loose reference.</li>
 </ol>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>
+<p>This <a href="https://gist.github.com/liamcurry/2597326">jQuery vs Vanilla JS Cheatsheet</a> is useful (doesn't cover everything though).</p>
+</li>
+<li>
+<p>You will probably need to use at least the following jQuery functions:</p>
+<ul>
+<li><a href="https://api.jquery.com/val/">.val()</a></li>
+<li><a href="https://api.jquery.com/append/">.append()</a></li>
+<li><a href="https://api.jquery.com/text/">.text()</a></li>
+<li><a href="https://api.jquery.com/addClass">.addClass()</a></li>
+<li><a href="https://api.jquery.com/empty/">.empty()</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="committing-your-changes">Committing Your Changes</h2>
 <ol>
 <li>
@@ -131,7 +135,7 @@ Your branch is up-to-date with 'origin/mario4'.</code></pre>
 </li>
 <li>
 <p>Then commit, along with a descriptive message.</p>
-<pre><code class="language-nohighlight">$ git commit -m "finish validating form submission"</code></pre>
+<pre><code class="language-nohighlight">$ git commit -m "refactor to use jQuery"</code></pre>
 </li>
 </ol>
                 </section>
