@@ -6,7 +6,7 @@ Before coming to Class 4, please complete the following tasks:
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|--------------
-Read | Interactive Book | [EloquentJS 18 -- Forms][eloquent18] | 2.5 hours |
+Read | Interactive Book | [EloquentJS 18: Forms][eloquent18] | 2.5 hours |
 
 
 ### Client-side Validation
@@ -15,9 +15,8 @@ in other-words, a script which checks whether the form was properly filled out, 
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|--------------
-Follow-Along | Walkthrough | [CS50 -- form-0][form-0] | In this walkthrough, David creates a demo page with a registration form for users to sign up for something.
-Follow-Along | Walkthrough | [CS50 -- form-1][form-1] | Here we improve our registration form by adding a script that performs client-side validation on the form. You will also want to copy register.php
-Follow-Along | Walkthrough | [CS50 -- form-2][form-2] | Once again we refactor to use the jQuery `document.ready()` function, as we did in the
+Follow-Along | Walkthrough | [CS50: form-0][form-0] | In this walkthrough, David creates a demo page with a registration form for users to sign up for something.
+Follow-Along | Walkthrough | [CS50: form-1][form-1] | Here we improve our registration form by adding a script that performs client-side validation on the form. You will also want to copy register.php
 
 [eloquent18]: http://eloquentjavascript.net/18_forms.html
 [form-0]: https://www.youtube.com/watch?v=U7W2U8qRI3I&list=PLhQjrBD2T382FjybRNOXyEdsjP9CNKJgb&index=7

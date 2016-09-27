@@ -11,8 +11,8 @@ Class 5 | Mon 10/10 | [Class 5 Prep](./class5-prep) | [In Class](./class5) | The
 Class 6 | Thu 10/13 | [Class 6 Prep](./class6-prep) | [In Class](./class6) | AJAX | [The AJAXson 5][ajaxson-5] | [Pyramid Slide][pyramid-slide] |
 Class 7 | Mon 10/17 | [Class 7 Prep](./class7-prep) | [In Class](./class7) | Browser developer tools | | |
 Class 8 | Thu 10/20 | [Class 8 Prep](./class8-prep) | [In Class](./class8) | Semantic HTML | | | |
-Class 9 | Mon 10/24 | [Class 9 Prep](./class9-prep) | [In Class](./class9) | Responsiveness; Bootstrap | | [The AJAXson 5][ajaxson-5]
-Class 10 | Thu 10/27 | [Class 10 Prep](./class10-prep) | [In Class](./class10) | Chaining API calls and surviving "callback hell" | [Fire in the Hole!][fire-in-the-hole] | |
+Class 9 | Mon 10/24 | [Class 9 Prep](./class9-prep) | [In Class](./class9) | Responsiveness; Bootstrap | |
+Class 10 | Thu 10/27 | [Class 10 Prep](./class10-prep) | [In Class](./class10) | Chaining API calls and surviving "callback hell" | [Fire in the Hole!][fire-in-the-hole] | [The AJAXson 5][ajaxson-5] |
 Halloween! | 10/31 | No | Class | 👻 | 🎃 | 👾 |
 Class 11 | Thu 11/3 | [Class 11 Prep](./class11-prep) | [In Class](./class11) | Nested Bootstrap grids; Bootstrap carousels | | |
 Class 12 | Mon 11/7 | [Class 12 Prep](./class12-prep) | [In Class](./class12) | Firebase | | |
