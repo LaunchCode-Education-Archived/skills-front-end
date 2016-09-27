@@ -12,7 +12,7 @@ Today your team's designer, Daisy, came to you with a UI idea that you are sure 
 
 Daisy put together a hand-drawn animation (amazingly realistic drawing skills) of the functionality she envisions:
 
-<img src="http://g.recordit.co/MiCFM5uBEr.gif"/>
+[Click here to see Daisy's vision][daisy-vision]
 
 Your task is to make it real!
 
@@ -83,7 +83,13 @@ Time to enjoy a cold one:
 <img src="http://i.imgur.com/pmC3Kch.gif"/>
 
 
+<img src="http://g.recordit.co/MiCFM5uBEr.gif"/>
+
+
+
 [dolphin-cay]: https://www.carnival.com/~/media/Images/PreSales/Excursions/Ports_M-Q/NAS/424042/Pictures/atlantis-dolphin-cay-deep-water-swim-and-aquaventure-nassau-the-bahamas-13.jpg
+
+[daisy-vision]: http://g.recordit.co/MiCFM5uBEr.gif
 
 [getting-started]: http://education.launchcode.org/web-fundamentals/assignments/getting-started/
 
