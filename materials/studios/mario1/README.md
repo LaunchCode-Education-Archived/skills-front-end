@@ -78,6 +78,7 @@ In the function definition, we can see that the `5` we passed in represents the 
 
 This is where you come in. The body of the function is essentially blank, with a big fat `TODO` waiting for you.
 
+Over in the `mario.html`, you will see the elements that make up our very simply HTML page. Notice the `<script>` tag whose `src` attribute is equal to the path to our `mario.js` file: this is what causes the javascript code to execute every time the user visits or refreshes the page.
 
 
 ## Your Task
