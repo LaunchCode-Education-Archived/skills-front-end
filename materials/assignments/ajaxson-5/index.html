@@ -52,7 +52,7 @@
                     <h1 id="assignment-the-ajaxson-5">Assignment: The AJAXson 5</h1>
 <p>One of the classic problems in computer science is the question of how to optimally implement a web page that displays GIFs of the Jackson 5. Today you'll take a stab at it.</p>
 <h2 id="the-giphy-api">The Giphy API</h2>
-<p>You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers. </p>
+<p>You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers.</p>
 <p>The basic goal of your page will be to fetch a GIF from Giphy, and then insert it into the DOM to display it on your page. We'll get into the details shortly, but first, let's play with Giphy for a minute.</p>
 <h4 id="the-host">The host</h4>
 <p>The host url we want is <code>https://api.giphy.com/v1/gifs/</code>. Let's try sending a GET request to that url. Try entering the following command into your terminal:</p>
@@ -60,11 +60,11 @@
 {"meta":{"status":404,"msg":"Not Found!"}}</code></pre>
 <p>We recieved a 404 Not Found response from Giphy. Maybe they ran out of GIFs?</p>
 <h4 id="the-endpoint">The Endpoint</h4>
-<p>Actually, the problem is that we need to choose an &quot;endpoint&quot; to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a <em>very</em> random GIF). </p>
+<p>Actually, the problem is that we need to choose an &quot;endpoint&quot; to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a <em>very</em> random GIF).</p>
 <p>The url for the Random endpoint is simply <code>/random</code>, so let's try this:</p>
 <pre><code class="language-nohighight">$ curl -G https://api.giphy.com/v1/gifs/random
 {"meta":{"status":403,"msg":"Forbidden"}}</code></pre>
-<p>This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public &quot;Beta&quot; key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is &quot;dc6zaTOxFJmzC&quot;. </p>
+<p>This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public &quot;Beta&quot; key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is &quot;dc6zaTOxFJmzC&quot;.</p>
 <h4 id="adding-params-api_key">Adding Params: api_key</h4>
 <p>Let's authorize ourselves by including in our request a parameter whose value is that magic string and whose key name is &quot;api_key&quot;.</p>
 <p>We can associate data with our curl request by using the -d flag:</p>
@@ -119,19 +119,19 @@
 <img src="screenshots/error.png" />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <ol>
-<li>Visit our <a href="https://github.com/LaunchCodeEducation/ajaxson5">starter-code repository</a> on Github.</li>
+<li>Visit our <a href="https://github.com/LaunchCodeEducation/the-ajaxson-5">starter-code repository</a> on Github.</li>
 <li><strong>Fork</strong> our repo by pressing the &quot;Fork&quot; button. You will now have your own version of the project, hosted on your Github profile.</li>
 <li>Back on your terminal, us <code>cd</code> to navigate to the place in your file system where to the place you want this project to live.</li>
 <li>
 <p>Clone your remote repo:</p>
-<pre><code class="language-nohighlight">$ git clone https://github.com/bobthebuilder/ajaxson5</code></pre>
+<pre><code class="language-nohighlight">$ git clone https://github.com/bobthebuilder/the-ajaxson-5</code></pre>
 <p>where <code>bobthebuilder</code> is your own username.</p>
 </li>
 </ol>
 <h2 id="take-a-look">Take a Look</h2>
 <p>Look inside the folder:</p>
-<pre><code class="language-nohighlight">$ cd ajaxson-5/
-$ ls 
+<pre><code class="language-nohighlight">$ cd the-ajaxson-5/
+$ ls
 index.html request-gif.js</code></pre>
 <p>You should see only two files: <code>index.html</code> and <code>request-gif.js</code>.</p>
 <h4 id="indexhtml">index.html</h4>
@@ -143,7 +143,7 @@ index.html request-gif.js</code></pre>
 <li>a couple <code>&lt;script&gt;</code> tags to load jQuery and our own <code>request-gif.js</code> script.</li>
 </ul>
 <h4 id="request-gifjs">request-gif.js</h4>
-<p>You will do all your work inside <code>request-gif.js</code>. Open it up now and take a look. </p>
+<p>You will do all your work inside <code>request-gif.js</code>. Open it up now and take a look.</p>
 <p>In broad terms, this script's job is to set things up such that:</p>
 <ul>
 <li>when the <code>&lt;form&gt;</code> is submitted, an AJAX request will be sent out to Giphy asking for a new random GIF</li>
@@ -151,7 +151,7 @@ index.html request-gif.js</code></pre>
 </ul>
 <p>The first block of code in the file contains this line:</p>
 <pre><code class="language-js">$("#form-gif-request").submit(fetchAndDisplayGif);</code></pre>
-<p>which uses jQuery to search the DOM for our form (by querying for an element whose <code>id</code> is <code>"form-gif-request"</code>), and then attaches, to that form's <code>submit</code> event, a &quot;callback&quot; function named <code>fetchAndDisplayGif</code>, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our <code>fetchAndDisplayGif</code> function will be invoked. </p>
+<p>which uses jQuery to search the DOM for our form (by querying for an element whose <code>id</code> is <code>"form-gif-request"</code>), and then attaches, to that form's <code>submit</code> event, a &quot;callback&quot; function named <code>fetchAndDisplayGif</code>, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our <code>fetchAndDisplayGif</code> function will be invoked.</p>
 <p>The above line is, itself, inside of another callback, an annonymous function that we pass to jQuery's <code>document.ready()</code> function. This ensures that we do not execute that line until the HTML document has finished loading and is &quot;ready&quot; (because if we don't wait, then this code might execute before the <code>&lt;form&gt;</code> has loaded, in which case our <code>$("#form-gif-request")</code> query will fail to find anything).</p>
 <p>Let's continue on to the <code>fetchAndDisplayGif()</code> function. This is where you will do all your work. You will see a handful of TODOs sprinkled throughout the body of this function. The code that is in there currently provides a skeleton for the following gameplan:</p>
 <ol>
@@ -166,13 +166,13 @@ index.html request-gif.js</code></pre>
 <li><code>success</code> -- a callback function to execute when the response comes back</li>
 <li><code>error</code> -- an alternative callback function, if something went wrong, to handle the error</li>
 </ul>
-<p>There are many more settings you can configure, but those are the core things we care about in this case. </p>
+<p>There are many more settings you can configure, but those are the core things we care about in this case.</p>
 <p>The last section of this function is a TODO where we instruct you to give the user a &quot;Loading...&quot; message while they wait for the response to come back. You might be wondering: Why are we displaying a loading message AFTER we've already done the whole request and handled the response in the <code>success()</code> (or <code>error()</code>) function? Remember, those callback functions will not actually be <em>executed</em> until later, after the response comes back. Just because the <code>success()</code> function is defined <em>above</em> line 53 does not mean that it will actually be invoked before line 53.</p>
 <p>The final piece of code in the file is a helper function called <code>setGifLoadedStatus()</code> which we have written, which you can use to toggle the visibility of the <code>&lt;img&gt;</code> and <code>&lt;p&gt;</code> tags in the HTML page. Depending on the situation, you are either going to want one to be visible and the other hidden, or vice versa, so this function makes it easy to flip back and forth between those two possible states.</p>
 <h2 id="your-task">Your Task</h2>
 <p>The assignment has 3 parts:</p>
 <h4 id="part-1-core-functionality">Part 1: Core Functionality</h4>
-<p>This part is easy to explain: go ahead and fill in those <code>TODO</code> comments! </p>
+<p>This part is easy to explain: go ahead and fill in those <code>TODO</code> comments!</p>
 <p>You know you are done when your site performs all the functionality described in the <a href="./#the-goal">The Goal</a> section above.</p>
 <p>You may find the following jQuery functions helpful:</p>
 <ul>
@@ -182,8 +182,8 @@ index.html request-gif.js</code></pre>
 <li><code>$(someSelector).find()</code></li>
 </ul>
 <h4 id="part-2-validation">Part 2: Validation</h4>
-<p>Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz. </p>
-<p>You know those &quot;Prove you are not a robot&quot; CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows: </p>
+<p>Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz.</p>
+<p>You know those &quot;Prove you are not a robot&quot; CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows:</p>
 <p>Add a second field to your form. It should look like this:</p>
 <p><img src="./screenshots/captcha.png" alt="captcha" /></p>
 <p>If the user gets the answer right, then go ahead and load the GIF like normal.</p>
