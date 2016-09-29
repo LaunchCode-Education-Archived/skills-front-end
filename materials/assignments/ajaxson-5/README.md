@@ -132,9 +132,12 @@ Finally, it is possible that something might go wrong in the proccess of making 
 
 ## Obtaining the Starter Code
 
+1. Visit our [starter-code repository][starter-repo] on Github.
+2. Fork our repo. 
+3. Navigate to the place you want this project to live.
+4. Clone your remote repo.
 
-TODO
-
+[starter-repo]: 
 
 ## Take a Look
 
@@ -232,14 +235,18 @@ Finally, add some CSS to make your page beautiful and responsive.
 
 Here is an example of a nicer looking page:
 
-![pretty-page](./screenshots/pretty-page.png)
+![pretty-page-1](./screenshots/pretty-page-1.png)
+![pretty-page-2](./screenshots/pretty-page-2.png)
+![pretty-page-3](./screenshots/pretty-page-3.png)
 
 But feel free to get creative and style the page however you want.
 
-The one requirement is that your page **must be reasonably responsive!**. Specifically, this means that it must be equally functional and non-ugly on mobile phones as it is on larger desktop screens.
+The one requirement is that your page **must be reasonably responsive!**. Specifically, this means that it must be equally functional and non-ugly on mobile phones as it is on larger desktop screens. You should make your browser window really narrow while you design, so as to force yourself to think "mobile first".
 
-You are encouraged (but not required) to use Bootstrap to do most of the heavy lifting.
+You are encouraged (but not required) to let [Bootstrap](http://getbootstrap.com/css/) do most of the heavy lifting, particularly on the responsiveness aspect.
 
 ## How to Submit
 
-TODO
+1. Add and commit your changes.
+2. Push your local changes up to your remote repo.
+3. 
