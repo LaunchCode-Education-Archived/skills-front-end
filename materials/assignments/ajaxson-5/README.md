@@ -133,11 +133,17 @@ Finally, it is possible that something might go wrong in the proccess of making 
 ## Obtaining the Starter Code
 
 1. Visit our [starter-code repository][starter-repo] on Github.
-2. Fork our repo. 
-3. Navigate to the place you want this project to live.
-4. Clone your remote repo.
+2. **Fork** our repo by pressing the "Fork" button. You will now have your own version of the project, hosted on your Github profile.
+3. Back on your terminal, us `cd` to navigate to the place in your file system where to the place you want this project to live.
+4. Clone your remote repo:
+	
+	```nohighlight
+	$ git clone https://github.com/bobthebuilder/ajaxson5
+	```
+	
+	where `bobthebuilder` is your own username.
 
-[starter-repo]: 
+[starter-repo]: https://github.com/LaunchCodeEducation/ajaxson5
 
 ## Take a Look
 
@@ -247,6 +253,10 @@ You are encouraged (but not required) to let [Bootstrap](http://getbootstrap.com
 
 ## How to Submit
 
-1. Add and commit your changes.
-2. Push your local changes up to your remote repo.
-3. 
+1. In a terminal `add` and `commit` your changes.
+2. Then `push` your local changes up to your remote repo. You should then see your latest code up on Github if you visit your remote repo.
+3. Go to Vocareum and find the assignment called "The AJAXson 5".
+4. In your Vocareum work environment, `clone` the project down from your remote repo.
+5. Click Submit.
+6. Demo for a TF.
+7. Hit the dance floor!
