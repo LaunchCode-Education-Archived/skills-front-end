@@ -4,7 +4,7 @@ One of the classic problems in computer science is the question of how to optima
 
 ## The Giphy API
 
-You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers. 
+You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers.
 
 The basic goal of your page will be to fetch a GIF from Giphy, and then insert it into the DOM to display it on your page. We'll get into the details shortly, but first, let's play with Giphy for a minute.
 
@@ -21,7 +21,7 @@ We recieved a 404 Not Found response from Giphy. Maybe they ran out of GIFs?
 
 #### The Endpoint
 
-Actually, the problem is that we need to choose an "endpoint" to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a *very* random GIF). 
+Actually, the problem is that we need to choose an "endpoint" to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a *very* random GIF).
 
 The url for the Random endpoint is simply `/random`, so let's try this:
 
@@ -30,7 +30,7 @@ $ curl -G https://api.giphy.com/v1/gifs/random
 {"meta":{"status":403,"msg":"Forbidden"}}
 ```
 
-This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public "Beta" key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is "dc6zaTOxFJmzC". 
+This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public "Beta" key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is "dc6zaTOxFJmzC".
 
 #### Adding Params: api_key
 
@@ -136,22 +136,22 @@ Finally, it is possible that something might go wrong in the proccess of making 
 2. **Fork** our repo by pressing the "Fork" button. You will now have your own version of the project, hosted on your Github profile.
 3. Back on your terminal, us `cd` to navigate to the place in your file system where to the place you want this project to live.
 4. Clone your remote repo:
-	
+
 	```nohighlight
-	$ git clone https://github.com/bobthebuilder/ajaxson5
+	$ git clone https://github.com/bobthebuilder/the-ajaxson-5
 	```
-	
+
 	where `bobthebuilder` is your own username.
 
-[starter-repo]: https://github.com/LaunchCodeEducation/ajaxson5
+[starter-repo]: https://github.com/LaunchCodeEducation/the-ajaxson-5
 
 ## Take a Look
 
 Look inside the folder:
 
 ```nohighlight
-$ cd ajaxson-5/
-$ ls 
+$ cd the-ajaxson-5/
+$ ls
 index.html request-gif.js
 ```
 You should see only two files: `index.html` and `request-gif.js`.
@@ -167,7 +167,7 @@ In `index.html` we have four main things:
 
 #### request-gif.js
 
-You will do all your work inside `request-gif.js`. Open it up now and take a look. 
+You will do all your work inside `request-gif.js`. Open it up now and take a look.
 
 In broad terms, this script's job is to set things up such that:
   * when the `<form>` is submitted, an AJAX request will be sent out to Giphy asking for a new random GIF
@@ -177,7 +177,7 @@ The first block of code in the file contains this line:
 ```js
 $("#form-gif-request").submit(fetchAndDisplayGif);
 ```
-which uses jQuery to search the DOM for our form (by querying for an element whose `id` is `"form-gif-request"`), and then attaches, to that form's `submit` event, a "callback" function named `fetchAndDisplayGif`, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our `fetchAndDisplayGif` function will be invoked. 
+which uses jQuery to search the DOM for our form (by querying for an element whose `id` is `"form-gif-request"`), and then attaches, to that form's `submit` event, a "callback" function named `fetchAndDisplayGif`, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our `fetchAndDisplayGif` function will be invoked.
 
 The above line is, itself, inside of another callback, an annonymous function that we pass to jQuery's `document.ready()` function. This ensures that we do not execute that line until the HTML document has finished loading and is "ready" (because if we don't wait, then this code might execute before the `<form>` has loaded, in which case our `$("#form-gif-request")` query will fail to find anything).
 
@@ -193,7 +193,7 @@ To make the AJAX request, we use jQuery's `ajax()` function. In some of the CS50
 * `success` -- a callback function to execute when the response comes back
 * `error` -- an alternative callback function, if something went wrong, to handle the error
 
-There are many more settings you can configure, but those are the core things we care about in this case. 
+There are many more settings you can configure, but those are the core things we care about in this case.
 
 The last section of this function is a TODO where we instruct you to give the user a "Loading..." message while they wait for the response to come back. You might be wondering: Why are we displaying a loading message AFTER we've already done the whole request and handled the response in the `success()` (or `error()`) function? Remember, those callback functions will not actually be *executed* until later, after the response comes back. Just because the `success()` function is defined *above* line 53 does not mean that it will actually be invoked before line 53.
 
@@ -205,7 +205,7 @@ The assignment has 3 parts:
 
 #### Part 1: Core Functionality
 
-This part is easy to explain: go ahead and fill in those `TODO` comments! 
+This part is easy to explain: go ahead and fill in those `TODO` comments!
 
 You know you are done when your site performs all the functionality described in the [The Goal](./#the-goal) section above.
 
@@ -218,9 +218,9 @@ You may find the following jQuery functions helpful:
 
 #### Part 2: Validation
 
-Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz. 
+Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz.
 
-You know those "Prove you are not a robot" CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows: 
+You know those "Prove you are not a robot" CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows:
 
 Add a second field to your form. It should look like this:
 
