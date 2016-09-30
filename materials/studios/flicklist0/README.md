@@ -1,6 +1,3 @@
-##### Web Track
-
-[Back to Class 0](../../class0)
 
 # Studio: FlickList 0
 
@@ -97,7 +94,7 @@ $ git checkout studio0-my-work
 Switched to branch 'studio0-my-work'
 ```
 
-### Starter Code
+## Starter Code
 
 In `index.html`, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small `TODO` for you, which is to finish our `<script>` tag so that it loads up our local `flicklist.js` file.
 
