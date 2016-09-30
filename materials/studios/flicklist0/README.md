@@ -4,13 +4,11 @@
 
 # Studio: FlickList 0
 
-Welcome to your first Studio! Today is mostly just about getting set up. 
+Welcome to your first Studio! Today is mostly just about getting set up.
 
-First, you will use Git to grab the starter code for the project. 
+First, you will use Git to grab the starter code for the project.
 
-**(This will seem excessively complicated--and indeed it is a little more complicated than a normal Git workflow--for reasons that we'll explain later. But don't worry, we will tell you exactly what to do, and help you out if something goes wrong. That's what today is for.)**
-
-Next, you will register for an API key with themoviedb.org, an open source database of movies. 
+Next, you will register for an API key with themoviedb.org, an open source database of movies.
 
 Finally you'll plug your API key into the starter code, and see some immediate results!
 
@@ -32,7 +30,7 @@ You should now be taken to a new, nearly identical project page. But instead of 
 
 ### Clone your Fork
 
-Now that you have your own *remote* repository hosted on GitHub, it's time to start working on it. To do so, you will *clone* the remote repo onto your local machine. 
+Now that you have your own *remote* repository hosted on GitHub, it's time to start working on it. To do so, you will *clone* the remote repo onto your local machine.
 
 Open up the terminal, and `cd` into the parent folder where you want this project to live. Then clone your repo:
 
@@ -66,7 +64,7 @@ There's some code in here! Open up index.html and take a very brief look. Seems 
 
 Why did we give you the finished product? Well, this is a Git repo, so in fact, the entire history of the project is actually present. To start from the beginning, you just have to go back in time!
 
-We have created 6 *branches* at various points in the history of the project, one for each Studio. You will complete each studio from a different one of these "jumping off points". 
+We have created 6 *branches* at various points in the history of the project, one for each Studio. You will complete each studio from a different one of these "jumping off points".
 
 
 ### Check Out the new Branch
@@ -85,7 +83,7 @@ We have officially time traveled into the past!
 
 ### Make Another Branch for Your Work
 
-The last thing you need to do is make another new branch where you can work on this assignment (we want to keep "studio0" fresh so you can come back to it later). 
+The last thing you need to do is make another new branch where you can work on this assignment (we want to keep "studio0" fresh so you can come back to it later).
 
 Go ahead and create a branch called "studio0-my-work", then look to confirm that it exists, and finally switch over to it:
 
@@ -101,11 +99,11 @@ Switched to branch 'studio0-my-work'
 
 ### Starter Code
 
-In `index.html`, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small `TODO` for you, which is to finish our `<script>` tag so that it loads up our local `flicklist.js` file. 
+In `index.html`, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small `TODO` for you, which is to finish our `<script>` tag so that it loads up our local `flicklist.js` file.
 
-In `js/flicklist.js`, you will see a javascript object stored in a local variable called `api`. 
+In `js/flicklist.js`, you will see a javascript object stored in a local variable called `api`.
 
-Below that is a function called `testTheAPI()`, which, true to its name, tests our ability to connect to themoviedb's API. It does so by making making an AJAX request (using jQuery's `.ajax` function) to this url: "https://api.themoviedb.org/3/discover/movie", passing along your API key as a parameter. A success "callback" function is provided to the request, which will be invoked if a response comes back successfully. This callback function will log the response to the console. 
+Below that is a function called `testTheAPI()`, which, true to its name, tests our ability to connect to themoviedb's API. It does so by making making an AJAX request (using jQuery's `.ajax` function) to this url: "https://api.themoviedb.org/3/discover/movie", passing along your API key as a parameter. A success "callback" function is provided to the request, which will be invoked if a response comes back successfully. This callback function will log the response to the console.
 
 After defining the function, we have a simple `console.log` statement, and then we invoke the function.
 
@@ -119,7 +117,7 @@ For today, the only things you need to do are:
 
 ## TheMovieDB API
 
-TheMovieDB is a freely available database of movies and TV shows. We will use their API as the source of our project's data. This API, like most, requires that you register and obtain a key in order to use it. 
+TheMovieDB is a freely available database of movies and TV shows. We will use their API as the source of our project's data. This API, like most, requires that you register and obtain a key in order to use it.
 
 Here's how to nab that key:
 
@@ -224,4 +222,3 @@ To https://github.com/bobthebuilder/flicklist.git
 ```
 
 If you go back and revisit `https://github.com/bobthebuilder/flicklist`, you should now see your new branch up there!
-
