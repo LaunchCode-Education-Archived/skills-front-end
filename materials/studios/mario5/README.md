@@ -27,6 +27,24 @@ Today you won't be adding any new features to the project. Instead you will refa
     Your branch is up-to-date with 'origin/mario5'.
     ```
 
+4. Pull down the latest changes.
+
+    ```nohighlight
+    $ git pull
+    Already up-to-date.
+    ```
+
+    Sometimes, the staff might make last-minute changes to the starter-code. Running `git pull` here ensures that you will have the **very latest** version of the `mario3` branch.
+
+    Usually you will just see:
+
+    ```nohighlight
+    Already up-to-date.
+    ```
+
+    But in the event that we **did** make some changes after your initial `git clone` on the first day of class, running `git pull` now pulls down those changes, and you will see a different message outlining the changes.
+
+
 ## Take a Look
 
 #### Preview
@@ -39,14 +57,14 @@ Let's look over the code. Notice the following changes:
 
 - At the bottom of `mario.html`, we have an additional `<script>` tag right before the one that loads `mario.js`. This script imports the jQuery library so that we can use jQuery's methods in our own code.
 
-- We have refactored a few lines of code to use jQuery syntax: 
-	
+- We have refactored a few lines of code to use jQuery syntax:
+
 	- registering the form's submission event handler:
 
 		```js
 		$("#draw-form").submit( function(event) { // lots of code ... } );
 		```
-	
+
 	- The `clearError` function is implemented using jQuery.
 
 	- At the bottom of `drawPyramid`, we use jQuery to create a `<p>` element whose inner HTML is equal to the string for the current row.

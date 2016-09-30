@@ -19,13 +19,31 @@ Thus far, we have had this cool generic function which is able to draw a pyramid
 
     If you *do* have uncommitted changes, then `add` and `commit` them now.
 
-3. Switch to the `mario3` branch:
+3. Switch to the `mario3` branch.
 
     ```nohighlight
     $ git checkout mario3
     Switched to branch 'mario3'
     Your branch is up-to-date with 'origin/mario3'.
     ```
+
+4. Pull down the latest changes.
+
+    ```nohighlight
+    $ git pull
+    Already up-to-date.
+    ```
+
+    Sometimes, the staff might make last-minute changes to the starter-code. Running `git pull` here ensures that you will have the **very latest** version of the `mario3` branch.
+
+    Usually you will just see:
+
+    ```nohighlight
+    Already up-to-date.
+    ```
+
+    But in the event that we **did** make some changes after your initial `git clone` on the first day of class, running `git pull` now pulls down those changes, and you will see a different message outlining the changes.
+
 
 ## Take a Look
 

@@ -38,6 +38,23 @@ In Mario 1, you implemented a function to print a "pyramid" to the developer con
 
     If you look at your files now, you will see that they have changed. Cool! We will continue to use this branching system to give you starter code on future studios.
 
+4. Pull down the latest changes.
+
+    ```nohighlight
+    $ git pull
+    Already up-to-date.
+    ```
+
+    Sometimes, the staff might make last-minute changes to the starter-code. Running `git pull` here ensures that you will have the **very latest** version of the `mario3` branch.
+
+    Usually you will just see:
+
+    ```nohighlight
+    Already up-to-date.
+    ```
+
+    But in the event that we **did** make some changes after your initial `git clone` on the first day of class, running `git pull` now pulls down those changes, and you will see a different message outlining the changes.
+
 ## Take a Look
 
 View the `mario.html` page in a browser window, you will see that the text on the page has changed since last time. It now says:
