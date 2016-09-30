@@ -74,7 +74,7 @@ Branch studio0 set up to track remote branch studio0 from origin.
 Switched to a new branch 'studio0'
 ```
 
-Git informs us that we have "switched to" the other branch. If you close and reopen `index.html`, you should see a big change! You might also notice that the `css/` directory has disappeared entirely. And if you preview the webpage in the browser again, you will see that the fancy movie content has reverted to some very basic text.
+Git informs us that we have "switched to" the other branch. If you take another look at `index.html`, you should see a big change! You might also notice that the `css/` directory has disappeared entirely. And if you preview the webpage in the browser again, you will see that the fancy movie content has reverted to some very basic text.
 
 We have officially time traveled into the past!
 
@@ -143,7 +143,7 @@ You should now be taken to your profile page, where your key should be visible.
 
 Again, you have three steps:
 
-1. Get your API key from themoviedb.org (we'll do that next).
+1. Get your API key from themoviedb.org.
 2. In `index.html`, Fill in the `<script>` tag so that it loads the `flicklist.js` Javascript file.
 3. In `flicklist.js`, paste your key into the code as indicated by the `TODO`.
 
