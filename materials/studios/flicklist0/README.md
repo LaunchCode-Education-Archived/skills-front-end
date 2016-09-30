@@ -78,22 +78,6 @@ Git informs us that we have "switched to" the other branch. If you take another 
 
 We have officially time traveled into the past!
 
-### Make Another Branch for Your Work
-
-The last thing you need to do is make another new branch where you can work on this assignment (we want to keep "studio0" fresh so you can come back to it later).
-
-Go ahead and create a branch called "studio0-my-work", then look to confirm that it exists, and finally switch over to it:
-
-```nohighlight
-$ git branch studio0-my-work
-$ git branch
-  master
-* studio0
-  studio0-my-work
-$ git checkout studio0-my-work
-Switched to branch 'studio0-my-work'
-```
-
 ## Starter Code
 
 In `index.html`, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small `TODO` for you, which is to finish our `<script>` tag so that it loads up our local `flicklist.js` file.
@@ -156,7 +140,7 @@ If you run the `git status` command, you should see that you now have *unstaged*
 
 ```nohighlight
 $ git status
-On branch studio0-my-work
+On branch studio0
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -179,7 +163,7 @@ If you check your status again now, you should see:
 
 ```nohighlight
 $ git status
-On branch studio0-my-work
+On branch studio0
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
@@ -191,7 +175,7 @@ Both files are now staged for committing. Go ahead and make a commit, using the 
 
 ```nohighlight
 $ git commit -m "finish FlickList 0 studio"
-[studio0-my-work 46db232] finish FlickList 0 studio
+[studio0 46db232] finish FlickList 0 studio
  2 files changed, 2 insertions(+), 2 deletions(-)
 ```
 
@@ -201,21 +185,21 @@ If you check your status one more time, you should see this:
 
 ```nohighlight
 $ git status
-On branch studio0-my-work
+On branch studio0
 nothing to commit, working directory clean
 ```
 
 Finally, *push* your changes to your remote repo:
 
 ```nohighlight
-$ git push origin studio0-my-work
+$ git push origin studio0
 Counting objects: 62, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (20/20), done.
 Writing objects: 100% (22/22), 2.36 KiB | 0 bytes/s, done.
 Total 22 (delta 6), reused 0 (delta 0)
 To https://github.com/bobthebuilder/flicklist.git
- * [new branch]      studio0-my-work -> studio0-my-work
+ * [new branch]      studio0 -> studio0
 ```
 
 If you go back and revisit `https://github.com/bobthebuilder/flicklist`, you should now see your new branch up there!
