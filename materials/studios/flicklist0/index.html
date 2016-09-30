@@ -49,9 +49,7 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h5 id="web-track">Web Track</h5>
-<p><a href="../../class0">Back to Class 0</a></p>
-<h1 id="studio-flicklist-0">Studio: FlickList 0</h1>
+                    <h1 id="studio-flicklist-0">Studio: FlickList 0</h1>
 <p>Welcome to your first Studio! Today is mostly just about getting set up.</p>
 <p>First, you will use Git to grab the starter code for the project.</p>
 <p>Next, you will register for an API key with themoviedb.org, an open source database of movies.</p>
@@ -102,7 +100,7 @@ $ git branch
   studio0-my-work
 $ git checkout studio0-my-work
 Switched to branch 'studio0-my-work'</code></pre>
-<h3 id="starter-code">Starter Code</h3>
+<h2 id="starter-code">Starter Code</h2>
 <p>In <code>index.html</code>, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small <code>TODO</code> for you, which is to finish our <code>&lt;script&gt;</code> tag so that it loads up our local <code>flicklist.js</code> file.</p>
 <p>In <code>js/flicklist.js</code>, you will see a javascript object stored in a local variable called <code>api</code>.</p>
 <p>Below that is a function called <code>testTheAPI()</code>, which, true to its name, tests our ability to connect to themoviedb's API. It does so by making making an AJAX request (using jQuery's <code>.ajax</code> function) to this url: &quot;<a href="https://api.themoviedb.org/3/discover/movie">https://api.themoviedb.org/3/discover/movie</a>&quot;, passing along your API key as a parameter. A success &quot;callback&quot; function is provided to the request, which will be invoked if a response comes back successfully. This callback function will log the response to the console.</p>
