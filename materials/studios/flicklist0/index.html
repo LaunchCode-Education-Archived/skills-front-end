@@ -52,10 +52,9 @@
                     <h5 id="web-track">Web Track</h5>
 <p><a href="../../class0">Back to Class 0</a></p>
 <h1 id="studio-flicklist-0">Studio: FlickList 0</h1>
-<p>Welcome to your first Studio! Today is mostly just about getting set up. </p>
-<p>First, you will use Git to grab the starter code for the project. </p>
-<p><strong>(This will seem excessively complicated--and indeed it is a little more complicated than a normal Git workflow--for reasons that we'll explain later. But don't worry, we will tell you exactly what to do, and help you out if something goes wrong. That's what today is for.)</strong></p>
-<p>Next, you will register for an API key with themoviedb.org, an open source database of movies. </p>
+<p>Welcome to your first Studio! Today is mostly just about getting set up.</p>
+<p>First, you will use Git to grab the starter code for the project.</p>
+<p>Next, you will register for an API key with themoviedb.org, an open source database of movies.</p>
 <p>Finally you'll plug your API key into the starter code, and see some immediate results!</p>
 <h2 id="submit-individually">Submit Individually</h2>
 <p>Today, it is best if you complete this studio on your own computer, rather than with a partner. You are still encouraged to work together with others, but each coder should have their own computer open.</p>
@@ -66,7 +65,7 @@
 <p>To work on this project, you'll need to <em>fork</em> your own version of it. Near the upper-right corner of the screen, you should see a button that says &quot;Fork&quot;. Click it!</p>
 <p>You should now be taken to a new, nearly identical project page. But instead of <code>LaunchCodeEducation/flicklist</code>, this is <code>YOURUSERNAME/flicklist</code>.</p>
 <h3 id="clone-your-fork">Clone your Fork</h3>
-<p>Now that you have your own <em>remote</em> repository hosted on GitHub, it's time to start working on it. To do so, you will <em>clone</em> the remote repo onto your local machine. </p>
+<p>Now that you have your own <em>remote</em> repository hosted on GitHub, it's time to start working on it. To do so, you will <em>clone</em> the remote repo onto your local machine.</p>
 <p>Open up the terminal, and <code>cd</code> into the parent folder where you want this project to live. Then clone your repo:</p>
 <pre><code class="language-nohighlight">$ git clone https://github.com/YOURUSERNAME/flicklist.git
 Cloning into 'flicklist'...
@@ -85,7 +84,7 @@ $ ls
 README.md  css/  index.html  js/</code></pre>
 <p>There's some code in here! Open up index.html and take a very brief look. Seems like a lot of stuff. In fact, the entire finished project is all here. See for yourself by opening up this page in a browser window.</p>
 <p>Why did we give you the finished product? Well, this is a Git repo, so in fact, the entire history of the project is actually present. To start from the beginning, you just have to go back in time!</p>
-<p>We have created 6 <em>branches</em> at various points in the history of the project, one for each Studio. You will complete each studio from a different one of these &quot;jumping off points&quot;. </p>
+<p>We have created 6 <em>branches</em> at various points in the history of the project, one for each Studio. You will complete each studio from a different one of these &quot;jumping off points&quot;.</p>
 <h3 id="check-out-the-new-branch">Check Out the new Branch</h3>
 <p>Watch what happens when you checkout the new branch:</p>
 <pre><code class="language-nohighlight">$ git checkout studio0
@@ -94,7 +93,7 @@ Switched to a new branch 'studio0'</code></pre>
 <p>Git informs us that we have &quot;switched to&quot; the other branch. If you close and reopen <code>index.html</code>, you should see a big change! You might also notice that the <code>css/</code> directory has disappeared entirely. And if you preview the webpage in the browser again, you will see that the fancy movie content has reverted to some very basic text.</p>
 <p>We have officially time traveled into the past!</p>
 <h3 id="make-another-branch-for-your-work">Make Another Branch for Your Work</h3>
-<p>The last thing you need to do is make another new branch where you can work on this assignment (we want to keep &quot;studio0&quot; fresh so you can come back to it later). </p>
+<p>The last thing you need to do is make another new branch where you can work on this assignment (we want to keep &quot;studio0&quot; fresh so you can come back to it later).</p>
 <p>Go ahead and create a branch called &quot;studio0-my-work&quot;, then look to confirm that it exists, and finally switch over to it:</p>
 <pre><code class="language-nohighlight">$ git branch studio0-my-work
 $ git branch
@@ -104,9 +103,9 @@ $ git branch
 $ git checkout studio0-my-work
 Switched to branch 'studio0-my-work'</code></pre>
 <h3 id="starter-code">Starter Code</h3>
-<p>In <code>index.html</code>, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small <code>TODO</code> for you, which is to finish our <code>&lt;script&gt;</code> tag so that it loads up our local <code>flicklist.js</code> file. </p>
-<p>In <code>js/flicklist.js</code>, you will see a javascript object stored in a local variable called <code>api</code>. </p>
-<p>Below that is a function called <code>testTheAPI()</code>, which, true to its name, tests our ability to connect to themoviedb's API. It does so by making making an AJAX request (using jQuery's <code>.ajax</code> function) to this url: &quot;<a href="https://api.themoviedb.org/3/discover/movie">https://api.themoviedb.org/3/discover/movie</a>&quot;, passing along your API key as a parameter. A success &quot;callback&quot; function is provided to the request, which will be invoked if a response comes back successfully. This callback function will log the response to the console. </p>
+<p>In <code>index.html</code>, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small <code>TODO</code> for you, which is to finish our <code>&lt;script&gt;</code> tag so that it loads up our local <code>flicklist.js</code> file.</p>
+<p>In <code>js/flicklist.js</code>, you will see a javascript object stored in a local variable called <code>api</code>.</p>
+<p>Below that is a function called <code>testTheAPI()</code>, which, true to its name, tests our ability to connect to themoviedb's API. It does so by making making an AJAX request (using jQuery's <code>.ajax</code> function) to this url: &quot;<a href="https://api.themoviedb.org/3/discover/movie">https://api.themoviedb.org/3/discover/movie</a>&quot;, passing along your API key as a parameter. A success &quot;callback&quot; function is provided to the request, which will be invoked if a response comes back successfully. This callback function will log the response to the console.</p>
 <p>After defining the function, we have a simple <code>console.log</code> statement, and then we invoke the function.</p>
 <p>That was a mouthful. If any of these terms are unfamiliar to you, know that they are covered thoroughly in Module 8 of CS50, and will be reviewed in your Prep Work for next class.</p>
 <p>For today, the only things you need to do are:</p>
@@ -116,7 +115,7 @@ Switched to branch 'studio0-my-work'</code></pre>
 <li>In <code>flicklist.js</code>, paste your key into the code as indicated by the <code>TODO</code>.</li>
 </ol>
 <h2 id="themoviedb-api">TheMovieDB API</h2>
-<p>TheMovieDB is a freely available database of movies and TV shows. We will use their API as the source of our project's data. This API, like most, requires that you register and obtain a key in order to use it. </p>
+<p>TheMovieDB is a freely available database of movies and TV shows. We will use their API as the source of our project's data. This API, like most, requires that you register and obtain a key in order to use it.</p>
 <p>Here's how to nab that key:</p>
 <h3 id="sign-up-for-an-account">Sign up for an Account</h3>
 <p><a href="https://www.themoviedb.org/account/signup" target="_blank">Register here</a>. Then check your email and click the confirmation link.</p>
