@@ -90,16 +90,6 @@ Branch studio0 set up to track remote branch studio0 from origin.
 Switched to a new branch 'studio0'</code></pre>
 <p>Git informs us that we have &quot;switched to&quot; the other branch. If you take another look at <code>index.html</code>, you should see a big change! You might also notice that the <code>css/</code> directory has disappeared entirely. And if you preview the webpage in the browser again, you will see that the fancy movie content has reverted to some very basic text.</p>
 <p>We have officially time traveled into the past!</p>
-<h3 id="make-another-branch-for-your-work">Make Another Branch for Your Work</h3>
-<p>The last thing you need to do is make another new branch where you can work on this assignment (we want to keep &quot;studio0&quot; fresh so you can come back to it later).</p>
-<p>Go ahead and create a branch called &quot;studio0-my-work&quot;, then look to confirm that it exists, and finally switch over to it:</p>
-<pre><code class="language-nohighlight">$ git branch studio0-my-work
-$ git branch
-  master
-* studio0
-  studio0-my-work
-$ git checkout studio0-my-work
-Switched to branch 'studio0-my-work'</code></pre>
 <h2 id="starter-code">Starter Code</h2>
 <p>In <code>index.html</code>, we have hardcoded some text to appear on the browser screen. At the bottom of the file, notice that we have left a small <code>TODO</code> for you, which is to finish our <code>&lt;script&gt;</code> tag so that it loads up our local <code>flicklist.js</code> file.</p>
 <p>In <code>js/flicklist.js</code>, you will see a javascript object stored in a local variable called <code>api</code>.</p>
@@ -136,7 +126,7 @@ Switched to branch 'studio0-my-work'</code></pre>
 <h2 id="commit-and-push-on-git">Commit and Push on Git</h2>
 <p>If you run the <code>git status</code> command, you should see that you now have <em>unstaged</em> changes:</p>
 <pre><code class="language-nohighlight">$ git status
-On branch studio0-my-work
+On branch studio0
 Changes not staged for commit:
   (use "git add &lt;file&gt;..." to update what will be committed)
   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
@@ -150,7 +140,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
 <p>The <code>--all</code> adds all (both of) the unstaged files, so you don't have to type them one by one. (You might often see an alternative syntax which uses a dot to specify &quot;all&quot;: <code>git add .</code>. Either way is fine; they mean the exact same thing.)</p>
 <p>If you check your status again now, you should see:</p>
 <pre><code class="language-nohighlight">$ git status
-On branch studio0-my-work
+On branch studio0
 Changes to be committed:
   (use "git reset HEAD &lt;file&gt;..." to unstage)
 
@@ -158,22 +148,22 @@ Changes to be committed:
         modified:   js/flicklist.js</code></pre>
 <p>Both files are now staged for committing. Go ahead and make a commit, using the -m flag to remind your future self (and others looking at your code) what changes you made during this commit:</p>
 <pre><code class="language-nohighlight">$ git commit -m "finish FlickList 0 studio"
-[studio0-my-work 46db232] finish FlickList 0 studio
+[studio0 46db232] finish FlickList 0 studio
  2 files changed, 2 insertions(+), 2 deletions(-)</code></pre>
 <p>The convention is to write your commit messages using the present tense rather than past tense (e.g. &quot;finish&quot; rather than &quot;finished&quot;).</p>
 <p>If you check your status one more time, you should see this:</p>
 <pre><code class="language-nohighlight">$ git status
-On branch studio0-my-work
+On branch studio0
 nothing to commit, working directory clean</code></pre>
 <p>Finally, <em>push</em> your changes to your remote repo:</p>
-<pre><code class="language-nohighlight">$ git push origin studio0-my-work
+<pre><code class="language-nohighlight">$ git push origin studio0
 Counting objects: 62, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (20/20), done.
 Writing objects: 100% (22/22), 2.36 KiB | 0 bytes/s, done.
 Total 22 (delta 6), reused 0 (delta 0)
 To https://github.com/bobthebuilder/flicklist.git
- * [new branch]      studio0-my-work -&gt; studio0-my-work</code></pre>
+ * [new branch]      studio0 -&gt; studio0</code></pre>
 <p>If you go back and revisit <code>https://github.com/bobthebuilder/flicklist</code>, you should now see your new branch up there!</p>
                 </section>
 
