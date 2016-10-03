@@ -4,7 +4,7 @@
 Before coming to class, please complete [Class 7 Prep](../class7-prep).
 
 ### During Class
-* First, work on today's studio: [FlickList 1](../studios/flicklist-1)
+* First, work on today's studio: [FlickList 1](../../materials/studios/flicklist1)
 * Afterwards, we will go over the staff solution to the studio. [Click here][solution-vid] for a video walkthrough of the solution.
 
 ### Homework
