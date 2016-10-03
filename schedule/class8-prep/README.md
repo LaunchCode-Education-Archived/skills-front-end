@@ -1,8 +1,7 @@
-##### [Web Track](../..)
 
 # Class 2 Prep
 
-Before coming to [Class 2](../class2), please complete the following tasks:
+Before coming to [Class 8](../class8), please complete the following tasks:
 
 ### Studio Recap
 Task | Resource Type | Link | Time Estimate | Instructions
@@ -11,9 +10,12 @@ Follow Along | Exercise | 30 minutes | [FlickList 1 Solution][https://github.com
 
 
 ### Semantic HTML
-Task | Resource Type | Link | Instructions
------|---------------|------|-------------
-Do | Interactive Course | [Tuts Plus / Semantic HTML][semantic-tutorial] | This tutorial course introduces the concept of Semantic HTML.
+
+These days it is considered best-practice to structure your HTML content by always trying to choose a tag that "semantically" describes its content. With HTML5 came a suite of new tags (`<section>`, `<header>`, etc) that are more semantically meaningful than plain-old `<div>`s.
+
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|-------------
+Do | Interactive Course | 1 hour | [Tuts Plus / Semantic HTML][semantic-tutorial] | This tutorial course introduces the new HTML5 tags that help you write more semantic HTML. You will need to create an account in order to unlock most of the chapters.
 
 
 [semantic-tutorial]: http://webdesign.tutsplus.com/courses/semantic-html-how-to-structure-web-pages
