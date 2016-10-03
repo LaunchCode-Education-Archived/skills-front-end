@@ -10,4 +10,4 @@ Before coming to class, please complete [Class 11 Prep](../class11-prep).
 
 
 ### Homework
-Class 5 Prep
+[Class 12 Prep](../class12-prep)
