@@ -287,8 +287,4 @@ To https://github.com/jharvard/flicklist.git
  * [new branch]      studio3 -> studio3
 ```
 
-If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio3". Click on that branch, and you should now see the code you just worked on. Copy the current url in your browser's address bar (you are about to paste that url into Vocareum).
-
-##### Submit on Vocareum
-
-On Vocareum, click the assignment titled **Studio: FlickList 3**. In your `/work` directory you should see a file called `studio3.txt`. Open up this file and fill in the link to your work on GitHub.
+If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio3". Click on that branch, and you should now see the code you just worked on. 
