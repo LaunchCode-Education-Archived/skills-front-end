@@ -23,11 +23,11 @@ Two things to keep in mind:
 
 ## Your Project
 
-You should now be in a position where you can (with some struggles and help along the way) create a front-end project similar to the FlickList site we made in class, or Problem Set 8 from CS50.
+You should now be in a position where you can (with some struggles and help along the way) create a front-end project similar to the FlickList site we made in class, or the Apartment Moving site from the Udacity AJAX course.
 
 If you're struggling to think of an idea, here is a basic framework that you can use:
 
-Like FlickList or the Udacity AJAX Apartment Moving App, build some kind of front-end for displaying data from a publicly available API(s). Give the user a fun, interesting, or useful way of exploring and interacting with the content from the API.
+Like FlickList or the Apartment Moving site, build some kind of front-end for displaying data from a publicly available API(s). Give the user a fun, interesting, or useful way of exploring and interacting with the content from the API.
 
 But if you have some other idea that doesn't fit this template, then that's great! Go for it, and reach out for any help you need.
 
