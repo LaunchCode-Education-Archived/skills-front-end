@@ -17,7 +17,6 @@ Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
 Do | Interactive Course | 1 hour | [Tuts Plus / Semantic HTML][semantic-tutorial] | This tutorial course introduces the new HTML5 tags that help you write more semantic HTML. You will need to create an account in order to unlock most of the chapters.
 
-
 [semantic-tutorial]: http://webdesign.tutsplus.com/courses/semantic-html-how-to-structure-web-pages
 
 
@@ -31,3 +30,14 @@ Do | Exercises | <a href="https://www.freecodecamp.com/challenges/adjusting-the-
 Read | Article | <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"> W3 Schools / CSS Box Model </a>  | 15 minutes | Read this article on the Box Model, the system for determining how the `margin`, `border`, and `padding` attributes work together to determine the overall sizing and spacing of an element. (You will first have to make an account with FreeCodeCamp.)
 Do | Exercises | <a href="https://www.freecodecamp.com/challenges/inherit-styles-from-the-body-element" target="_blank">Inherit Styles from the Body Element</a> <br/> <a href="https://www.freecodecamp.com/challenges/prioritize-one-style-over-another" target="_blank">Prioritize One Style Over Another</a> <br/> <a href="https://www.freecodecamp.com/challenges/override-styles-in-subsequent-css"  target="_blank">Override Styles in Subsequent CSS</a> </br> <a href="https://www.freecodecamp.com/challenges/override-class-declarations-by-styling-id-attributes" target="_blank">Override Class Declarations by Styling ID Attributes</a> | 30 minutes | These exercises on FreeCodeCamp will give you some experience with various ways that styles declarations can override and take precedence over one another. Using these techniques will help you maintain concise, readable CSS code.
 Read | Articles | <a href="http://www.w3schools.com/css/css_inline-block.asp" target="_blank">W3 Schools / CSS Display</a> <br/> <a href="http://www.w3schools.com/css/css_inline-block.asp" target="_blank">W3 Schools / CSS Inline-Block</a> <br/> <a href="https://designshack.net/articles/css/whats-the-deal-with-display-inline-block/" target="_blank"> What's the Deal with Display Inline Block</a> | 30 minutes | Read these articles on the differences between the `display` values of `block`, `inline`, and `inline-block`.
+
+
+### Functional Javascript
+
+We have talked about this before, but it is worth spending some more time on it.
+
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|-------------
+Read | Article Series | [Gentle Intro to Functional Javascript] | 1.5 hours | This is a 4-part series. Please read [all][functional-js-2] [four][functional-js-3] [parts][functional-js-4].
+
+[functional-js-1]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/
