@@ -24,6 +24,6 @@ Bootstrap is a front-end framework that handles for you much of the heavy-liftin
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Article | <a href="http://learntocodewith.me/getting-started/topics/bootstrap/" target="_blank">Bootstrap for Beginners</a> | Read this article for an intro to Bootstrap. |
+Read | Article | <a href="http://learntocodewith.me/getting-started/topics/bootstrap/" target="_blank">Bootstrap for Beginners</a> | 15 minutes | Read this article for an intro to Bootstrap. |
 Do | Interactive Course | <a href="https://www.freecodecamp.com/challenges/use-responsive-design-with-bootstrap-fluid-containers" target="_blank">FreeCodeCamp / Responsive Design with Bootstrap</a> | 2 hours | The link here will take you to the first exercise in a section titled **Responsive Design with Bootstrap**. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our experience is that students get through it pretty quickly.
-Read | Article |  <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system" target="_blank">Understanding the Bootstrap 3 Grid System</a> | 30 minutes | Read this article for a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. `col-sm-6` vs `col-md-6`.
+Read | Article |  <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system" target="_blank">Understanding the Bootstrap 3 Grid System</a> | 30 minutes | This article takes a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. `col-sm-6` vs `col-md-6`.
