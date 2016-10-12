@@ -36,5 +36,6 @@ Do   | Interactive Course | [Udacity: Intro to AJAX][intro-to-ajax] | 6 hours | 
 
 
 [curl-tutorial]: http://www.yilmazhuseyin.com/blog/dev/curl-tutorial-examples-usage/
+[3-minute-json]: http://www.secretgeek.net/json_3mins
 [what-is-json]: http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it
 [intro-to-ajax]: https://www.udacity.com/course/intro-to-ajax--ud110
