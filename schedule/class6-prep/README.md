@@ -21,8 +21,8 @@ When sending and receiving data, there are a variety of different standards for 
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|--------------
-Read  | Stack Overflow Post | [What is JSON and Why Should I Use it?][what-is-json] | 10 minutes | Quickly read this SO post on JSON.
-
+Read | Article | [What is JSON: the 3 minute JSON Tutorial][3-minute-json] | 3 minutes! | This (very old) article gives a quick intro to JSON.
+Read  | Stack Overflow Post | [What is JSON and Why Should I Use it?][what-is-json] | a few more minutes | Quickly read this SO post on JSON.
 
 ### AJAX
 
