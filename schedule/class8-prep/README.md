@@ -38,6 +38,9 @@ We have talked about this before, but it is worth spending some more time on it.
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Article Series | [Gentle Intro to Functional Javascript] | 1.5 hours | This is a 4-part series. Please read [all][functional-js-2] [four][functional-js-3] [parts][functional-js-4].
+Read | Article Series | [Gentle Intro to Functional Javascript][functional-js-1] | 1.5 hours | This is a 4-part series. Please read [all][functional-js-2] [four][functional-js-3] [parts][functional-js-4].
 
 [functional-js-1]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/
+[functional-js-2]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-arrays/
+[functional-js-3]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-functions/
+[functional-js-4]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-style/
