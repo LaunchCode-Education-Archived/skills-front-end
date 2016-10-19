@@ -38,8 +38,10 @@ We have talked about this before, but it is worth spending some more time on it.
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
+Read | Infographic | [map, filter and reduce Explained with Emoji][functional-emoji] | 2 minutes | This is the TL;DR explanation for the `map` `filter` and `reduce` functions.
 Read | Article Series | [Gentle Intro to Functional Javascript][functional-js-1] | 1.5 hours | This is a 4-part series. Please read [all][functional-js-2] [four][functional-js-3] [parts][functional-js-4].
 
+[functional-emoji]: https://i.redd.it/yf7rw3pjiapx.jpg
 [functional-js-1]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/
 [functional-js-2]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-arrays/
 [functional-js-3]: http://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-functions/
