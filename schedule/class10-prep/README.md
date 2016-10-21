@@ -3,6 +3,13 @@
 
 Before coming to Class 10, please complete the following tasks:
 
+### Studio Recap
+
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|-------------
+Follow Along | Exercise | 30 minutes | [FlickList 3 Solution](https://github.com/LaunchCodeEducation/flicklist/tree/studio3-staff-solution) | Read over (and maybe even code along with) the staff solution to the previous Studio, so that you're up to speed with the starter code for the upcoming one.
+
+
 ### Catch Up
 
 A Catchup is a special type of Javascript function that takes no arguments, and returns the result of an AJAX call to the Moon, unless the server on the Moon is busy, in which case the Catchup will return another function...
