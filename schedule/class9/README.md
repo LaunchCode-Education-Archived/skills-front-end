@@ -12,3 +12,5 @@ Before coming to class, please complete [Class 9 Prep](../class9-prep).
 
 ### Homework
 [Class 10 Prep](../class10-prep)
+
+[solution-vid]: https://www.youtube.com/watch?v=WILnpSi7DDM
