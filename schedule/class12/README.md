@@ -12,4 +12,4 @@ Before coming to class, please complete [Class 12 Prep](../class11-prep).
 [solution-vid]: https://www.youtube.com/watch?v=htpsYP1s4c0
 
 ### Homework
-[Class 13 Prep](../class12-prep)
+[Class 13 Prep](../class13-prep)
