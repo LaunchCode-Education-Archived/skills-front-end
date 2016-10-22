@@ -1,3 +1,7 @@
+> *NOTE:* If you are in the St Charles section, your schedule is slightly different. Please visit [your new course website][stcharles-class9-prep] from now on.
+
+[stcharles-class9-prep]: http://education.launchcode.org/skills-front-end-stcharles/schedule/class9-prep
+
 
 # Class 9 Prep
 
