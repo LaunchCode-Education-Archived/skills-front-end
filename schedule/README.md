@@ -1,3 +1,7 @@
+> *NOTE:* If you are in the St Charles section, your schedule is slightly different. Please visit [your new course website][stcharles-schedule] from now on.
+
+[stcharles-schedule]: http://education.launchcode.org/skills-front-end-stcharles/schedule/
+
 
 # Schedule
 
