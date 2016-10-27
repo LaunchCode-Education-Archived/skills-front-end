@@ -159,7 +159,7 @@
 <li>If you give it the correct id, it will magically work.</li>
 <li>If you give it the correct CSS classes, it will magically look nice.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>Clicking should cause the textbox to appear.</li>
 </ul>
@@ -168,7 +168,7 @@
 <ul>
 <li>For reference, we do something fairly similar in the line above, to set the current score.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see that the time appears on initial page load.</li>
 <li>Even better, you should also see that the time starts to count down when New Game button is clicked! The reason this works is that, each second, the <code>startTimer</code> function is updating the model and re-invoking <code>render</code>.</li>
@@ -178,7 +178,7 @@
 <ul>
 <li>In the <code>render</code> function, use the jQuery <code>.focus</code> method to give focus to the textbox.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>As soon as the textbox appears, it should already have focus.</li>
 </ul>
@@ -187,7 +187,7 @@
 <blockquote>
 <p>Spell as many words as you can, using only these letters:</p>
 </blockquote>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see your instructions... duh.</li>
 <li>It will obviously look a little wierd, because &quot;what letters?&quot;</li>
@@ -197,7 +197,7 @@
 <ul>
 <li>If you give it the correct id, it will magically work.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>Should magically fill up with letter chips now.</li>
 <li>Notice if you click New Game again, the letters change!</li>
@@ -211,7 +211,7 @@
 <li>When the event fires, you should update <code>model.currentAttempt</code> to be equal to the current value of the textbox.</li>
 <li>Use the jQuery <code>.val</code> method.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>Nothing visible. But if you open up the console and type <code>model.currentAttempt</code>, you should see that it always matches the current text value that you have typed into the textbox.</li>
 </ul>
@@ -221,7 +221,7 @@
 <li>You can use the Javascript <code>indexOf</code> function as a way to check whether a particular thing is a member of a list.</li>
 <li>You might find it helpful to test the function in isolation by invoking it from the console, e.g. type <code>isDisallowedLetter("z")</code>, etc.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see that the textbox's text turns red whenever you type a disallowed letter.</li>
 <li>You might also notice that the text <em>stays</em> red, even after you delete the disallowed letter. We will fix that soon.</li>
@@ -229,7 +229,7 @@
 <h3 id="8-red-letter-chips">8. Red Letter Chips</h3>
 <p>We don't just want the text to turn red, we also want to inform the user about specifically <em>which</em> letters are not allowed. We do this by appending little red chips underneath the textbox, one for each disallowed letter.</p>
 <p>In the <code>render</code> function, we have already written code that generates a list of those little red chips. You simply need to append those elements to the bottom of the <code>&lt;form&gt;</code>.</p>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see the chips!</li>
 <li>You will also notice that they never go away, and very rapidly start to accumulate. We will address that soon.</li>
@@ -242,7 +242,7 @@
 <li>Another thing you should do is make sure to clear away any remaining text that was in the textbox. To clear its contents, just set its value equal to the empty string <code>""</code>.</li>
 <li>A neat trick you can use to test your code without having to wait 60 seconds for the timer to run out is to open up the console and manually change the model's <code>.secondsRemaining</code> property to something low, e.g. <code>model.secondsRemaining = 2;</code>.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>The textbox should loose its focus and no longer be usable once the timer runs out.</li>
 <li>You might also notice that even upon starting a new game, the textbox remains disabled! That's not good. We will address that (and those other loose ends that have been building up) in the next task.</li>
@@ -255,7 +255,7 @@
 <li>The red letter chips appear, but never disappear. So use the jQuery <code>.remove</code> method to remove all the red letter chips from the document. Remember that jQuery selectors can work with <em>groups</em> of elements. So to operate on all these chips at once, you need to use a selector based on a class that all the chips have in common, but no other elements share.</li>
 <li>The textbox remains disabled after the first game ends. So make sure you set its <code>"disabled"</code> attribute to <code>false</code>.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>All the problems above should be fixed!</li>
 </ul>
@@ -265,7 +265,7 @@
 <li>You can do something very similar to what we did for the letter chips. You can get a list of chip elements by mapping a certain function over each submitted word.</li>
 <li>Then, you can append that list of HTML elements into the appropriate container.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should now see the word show up whenever you submit the form.</li>
 </ul>
@@ -274,13 +274,13 @@
 <li>This function is important because it is used by the <code>addNewWordSubmission</code> function as a way of filtering out illegal words. Once you finish this task, the user will no longer be able to submit a word that contains disallowed letters.</li>
 <li>You should make use of the <code>disallowedLettersInWord</code> function directly above this one.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>If you type a word that contains disallowed letters and hit Enter, the form will simply clear away, but the new word will not be added.</li>
 </ul>
 <h4 id="13-pearson-url">13. Pearson URL</h4>
 <p>In the <code>checkIfWordIsReal</code> function, provide the correct URL for the AJAX call for the particular word that was passed in.</p>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>
 <p>When you submit a word, you should hopefully see this appear on the console:</p>
@@ -293,7 +293,7 @@
 <p>Now that we got a response, we need to use that response to answer the question: Is this word legit?</p>
 <p>In the same <code>success</code> callback of the AJAX call within the <code>checkIfWordIsReal</code> function, we have made a variable called <code>theAnswer</code>, and have assigned it a hardcoded value of <code>true</code>. Replace the hardcoded value with an actual answer.</p>
 <p>Use the following (imperfect) hueristic to decide whether or not we have a &quot;real word&quot; on our hands: The <code>response</code> object contains a bunch of properties, one of which is a list of &quot;matching entries&quot; called <code>results</code>. If the <code>results</code> list is empty, then the word is not real. Otherwise, it is real.</p>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>Nothing visible. You should add your own <code>console.log</code> statement to check that this is working properly.</li>
 </ul>
@@ -333,7 +333,7 @@
 <p>That is how we want our program to behave. Each word submission object should contain a <code>.word</code> property, and <em>eventually</em> should also contain a <code>.isRealWord</code> property, after a brief delay. The first part is already done for you (go look at the <code>addNewWordSubmission</code> function again to see the code). But the second part is your job: you must add a <code>.isRealWord</code> property to the objects that don't already have them.</p>
 <p>Let's finally turn to the task at hand. You are inside the <code>success</code> callback of the AJAX call to Pearson. You have just received the response for some particular word (let's continue pretending it is <code>"chunk"</code>), and you even you know the answer now (either <code>true</code> or <code>false</code>), assuming you did the previous TODO. Your current <code>model.wordSubmissions</code> is a list of objects, most of which contain two properties, but at least one (the one we care about, whose <code>.word</code> property is <code>"chunk"</code>) does not yet contain a <code>.isRealWord</code> property. Your job is to find that list entry, and set its <code>.isRealWord</code> property to the correct answer (in this case, <code>true</code>).</p>
 <p>In coding terms, you simply need to iterate over the list of submissions, and for each submission, check if its <code>.word</code> property is equal to the string in question. If so, assign the correct value to its <code>.isRealWord</code> property.</p>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>As the user, submit a few words (some real words and some gibberish). Next, after waiting a second, open up the console and type <code>"model.wordSubmissions"</code>, and you should see an accurate answer for each item's <code>.isRealWord</code> property.</li>
 </ul>
@@ -343,7 +343,7 @@
 <li>In the <code>wordSubmissionChip</code> function, we have already created a little &quot;score&quot; chip element, and stored it in the variable called <code>scoreChip</code>.</li>
 <li>To make this score chip show up on screen, append it into the larger &quot;word&quot; chip that gets returned from the the function.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see a weird <code>⟐</code> symbol tacked onto the end of each word.</li>
 </ul>
@@ -353,7 +353,7 @@
 <li>If the submission's word is real, then the content should be the score of the word. You can use the <code>wordScore</code> function to determine the score of the word. That function still has an unfinished TODO, so you will always get an answer of <code>0</code>, but that's fine for now.</li>
 <li>If the submission's word is not real, then the content should be a capital <code>"X"</code>.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see appropriate Xs and 0s, e.g. <code>honk 0</code>, <code>honq X</code>, <code>chunk 0</code>, etc.</li>
 </ul>
@@ -364,7 +364,7 @@
 <li>If the word is not real, the score chip should have a red background.</li>
 <li>In either case, the score chip should have smaller text than the word, and should have a slight margin separating it from the word's text.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>It looks great.</li>
 </ul>
@@ -373,7 +373,7 @@
 <ul>
 <li>You have a list of letters in a variable called <code>letters</code>. You must map that list of letters into a list of scores, one for each letter, and assign that list into the new variable, <code>wordScores</code>.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see a correct score next to each submitted word.</li>
 </ul>
@@ -383,7 +383,7 @@
 <ul>
 <li>Notice that you have a list of word scores available to you. You simply have to add those numbers up and return the total.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>You should see real scores on the scoreboard!</li>
 </ul>
@@ -392,7 +392,7 @@
 <ul>
 <li>The variable <code>alreadyUsed</code> is currently hardcoded to <code>false</code>. But if the user has already used the word in question, then that value should be <code>true</code>. Determine the actual answer.</li>
 </ul>
-<p><strong>Confirmation:</strong></p>
+<p><em>Confirmation:</em></p>
 <ul>
 <li>If you try to submit the same word more than once, the textbox should simply clear away your text and no new word submission will be added.</li>
 </ul>
