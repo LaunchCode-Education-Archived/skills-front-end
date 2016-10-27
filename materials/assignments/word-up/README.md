@@ -132,7 +132,7 @@ In our app, we use `tag` as well as some additional custom classes that we defin
 - `tag-lg` for the larger tags that display the letter chips and word chips
 - `tag-sm` for the "inner" tags that annotate each chip with its points value or some other information.
 
-[bootstrap-tag]:#
+Note also that rather than the stable Bootstrap 3, we are using Bootstrap 4, which is still in "alpha" development (we are on the *bleeding edge!*), because we want to use those tags.
 
 ---
 ## Your Tasks
