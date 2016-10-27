@@ -152,6 +152,7 @@
 <p>Time to get started!</p>
 <p>I have bad news and good news for you. The bad news is that you have a lot (21!) of <code>TODO</code>s. The good news is that each task is relatively small, often only one or two lines of code, and you will be given somewhat detailed guidance.</p>
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
+<p><br></p>
 <p>Your tasks are as follows:</p>
 <h4 id="1-new-game-button">1. New Game Button</h4>
 <p>Add a &quot;New Game&quot; button in <code>index.html</code>.</p>
@@ -300,6 +301,7 @@
 <h4 id="15-update">15. Update <code>.isRealWord</code> of the Word Submission</h4>
 <p>Now that you know the correct answer, there is one more thing to do. You must find the appropriate item in <code>model.wordSubmissions</code>, and set its <code>.isRealWord</code> property accordingly.</p>
 <img src="https://media.giphy.com/media/3o7TKw7vcnyQa0Hldu/giphy.gif" style="width: 200px"/>
+<p><br></p>
 <p>Let's back up a sec. (This will be a long digression, so get comfortable.)</p>
 <p>You might have noticed, if you poked around on the console, that the <code>model.wordSubmissions</code> property is kind of weird. It turns out that the concept of a &quot;word submission&quot; is too complicated to be represented by a string alone. For each word, we need to keep track of two pieces of information: the string itself, and also whether or not the string is a real word (rather than just gibberish). So for each item in the <code>model.wordSubmissions</code> list, we actually want an <em>object</em> composed of two properties: a string, and a boolean.</p>
 <p>For example, suppose the user is in the middle of a game, and has previously typed two words: <code>"honk"</code>, and <code>"honq"</code>. While &quot;honk&quot; is a real word, &quot;honq&quot; is not. And so in this situation, our model should look something like this:</p>
@@ -315,6 +317,7 @@
 }</code></pre>
 <p>Makes sense so far?</p>
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
+<p><br></p>
 <p>Good, because it's about to get weirder.</p>
 <p>The situation is further muddied by the fact that for each word submission, there is a brief period of time during which we <em>don't yet know</em> whether or not its string is a real word, because we are still waiting for a response from the dictionary API.</p>
 <p>Suppose the user now submits another word, <code>"chunk"</code>. We need to add that to our <code>.wordSubmissions</code> list, but we do not immediately know whether or not &quot;chunk&quot; is a real word. You and I happen to know that &quot;chunk&quot; is real, but our program is dumb and must defer to the dictionary. So our program makes an AJAX call to the Pearson API. But remember that an AJAX call takes a few seconds to come back with a response, and in the meantime, we still don't have the answer. So during the brief period of time before the response comes back, we want our <code>model.wordSubmissions</code> to look like this:</p>
