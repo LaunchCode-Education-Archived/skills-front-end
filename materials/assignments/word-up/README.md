@@ -142,6 +142,7 @@ Time to get started!
 I have bad news and good news for you. The bad news is that you have a lot (21!) of `TODO`s. The good news is that each task is relatively small, often only one or two lines of code, and you will be given somewhat detailed guidance.
 
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
+<br>
 
 Your tasks are as follows:
 
@@ -317,6 +318,7 @@ Use the following (imperfect) hueristic to decide whether or not we have a "real
 Now that you know the correct answer, there is one more thing to do. You must find the appropriate item in `model.wordSubmissions`, and set its `.isRealWord` property accordingly.
 
 <img src="https://media.giphy.com/media/3o7TKw7vcnyQa0Hldu/giphy.gif" style="width: 200px"/>
+<br>
 
 Let's back up a sec. (This will be a long digression, so get comfortable.)
 
@@ -340,6 +342,7 @@ For example, suppose the user is in the middle of a game, and has previously typ
 Makes sense so far?
 
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
+<br>
 
 Good, because it's about to get weirder.
 
