@@ -152,7 +152,7 @@ Add a "New Game" button in `index.html`.
 - If you give it the correct id, it will magically work.
 - If you give it the correct CSS classes, it will magically look nice.
 
-**Confirmation:**
+*Confirmation:*
 
  - Clicking should cause the textbox to appear.
 
@@ -162,7 +162,7 @@ In the `render` function in `wordup.js`, update the *Time Remaining* data on the
 
 - For reference, we do something fairly similar in the line above, to set the current score.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see that the time appears on initial page load.
 - Even better, you should also see that the time starts to count down when New Game button is clicked! The reason this works is that, each second, the `startTimer` function is updating the model and re-invoking `render`.
@@ -173,7 +173,7 @@ Another thing that should happen, just to make the user experience a little bett
 
 - In the `render` function, use the jQuery `.focus` method to give focus to the textbox.
 
-**Confirmation:**
+*Confirmation:*
 
 - As soon as the textbox appears, it should already have focus.
 
@@ -183,7 +183,7 @@ In `index.html`, add some instructions above the textbox so the user knows what 
 
 > Spell as many words as you can, using only these letters:
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see your instructions... duh.
 - It will obviously look a little wierd, because "what letters?"
@@ -194,7 +194,7 @@ In `index.html`, make an empty `<div>` container so we can "inject" the letter c
 
 - If you give it the correct id, it will magically work.
 
-**Confirmation:**
+*Confirmation:*
 
 - Should magically fill up with letter chips now.
 - Notice if you click New Game again, the letters change!
@@ -211,7 +211,7 @@ First, we need to be notified whenever any typing ocurs. In `wordup.js`, inside 
 - When the event fires, you should update `model.currentAttempt` to be equal to the current value of the textbox.
 - Use the jQuery `.val` method.
 
-**Confirmation:**
+*Confirmation:*
 
 - Nothing visible. But if you open up the console and type `model.currentAttempt`, you should see that it always matches the current text value that you have typed into the textbox.
 
@@ -223,7 +223,7 @@ Now let's make some visible indication appear. Notice the block of code in `rend
 - You can use the Javascript `indexOf` function as a way to check whether a particular thing is a member of a list.
 - You might find it helpful to test the function in isolation by invoking it from the console, e.g. type `isDisallowedLetter("z")`, etc.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see that the textbox's text turns red whenever you type a disallowed letter.
 - You might also notice that the text *stays* red, even after you delete the disallowed letter. We will fix that soon.
@@ -235,7 +235,7 @@ We don't just want the text to turn red, we also want to inform the user about s
 
 In the `render` function, we have already written code that generates a list of those little red chips. You simply need to append those elements to the bottom of the `<form>`.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see the chips!
 - You will also notice that they never go away, and very rapidly start to accumulate. We will address that soon.
@@ -250,7 +250,7 @@ At the bottom of the `render` function you will see we have a block of code that
 - Another thing you should do is make sure to clear away any remaining text that was in the textbox. To clear its contents, just set its value equal to the empty string `""`.
 - A neat trick you can use to test your code without having to wait 60 seconds for the timer to run out is to open up the console and manually change the model's `.secondsRemaining` property to something low, e.g. `model.secondsRemaining = 2;`.
 
-**Confirmation:**
+*Confirmation:*
 
 - The textbox should loose its focus and no longer be usable once the timer runs out.
 - You might also notice that even upon starting a new game, the textbox remains disabled! That's not good. We will address that (and those other loose ends that have been building up) in the next task.
@@ -265,7 +265,7 @@ Notice the code block towards the top of `render` whose comment is `// clear stu
 - The red letter chips appear, but never disappear. So use the jQuery `.remove` method to remove all the red letter chips from the document. Remember that jQuery selectors can work with *groups* of elements. So to operate on all these chips at once, you need to use a selector based on a class that all the chips have in common, but no other elements share.
 - The textbox remains disabled after the first game ends. So make sure you set its `"disabled"` attribute to `false`.
 
-**Confirmation:**
+*Confirmation:*
 
 - All the problems above should be fixed!
 
@@ -276,7 +276,7 @@ Back in the `render` function, append the wordSubmission chips to the DOM.
 - You can do something very similar to what we did for the letter chips. You can get a list of chip elements by mapping a certain function over each submitted word.
 - Then, you can append that list of HTML elements into the appropriate container.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should now see the word show up whenever you submit the form.
 
@@ -285,7 +285,7 @@ Back in the `render` function, append the wordSubmission chips to the DOM.
 - This function is important because it is used by the `addNewWordSubmission` function as a way of filtering out illegal words. Once you finish this task, the user will no longer be able to submit a word that contains disallowed letters.
 - You should make use of the `disallowedLettersInWord` function directly above this one.
 
-**Confirmation:**
+*Confirmation:*
 
 - If you type a word that contains disallowed letters and hit Enter, the form will simply clear away, but the new word will not be added.
 
@@ -293,7 +293,7 @@ Back in the `render` function, append the wordSubmission chips to the DOM.
 
 In the `checkIfWordIsReal` function, provide the correct URL for the AJAX call for the particular word that was passed in.
 
-**Confirmation:**
+*Confirmation:*
 
 - When you submit a word, you should hopefully see this appear on the console:
 
@@ -308,7 +308,7 @@ In the same `success` callback of the AJAX call within the `checkIfWordIsReal` f
 
 Use the following (imperfect) hueristic to decide whether or not we have a "real word" on our hands: The `response` object contains a bunch of properties, one of which is a list of "matching entries" called `results`. If the `results` list is empty, then the word is not real. Otherwise, it is real.
 
-**Confirmation:**
+*Confirmation:*
 
 - Nothing visible. You should add your own `console.log` statement to check that this is working properly.
 
@@ -373,7 +373,7 @@ Let's finally turn to the task at hand. You are inside the `success` callback of
 
 In coding terms, you simply need to iterate over the list of submissions, and for each submission, check if its `.word` property is equal to the string in question. If so, assign the correct value to its `.isRealWord` property.
 
-**Confirmation:**
+*Confirmation:*
 
 - As the user, submit a few words (some real words and some gibberish). Next, after waiting a second, open up the console and type `"model.wordSubmissions"`, and you should see an accurate answer for each item's `.isRealWord` property.
 
@@ -384,7 +384,7 @@ Now that your model is correct it's time to display that information on screen s
 - In the `wordSubmissionChip` function, we have already created a little "score" chip element, and stored it in the variable called `scoreChip`.
 - To make this score chip show up on screen, append it into the larger "word" chip that gets returned from the the function.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see a weird `⟐` symbol tacked onto the end of each word.
 
@@ -395,7 +395,7 @@ Now let's replace the weird `⟐` symbol with the appropriate text content.
 - If the submission's word is real, then the content should be the score of the word. You can use the `wordScore` function to determine the score of the word. That function still has an unfinished TODO, so you will always get an answer of `0`, but that's fine for now.
 - If the submission's word is not real, then the content should be a capital `"X"`.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see appropriate Xs and 0s, e.g. `honk 0`, `honq X`, `chunk 0`, etc.
 
@@ -408,7 +408,7 @@ Still in the same `wordSubmissionChip` function, give the "score" chip the appro
 - If the word is not real, the score chip should have a red background.
 - In either case, the score chip should have smaller text than the word, and should have a slight margin separating it from the word's text.
 
-**Confirmation:**
+*Confirmation:*
 
 - It looks great.
 
@@ -418,7 +418,7 @@ Now let's fix those zeros and get the real score showing up next to each word. T
 
 - You have a list of letters in a variable called `letters`. You must map that list of letters into a list of scores, one for each letter, and assign that list into the new variable, `wordScores`.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see a correct score next to each submitted word.
 
@@ -430,7 +430,7 @@ Notice that it always returns a hardcoded value of `0`. Replace that `0` with th
 
 - Notice that you have a list of word scores available to you. You simply have to add those numbers up and return the total.
 
-**Confirmation:**
+*Confirmation:*
 
 - You should see real scores on the scoreboard!
 
@@ -440,7 +440,7 @@ Just one last loose-end to tie up! Currently the user is able to cheat by submit
 
 - The variable `alreadyUsed` is currently hardcoded to `false`. But if the user has already used the word in question, then that value should be `true`. Determine the actual answer.
 
-**Confirmation:**
+*Confirmation:*
 
 - If you try to submit the same word more than once, the textbox should simply clear away your text and no new word submission will be added.
 
