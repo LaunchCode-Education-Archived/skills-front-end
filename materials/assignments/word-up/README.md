@@ -2,6 +2,7 @@
 
 As we near the end of a long Skill Track full boring things like movies, GIFs, and pyramids--the practicalities of life that, though perhaps necessary, are rather dull--you deserve some fun and games. So for this assignment, you will make a fun game!
 
+--
 ## The Goal
 
 The game you are trying to build is called *Word Up!*, and it is best described as a cross between Scabble, Solitaire, and the Hunger Games in Space.
@@ -51,14 +52,19 @@ Just wanted to point out that all these flaws are part of the assignment, and yo
 
 Of course, if you finish the normal assignment and want to improve the game, either by tweaking these imperfections or by adding cool new features, you are obviously encouraged to do so! 
 
+--
 ## The Pearson Dictionary API
 
+*Coming Soon*
+
+--
 ## Obtaining the Starter Code 
 
 [Clone this repository][word-up-repo].
 
 [word-up-repo]: https://github.com/launchcodeeducation/word-up
 
+--
 ## A Brief Tour of the Starter Code
 
 Let's briefly look over the code you have inherited.
@@ -128,6 +134,7 @@ In our app, we use `tag` as well as some additional custom classes that we defin
 
 [bootstrap-tag]:#
 
+--
 ## Your Tasks
 
 Time to get started!
@@ -437,6 +444,7 @@ Just one last loose-end to tie up! Currently the user is able to cheat by submit
 
 - If you try to submit the same word more than once, the textbox should simply clear away your text and no new word submission will be added.
 
+--
 ## Submitting Your Work
 
 You know the drill:
@@ -449,12 +457,7 @@ You know the drill:
 
 [colbert-gif]: http://giphy.com/gifs/OxAMjQW6mmA8g
 
+--
 ## Extra Credit: All Fired Up
 
 *Coming Soon*
-
---
-
-
-- [ ] chex?
-- [x] chex??
