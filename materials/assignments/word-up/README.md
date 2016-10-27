@@ -55,7 +55,24 @@ Of course, if you finish the normal assignment and want to improve the game, eit
 ---
 ## The Pearson Dictionary API
 
-*Coming Soon*
+Before diving into the code, let's take a second to get familiar with the API we'll be using.
+
+What service do we need an API for? A dictionary. Our way of checking the validity of the user's word submissions will be to look up each word in the dictionary and see if it exists.
+
+I discovered a dictionary service called Pearson whose [API][pearson-api] is dead-simple to use. You don't even need to register for a developer key.
+
+[pearson-api]: http://developer.pearson.com/apis/dictionaries
+
+Let's use Pearson to search for the word "cheese": Open up a terminal make a `curl` request to this url:
+
+```nohighlight
+$ curl "http://api.pearson.com/v2/dictionaries/entries?headword=cheese"
+```
+
+You should shortly receive a fat wall of JSON about cheese.
+
+As you can see, the main endpoint we want to hit is `http://api.pearson.com/v2/dictionaries/entries`, and we pass along an additional `headword` parameter with a value of `cheese`.
+
 
 ---
 ## Obtaining the Starter Code
