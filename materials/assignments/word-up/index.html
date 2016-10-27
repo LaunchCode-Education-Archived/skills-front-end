@@ -51,13 +51,13 @@
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="word-up">Word Up!</h1>
 <p>As we near the end of a long Skill Track full boring things like movies, GIFs, and pyramids--the practicalities of life that, though perhaps necessary, are rather dull--you deserve some fun and games. So for this assignment, you will make a fun game!</p>
-<p>--</p>
+<hr />
 <h2 id="the-goal">The Goal</h2>
 <p>The game you are trying to build is called <em>Word Up!</em>, and it is best described as a cross between Scabble, Solitaire, and the Hunger Games in Space.</p>
-<h3 id="demo">Demo</h3>
+<h4 id="demo">Demo</h4>
 <p>First things first: <a href="http://htmlpreview.github.io/?https://github.com/jesseilev/word-up/blob/demo/index.html">Click here for a demo of what you are trying to accomplish</a>.</p>
 <p>Take note the following:</p>
-<h3 id="rules-of-the-game">Rules of the Game</h3>
+<h4 id="rules-of-the-game">Rules of the Game</h4>
 <ul>
 <li>The object of the game is to spell as many words as possible before time runs out, using only the letters specified.</li>
 <li>A word is invalid if it contains any letters that aren't in the specified set of allowed letters.</li>
@@ -67,19 +67,19 @@
 <li>The score of a letter is simply its score from the boardgame Scrabble.</li>
 <li>Unlike in Scrabble, you <strong>may</strong> use the same letter more than once in a single word.</li>
 </ul>
-<h3 id="the-user-interface">The User Interface</h3>
+<h4 id="the-user-interface">The User Interface</h4>
 <ul>
 <li>When the user clicks <code>New Game</code>, the letters are revealed and she can begin typing words.</li>
-<li>The letters are presented as little &quot;chips&quot; (I am going to refer to these things as chips throughout the assignment). </li>
+<li>The letters are presented as little &quot;chips&quot; (I am going to refer to these things as chips throughout the assignment).</li>
 <li>Each letter chip contains a smaller chip indicating its points value.</li>
-<li>As the user types, the page provides continuous feedback. Specifically, if the word she is currently typing contains any letters that are not allowed, then the disallowed letters appear as red chips underneath the textbox. </li>
+<li>As the user types, the page provides continuous feedback. Specifically, if the word she is currently typing contains any letters that are not allowed, then the disallowed letters appear as red chips underneath the textbox.</li>
 <li>If the user tries to submit (presses Enter after typing) a word that contains disallowed letters, then the textbox simply clears and the word is not submitted.</li>
 <li>Once the user does submit a word containing only valid letters, it appears in a chip below the textbox.</li>
-<li>Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistant word will instead contain a red chip with an &quot;X&quot;. </li>
+<li>Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistant word will instead contain a red chip with an &quot;X&quot;.</li>
 <li>Once the timer runs out, the textbox is no longer usable.</li>
 <li>Overall, everything looks freshhhh.</li>
 </ul>
-<h3 id="room-for-improvement">Room for Improvement</h3>
+<h4 id="room-for-improvement">Room for Improvement</h4>
 <p>Note as well that there are some obvious places where the game could be improved, especially when it comes to the selection of the allowed letters:</p>
 <ul>
 <li>Sometimes none of your 7 letters are vowels, making it very hard to spell words!</li>
@@ -87,20 +87,20 @@
 <li>Weird rare letters like <code>z</code> and <code>x</code> happen no less frequently than common letters like <code>e</code> and <code>t</code>.</li>
 </ul>
 <p>Just wanted to point out that all these flaws are part of the assignment, and you are not required to fix them.</p>
-<p>Of course, if you finish the normal assignment and want to improve the game, either by tweaking these imperfections or by adding cool new features, you are obviously encouraged to do so! </p>
-<p>--</p>
+<p>Of course, if you finish the normal assignment and want to improve the game, either by tweaking these imperfections or by adding cool new features, you are obviously encouraged to do so!</p>
+<hr />
 <h2 id="the-pearson-dictionary-api">The Pearson Dictionary API</h2>
 <p><em>Coming Soon</em></p>
-<p>--</p>
+<hr />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <p><a href="https://github.com/launchcodeeducation/word-up">Clone this repository</a>.</p>
-<p>--</p>
+<hr />
 <h2 id="a-brief-tour-of-the-starter-code">A Brief Tour of the Starter Code</h2>
 <p>Let's briefly look over the code you have inherited.</p>
-<h3 id="preview-in-the-browser">Preview in the Browser</h3>
+<h4 id="preview-in-the-browser">Preview in the Browser</h4>
 <p>Before looking at the code itself, you might want to quickly open up <code>index.html</code> in a browser window so you can see what the starter code <em>does</em>.</p>
 <p>It's not much to look at, to be honest: just a header and a dilapidated scoreboard.</p>
-<h3 id="indexhtml">index.html</h3>
+<h4 id="indexhtml">index.html</h4>
 <p>Now open up the source code in your text editor.</p>
 <p>In <code>index.html</code>, note the following:</p>
 <ul>
@@ -112,15 +112,15 @@
 </ul></li>
 <li>We load our own <code>scripts/wordup.js</code> script.</li>
 </ul>
-<h3 id="scriptswordupjs">scripts/wordup.js</h3>
+<h4 id="scriptswordupjs">scripts/wordup.js</h4>
 <p>Turn your attention now to the <code>wordup.js</code> file.</p>
 <p>This is a very large file, but you will definitely find it worth your while to spend 5-10 minutes looking it over and reading all the comments. I wrote those comments myself, and I <em>will</em> be offended if you don't read them.</p>
 <p>Broadly, the file is split up into a few sections:</p>
 <ul>
 <li>
-<p><strong>Model Stuff</strong> </p>
+<p><strong>Model Stuff</strong></p>
 <p>In this section we define a variable called <code>model</code> which holds all the information we need to keep track of. The model is like the current state of the app.</p>
-<p>This section also includes helper functions, such as <code>addNewWordSubmission</code>, which provide an interface for making changes to the model. </p>
+<p>This section also includes helper functions, such as <code>addNewWordSubmission</code>, which provide an interface for making changes to the model.</p>
 </li>
 <li>
 <p><strong>View Stuff</strong></p>
@@ -134,10 +134,10 @@
 </li>
 <li>
 <p><strong>Game Logic</strong></p>
-<p>This section simply contains a bunch of helper functions relating specifically to the rules and logic of the game. </p>
+<p>This section simply contains a bunch of helper functions relating specifically to the rules and logic of the game.</p>
 </li>
 </ul>
-<h3 id="cssstylescss">css/styles.css</h3>
+<h4 id="cssstylescss">css/styles.css</h4>
 <p>Finally, take a look at <code>styles.css</code>. There are no TODOs on this file, but  in order to do some of your Javascript code, you are going to need to be familar with our scheme for applying CSS classes to the various elements of the page.</p>
 <p>Specifically, it is important to understand how we style the various &quot;chips&quot; we are using. All of the different types of chips are some form of the Bootstrap <a href="#">.tag</a> class (&lt;-- You should keep that link open in another window).</p>
 <p>The <code>.tag</code> class is just a little colored rectangle with rounded corners, intended for things like the little red number on Facebook that tells you how many new notifications you have. But one nice aspect of tags is that they have <code>display: inline-block</code>, which means if you put a bunch of them next to each other, they will wrap around to the next line, rather than disappear off the right-hand edge of the screen.</p>
@@ -146,7 +146,7 @@
 <li><code>tag-lg</code> for the larger tags that display the letter chips and word chips</li>
 <li><code>tag-sm</code> for the &quot;inner&quot; tags that annotate each chip with its points value or some other information.</li>
 </ul>
-<p>--</p>
+<hr />
 <h2 id="your-tasks">Your Tasks</h2>
 <p>Time to get started!</p>
 <p>I have bad news and good news for you. The bad news is that you have a lot (21!) of <code>TODO</code>s. The good news is that each task is relatively small, often only one or two lines of code, and you will be given somewhat detailed guidance.</p>
@@ -158,7 +158,7 @@
 <li>If you give it the correct id, it will magically work.</li>
 <li>If you give it the correct CSS classes, it will magically look nice.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>Clicking should cause the textbox to appear.</li>
 </ul>
@@ -167,17 +167,17 @@
 <ul>
 <li>For reference, we do something fairly similar in the line above, to set the current score.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>You should see that the time appears on initial page load.</li>
 <li>Even better, you should also see that the time starts to count down when New Game button is clicked! The reason this works is that, each second, the <code>startTimer</code> function is updating the model and re-invoking <code>render</code>.</li>
 </ul>
 <h4 id="3-focus-the-textbox">3. Focus the Textbox</h4>
-<p>Another thing that should happen, just to make the user experience a little better, is that the textbox should automatically receive &quot;focus&quot;, so that the user can start typing immediately without having to physically click on it. </p>
+<p>Another thing that should happen, just to make the user experience a little better, is that the textbox should automatically receive &quot;focus&quot;, so that the user can start typing immediately without having to physically click on it.</p>
 <ul>
 <li>In the <code>render</code> function, use the jQuery <code>.focus</code> method to give focus to the textbox.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>As soon as the textbox appears, it should already have focus.</li>
 </ul>
@@ -186,7 +186,7 @@
 <blockquote>
 <p>Spell as many words as you can, using only these letters:</p>
 </blockquote>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>You should see your instructions... duh.</li>
 <li>It will obviously look a little wierd, because &quot;what letters?&quot;</li>
@@ -196,21 +196,21 @@
 <ul>
 <li>If you give it the correct id, it will magically work.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>Should magically fill up with letter chips now.</li>
 <li>Notice if you click New Game again, the letters change!</li>
 </ul>
 <p>Now would probably be a good time to show your page to a friend and brag, &quot;Check it out, I'm practically done with this assignment.&quot; If only you knew what's in store...</p>
 <h4 id="6-handle-input-event">6. Handle Input Event</h4>
-<p>The next handful of tasks will tackle that cool feature where we give immediate feedback as the user types. Specifically, we want to provide feedback to inform the user whenever the word she is typing contains any disallowed letters. </p>
+<p>The next handful of tasks will tackle that cool feature where we give immediate feedback as the user types. Specifically, we want to provide feedback to inform the user whenever the word she is typing contains any disallowed letters.</p>
 <p>First, we need to be notified whenever any typing ocurs. In <code>wordup.js</code>, inside the <code>$(document).ready</code> callback, add another event handler, which will fire in response to the textbox's &quot;input&quot; event. An &quot;input&quot; event fires very liberally, basically whenever anything changes. (Recall that in the Pyramid Slide assignment, you listened for this same event on your slider component.)</p>
 <ul>
 <li>Use the jQuery <code>.on</code> method, with an event of <code>"input"</code></li>
 <li>When the event fires, you should update <code>model.currentAttempt</code> to be equal to the current value of the textbox.</li>
 <li>Use the jQuery <code>.val</code> method.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>Nothing visible. But if you open up the console and type <code>model.currentAttempt</code>, you should see that it always matches the current text value that you have typed into the textbox.</li>
 </ul>
@@ -220,7 +220,7 @@
 <li>You can use the Javascript <code>indexOf</code> function as a way to check whether a particular thing is a member of a list.</li>
 <li>You might find it helpful to test the function in isolation by invoking it from the console, e.g. type <code>isDisallowedLetter("z")</code>, etc.</li>
 </ul>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>You should see that the textbox's text turns red whenever you type a disallowed letter.</li>
 <li>You might also notice that the text <em>stays</em> red, even after you delete the disallowed letter. We will fix that soon.</li>
@@ -228,13 +228,13 @@
 <h3 id="8-red-letter-chips">8. Red Letter Chips</h3>
 <p>We don't just want the text to turn red, we also want to inform the user about specifically <em>which</em> letters are not allowed. We do this by appending little red chips underneath the textbox, one for each disallowed letter.</p>
 <p>In the <code>render</code> function, we have already written code that generates a list of those little red chips. You simply need to append those elements to the bottom of the <code>&lt;form&gt;</code>.</p>
-<p><strong>Confirmation:</strong> </p>
+<p><strong>Confirmation:</strong></p>
 <ul>
 <li>You should see the chips!</li>
 <li>You will also notice that they never go away, and very rapidly start to accumulate. We will address that soon.</li>
 </ul>
 <h3 id="9-game-over">9. Game Over</h3>
-<p>Changing gears now, when time runs out and the game is over, we don't want the user to be able to continue playing the current game. The textbox should become disabled when the game ends. </p>
+<p>Changing gears now, when time runs out and the game is over, we don't want the user to be able to continue playing the current game. The textbox should become disabled when the game ends.</p>
 <p>At the bottom of the <code>render</code> function you will see we have a block of code that checks whether the game is over, but the body of that conditional is empty with a TODO waiting for you.</p>
 <ul>
 <li>There is an HTML attribute called <code>"disabled"</code>, which you want to set to <code>true</code>.</li>
@@ -261,7 +261,7 @@
 <h4 id="11-word-submission-chips">11. Word Submission Chips</h4>
 <p>Back in the <code>render</code> function, append the wordSubmission chips to the DOM.</p>
 <ul>
-<li>You can do something very similar to what we did for the letter chips. You can get a list of chip elements by mapping a certain function over each submitted word. </li>
+<li>You can do something very similar to what we did for the letter chips. You can get a list of chip elements by mapping a certain function over each submitted word.</li>
 <li>Then, you can append that list of HTML elements into the appropriate container.</li>
 </ul>
 <p><strong>Confirmation:</strong></p>
@@ -289,7 +289,7 @@
 </li>
 </ul>
 <h4 id="14-is-it-a-real-word">14. Is it a Real Word?</h4>
-<p>Now that we got a response, we need to use that response to answer the question: Is this word legit? </p>
+<p>Now that we got a response, we need to use that response to answer the question: Is this word legit?</p>
 <p>In the same <code>success</code> callback of the AJAX call within the <code>checkIfWordIsReal</code> function, we have made a variable called <code>theAnswer</code>, and have assigned it a hardcoded value of <code>true</code>. Replace the hardcoded value with an actual answer.</p>
 <p>Use the following (imperfect) hueristic to decide whether or not we have a &quot;real word&quot; on our hands: The <code>response</code> object contains a bunch of properties, one of which is a list of &quot;matching entries&quot; called <code>results</code>. If the <code>results</code> list is empty, then the word is not real. Otherwise, it is real.</p>
 <p><strong>Confirmation:</strong></p>
@@ -312,9 +312,9 @@
     ],
     ...
 }</code></pre>
-<p>Makes sense so far? </p>
+<p>Makes sense so far?</p>
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
-<p>Good, because it's about to get weirder. </p>
+<p>Good, because it's about to get weirder.</p>
 <p>The situation is further muddied by the fact that for each word submission, there is a brief period of time during which we <em>don't yet know</em> whether or not its string is a real word, because we are still waiting for a response from the dictionary API.</p>
 <p>Suppose the user now submits another word, <code>"chunk"</code>. We need to add that to our <code>.wordSubmissions</code> list, but we do not immediately know whether or not &quot;chunk&quot; is a real word. You and I happen to know that &quot;chunk&quot; is real, but our program is dumb and must defer to the dictionary. So our program makes an AJAX call to the Pearson API. But remember that an AJAX call takes a few seconds to come back with a response, and in the meantime, we still don't have the answer. So during the brief period of time before the response comes back, we want our <code>model.wordSubmissions</code> to look like this:</p>
 <pre><code class="language-js">[
@@ -337,9 +337,9 @@
 <li>As the user, submit a few words (some real words and some gibberish). Next, after waiting a second, open up the console and type <code>"model.wordSubmissions"</code>, and you should see an accurate answer for each item's <code>.isRealWord</code> property.</li>
 </ul>
 <h4 id="16-add-a-score-chip-to-each-word">16. Add a Score Chip to Each Word</h4>
-<p>Now that your model is correct it's time to display that information on screen so the user can see. </p>
+<p>Now that your model is correct it's time to display that information on screen so the user can see.</p>
 <ul>
-<li>In the <code>wordSubmissionChip</code> function, we have already created a little &quot;score&quot; chip element, and stored it in the variable called <code>scoreChip</code>. </li>
+<li>In the <code>wordSubmissionChip</code> function, we have already created a little &quot;score&quot; chip element, and stored it in the variable called <code>scoreChip</code>.</li>
 <li>To make this score chip show up on screen, append it into the larger &quot;word&quot; chip that gets returned from the the function.</li>
 </ul>
 <p><strong>Confirmation:</strong></p>
@@ -359,7 +359,7 @@
 <h4 id="18-style-the-score-chip">18. Style the Score Chip</h4>
 <p>Still in the same <code>wordSubmissionChip</code> function, give the &quot;score&quot; chip the appropriate CSS classes.</p>
 <ul>
-<li>If the word is real, the score chip should have a blue background. </li>
+<li>If the word is real, the score chip should have a blue background.</li>
 <li>If the word is not real, the score chip should have a red background.</li>
 <li>In either case, the score chip should have smaller text than the word, and should have a slight margin separating it from the word's text.</li>
 </ul>
@@ -370,7 +370,7 @@
 <h4 id="19-finish-implementing-the">19. Finish Implementing the <code>wordScore</code> Function.</h4>
 <p>Now let's fix those zeros and get the real score showing up next to each word. The problem is that the <code>wordScore</code> function is incomplete.</p>
 <ul>
-<li>You have a list of letters in a variable called <code>letters</code>. You must map that list of letters into a list of scores, one for each letter, and assign that list into the new variable, <code>wordScores</code>. </li>
+<li>You have a list of letters in a variable called <code>letters</code>. You must map that list of letters into a list of scores, one for each letter, and assign that list into the new variable, <code>wordScores</code>.</li>
 </ul>
 <p><strong>Confirmation:</strong></p>
 <ul>
@@ -378,7 +378,7 @@
 </ul>
 <h4 id="20-finish-implementing-the">20. Finish Implementing the <code>currentScore</code> Function.</h4>
 <p>This is a rewarding one. You probably noticed that the scoreboard always says 0, no matter what words have been submitted. That's because the <code>currentScore</code> function is incomplete!</p>
-<p>Notice that it always returns a hardcoded value of <code>0</code>. Replace that <code>0</code> with the real answer, which is the sum total of all the word scores. </p>
+<p>Notice that it always returns a hardcoded value of <code>0</code>. Replace that <code>0</code> with the real answer, which is the sum total of all the word scores.</p>
 <ul>
 <li>Notice that you have a list of word scores available to you. You simply have to add those numbers up and return the total.</li>
 </ul>
@@ -395,7 +395,7 @@
 <ul>
 <li>If you try to submit the same word more than once, the textbox should simply clear away your text and no new word submission will be added.</li>
 </ul>
-<p>--</p>
+<hr />
 <h2 id="submitting-your-work">Submitting Your Work</h2>
 <p>You know the drill:</p>
 <ul>
@@ -405,7 +405,7 @@
 <li>Click Submit.</li>
 <li>Victory!!! And all the haters who didn't believe in you are <a href="http://giphy.com/gifs/OxAMjQW6mmA8g">sore losers</a>.</li>
 </ul>
-<p>--</p>
+<hr />
 <h2 id="extra-credit-all-fired-up">Extra Credit: All Fired Up</h2>
 <p><em>Coming Soon</em></p>
                 </section>
