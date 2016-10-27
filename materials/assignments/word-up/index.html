@@ -90,7 +90,13 @@
 <p>Of course, if you finish the normal assignment and want to improve the game, either by tweaking these imperfections or by adding cool new features, you are obviously encouraged to do so!</p>
 <hr />
 <h2 id="the-pearson-dictionary-api">The Pearson Dictionary API</h2>
-<p><em>Coming Soon</em></p>
+<p>Before diving into the code, let's take a second to get familiar with the API we'll be using.</p>
+<p>What service do we need an API for? A dictionary. Our way of checking the validity of the user's word submissions will be to look up each word in the dictionary and see if it exists.</p>
+<p>I discovered a dictionary service called Pearson whose <a href="http://developer.pearson.com/apis/dictionaries">API</a> is dead-simple to use. You don't even need to register for a developer key.</p>
+<p>Let's use Pearson to search for the word &quot;cheese&quot;: Open up a terminal make a <code>curl</code> request to this url:</p>
+<pre><code class="language-nohighlight">$ curl "http://api.pearson.com/v2/dictionaries/entries?headword=cheese"</code></pre>
+<p>You should shortly receive a fat wall of JSON about cheese.</p>
+<p>As you can see, the main endpoint we want to hit is <code>http://api.pearson.com/v2/dictionaries/entries</code>, and we pass along an additional <code>headword</code> parameter with a value of <code>cheese</code>.</p>
 <hr />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <p><a href="https://github.com/launchcodeeducation/word-up">Clone this repository</a>.</p>
