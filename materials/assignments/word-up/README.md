@@ -169,13 +169,13 @@ In the `render` function in `wordup.js`, update the *Time Remaining* data on the
 
 #### 3. Focus the Textbox
 
-	Another thing that should happen, just to make the user experience a little better, is that the textbox should automatically receive "focus", so that the user can start typing immediately without having to physically click on it.
+Another thing that should happen, just to make the user experience a little better, is that the textbox should automatically receive "focus", so that the user can start typing immediately without having to physically click on it.
 
-	- In the `render` function, use the jQuery `.focus` method to give focus to the textbox.
+- In the `render` function, use the jQuery `.focus` method to give focus to the textbox.
 
-	**Confirmation:**
+**Confirmation:**
 
-	- As soon as the textbox appears, it should already have focus.
+- As soon as the textbox appears, it should already have focus.
 
 #### 4. Instructions for the User
 
