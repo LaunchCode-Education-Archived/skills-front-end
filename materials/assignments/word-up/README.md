@@ -5,9 +5,7 @@ As we near the end of a long Skill Track full boring things like movies, GIFs, a
 ----
 ## The Goal
 
-The game you are trying to build is called *Word Up!*, and it is best described as a cross between Scabble, Solitaire, and the Hunger Games in Space.
-
-[enders-game]: http://giphy.com/gifs/asa-butterfield-enders-game-ender-wiggin-PlI8CSwf7dwdO
+The game you are trying to build is called *Word Up!*, and it is best described as a cross between Scrabble, Solitaire, and the Hunger Games in Space.
 
 #### Demo
 
@@ -36,7 +34,7 @@ Take note the following:
 - As the user types, the page provides continuous feedback. Specifically, if the word she is currently typing contains any letters that are not allowed, then the disallowed letters appear as red chips underneath the textbox.
 - If the user tries to submit (presses Enter after typing) a word that contains disallowed letters, then the textbox simply clears and the word is not submitted.
 - Once the user does submit a word containing only valid letters, it appears in a chip below the textbox.
-- Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistant word will instead contain a red chip with an "X".
+- Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistent word will instead contain a red chip with an "X".
 - Once the timer runs out, the textbox is no longer usable.
 - Overall, everything looks freshhhh.
 
@@ -59,11 +57,14 @@ Before diving into the code, let's take a second to get familiar with the API we
 
 What service do we need an API for? A dictionary. Our way of checking the validity of the user's word submissions will be to look up each word in the dictionary and see if it exists.
 
-I discovered a dictionary service called Pearson whose [API][pearson-api] is dead-simple to use. You don't even need to register for a developer key.
+#### Pearson
 
+[Pearson][pearson] is some mysterious organization that provides free tech services, or something... honestly IDK who they are. But their [Dictionary API][pearson-api] is dead-simple to use. You don't even need to register for a developer key.
+
+[pearson]: http://developer.pearson.com
 [pearson-api]: http://developer.pearson.com/apis/dictionaries
 
-Let's use Pearson to search for the word "cheese": Open up a terminal make a `curl` request to this url:
+Let's use Pearson's dictionary to search for the word "cheese": Open up a terminal make a `curl` request to this url:
 
 ```nohighlight
 $ curl "http://api.pearson.com/v2/dictionaries/entries?headword=cheese"
@@ -73,6 +74,19 @@ You should shortly receive a fat wall of JSON about cheese.
 
 As you can see, the main endpoint we want to hit is `http://api.pearson.com/v2/dictionaries/entries`, and we pass along an additional `headword` parameter with a value of `cheese`.
 
+#### Specifying a Particular Dictionary
+
+There is one more complication, which is that their default dictonary is very permissive. For example, pretty much any combination of two or three letters you can imagine will probably turn up a few results as an acronym for something. This is bad, because we don't want our game to reward players who simply hack away at random short combinations of letters.
+
+Luckily, the API allows you to choose a more specific dictionary by changing the endpoint url to:
+
+`http://api.pearson.com/v2/dictionaries/DICTIONARY_CODE/entries`
+
+where you substitute a particular dictionary name in for `DICTIONARY_CODE`. See the [API page][pearson-api] for more details.
+
+I have gotten pretty good results using the "Longman Active Study Dictionary", whose code name is `lasde`.
+
+Great, you should now have all the tools you need to start looking up words in the dictionary! This will come in handy towards the end of the assignment.
 
 ---
 ## Obtaining the Starter Code
