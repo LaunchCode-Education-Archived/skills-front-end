@@ -53,7 +53,7 @@
 <p>As we near the end of a long Skill Track full boring things like movies, GIFs, and pyramids--the practicalities of life that, though perhaps necessary, are rather dull--you deserve some fun and games. So for this assignment, you will make a fun game!</p>
 <hr />
 <h2 id="the-goal">The Goal</h2>
-<p>The game you are trying to build is called <em>Word Up!</em>, and it is best described as a cross between Scabble, Solitaire, and the Hunger Games in Space.</p>
+<p>The game you are trying to build is called <em>Word Up!</em>, and it is best described as a cross between Scrabble, Solitaire, and the Hunger Games in Space.</p>
 <h4 id="demo">Demo</h4>
 <p>First things first: <a href="http://htmlpreview.github.io/?https://github.com/jesseilev/word-up/blob/demo/index.html">Click here for a demo of what you are trying to accomplish</a>.</p>
 <p>Take note the following:</p>
@@ -75,7 +75,7 @@
 <li>As the user types, the page provides continuous feedback. Specifically, if the word she is currently typing contains any letters that are not allowed, then the disallowed letters appear as red chips underneath the textbox.</li>
 <li>If the user tries to submit (presses Enter after typing) a word that contains disallowed letters, then the textbox simply clears and the word is not submitted.</li>
 <li>Once the user does submit a word containing only valid letters, it appears in a chip below the textbox.</li>
-<li>Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistant word will instead contain a red chip with an &quot;X&quot;.</li>
+<li>Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistent word will instead contain a red chip with an &quot;X&quot;.</li>
 <li>Once the timer runs out, the textbox is no longer usable.</li>
 <li>Overall, everything looks freshhhh.</li>
 </ul>
@@ -92,11 +92,19 @@
 <h2 id="the-pearson-dictionary-api">The Pearson Dictionary API</h2>
 <p>Before diving into the code, let's take a second to get familiar with the API we'll be using.</p>
 <p>What service do we need an API for? A dictionary. Our way of checking the validity of the user's word submissions will be to look up each word in the dictionary and see if it exists.</p>
-<p>I discovered a dictionary service called Pearson whose <a href="http://developer.pearson.com/apis/dictionaries">API</a> is dead-simple to use. You don't even need to register for a developer key.</p>
-<p>Let's use Pearson to search for the word &quot;cheese&quot;: Open up a terminal make a <code>curl</code> request to this url:</p>
+<h4 id="pearson">Pearson</h4>
+<p><a href="http://developer.pearson.com">Pearson</a> is some mysterious organization that provides free tech services, or something... honestly IDK who they are. But their <a href="http://developer.pearson.com/apis/dictionaries">Dictionary API</a> is dead-simple to use. You don't even need to register for a developer key.</p>
+<p>Let's use Pearson's dictionary to search for the word &quot;cheese&quot;: Open up a terminal make a <code>curl</code> request to this url:</p>
 <pre><code class="language-nohighlight">$ curl "http://api.pearson.com/v2/dictionaries/entries?headword=cheese"</code></pre>
 <p>You should shortly receive a fat wall of JSON about cheese.</p>
 <p>As you can see, the main endpoint we want to hit is <code>http://api.pearson.com/v2/dictionaries/entries</code>, and we pass along an additional <code>headword</code> parameter with a value of <code>cheese</code>.</p>
+<h4 id="specifying-a-particular-dictionary">Specifying a Particular Dictionary</h4>
+<p>There is one more complication, which is that their default dictonary is very permissive. For example, pretty much any combination of two or three letters you can imagine will probably turn up a few results as an acronym for something. This is bad, because we don't want our game to reward players who simply hack away at random short combinations of letters.</p>
+<p>Luckily, the API allows you to choose a more specific dictionary by changing the endpoint url to:</p>
+<p><code>http://api.pearson.com/v2/dictionaries/DICTIONARY_CODE/entries</code></p>
+<p>where you substitute a particular dictionary name in for <code>DICTIONARY_CODE</code>. See the <a href="http://developer.pearson.com/apis/dictionaries">API page</a> for more details.</p>
+<p>I have gotten pretty good results using the &quot;Longman Active Study Dictionary&quot;, whose code name is <code>lasde</code>.</p>
+<p>Great, you should now have all the tools you need to start looking up words in the dictionary! This will come in handy towards the end of the assignment.</p>
 <hr />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <p><a href="https://github.com/launchcodeeducation/word-up">Clone this repository</a>.</p>
