@@ -1,7 +1,3 @@
-> *NOTE:* If you are in the St Charles section, your schedule is slightly different. Please visit [your new course website][stcharles-home] from now on.
-
-[stcharles-home]: http://education.launchcode.org/skills-front-end-stcharles/
-
 
 # Skill Track: Front-end Web
 
