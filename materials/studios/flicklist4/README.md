@@ -19,11 +19,11 @@ So what are we doing differently under the hood to allow this new Search functio
 
 Let's dive into this by interacting more deeply with the API documentation.
 
-Up till now, we have been sending a request to their <a href="http://docs.themoviedb.apiary.io/#reference/search/searchmovie/get?console=1" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to "Search for movies by title."
+Up till now, we have been sending a request to their <a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to "Search for movies by title."
 
 Great, so is there a different search endpoint that allows you to, say, "search for movies by topic"?
 
-Not exactly. But the <a href="http://docs.themoviedb.apiary.io/#reference/discover/get?console=1">/discover/movie</a> endpoint does have an "optional parameter" that seems promising. Take a minute now, and browse quickly through that long list of optional parameters and see if you can spot it.
+Not exactly. But the <a href="https://developers.themoviedb.org/3/discover">/discover/movie</a> endpoint does have an "optional parameter" that seems promising. Take a minute now, and browse quickly through that long list of optional parameters and see if you can spot it.
 
 Did you find it?
 
@@ -41,7 +41,7 @@ with_keywords: "vampire"
 
 Rather than the keyword itself, the "expected value is an integer (the id of a keyword)". So if we want to search for "vampire", we actually need to pass in an **id number** like, say 954782, which is the official magic id number for the keyword "vampire".
 
-How the heck do we find that id number? There's a different endpoint set up specifically for this purpose: the <a href="http://docs.themoviedb.apiary.io/#reference/search/searchkeyword/get?console=1">/search/keyword</a> endpoint allows you to "search for keywords by name".
+How the heck do we find that id number? There's a different endpoint set up specifically for this purpose: the <a href="https://developers.themoviedb.org/3/search/search-keywords">/search/keyword</a> endpoint allows you to "search for keywords by name".
 
 Let's try one of these keyword searches. Notice that in the right-hand sidebar on the docs page, is an interactive console via which you can make calls to the API. If you click the green "Call Resource" button, it will make the call. Try it now.
 
