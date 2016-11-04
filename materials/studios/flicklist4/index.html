@@ -60,9 +60,9 @@
 <p>So what are we doing differently under the hood to allow this new Search functionality? We are interacting with TheMovieDB's API a little differently than before.</p>
 <h3 id="read-the-docs">Read the Docs</h3>
 <p>Let's dive into this by interacting more deeply with the API documentation.</p>
-<p>Up till now, we have been sending a request to their <a href="http://docs.themoviedb.apiary.io/#reference/search/searchmovie/get?console=1" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to &quot;Search for movies by title.&quot;</p>
+<p>Up till now, we have been sending a request to their <a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to &quot;Search for movies by title.&quot;</p>
 <p>Great, so is there a different search endpoint that allows you to, say, &quot;search for movies by topic&quot;?</p>
-<p>Not exactly. But the <a href="http://docs.themoviedb.apiary.io/#reference/discover/get?console=1">/discover/movie</a> endpoint does have an &quot;optional parameter&quot; that seems promising. Take a minute now, and browse quickly through that long list of optional parameters and see if you can spot it.</p>
+<p>Not exactly. But the <a href="https://developers.themoviedb.org/3/discover">/discover/movie</a> endpoint does have an &quot;optional parameter&quot; that seems promising. Take a minute now, and browse quickly through that long list of optional parameters and see if you can spot it.</p>
 <p>Did you find it?</p>
 <p>The <code>with_keywords</code> parameter is described as such:</p>
 <blockquote>
@@ -72,7 +72,7 @@
 <p>Perfect! But unfortunately, the way we go about doing this is not so simple as merely adding a key/value pair like so:</p>
 <pre><code class="language-nohighlight">with_keywords: "vampire"</code></pre>
 <p>Rather than the keyword itself, the &quot;expected value is an integer (the id of a keyword)&quot;. So if we want to search for &quot;vampire&quot;, we actually need to pass in an <strong>id number</strong> like, say 954782, which is the official magic id number for the keyword &quot;vampire&quot;.</p>
-<p>How the heck do we find that id number? There's a different endpoint set up specifically for this purpose: the <a href="http://docs.themoviedb.apiary.io/#reference/search/searchkeyword/get?console=1">/search/keyword</a> endpoint allows you to &quot;search for keywords by name&quot;.</p>
+<p>How the heck do we find that id number? There's a different endpoint set up specifically for this purpose: the <a href="https://developers.themoviedb.org/3/search/search-keywords">/search/keyword</a> endpoint allows you to &quot;search for keywords by name&quot;.</p>
 <p>Let's try one of these keyword searches. Notice that in the right-hand sidebar on the docs page, is an interactive console via which you can make calls to the API. If you click the green &quot;Call Resource&quot; button, it will make the call. Try it now.</p>
 <p>You should receive a response like this:</p>
 <pre><code class="language-nohighlight">{
