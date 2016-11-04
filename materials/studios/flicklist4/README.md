@@ -1,5 +1,3 @@
-##### Web Track
-[Back to Class 5](../../class5)
 
 # Studio: FlickList 4
 

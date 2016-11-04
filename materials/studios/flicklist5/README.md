@@ -1,5 +1,3 @@
-##### Web Track
-[Back to Class 6](../../class6)
 
 # Studio: FlickList 5
 
@@ -15,7 +13,7 @@ Note the following additions since last time:
 * The browse section is way different. Rather than displaying all the movies at once inside a list, now only one movie is shown at a time. The user can cycle through movies using a fancy UI "carousel", which displays the movie posters along with buttons for sliding back and forth between movies. Each time the carousel slides, the movie title and description update to reflect the newly active movie whose poster has slid into view.
 * The browse section layout uses the Bootstrap grid system, in fact a *nested* grid: At the macro level, the section is split into two columns, and then the column on the left is subdivided into two smaller columns:
 	* (A) a column on the left for the movie info and carousel, which is further subdivided into:
-		* (A-1) a column on the left for the movie title and overview. 
+		* (A-1) a column on the left for the movie title and overview.
 		* (A-2) a column on the right for the carousel and the "Add to Watchlist" button. 	
 	*  (B) a column on the right for the search form.
 
@@ -322,7 +320,7 @@ To https://github.com/jharvard/flicklist.git
  * [new branch]      studio5 -> studio5
 ```
 
-If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio2". Click on that branch, and you should now see the code you just worked on. 
+If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio2". Click on that branch, and you should now see the code you just worked on.
 
 ## Bonus: Publish your Work using Github Pages!
 
