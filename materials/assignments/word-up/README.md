@@ -198,6 +198,7 @@ In the `render` function in `wordup.js`, update the *Time Remaining* data on the
 
 - You should see that the time appears on initial page load.
 - Even better, you should also see that the time starts to count down when New Game button is clicked! The reason this works is that, each second, the `startTimer` function is updating the model and re-invoking `render`.
+- You will also notice that every time the timer ticks, the user's text input is wiped clear from the textbox. That's not good! We will fix this soon.
 
 #### 3. Focus the Textbox
 
@@ -245,7 +246,8 @@ First, we need to be notified whenever any typing ocurs. In `wordup.js`, inside 
 
 *Confirmation:*
 
-- Nothing visible. But if you open up the console and type `model.currentAttempt`, you should see that it always matches the current text value that you have typed into the textbox.
+- You should now see that you have fixed the annoying bug in which user's text input was getting cleared away every second. Pop quiz: why was it happening, and why did this fix it?
+- Additionally, if you open up the console and type `model.currentAttempt`, you should now see that it always matches the current text value that you have typed into the textbox.
 
 
 #### 7. Implement the `isDisallowedLetter` function.
