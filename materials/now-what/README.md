@@ -9,9 +9,9 @@ Once you have finished all your coursework, there are two things you should do r
 
 2. If you have not already filled out your [Apprenticeship Application][application], go do it!
 
-    *Now?*
+    *Like, right now?*
 
-    Right now!
+    Yes, right now!
 
     *But I don't feel ready. I haven't even started my project...*
 
