@@ -89,9 +89,9 @@ Some popular frameworks are:
 * <a href="http://emberjs.com" target="_blank">EmberJS</a>
 
 Some less popular (but much better, in my own hipster opinion) frameworks are:
-* <a href="https://elm-lang.org" target="_blank">Elm</a> (This is actually an entirely different language that compiles to Javascript)
-* [Redux][http://redux.js.org]
-* [Cycle][https://cycle.js.org]
+* [Redux](http://redux.js.org)
+* [Elm](https://elm-lang.org) (This is actually an entirely different language that compiles to Javascript)
+* [Cycle](https://cycle.js.org)
 
 This site, <a href="http://todomvc.com" target="_blank">TodoMVC</a> shows you how to build the same Todo List app in a variety of different frameworks.
 
