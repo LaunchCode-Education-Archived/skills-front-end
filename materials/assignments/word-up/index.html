@@ -187,6 +187,7 @@
 <ul>
 <li>You should see that the time appears on initial page load.</li>
 <li>Even better, you should also see that the time starts to count down when New Game button is clicked! The reason this works is that, each second, the <code>startTimer</code> function is updating the model and re-invoking <code>render</code>.</li>
+<li>You will also notice that every time the timer ticks, the user's text input is wiped clear from the textbox. That's not good! We will fix this soon.</li>
 </ul>
 <h4 id="3-focus-the-textbox">3. Focus the Textbox</h4>
 <p>Another thing that should happen, just to make the user experience a little better, is that the textbox should automatically receive &quot;focus&quot;, so that the user can start typing immediately without having to physically click on it.</p>
@@ -228,7 +229,8 @@
 </ul>
 <p><em>Confirmation:</em></p>
 <ul>
-<li>Nothing visible. But if you open up the console and type <code>model.currentAttempt</code>, you should see that it always matches the current text value that you have typed into the textbox.</li>
+<li>You should now see that you have fixed the annoying bug in which user's text input was getting cleared away every second. Pop quiz: why was it happening, and why did this fix it?</li>
+<li>Additionally, if you open up the console and type <code>model.currentAttempt</code>, you should now see that it always matches the current text value that you have typed into the textbox.</li>
 </ul>
 <h4 id="7-implement-the">7. Implement the <code>isDisallowedLetter</code> function.</h4>
 <p>Now let's make some visible indication appear. Notice the block of code in <code>render</code> underneath where you focus the textbox. This code is attempting to check whether the user's current attempt contains disallowed letters, and if so, will restyle the textbox. The first line invokes a function called <code>disallowedLettersInWord</code>, which in turn makes use of another function called <code>isDisallowedLetter</code>, which is incomplete! Your job is to implement this function so that given any letter, it returns a boolean indicating whether or not the letter is &quot;disallowed&quot; by the current model.</p>
