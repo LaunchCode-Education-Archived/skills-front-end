@@ -3,6 +3,9 @@
 
 As we wrap up the Skill Track, you may be finished with your coursework, or you may still be working. In either case, the goal of this page is to give you some guidance as to what comes next.
 
+
+## What You Should Do Now
+
 Once you have finished all your coursework, there are two things you should do right away:
 
 1. Get started on a personal project of your own.
@@ -51,9 +54,9 @@ But if you have some other idea that doesn't fit this template, then that's grea
 
 ## Skills to Improve On
 
-If you want to learn more stuff, here are some directions you could go in:
+If you want to learn more, here are some directions you could go in:
 
-#### Javascript
+### Javascript
 
 Stuff we didn't really talk about:
 * [Object-oriented javascript](http://eloquentjavascript.net/06_object.html)
@@ -61,7 +64,7 @@ Stuff we didn't really talk about:
 * Managing [callback hell](http://callbackhell.com) with and without using [Promises](http://blog.parse.com/learn/engineering/whats-so-great-about-javascript-promises/)
 * [Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 
-#### CSS and Design
+### CSS and Design
 
 Stuff we didn't really talk about:
 * CSS Layout frameworks like <a href="http://flexbox.io" target="_blank">Flexbox</a> or <a href="https://gridstylesheets.org" target="_blank">Gride Stylesheets</a>
@@ -77,7 +80,7 @@ I generally recommend these resources for learning HTML and CSS
 [mdl]: https://getmdl.io
 [material-flicklist]: http://anthonystark.com/flicklist/
 
-#### A Javascript Framework
+### A Javascript Framework
 
 As your project grows from 500 lines of code to 5,000 to 50,000, it becomes exponentially harder to "manage the complexity". Every time you try to add a new feature you end up breaking 5 things.
 
@@ -95,7 +98,7 @@ Some less popular (but much better, in my own hipster opinion) frameworks are:
 
 This site, <a href="http://todomvc.com" target="_blank">TodoMVC</a> shows you how to build the same Todo List app in a variety of different frameworks.
 
-#### Build-Tools and Stuff
+### Build-Tools and Stuff
 
 e.g. NPM, Gulp, Webpack...
 
