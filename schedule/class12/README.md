@@ -2,7 +2,7 @@
 # Class 12
 
 ### Before Class
-Before coming to class, please complete [Class 12 Prep](../class11-prep).
+Before coming to class, please complete [Class 12 Prep](../class12-prep).
 
 ### During Class
 * First, work on today's studio: [FlickList 5](../../materials/studios/flicklist5)
