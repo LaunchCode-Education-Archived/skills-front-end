@@ -1,6 +1,6 @@
 # Class 13 Prep
 
-Before coming to class 12, please complete the following tasks:
+Before coming to class 13, please complete the following tasks:
 
 ### Studio Recap
 
