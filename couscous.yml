@@ -1,5 +1,7 @@
 template:
     url: https://github.com/LaunchCodeEducation/Template-Light
+    # directory: ../Template-Light
+
 # Base URL of the published website
 baseUrl: http://education.launchcode.org/skills-front-end
 
@@ -9,7 +11,8 @@ github:
     user: LaunchCodeEducation
     repo: skills-front-end
 
-title: LaunchCode Front-end Web
+siteTitle: Front-end Web Skill Track
+cseId: 014657181352409571810:szqov91hhf4
 
 # The left menu bar
 menu:
@@ -17,11 +20,3 @@ menu:
         schedule:
             text: Schedule
             relativeUrl: schedule/
-        vocareum:
-            text: Submit Your Work
-            absoluteUrl: https://labs.vocareum.com/home/login.php
-            attributes: target="_blank"
-        piazza:
-            text: Discussion Forum
-            absoluteUrl: http://piazza.com/
-            attributes: target="_blank"

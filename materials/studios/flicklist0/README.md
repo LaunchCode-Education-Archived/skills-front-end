@@ -1,8 +1,6 @@
-##### Web Track
-
-[Back to Class 0](../../class0)
-
-# Studio: FlickList 0
+---
+title: "Studio: FlickList 0"
+---
 
 Welcome to your first Studio! Today is mostly just about getting set up. 
 

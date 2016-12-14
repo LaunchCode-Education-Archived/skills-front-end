@@ -1,6 +1,6 @@
-##### [Web Track](../..)
-
-# Class 5
+---
+title: Class 5
+---
 
 ### Before Class
 Before coming to class, please complete [Class 5 Prep](../class5-prep).

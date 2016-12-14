@@ -1,5 +1,6 @@
-
-# Class 6
+---
+title: Class 6
+---
 
 Before coming to class today please complete [Class 6 Prep](../class6-prep).
 

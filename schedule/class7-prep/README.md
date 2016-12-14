@@ -1,5 +1,6 @@
-
-# Class 7 Prep
+---
+title: Class 7 Prep
+---
 
 Before coming to Class 7, please complete the following tasks:
 

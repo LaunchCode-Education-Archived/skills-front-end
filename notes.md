@@ -1,4 +1,6 @@
-# Web Track!
+---
+title: Web Track!
+---
 
 
 ### Schedule

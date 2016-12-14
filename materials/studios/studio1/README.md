@@ -1,7 +1,6 @@
-##### Web Track
-[Back to Class 1](../class1)
-
-# Studio 1
+---
+title: Studio 1
+---
 
 
 ### Goal

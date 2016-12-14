@@ -1,6 +1,6 @@
-##### [Web Track](../..)
-
-# Class 4
+---
+title: Class 4
+---
 
 ### Before Class
 Before coming to class, please complete [Class 4 Prep](../class4-prep).

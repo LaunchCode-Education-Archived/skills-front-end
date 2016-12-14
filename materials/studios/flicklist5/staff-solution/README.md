@@ -1,7 +1,8 @@
-##### Web Track
 [Back to Class 2 Prep](../../../class2-prep)
 
-# Studio Solution: FlickList 1
+---
+title: "Studio Solution: FlickList 1"
+---
 
 The goal of this exercise is to make sure you are familar and comfortable with our staff solution to the previous studio, because when you work on the upcoming studio, you will be more-or-less starting where our solution left off.
 

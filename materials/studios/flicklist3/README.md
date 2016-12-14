@@ -1,7 +1,6 @@
-##### Web Track
-[Back to Class 3](../../class3)
-
-# Studio: FlickList 3
+---
+title: "Studio: FlickList 3"
+---
 
 Today you will add a little bit more functionality to the project, but the main improvements will be aesthetic. You will Bootstrapify the page, using the Bootstrap library to apply a bunch of nice styles, as well as a responsive Bootstrap Grid layout.
 

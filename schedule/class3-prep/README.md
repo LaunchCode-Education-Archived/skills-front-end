@@ -1,5 +1,6 @@
-
-# Class 3 Prep
+---
+title: Class 3 Prep
+---
 
 Before coming to [Class 3](../class3), please complete the following tasks:
 

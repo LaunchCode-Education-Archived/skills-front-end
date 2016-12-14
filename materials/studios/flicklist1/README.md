@@ -1,7 +1,6 @@
-##### Web Track
-[Back to class 1](../../class1)
-
-# Studio: FlickList 1
+---
+title: "Studio: FlickList 1"
+---
 
 In [the previous Studio](../flicklist-0), you forked the project repository and added your API key to the source code.
 

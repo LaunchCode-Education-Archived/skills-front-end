@@ -1,6 +1,6 @@
-##### [Web Track](../..)
-
-# Class 2
+---
+title: Class 2
+---
 
 ### Before Class
 Before coming to class, please complete [Class 2 Prep](../class2-prep).

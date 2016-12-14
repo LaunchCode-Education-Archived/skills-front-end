@@ -1,4 +1,6 @@
-# Class 5 Prep
+---
+title: Class 5 Prep
+---
 
 Before coming to class 5, please complete the following tasks:
 

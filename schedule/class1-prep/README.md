@@ -1,5 +1,6 @@
-
-# Class 1 Prep
+---
+title: Class 1 Prep
+---
 
 Before coming to Class 1, please complete the following tasks:
 

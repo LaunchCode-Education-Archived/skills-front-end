@@ -1,5 +1,6 @@
-
-# Class 6 Prep
+---
+title: Class 6 Prep
+---
 
 Before coming to [Class 6](../class6), please complete the following tasks:
 

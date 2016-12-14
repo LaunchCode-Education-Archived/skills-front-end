@@ -1,6 +1,6 @@
-##### [Web Track](../..)
-
-# Now What?
+---
+title: Now What?
+---
 
 Congratulations on finishing the class! Your next step is to make a personal project of your own.
 

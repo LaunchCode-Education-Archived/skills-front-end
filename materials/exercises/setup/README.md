@@ -1,7 +1,6 @@
-##### Web Track
-[Back to Class 0 Prep](../../class0-prep)
-
-# Exercise: Setup
+---
+title: "Exercise: Setup"
+---
 
 In your CS50 IDE, create a new directory for the Web Track:
 

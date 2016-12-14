@@ -1,4 +1,6 @@
-# Skill Track: Front-end Web
+---
+title: "Skill Track: Front-end Web"
+---
 
 Welcome! This skill-track is an introduction to front-end web development.
 

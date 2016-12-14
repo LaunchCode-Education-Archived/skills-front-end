@@ -1,7 +1,6 @@
-##### Web Track
-[Back to Class 5](../../class5)
-
-# Studio: FlickList 4
+---
+title: "Studio: FlickList 4"
+---
 
 Today we will make only a few changes, but they are tricky changes.
 

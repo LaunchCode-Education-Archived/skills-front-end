@@ -1,6 +1,6 @@
-##### [Web Track](../..)
-
-# Class 4 Prep
+---
+title: Class 4 Prep
+---
 
 Before coming to Class 4, please complete the following tasks:
 

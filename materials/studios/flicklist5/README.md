@@ -1,7 +1,6 @@
-##### Web Track
-[Back to Class 6](../../class6)
-
-# Studio: FlickList 5
+---
+title: "Studio: FlickList 5"
+---
 
 In today's (final!) studio, you will add some finishing touches to the project. The changes are mostly cosmetic, but they will require you to refactor a significant chunk of your html and javascript code.
 

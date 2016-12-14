@@ -1,4 +1,6 @@
-# Class 7
+---
+title: Class 7
+---
 
 ### Before Class
 Before coming to class, please complete [Class 7 Prep](../class7-prep).
