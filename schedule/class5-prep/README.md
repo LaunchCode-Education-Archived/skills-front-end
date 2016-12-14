@@ -17,7 +17,7 @@ Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minute
 
 ### jQuery
 
-You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but these functions are a little verbose (long and wordy). If you want to combine a few operations to do something complicated, all that verbosity adds up to a clumsy experience. jQuery is a Javascript library that provides a very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations. jQuery does additional things as well, but its biggest role is to make it easier to do fancy things with the DOM.
+You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but once you start trying to combine a few operations to do something complicated, the "vanilla" way adds up to a clumsy experience. jQuery is a Javascript library that provides a very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations. jQuery does additional things as well, but its biggest role is to make it easier to do fancy things with the DOM.
 
 Eloquent Javascript does not talk about jQuery, so we will use a short Udacity course.
 

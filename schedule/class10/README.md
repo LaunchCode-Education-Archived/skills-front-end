@@ -2,18 +2,17 @@
 title: Class 4
 ---
 
-### Before Class
-Before coming to class, please complete [Class 4 Prep](../class4-prep).
+Today is a breather day. Take some time to [get caught up][gif-catchup] on previous work such as:
+    - The [Pyramid Slide](../materials/assignments/pyramid-slide) assignment
+    - Previous FlickList studios
+    - Previous Prep Work items, such as the [Udacity AJAX course](../class6-prep/index.html#ajax)
+    - Continue working on [The AJAXson 5](../materials/assignments/ajaxson-5)
 
-### During Class
-
-Office Hours. Use this time to catch up on:
-* previous Studios from this track
-* previous Prep work from this track
-* Module 8 studios
-* CS50 Problem Sets
-
-Mentors will circulate and provide help. We will also hold a Q&A session as a group and do live walkthroughs of any problems people want help with.
+For Lecture, we will do an optional Q&A Review Session
 
 ### Homework
-[Class 5 Prep](../class5-prep)
+[Class 11 Prep](../class11-prep)
+
+
+[gif-catchup]: http://giphy.com/gifs/catchup-pXqgR72CCIQAU
+[solution-vid]: https://youtu.be/UMJuzGMK0DQ

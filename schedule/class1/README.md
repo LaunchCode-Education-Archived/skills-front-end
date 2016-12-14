@@ -6,7 +6,7 @@ title: Class 1
 Before coming to class, please complete [Class 1 Prep](../class1-prep).
 
 ### During Class
-* First, work on today's studio: [Studio 1](../studios/studio1)
+* First, work on today's studio: [Mario 1](../../materials/studios/mario1)
 * Afterwards, we will go over the staff solution to the studio.
 
 ### Homework

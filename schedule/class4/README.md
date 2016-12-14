@@ -6,7 +6,7 @@ title: Class 4
 Before coming to class, please complete [Class 4 Prep](../class4-prep).
 
 ### During Class
-* First, work on today's studio: [Studio 4](../studios/studio4)
+* First, work on today's studio: [Mario 4](../../materials/studios/mario4)
 * Afterwards, we will go over the staff solution to the studio.
 
 ### Homework

@@ -3,11 +3,15 @@ title: Class 5
 ---
 
 ### Before Class
-Before coming to class, please complete [Class 5 Prep](../class5-prep).
+Before coming to class, please complete [Class 11 Prep](../class11-prep).
 
 ### During Class
-* First, work on today's studio: [FlickList 4](../studios/flicklist-4)
-* Afterwards, we will <a href="https://youtu.be/UMJuzGMK0DQ" target="_blank">go over the staff solution to the studio</a>.
+* First, work on today's studio: [FlickList 4](../../materials/studios/flicklist4)
+* Afterwards, we will go over the staff solution to the studio.
+    * [Click here for a video of a previous class's solution lecture][solution-vid]
 
 ### Homework
-Class 5 Prep
+[Class 12 Prep](../class12-prep)
+
+
+[solution-vid]: https://youtu.be/UMJuzGMK0DQ
