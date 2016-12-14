@@ -80,27 +80,61 @@
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1>Class 6 Prep</h1>
-                    <p>Before coming to <a href="../class6">Class 6</a>, please complete the following tasks:</p>
-<h3 id="setup-for-next-class">Setup for Next Class</h3>
+                    <p>We are now transitioning to a point in the class where we will be making a bunch of HTTP requests to external servers, and processing the data we receive back. This, of course, is what a browser does every time you visit a webpage. But in fact, there are other ways of making HTTP requests. On the front-end, one very common technique for making requests is using a technique called AJAX, which you will learn about in the Udacity course below.</p>
+<p>Before coming to <a href="../class6">Class 6</a>, please complete the following tasks:</p>
+<h3 id="curl">cURL</h3>
+<p>cURL is a command-line tool that lets you simply make HTTP requests and see the response. This is a helpful tool for debugging, and for playing around the APIs of third-party sources that make their data available (like in the Udacity course below).</p>
 <table>
 <thead>
 <tr>
 <th>Task</th>
 <th>Resource Type</th>
 <th>Link</th>
+<th>Time Estimate</th>
 <th>Instructions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Do</td>
-<td>Exercise</td>
-<td><a href="../exercises/setup">Setup</a></td>
-<td>Here we guide you through a couple basic things to get yourself set up to start working on the first FlickList studio in class.</td>
+<td>Follow-Along</td>
+<td>Article</td>
+<td><a href="http://www.yilmazhuseyin.com/blog/dev/curl-tutorial-examples-usage/">cURL Tutorial</a></td>
+<td>30 minutes</td>
+<td>As you read this article, make sure to open up a Terminal window follow along with the examples.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="json">JSON</h3>
+<p>When sending and receiving data, there are a variety of different standards for the exact syntax of how to structure the data as text. These days, the most common standard is JSON.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Time Estimate</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>Article</td>
+<td><a href="http://www.secretgeek.net/json_3mins">What is JSON: the 3 minute JSON Tutorial</a></td>
+<td>3 minutes!</td>
+<td>This (very old) article gives a quick intro to JSON.</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>Stack Overflow Post</td>
+<td><a href="http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it">What is JSON and Why Should I Use it?</a></td>
+<td>a few more minutes</td>
+<td>Quickly read this SO post on JSON.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="ajax">AJAX</h3>
+<p>In Javascript, you can make a request to a server, wait for the response to come back, and then do something with the response, without the user ever having to leave or refresh the page. This technique is called AJAX. This is how Gmail, for example, makes your newly received email appear instantly in your inbox, even without you refreshing the page.</p>
 <table>
 <thead>
 <tr>
@@ -117,6 +151,7 @@
 <td>Interactive Course</td>
 <td><a href="https://www.udacity.com/course/intro-to-ajax--ud110">Udacity: Intro to AJAX</a></td>
 <td>6 hours</td>
+<td>This course covers the basics of making AJAX requests. You will see how to build a project that reads data from third-party services like Google Maps and Wikipedia by making AJAX requests to those sites' publicly-facing APIs.</td>
 </tr>
 </tbody>
 </table>

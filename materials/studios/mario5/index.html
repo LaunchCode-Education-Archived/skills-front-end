@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> :: Front-end Web Skill Track</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://education.launchcode.org/skills-front-end/">
+                Front-end Web Skill Track
+            </a>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+                      <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+                    </a>
+                </li>
+            </ul>
+
+        </header>
+
+        <!-- Search Modal -->
+        <div id="modalSearch" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Search Front-end Web Skill Track</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                      (function() {
+                        var cx = "014657181352409571810:szqov91hhf4";
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+           </div>
+        </div>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="http://education.launchcode.org/skills-front-end/schedule/">
+                                        Schedule
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1></h1>
+                    <h1 id="studio-mario-5">Studio: Mario 5</h1>
+<p>Today you won't be adding any new features to the project. Instead you will refactor the existing codebase to use jQuery instead of &quot;vanilla&quot; Javascript for manipulating the DOM.</p>
+<h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
+<ol>
+<li>
+<p>Navigate into your <code>mario-js</code> directory.</p>
+</li>
+<li>
+<p>Make sure you do not have any uncommitted changes:</p>
+<pre><code class="language-nohighlight">$ git status
+On branch mario4
+Your branch is ahead of 'origin/mario4' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean</code></pre>
+<p>It should say &quot;working directory clean&quot;.</p>
+<p>If you <em>do</em> have uncommitted changes, then <code>add</code> and <code>commit</code> them now.</p>
+</li>
+<li>
+<p>Switch to the <code>mario5</code> branch:</p>
+<pre><code class="language-nohighlight">$ git checkout mario5
+Switched to branch 'mario5'
+Your branch is up-to-date with 'origin/mario5'.</code></pre>
+</li>
+<li>
+<p>Pull down the latest changes.</p>
+<pre><code class="language-nohighlight">$ git pull
+Already up-to-date.</code></pre>
+<p>Sometimes, the staff might make last-minute changes to the starter-code. Running <code>git pull</code> here ensures that you will have the <strong>very latest</strong> version of the <code>mario3</code> branch.</p>
+<p>Usually you will just see:</p>
+<pre><code class="language-nohighlight">Already up-to-date.</code></pre>
+<p>But in the event that we <strong>did</strong> make some changes after your initial <code>git clone</code> on the first day of class, running <code>git pull</code> now pulls down those changes, and you will see a different message outlining the changes.</p>
+</li>
+</ol>
+<h2 id="take-a-look">Take a Look</h2>
+<h4 id="preview">Preview</h4>
+<p>If you open up the page in a browser, you will see that it looks the same as last time, but it doesn't function anymore. You can type in the textbox, but nothing happens when you submit the form. That's because we have started the refactoring process, and left some gaps for you to fill in.</p>
+<h4 id="code-changes">Code Changes</h4>
+<p>Let's look over the code. Notice the following changes:</p>
+<ul>
+<li>
+<p>At the bottom of <code>mario.html</code>, we have an additional <code>&lt;script&gt;</code> tag right before the one that loads <code>mario.js</code>. This script imports the jQuery library so that we can use jQuery's methods in our own code.</p>
+</li>
+<li>
+<p>We have refactored a few lines of code to use jQuery syntax:</p>
+<ul>
+<li>
+<p>registering the form's submission event handler:</p>
+<pre><code class="language-js">$("#draw-form").submit( function(event) { // lots of code ... } );</code></pre>
+</li>
+<li>
+<p>The <code>clearError</code> function is implemented using jQuery.</p>
+</li>
+<li>At the bottom of <code>drawPyramid</code>, we use jQuery to create a <code>&lt;p&gt;</code> element whose inner HTML is equal to the string for the current row.</li>
+</ul>
+</li>
+</ul>
+<h2 id="your-task">Your Task</h2>
+<p>First, note that we provide a few helpful links in the <a href="./#tips">Tips</a> section below.</p>
+<p>Now go ahead and complete the following tasks:</p>
+<ol>
+<li>
+<p>At the end of the loop in <code>drawPyramid</code>, we have created a <code>&lt;p&gt;</code> element with the string content. But there is no longer any code to insert the element onto the page. Use jQuery to append the element as a child of the <code>&lt;div id="pyramid"&gt;</code>.</p>
+</li>
+<li>
+<p>Now you should be seeing a new pyramid added to the screen whenever you submit the form. Next, reimplement the &quot;clearing away&quot; of the previous pyramid so that they don't accumulate. At the beginning of <code>drawPyramid</code>, add some jQuery code to remove all the content inside the <code>#pyramid</code> container div.</p>
+</li>
+<li>
+<p>Currently the pyramids always have a height of 5, no matter what the user types. Let's fix that. Inside the <code>submit</code> handler callback, replace the hard-coded <code>"5"</code> with some jQuery code to extract the actual value from the <code>&lt;input&gt;</code>.</p>
+</li>
+<li>The last thing to bring back is the error messages. When the user types something &quot;bad&quot;, we currently don't provide any useful feedback. Fill in the implementation of <code>displayError</code> so that the user once again is able to see what she did wrong. You can use our implementation of <code>clearError</code> as a loose reference.</li>
+</ol>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>
+<p>This <a href="https://gist.github.com/liamcurry/2597326">jQuery vs Vanilla JS Cheatsheet</a> is useful (doesn't cover everything though).</p>
+</li>
+<li>
+<p>You will probably need to use at least the following jQuery functions:</p>
+<ul>
+<li><a href="https://api.jquery.com/val/">.val()</a></li>
+<li><a href="https://api.jquery.com/append/">.append()</a></li>
+<li><a href="https://api.jquery.com/text/">.text()</a></li>
+<li><a href="https://api.jquery.com/addClass">.addClass()</a></li>
+<li><a href="https://api.jquery.com/empty/">.empty()</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="committing-your-changes">Committing Your Changes</h2>
+<ol>
+<li>
+<p>Add your new changes:</p>
+<pre><code class="language-nohighlight">$ git add mario.js</code></pre>
+</li>
+<li>
+<p>Then commit, along with a descriptive message.</p>
+<pre><code class="language-nohighlight">$ git commit -m "refactor to use jQuery"</code></pre>
+</li>
+</ol>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="http://education.launchcode.org/skills-front-end/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
