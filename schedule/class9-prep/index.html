@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LaunchCode Front-end Web</title>
+        <title>Class 3 Prep :: Front-end Web Skill Track</title>
 
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/font-awesome.min.css">
@@ -16,10 +16,50 @@
         <header class="navbar navbar-default navbar-fixed-top">
 
             <a class="navbar-brand" href="http://education.launchcode.org/skills-front-end/">
-                LaunchCode Front-end Web
+                Front-end Web Skill Track
             </a>
 
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+                      <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+                    </a>
+                </li>
+            </ul>
+
         </header>
+
+        <!-- Search Modal -->
+        <div id="modalSearch" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Search Front-end Web Skill Track</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                      (function() {
+                        var cx = "014657181352409571810:szqov91hhf4";
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+           </div>
+        </div>
 
         <main class="container-fluid">
             <div class="row">
@@ -33,24 +73,14 @@
                                         Schedule
                                     </a>
                                 </li>
-                                                            <li class="">
-                                    <a href="https://labs.vocareum.com/home/login.php">
-                                        Submit Your Work
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="http://piazza.com/">
-                                        Discussion Forum
-                                    </a>
-                                </li>
                                                     </ul>
 
                     </nav>
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="class-9-prep">Class 9 Prep</h1>
-<p>Before coming to <a href="../class9">Class 9</a>, please complete the following tasks:</p>
+                    <h1>Class 3 Prep</h1>
+                    <p>Before coming to <a href="../class3">Class 3</a>, please complete the following tasks:</p>
 <h3 id="studio-recap">Studio Recap</h3>
 <table>
 <thead>
@@ -58,7 +88,6 @@
 <th>Task</th>
 <th>Resource Type</th>
 <th>Link</th>
-<th>Time Estimate</th>
 <th>Instructions</th>
 </tr>
 </thead>
@@ -66,21 +95,18 @@
 <tr>
 <td>Follow Along</td>
 <td>Exercise</td>
-<td>30 minutes</td>
-<td><a href="https://github.com/LaunchCodeEducation/flicklist/tree/studio2-staff-solution">FlickList 2 Solution</a></td>
-<td>Read over (and maybe even code along with) the staff solution to the previous Studio, so that you're up to speed with the starter code for the upcoming one.</td>
+<td><a href="../studios/flicklist-2/staff-solution" target="_blank">FlickList 2 Solution</a></td>
+<td>Follow along with the staff solution to the previous Studio, so that you're up to speed with the starter code for the upcoming one.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="responsiveness">Responsiveness</h3>
-<p>Responsiveness is a web-design philosophy and set of practices for dealing with the wide variety of screen sizes that a modern website must accommodate.</p>
 <table>
 <thead>
 <tr>
 <th>Task</th>
 <th>Resource Type</th>
 <th>Link</th>
-<th>Time Estimate</th>
 <th>Instructions</th>
 </tr>
 </thead>
@@ -89,20 +115,17 @@
 <td>Read</td>
 <td>Article</td>
 <td><a href="http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design" target="_blank">2014 Guide to Responsive Web Design</a></td>
-<td>30 minutes</td>
-<td>Read this article for an overview of the recent state of Responsiveness.</td>
+<td>Read this article for an introduction to Responsiveness, a philosophy and set of practices for dealing with the wide variety of screen sizes that a modern website must accomodate.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="bootstrap">Bootstrap</h3>
-<p>Bootstrap is a front-end framework that handles for you much of the heavy-lifting of implementing responsiveness, and also provides a suite of nice-looking, ready-to-use CSS styles.</p>
 <table>
 <thead>
 <tr>
 <th>Task</th>
 <th>Resource Type</th>
 <th>Link</th>
-<th>Time Estimate</th>
 <th>Instructions</th>
 </tr>
 </thead>
@@ -111,22 +134,38 @@
 <td>Read</td>
 <td>Article</td>
 <td><a href="http://learntocodewith.me/getting-started/topics/bootstrap/" target="_blank">Bootstrap for Beginners</a></td>
-<td>15 minutes</td>
-<td>Read this article for an intro to Bootstrap.</td>
+<td>Read this article for an intro to Bootstrap, a front-end framework that handles for you much of the heavy-lifting of implementing responsiveness, and also provides a suite of nice-looking CSS styles.</td>
 </tr>
 <tr>
 <td>Do</td>
 <td>Interactive Course</td>
 <td><a href="https://www.freecodecamp.com/challenges/use-responsive-design-with-bootstrap-fluid-containers" target="_blank">FreeCodeCamp / Responsive Design with Bootstrap</a></td>
-<td>2 hours</td>
-<td>The link here will take you to the first exercise in a section titled <strong>Responsive Design with Bootstrap</strong>. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our experience is that students get through it pretty quickly.</td>
+<td>The link here will take you to the first exercise in a section titled <strong>Responsive Design with Bootstrap</strong>. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our guess is that you should be able to finish in 2-4 hours.</td>
 </tr>
 <tr>
 <td>Read</td>
 <td>Article</td>
 <td><a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system" target="_blank">Understanding the Bootstrap 3 Grid System</a></td>
-<td>30 minutes</td>
-<td>This article takes a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. <code>col-sm-6</code> vs <code>col-md-6</code>.</td>
+<td>Read this article for a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. <code>col-sm-6</code> vs <code>col-md-6</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ajax">AJAX</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do</td>
+<td>Interactive Course</td>
+<td><a href="https://classroom.udacity.com/courses/ud110/" target="_blank">Udacity / Intro to AJAX</a></td>
+<td>Keep working your way through this course (which you started last time) at your own pace.</td>
 </tr>
 </tbody>
 </table>
@@ -135,16 +174,8 @@
             </div>
         </main>
 
-        <footer>
-            <div class="container-fluid">
-                <p class="text-muted">
-                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
-                </p>
-            </div>
-        </footer>
-
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="http://education.launchcode.org/skills-front-end/js/bootstrap.min.js"></script>
         <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
 
         <script>

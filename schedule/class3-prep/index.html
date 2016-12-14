@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LaunchCode Front-end Web</title>
+        <title>Class 3 Prep :: Front-end Web Skill Track</title>
 
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/font-awesome.min.css">
@@ -16,10 +16,50 @@
         <header class="navbar navbar-default navbar-fixed-top">
 
             <a class="navbar-brand" href="http://education.launchcode.org/skills-front-end/">
-                LaunchCode Front-end Web
+                Front-end Web Skill Track
             </a>
 
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+                      <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+                    </a>
+                </li>
+            </ul>
+
         </header>
+
+        <!-- Search Modal -->
+        <div id="modalSearch" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Search Front-end Web Skill Track</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                      (function() {
+                        var cx = "014657181352409571810:szqov91hhf4";
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+           </div>
+        </div>
 
         <main class="container-fluid">
             <div class="row">
@@ -33,24 +73,14 @@
                                         Schedule
                                     </a>
                                 </li>
-                                                            <li class="">
-                                    <a href="https://labs.vocareum.com/home/login.php">
-                                        Submit Your Work
-                                    </a>
-                                </li>
-                                                            <li class="">
-                                    <a href="http://piazza.com/">
-                                        Discussion Forum
-                                    </a>
-                                </li>
                                                     </ul>
 
                     </nav>
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="class-3-prep">Class 3 Prep</h1>
-<p>Before coming to <a href="../class3">Class 3</a>, please complete the following tasks:</p>
+                    <h1>Class 3 Prep</h1>
+                    <p>Before coming to <a href="../class3">Class 3</a>, please complete the following tasks:</p>
 <h3 id="responding-to-events">Responding to Events</h3>
 <p>We have seen how to use Javascript to modify the DOM, but so far the interaction has been a one-way street, with us (the program) doing stuff, and the user just sitting there watching like it's TV. In order to make our web page <em>interactive</em>, we need a way of responding to actions coming <em>from the user</em>. We want to be able to say, for example, &quot;when the user clicks that button over there, here is what should happen: ...&quot;. To allow us to do that, Javascript &quot;listens for events&quot; such as button clicks, and provides an interface for us to specify functions that should be invoked whenever the event occurs.</p>
 <table>
@@ -67,14 +97,14 @@
 <tr>
 <td>Read</td>
 <td>Interactive Book</td>
-<td><a href="http://eloquentjavascript.net/05_higher_order.html">EloquentJS 5: Higher-order Functions</a></td>
+<td><a href="http://eloquentjavascript.net/05_higher_order.html">EloquentJS 5 -- Higher-order Functions</a></td>
 <td>3 hours</td>
 <td>In order to start writing event handlers for the DOM, you will first need to get comfortable with the concept of a &quot;higher-order&quot; function: a function that accepts <em>another function</em> as an argument, or returns another function as its return value. Higher-order functions are somewhat mind-bending at first, but allow for very elegant solutions to all kinds of problems, and in fact are the foundation of a whole area of programming called Functional Programming (which is awesome and you should check it out later).</td>
 </tr>
 <tr>
 <td>Read</td>
 <td>Interactive Book</td>
-<td><a href="http://eloquentjavascript.net/14_event.html">EloquentJS 14: Handling Events</a></td>
+<td><a href="http://eloquentjavascript.net/14_event.html">EloquentJS 14 -- Handling Events</a></td>
 <td>3 hours</td>
 <td>Now for the fun part! In this chapter you will see examples of a bunch of different types of events you can listen for.</td>
 </tr>
@@ -92,16 +122,8 @@
             </div>
         </main>
 
-        <footer>
-            <div class="container-fluid">
-                <p class="text-muted">
-                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
-                </p>
-            </div>
-        </footer>
-
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="http://education.launchcode.org/skills-front-end/js/bootstrap.min.js"></script>
         <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
 
         <script>
