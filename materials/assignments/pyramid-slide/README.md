@@ -1,4 +1,6 @@
-# Assignment: Pyramid Slide
+---
+title: "Assignment: Pyramid Slide"
+---
 
 ![Pyramid Slide][dolphin-cay]
 

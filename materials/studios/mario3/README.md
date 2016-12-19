@@ -1,4 +1,6 @@
-# Studio: Mario 3
+---
+title: "Studio: Mario 3"
+---
 
 Thus far, we have had this cool generic function which is able to draw a pyramid of *any* height, but we haven't taken full advantage of it. We simply hardcode a value of `5` as the argument passed in. Today you will extend the page to allow the user to specify whatever height they want.
 

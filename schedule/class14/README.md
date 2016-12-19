@@ -1,4 +1,6 @@
-# Class 14
+---
+title: Class 14
+---
 
 ### Before Class
 

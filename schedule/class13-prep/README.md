@@ -1,4 +1,6 @@
-# Class 13 Prep
+---
+title: "Class 13 Prep"
+---
 
 Before coming to class 13, please complete the following tasks:
 

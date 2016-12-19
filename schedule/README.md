@@ -1,5 +1,6 @@
-
-# Schedule
+---
+title: Schedule
+---
 
 Class | Date | Prep Work | During Class | New Topics | Assignment | Assignment Due
 |-----|------|-----------|--------------|------------|------------|---------------|

@@ -1,4 +1,6 @@
-# Studio: Mario 1
+---
+title: "Studio: Mario 1"
+---
 
 For today's studio, and a few more to follow, we will do a Javascript version of the classic "Mario" problem, borrowed from our friends at CS50.
 

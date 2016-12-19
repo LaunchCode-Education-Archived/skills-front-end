@@ -1,5 +1,6 @@
-
-# Class 12 Prep
+---
+title: Class 12 Prep
+---
 
 Before coming to class 12, please complete the following tasks:
 

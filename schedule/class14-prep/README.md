@@ -1,4 +1,6 @@
-# Class 14 Prep
+---
+title: Class 14 Prep
+---
 
 Before coming to class 14, please complete the following tasks:
 

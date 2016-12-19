@@ -5,6 +5,8 @@ template:
 # Base URL of the published website
 baseUrl: http://education.launchcode.org/skills-front-end
 
+exclude:
+    - materials/studios/studio1
 
 # Used to link to the GitHub project
 github:

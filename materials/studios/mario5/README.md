@@ -1,4 +1,6 @@
-# Studio: Mario 5
+---
+title: "Studio: Mario 5"
+---
 
 Today you won't be adding any new features to the project. Instead you will refactor the existing codebase to use jQuery instead of "vanilla" Javascript for manipulating the DOM.
 

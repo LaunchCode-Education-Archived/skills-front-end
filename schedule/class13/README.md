@@ -1,4 +1,6 @@
-# Class 13
+---
+title: Class 13
+---
 
 ### Before Class
 Before coming to class, please complete [Class 13 Prep](../class13-prep).

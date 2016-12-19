@@ -1,5 +1,6 @@
-
-# Class 12
+---
+title: Class 12
+---
 
 ### Before Class
 Before coming to class, please complete [Class 12 Prep](../class12-prep).

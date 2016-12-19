@@ -1,4 +1,6 @@
-# Word Up!
+---
+title: "Assignment: Word Up!"
+---
 
 As we near the end of a long Skill Track full boring things like movies, GIFs, and pyramids--the practicalities of life that, though perhaps necessary, are rather dull--you deserve some fun and games. So for this assignment, you will make a fun game!
 
