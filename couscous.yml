@@ -27,9 +27,21 @@ homeBg: https://launchcode.org/assets/cover_banner_blue-8152795f6794e4bbb9fae2a6
 # The left menu bar
 menu:
     items:
-        schedule:
-            text: Schedule
-            relativeUrl: schedule/
-        about:
+        about-this-unit:
             text: About This Unit
-            relativeUrl: about/
+            relativeUrl: about-this-unit/
+        course-outline:
+            text: Course Outline
+            relativeUrl: course-outline/
+        studios:
+            text: Studios
+            relativeUrl: studios/
+        assignments:
+            text: Assignments
+            relativeUrl: assignments/
+        eloquent-javascript:
+            text: Eloquent Javascript
+            absoluteUrl: http://eloquentjavascript.net
+        reporting-issues:
+            text: Reporting Issues
+            relativeUrl: reporting-issues/

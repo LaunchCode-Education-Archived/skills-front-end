@@ -1,5 +1,5 @@
 ---
-title: "Assignment: Pyramid Slide"
+title: "Pyramid Slide"
 ---
 
 ![Pyramid Slide][dolphin-cay]

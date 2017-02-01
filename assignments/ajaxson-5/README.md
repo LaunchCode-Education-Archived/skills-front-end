@@ -1,5 +1,5 @@
 ---
-title: "Assignment: The AJAXson 5"
+title: "The AJAXson 5"
 ---
 
 One of the classic problems in computer science is the question of how to optimally implement a web page that displays GIFs of the Jackson 5. Today you'll take a stab at it.

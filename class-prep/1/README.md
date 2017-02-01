@@ -1,12 +1,13 @@
 ---
 title: Class 1 Prep
+currentMenu: course-outline
 ---
 
 Before coming to Class 1, please complete the following tasks:
 
 ## Javascript Basics
 
-For the first few weeks, we will be using an interactive textbook called [Eloquent Javascript](http://eloquentjavascript.net). Before you begin reading, please quickly read over the [Notes](./#notes) below.
+For the first few weeks, we will be using an interactive textbook called [Eloquent Javascript](http://eloquentjavascript.net). Before you begin reading, please quickly read over the [Notes](#notes) below.
 
 Did you read the notes? Great, time to dive into learning some Javascript!
 

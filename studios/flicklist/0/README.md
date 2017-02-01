@@ -1,5 +1,6 @@
 ---
-title: "Studio: FlickList 0"
+title: "FlickList 0"
+currentMenu: studios
 ---
 
 Welcome to your first Studio! Today is mostly just about getting set up.
