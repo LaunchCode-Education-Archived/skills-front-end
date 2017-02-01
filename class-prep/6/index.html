@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>About This Unit :: Unit 3: Front-end Web Skill Track</title>
+        <title>Class 6 Prep :: Unit 3: Front-end Web Skill Track</title>
 
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/highlight.launchcode.css">
         <link rel="stylesheet" href="http://education.launchcode.org/skills-front-end/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-about-this-unit'>
+    <body id='page-class-6-prep'>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -106,26 +106,82 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                                        <h1>About This Unit</h1>
-                    <p>This skill-track is an introduction to front-end web development.</p>
-<h2 id="synopsis">Synopsis</h2>
-<p>The term <em>front-end</em> (at least in the context of a web application) refers to the portion of a project that runs in the browser <strong>on the user's computer</strong>, as opposed to the <em>back-end</em> code which runs on a server computer somewhere else.</p>
-<p>Specifically, you will write front-end code in a language called Javascript. Your Javascript code, because it runs on the user's computer, can be utilized to create a rich, interactive user experience by dynamically modifying and reacting to the HTML and CSS that make up your web page.</p>
-<h2 id="topics">Topics</h2>
-<p>In addition to Javascript, we will also spend some more time on few other things, such as:</p>
-<ul>
-<li>an extremely popular Javascript library called jQuery</li>
-<li>writing nice, readable, &quot;semantic&quot; HTML code</li>
-<li>using Git for version control</li>
-<li>using CSS (and a CSS framework called Bootstrap) to create pages that actually look nice!</li>
-<li>using a tool called Firebase that provides basic back-end services like user accounts, login and simple data storage for you, so you can go and make a project and specialize on the the front-end without having to worry about implementing the back-end yourself (even though you totally could by now...)</li>
-</ul>
-<h2 id="structure-of-the-schedule">Structure of the Schedule</h2>
-<p>The course will loosely be split into two parts:</p>
-<ol>
-<li><strong>Learning Javascript.</strong> First, we will spend 2-3 weeks going over the fundamentals of Javascript, both its syntax and how to use it to interact with your page's HTML and CSS. During this time, your prep-work will consist of reading from an e-book and taking a few short online classes. The in-class studio exercises will be small and self-contained.</li>
-<li><strong>Building a Class Project Together.</strong> Once you have learned the basics, we will start spending in-class studio time to build a class project together. Just like with the FlickList project from Unit 2, each studio assignment will involve adding a little bit more onto the project. In fact, we are going to build <em>FlickList</em> again! (Exciting, I know.) This version will be <a href="http://education.launchcode.org/flicklist">somewhat different</a> than the Unit 2 version, and of course we will focus on the front-end rather than the back-end. During this time, your prep-work will consist of just a few miscellaneous new concepts, but mostly you will be solidifying and getting more repetition and practice with the core concepts from part 1.</li>
-</ol>
+                                        <h1>Class 6 Prep</h1>
+                    <p>We are now transitioning to a point in the class where we will be making a bunch of HTTP requests to external servers, and processing the data we receive back. This, of course, is what a browser does every time you visit a webpage. But in fact, there are other ways of making HTTP requests. On the front-end, one very common technique for making requests is using a technique called AJAX, which you will learn about in the Udacity course below.</p>
+<p>Before coming to <a href="../class6">Class 6</a>, please complete the following tasks:</p>
+<h3 id="curl">cURL</h3>
+<p>cURL is a command-line tool that lets you simply make HTTP requests and see the response. This is a helpful tool for debugging, and for playing around the APIs of third-party sources that make their data available (like in the Udacity course below).</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Time Estimate</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Follow-Along</td>
+<td>Article</td>
+<td><a href="http://www.yilmazhuseyin.com/blog/dev/curl-tutorial-examples-usage/">cURL Tutorial</a></td>
+<td>30 minutes</td>
+<td>As you read this article, make sure to open up a Terminal window follow along with the examples.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="json">JSON</h3>
+<p>When sending and receiving data, there are a variety of different standards for the exact syntax of how to structure the data as text. These days, the most common standard is JSON.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Time Estimate</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>Article</td>
+<td><a href="http://www.secretgeek.net/json_3mins">What is JSON: the 3 minute JSON Tutorial</a></td>
+<td>3 minutes!</td>
+<td>This (very old) article gives a quick intro to JSON.</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>Stack Overflow Post</td>
+<td><a href="http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it">What is JSON and Why Should I Use it?</a></td>
+<td>a few more minutes</td>
+<td>Quickly read this SO post on JSON.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ajax">AJAX</h3>
+<p>In Javascript, you can make a request to a server, wait for the response to come back, and then do something with the response, without the user ever having to leave or refresh the page. This technique is called AJAX. This is how Gmail, for example, makes your newly received email appear instantly in your inbox, even without you refreshing the page.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Resource Type</th>
+<th>Link</th>
+<th>Time Estimate</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do</td>
+<td>Interactive Course</td>
+<td><a href="https://www.udacity.com/course/intro-to-ajax--ud110">Udacity: Intro to AJAX</a></td>
+<td>6 hours</td>
+<td>This course covers the basics of making AJAX requests. You will see how to build a project that reads data from third-party services like Google Maps and Wikipedia by making AJAX requests to those sites' publicly-facing APIs.</td>
+</tr>
+</tbody>
+</table>
                                     </section>
 
             </div>
