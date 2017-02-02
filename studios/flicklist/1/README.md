@@ -9,7 +9,7 @@ Today, you will start adding some real functionality to the code base. By the en
 
 ## Demo
 
-Here is what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/ba335b0509258c7e4dc51779f9baa536f914c07b/index.html" target="_blank">FlickList 1 Demo</a>. Take a minute to play around with the demo so you understand what your goal is.
+Here is what you are trying to accomplish: [FlickList 1 Demo](http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/ba335b0509258c7e4dc51779f9baa536f914c07b/index.html). Take a minute to play around with the demo so you understand what your goal is.
 
 ## Obtaining the Starter Code
 
@@ -71,7 +71,7 @@ You might also notice that although the top of this file is almost the same as l
 <meta charset="utf-8"/>
 ```
 
-What this does is explicitly defines that our document should use the Unicode character encoding. If curious, you can read more about character encoding <a href="http://www.w3.org/International/questions/qa-what-is-encoding" target="_blank">here</a>. Generally try to remember to add this line in your HTML, or you might get some strange results when your page attempts to display obscure characters. But for now, don't waste a ton of brainpower worrying about this topic.
+What this does is explicitly defines that our document should use the Unicode character encoding. If curious, you can read more about character encoding [here](http://www.w3.org/International/questions/qa-what-is-encoding). Generally try to remember to add this line in your HTML, or you might get some strange results when your page attempts to display obscure characters. But for now, don't waste a ton of brainpower worrying about this topic.
 
 ### flicklist.js
 
@@ -85,7 +85,9 @@ There is another object nearby, called `model`. This is where we will store all 
 
 Moving down the page, the `discoverMovies` function is very similar to the function called `testTheAPI` from last time: it makes an AJAX request to TheMovieDB's API, and after receiving a response, logs it to the console. But there is now a little bit more code inside that `success` function:
 * First of all, there is a TODO! We want you to write a line here such that, whenever a response comes back from the API, you update the `model` variable so that its `.browseItems` property is equal to the list of movies in the response.
-* After updating the model, we invoke a function called `callback`. Where did that function come from? It turns out it was passed into us as an argument to `discoverMovies`. A very powerful feature of JS is the ability to pass functions around as arguments to other functions. The idea of a <a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" target="_blank">callback</a> is that whoever is invoking `discoverMovies` can pass in a block of code to specify what should happen after the response comes back.
+* After updating the model, we invoke a function called `callback`. Where did that function come from? It turns out it was passed into us as an argument to `discoverMovies`. A very powerful feature of JS is the ability to pass functions around as arguments to other functions. The idea of a [callback][callback-article] is that whoever is invoking `discoverMovies` can pass in a block of code to specify what should happen after the response comes back.
+
+[callback-article]: https://en.wikipedia.org/wiki/Callback_(computer_programming
 
 To see this in action, scroll down to the bottom of the file, and you'll see where `discoverMovies` is used. When the document is loaded, we execute this line:
 
@@ -114,23 +116,23 @@ To help wrap your head around all this, do the following exercise:
 7. Refresh the page.
 8. You should hit your first breakpoint (line 69.) Click the continue button and you should hit another breakpoint. At each breakpoint, click the Step-Over button a few times to get a feel for what's happening, and then click Continue button and observe which section of code fires next.
 
-## Assignment
+## Your Task
 
 Work your way through the TODOs in the starter code. Each task is numbered, indicating the order in which you should work on them. The tasks are as follows:
 
-### 0. Add your API key to the `api` variable
+##### 0. Add your API key to the `api` variable
 
 Just like last time.
 
-### 1. Add a browsing section
+##### 1. Add a browsing section
 
 In `index.html`, add another `<section>` very similar to the watchlist section above. You should give your section an `id` so that you can refer to it later and manipulate its contents. You should also put an empty `<ul>` inside, where you will later insert those list items for the browsable movies.
 
-### 2. Update the model when AJAX request succeeds
+##### 2. Update the model when AJAX request succeeds
 
 Inside the `discoverMovies` function, when a successul response comes back, we are currently logging the response to the console, but we are not actually doing anythign useful with the data. Your job is to update the `model` variable, filling its `.browseItems` property with the newly received list of movies.
 
-### 3. Insert a list item for each movie on the browse list
+##### 3. Insert a list item for each movie on the browse list
 
 The rest of your TODOs are inside the `render` function. For these, jQuery is your best friend.
 
@@ -144,7 +146,7 @@ $("#essay p")
 
 yields all `<p>` tags who are descendents (children, or children's children...) of the element whose id is "essay".
 
-To complete this task, you will need to make use of jQuery's <a href="http://api.jquery.com/append/" target="_blank">append</a> and <a href="http://api.jquery.com/text/" target="_blank">text</a> functions.
+To complete this task, you will need to make use of jQuery's [append](http://api.jquery.com/append/) and [text](http://api.jquery.com/text/) functions.
 
 The following code demonstrates how to add a link to the bottom of every descendant paragraph inside the "essay" element:
 
@@ -170,15 +172,15 @@ Ultimately, you should be generating HTML that looks something like this:
 </ul>
 ```
 
-### 4. Each browse list item should contain a button
+##### 4. Each browse list item should contain a button
 
 Once you have list items displaying the titles of all the movies, the next step is to add a button to each item. The button should say "Add to watchlist".
 
 This step should be pretty simple. Just append another item inside the list item, after the movie title.
 
-### 5. Add click handlers to the buttons
+##### 5. Add click handlers to the buttons
 
-Once those buttons are showing up, your next task is to make them actually do something. Use jQuery's <a href="http://api.jquery.com/click/" target="_blank">click</a> function to register a "click handler" on each button. This is another one of those functions where you pass in a "callback", in order to specify exactly what should happen when the click event occurs. You'll want to pass in a function that accomplishes two things: appends to `model.browseItems` whichever movie was clicked, and then re-invokes `render`. Here is an example of a button whose click handler contains an "annonymous function" that accomplishes some tasks:
+Once those buttons are showing up, your next task is to make them actually do something. Use jQuery's [click](http://api.jquery.com/click/) function to register a "click handler" on each button. This is another one of those functions where you pass in a "callback", in order to specify exactly what should happen when the click event occurs. You'll want to pass in a function that accomplishes two things: appends to `model.browseItems` whichever movie was clicked, and then re-invokes `render`. Here is an example of a button whose click handler contains an "anonymous function" that accomplishes some tasks:
 
 ```js
 var myButton = $("<button></button>").text("Click if you dare");
@@ -191,7 +193,7 @@ myButton.click(function() {
 
 Whenever `myButton` is clicked, the console will log "You clicked my button!", followed by "I love you!", and then some other function called `releaseTheHounds` will execute.
 
-### 6. Insert a list item for each movie on the Watchlist
+##### 6. Insert a list item for each movie on the Watchlist
 
 Now that your buttons wired up and pushing new movies onto `model.watchlistItems`, the next step is to render those watchlist movies on the screen so the user can see them.
 
@@ -199,11 +201,11 @@ Create a similar `forEach` loop to iterate over `model.watchlistItems` and appen
 
 Once you've finished, you should start to see movies appearing on the watchlist whenever you click the buttons! You will probably notice some weird behavior, where the same movie shows up multiple times after a few clicks. You might also notice that the browse list is grwoing longer and longer! You will tackle that next.
 
-### 7. Clear out the old list elements before re-rendering
+##### 7. Clear out the old list elements before re-rendering
 
 You're seeing repeats of the same movies because each time `render` is executed, it re-renders *every* movie in the watchlist, not just the newly added movie. Similarly, the browse list is re-appending every single movie onto the DOM, even though they were already there.
 
-To fix this, simply add some code at the beginning of the function which clears both lists. Use jQuery's <a href="http://api.jquery.com/empty/" target="_blank">empty</a> function, which deletes all the child nodes of an element.
+To fix this, simply add some code at the beginning of the function which clears both lists. Use jQuery's [empty](http://api.jquery.com/empty/) function, which deletes all the child nodes of an element.
 
 You may think this is an inefficient way having the browser render stuff, and in fact, you are right. After all, why should we delete all 20 items from the browse list, only to re-add them an instant later? Fortunately, the operations we are doing here are small enough that the inefficiency won't lead to a drop in performance significant enough to hurt the user experience. And the benefit of this monolithic `render` function is that we don't have to worry about which particular event we are responding to (Did a response come back from the API? Did the user just click a button? Which button?). All we have to worry about is, given the current state of the model, this is what our view should look like. The mental simplicity that this system affords us will grow more and more valuable as our program grows in complexity.
 

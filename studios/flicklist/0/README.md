@@ -11,9 +11,7 @@ Next, you will register for an API key with themoviedb.org, an open source datab
 
 Finally you'll plug your API key into the starter code, and see some immediate results!
 
-## Submit Individually
-
-Today, it is best if you complete this studio on your own computer, rather than with a partner. You are still encouraged to work together with others, but each coder should have their own computer open.
+> *NOTE:* Today, it is best if you complete this studio on your own computer, rather than with a partner. You are still encouraged to work together with others, but each coder should have their own computer open.
 
 ## Obtaining the Starter Code
 
