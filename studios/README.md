@@ -11,23 +11,23 @@ In this series, we will build and make incremental additions to a simple page th
 
 ### Mario 1
 
-[Work on Mario 1](./mario/1)
+[Work on Mario 1](./mario/1/)
 
 ### Mario 2
 
-[Work on Mario 2](./mario/2)
+[Work on Mario 2](./mario/2/)
 
 ### Mario 3
 
-[Work on Mario 3](./mario/3)
+[Work on Mario 3](./mario/3/)
 
 ### Mario 4
 
-[Work on Mario 4](./mario/4)
+[Work on Mario 4](./mario/4/)
 
 ### Mario 5
 
-[Work on Mario 5](./mario/5)
+[Work on Mario 5](./mario/5/)
 
 ---
 
@@ -37,24 +37,24 @@ Back by popular demand, it's everybody's favorite movie app. This time, we will 
 
 ### FlickList 0
 
-[Work on FlickList 0](./flicklist/0)
+[Work on FlickList 0](./flicklist/0/)
 
 ### FlickList 1
 
-[Work on FlickList 1](./flicklist/1)
+[Work on FlickList 1](./flicklist/1/)
 
 ### FlickList 2
 
-[Work on FlickList 2](./flicklist/2)
+[Work on FlickList 2](./flicklist/2/)
 
 ### FlickList 3
 
-[Work on FlickList 3](./flicklist/3)
+[Work on FlickList 3](./flicklist/3/)
 
 ### FlickList 4
 
-[Work on FlickList 4](./flicklist/4)
+[Work on FlickList 4](./flicklist/4/)
 
 ### FlickList 5
 
-[Work on FlickList 5](./flicklist/5)
+[Work on FlickList 5](./flicklist/5/)

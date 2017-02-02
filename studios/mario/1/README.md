@@ -6,11 +6,9 @@ For today's studio, and a few more to follow, we will do a Javascript version of
 
 Before we get started, please enjoy this humorous meme about Mario:
 
-![Oh Mario you are so silly](https://s-media-cache-ak0.pinimg.com/564x/8e/57/97/8e57973c609cf14479731598acb76a89.jpg)
+<img style="width: 400px" src="https://s-media-cache-ak0.pinimg.com/564x/8e/57/97/8e57973c609cf14479731598acb76a89.jpg"/>
 
-Turtles and such, simply uproarious, gets me every time.
-
-Now then.
+Haha! See, LaunchCode knows how to "get down" and enjoy a joke just like you. Now let's get back to work.
 
 ## Obtaining the Starter Code
 
