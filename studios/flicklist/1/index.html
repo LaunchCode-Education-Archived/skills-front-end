@@ -110,7 +110,7 @@
                     <p>In <a href="../flicklist0">the previous Studio</a>, you forked the project repository and added your API key to the source code.</p>
 <p>Today, you will start adding some real functionality to the code base. By the end of this studio, users will see a browseable list of movies on the screen. Each movie will have an &quot;Add to Watchlist&quot; button, which, when clicked, will cause that movie to show up on another area of the screen where the user's Watchlist is displayed.</p>
 <h2 id="demo">Demo</h2>
-<p>Here is what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/ba335b0509258c7e4dc51779f9baa536f914c07b/index.html" target="_blank">FlickList 1 Demo</a>. Take a minute to play around with the demo so you understand what your goal is.</p>
+<p>Here is what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/ba335b0509258c7e4dc51779f9baa536f914c07b/index.html">FlickList 1 Demo</a>. Take a minute to play around with the demo so you understand what your goal is.</p>
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <p>Navigate into the <code>flicklist</code> folder:</p>
 <pre><code class="language-nohighlight">$ cd ~/your/path/to/flicklist</code></pre>
@@ -144,7 +144,7 @@ Switched to a new branch 'studio1'</code></pre>
 <p>The <code>&lt;header&gt;</code> and <code>&lt;section&gt;</code> tags might look unfamiliar to you. They are relatively new additions to the HTML language. Similar to the <code>&lt;div&gt;</code>, these tags serve as a container for other tags, so you can group your document into chunks. The difference is that a <code>&lt;div&gt;</code> does not indicate <em>what kind of content</em> it contains, whereas these new tags do: the <code>&lt;header&gt;</code> indicates that it is meant to serve as a title or heading above some other content; the <code>&lt;section&gt;</code> indicates a discrete section of your document. Using these tags instead of <code>&lt;div&gt;</code>s makes it more immediately obvious how your document is structured and what kind of role each of the various chunks is playing. As much as possible, it is generally best practice to make your HTML &quot;semantically meaningful&quot; like this. You will learn a bit more about &quot;Semantic HTML&quot; in later Prep Work.</p>
 <p>You might also notice that although the top of this file is almost the same as last time, there is one small change-- we have added this line:</p>
 <pre><code class="language-html">&lt;meta charset="utf-8"/&gt;</code></pre>
-<p>What this does is explicitly defines that our document should use the Unicode character encoding. If curious, you can read more about character encoding <a href="http://www.w3.org/International/questions/qa-what-is-encoding" target="_blank">here</a>. Generally try to remember to add this line in your HTML, or you might get some strange results when your page attempts to display obscure characters. But for now, don't waste a ton of brainpower worrying about this topic.</p>
+<p>What this does is explicitly defines that our document should use the Unicode character encoding. If curious, you can read more about character encoding <a href="http://www.w3.org/International/questions/qa-what-is-encoding">here</a>. Generally try to remember to add this line in your HTML, or you might get some strange results when your page attempts to display obscure characters. But for now, don't waste a ton of brainpower worrying about this topic.</p>
 <h3 id="flicklistjs">flicklist.js</h3>
 <p>Let's now talk about <code>flicklist.js</code>.</p>
 <p>The beginning of the file still contains that <code>api</code> object, one of whose properties, <code>token</code>, currently has a value of <code>"TODO"</code>, which you should once again replace with your personal api key.</p>
@@ -156,7 +156,7 @@ Switched to a new branch 'studio1'</code></pre>
 <p>Moving down the page, the <code>discoverMovies</code> function is very similar to the function called <code>testTheAPI</code> from last time: it makes an AJAX request to TheMovieDB's API, and after receiving a response, logs it to the console. But there is now a little bit more code inside that <code>success</code> function:</p>
 <ul>
 <li>First of all, there is a TODO! We want you to write a line here such that, whenever a response comes back from the API, you update the <code>model</code> variable so that its <code>.browseItems</code> property is equal to the list of movies in the response.</li>
-<li>After updating the model, we invoke a function called <code>callback</code>. Where did that function come from? It turns out it was passed into us as an argument to <code>discoverMovies</code>. A very powerful feature of JS is the ability to pass functions around as arguments to other functions. The idea of a <a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)" target="_blank">callback</a> is that whoever is invoking <code>discoverMovies</code> can pass in a block of code to specify what should happen after the response comes back.</li>
+<li>After updating the model, we invoke a function called <code>callback</code>. Where did that function come from? It turns out it was passed into us as an argument to <code>discoverMovies</code>. A very powerful feature of JS is the ability to pass functions around as arguments to other functions. The idea of a <a href="https://en.wikipedia.org/wiki/Callback_(computer_programming">callback</a> is that whoever is invoking <code>discoverMovies</code> can pass in a block of code to specify what should happen after the response comes back.</li>
 </ul>
 <p>To see this in action, scroll down to the bottom of the file, and you'll see where <code>discoverMovies</code> is used. When the document is loaded, we execute this line:</p>
 <pre><code class="language-js">discoverMovies(render);</code></pre>
@@ -180,21 +180,21 @@ Switched to a new branch 'studio1'</code></pre>
 <li>Refresh the page.</li>
 <li>You should hit your first breakpoint (line 69.) Click the continue button and you should hit another breakpoint. At each breakpoint, click the Step-Over button a few times to get a feel for what's happening, and then click Continue button and observe which section of code fires next.</li>
 </ol>
-<h2 id="assignment">Assignment</h2>
+<h2 id="your-task">Your Task</h2>
 <p>Work your way through the TODOs in the starter code. Each task is numbered, indicating the order in which you should work on them. The tasks are as follows:</p>
-<h3 id="0-add-your-api-key-to-the">0. Add your API key to the <code>api</code> variable</h3>
+<h5 id="0-add-your-api-key-to-the">0. Add your API key to the <code>api</code> variable</h5>
 <p>Just like last time.</p>
-<h3 id="1-add-a-browsing-section">1. Add a browsing section</h3>
+<h5 id="1-add-a-browsing-section">1. Add a browsing section</h5>
 <p>In <code>index.html</code>, add another <code>&lt;section&gt;</code> very similar to the watchlist section above. You should give your section an <code>id</code> so that you can refer to it later and manipulate its contents. You should also put an empty <code>&lt;ul&gt;</code> inside, where you will later insert those list items for the browsable movies.</p>
-<h3 id="2-update-the-model-when-ajax-request-succeeds">2. Update the model when AJAX request succeeds</h3>
+<h5 id="2-update-the-model-when-ajax-request-succeeds">2. Update the model when AJAX request succeeds</h5>
 <p>Inside the <code>discoverMovies</code> function, when a successul response comes back, we are currently logging the response to the console, but we are not actually doing anythign useful with the data. Your job is to update the <code>model</code> variable, filling its <code>.browseItems</code> property with the newly received list of movies.</p>
-<h3 id="3-insert-a-list-item-for-each-movie-on-the-browse-list">3. Insert a list item for each movie on the browse list</h3>
+<h5 id="3-insert-a-list-item-for-each-movie-on-the-browse-list">3. Insert a list item for each movie on the browse list</h5>
 <p>The rest of your TODOs are inside the <code>render</code> function. For these, jQuery is your best friend.</p>
 <p>On this one, we are asking you to create a list item <code>&lt;li&gt;</code> for each movie in the browse list, and append that list item to the <code>&lt;ul&gt;</code> inside the browse section on the document. The list item for now should jsut contain the title of the movie.</p>
 <p>You might be wondering: we had you assign an id to the section, but not the <code>&lt;ul&gt;</code> inside the section, so how can you obtain a reference to the <code>&lt;ul&gt;</code>? Just like CSS, jQuery allows you to traverse the DOM using <a>descendant selectors</a>, for example:</p>
 <pre><code class="language-js">$("#essay p")</code></pre>
 <p>yields all <code>&lt;p&gt;</code> tags who are descendents (children, or children's children...) of the element whose id is &quot;essay&quot;.</p>
-<p>To complete this task, you will need to make use of jQuery's <a href="http://api.jquery.com/append/" target="_blank">append</a> and <a href="http://api.jquery.com/text/" target="_blank">text</a> functions.</p>
+<p>To complete this task, you will need to make use of jQuery's <a href="http://api.jquery.com/append/">append</a> and <a href="http://api.jquery.com/text/">text</a> functions.</p>
 <p>The following code demonstrates how to add a link to the bottom of every descendant paragraph inside the &quot;essay&quot; element:</p>
 <pre><code class="language-js">var googleLink = $("&lt;a&gt;&lt;/a&gt;").text("Click me!").attr("href", "google.com");
 $("#essay p").append(googleLink);</code></pre>
@@ -211,11 +211,11 @@ $("#essay p").append(googleLink);</code></pre>
   &lt;/li&gt;
   ...
 &lt;/ul&gt;</code></pre>
-<h3 id="4-each-browse-list-item-should-contain-a-button">4. Each browse list item should contain a button</h3>
+<h5 id="4-each-browse-list-item-should-contain-a-button">4. Each browse list item should contain a button</h5>
 <p>Once you have list items displaying the titles of all the movies, the next step is to add a button to each item. The button should say &quot;Add to watchlist&quot;.</p>
 <p>This step should be pretty simple. Just append another item inside the list item, after the movie title.</p>
-<h3 id="5-add-click-handlers-to-the-buttons">5. Add click handlers to the buttons</h3>
-<p>Once those buttons are showing up, your next task is to make them actually do something. Use jQuery's <a href="http://api.jquery.com/click/" target="_blank">click</a> function to register a &quot;click handler&quot; on each button. This is another one of those functions where you pass in a &quot;callback&quot;, in order to specify exactly what should happen when the click event occurs. You'll want to pass in a function that accomplishes two things: appends to <code>model.browseItems</code> whichever movie was clicked, and then re-invokes <code>render</code>. Here is an example of a button whose click handler contains an &quot;annonymous function&quot; that accomplishes some tasks:</p>
+<h5 id="5-add-click-handlers-to-the-buttons">5. Add click handlers to the buttons</h5>
+<p>Once those buttons are showing up, your next task is to make them actually do something. Use jQuery's <a href="http://api.jquery.com/click/">click</a> function to register a &quot;click handler&quot; on each button. This is another one of those functions where you pass in a &quot;callback&quot;, in order to specify exactly what should happen when the click event occurs. You'll want to pass in a function that accomplishes two things: appends to <code>model.browseItems</code> whichever movie was clicked, and then re-invokes <code>render</code>. Here is an example of a button whose click handler contains an &quot;anonymous function&quot; that accomplishes some tasks:</p>
 <pre><code class="language-js">var myButton = $("&lt;button&gt;&lt;/button&gt;").text("Click if you dare");
 myButton.click(function() {
   console.log("You clicked my button!");
@@ -223,13 +223,13 @@ myButton.click(function() {
   releaseTheHounds();
 });</code></pre>
 <p>Whenever <code>myButton</code> is clicked, the console will log &quot;You clicked my button!&quot;, followed by &quot;I love you!&quot;, and then some other function called <code>releaseTheHounds</code> will execute.</p>
-<h3 id="6-insert-a-list-item-for-each-movie-on-the-watchlist">6. Insert a list item for each movie on the Watchlist</h3>
+<h5 id="6-insert-a-list-item-for-each-movie-on-the-watchlist">6. Insert a list item for each movie on the Watchlist</h5>
 <p>Now that your buttons wired up and pushing new movies onto <code>model.watchlistItems</code>, the next step is to render those watchlist movies on the screen so the user can see them.</p>
 <p>Create a similar <code>forEach</code> loop to iterate over <code>model.watchlistItems</code> and append content to the <code>&lt;ul&gt;</code> inside the watchlist <code>&lt;section&gt;</code>.</p>
 <p>Once you've finished, you should start to see movies appearing on the watchlist whenever you click the buttons! You will probably notice some weird behavior, where the same movie shows up multiple times after a few clicks. You might also notice that the browse list is grwoing longer and longer! You will tackle that next.</p>
-<h3 id="7-clear-out-the-old-list-elements-before-re-rendering">7. Clear out the old list elements before re-rendering</h3>
+<h5 id="7-clear-out-the-old-list-elements-before-re-rendering">7. Clear out the old list elements before re-rendering</h5>
 <p>You're seeing repeats of the same movies because each time <code>render</code> is executed, it re-renders <em>every</em> movie in the watchlist, not just the newly added movie. Similarly, the browse list is re-appending every single movie onto the DOM, even though they were already there.</p>
-<p>To fix this, simply add some code at the beginning of the function which clears both lists. Use jQuery's <a href="http://api.jquery.com/empty/" target="_blank">empty</a> function, which deletes all the child nodes of an element.</p>
+<p>To fix this, simply add some code at the beginning of the function which clears both lists. Use jQuery's <a href="http://api.jquery.com/empty/">empty</a> function, which deletes all the child nodes of an element.</p>
 <p>You may think this is an inefficient way having the browser render stuff, and in fact, you are right. After all, why should we delete all 20 items from the browse list, only to re-add them an instant later? Fortunately, the operations we are doing here are small enough that the inefficiency won't lead to a drop in performance significant enough to hurt the user experience. And the benefit of this monolithic <code>render</code> function is that we don't have to worry about which particular event we are responding to (Did a response come back from the API? Did the user just click a button? Which button?). All we have to worry about is, given the current state of the model, this is what our view should look like. The mental simplicity that this system affords us will grow more and more valuable as our program grows in complexity.</p>
 <h2 id="commit-and-push-on-git">Commit and Push on Git</h2>
 <p>If you run the <code>git status</code> command, you should see that you now have <em>unstaged</em> changes:</p>
