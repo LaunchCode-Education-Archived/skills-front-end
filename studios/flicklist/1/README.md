@@ -1,5 +1,6 @@
 ---
-title: "Studio: FlickList 1"
+title: "FlickList 1"
+currentMenu: studios
 ---
 
 In [the previous Studio](../flicklist0), you forked the project repository and added your API key to the source code.

@@ -1,5 +1,6 @@
 ---
-title: "Studio: Mario 1"
+title: "Mario 1"
+currentMenu: studios
 ---
 
 For today's studio, and a few more to follow, we will do a Javascript version of the classic "Mario" problem, borrowed from our friends at CS50.
@@ -114,7 +115,7 @@ Once you have finished, make sure you "save" your changes. In Git-land, this is 
 
 	You can confirm as much by checking your status:
 
-	```noghighlight
+	```nohighlight
 	$ git status
 	On branch mario1
 	Your branch is up-to-date with 'origin/mario1'.

@@ -1,5 +1,6 @@
 ---
-title: "Studio: Mario 4"
+title: "Mario 4"
+currentMenu: studios
 ---
 
 Last time, we added to our page an input field and a button so that the user could specify exactly how tall of a pyramid she wants drawn. You might have noticed, however, that the text box provides plenty of opportunities for the user to type things that don't make sense:

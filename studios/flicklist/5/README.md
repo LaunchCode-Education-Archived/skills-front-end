@@ -1,5 +1,6 @@
 ---
-title: "Studio: FlickList 5"
+title: "FlickList 5"
+currentMenu: studios
 ---
 
 In today's (final!) studio, you will add some finishing touches to the project. The changes are mostly cosmetic, but they will require you to refactor a significant chunk of your html and javascript code.

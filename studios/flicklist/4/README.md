@@ -1,5 +1,6 @@
 ---
-title: "Studio: FlickList 4"
+title: "FlickList 4"
+currentMenu: studios
 ---
 
 Today we will make only a few changes, but they are tricky changes.

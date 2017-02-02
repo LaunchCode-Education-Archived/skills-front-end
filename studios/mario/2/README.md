@@ -1,5 +1,6 @@
 ---
-title: "Studio: Mario 2"
+title: "Mario 2"
+currentMenu: studios
 ---
 
 In Mario 1, you implemented a function to print a "pyramid" to the developer console. Today, you will put that pyramid where it truly belongs: on your web page! To render the pyramid to the page, you will use Javascript to programatically insert it into the DOM.
