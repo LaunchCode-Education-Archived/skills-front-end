@@ -1,5 +1,6 @@
 ---
 title: "About This Unit"
+currentMenu: about-this-unit
 ---
 
 This skill-track is an introduction to front-end web development.
