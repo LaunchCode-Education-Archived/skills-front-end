@@ -24,9 +24,8 @@ Your task is to make it real!
 
 ## Setup
 
-1. Go to github.com and make sure you are logged in.
-2. Make a new repository on Github. Give it the name `"pyramid-slide"`.
-3. Clone your repository to your machine
+1. Make a [new repository on Github][new-repo]. Give it the name `"pyramid-slide"`.
+2. Clone your repository down onto your computer.
 
 > *NOTE*: If you need more guidance on this process, see steps 1 and 2 from the [Getting Started][getting-started] Assignment from the Unit 2 Python course.
 
