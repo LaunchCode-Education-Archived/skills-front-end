@@ -92,7 +92,8 @@ Great, you should now have all the tools you need to start looking up words in t
 ---
 ## Obtaining the Starter Code
 
-[Clone this repository][word-up-repo].
+1. [Fork this repository][word-up-repo].
+2. Clone your forked repo down to your local machine.
 
 [word-up-repo]: https://github.com/launchcodeeducation/word-up
 
