@@ -38,7 +38,6 @@ Take note the following:
 - Once the user does submit a word containing only valid letters, it appears in a chip below the textbox.
 - Shortly after a word chip appears, it will sprout a smaller (blue or red) chip indicating the points total for the word. A normal word will contain a blue chip with a number indicating its score. But a gibberish, nonexistent word will instead contain a red chip with an "X".
 - Once the timer runs out, the textbox is no longer usable.
-- Overall, everything looks freshhhh.
 
 #### Room for Improvement
 
@@ -172,10 +171,9 @@ Note also that rather than the stable Bootstrap 3, we are using Bootstrap 4, whi
 
 Time to get started!
 
-I have bad news and good news for you. The bad news is that you have a lot (21!) of `TODO`s. The good news is that each task is relatively small, often only one or two lines of code, and you will be given somewhat detailed guidance.
+I have bad news and good news for you. The bad news is that you have a lot (21!) of `TODO`s. The good news is that each task is relatively small, often only one or two lines of code, and you will be given fairly detailed guidance.
 
 <img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
-<br>
 
 Your tasks are as follows:
 
@@ -352,8 +350,7 @@ Use the following (imperfect) hueristic to decide whether or not we have a "real
 
 Now that you know the correct answer, there is one more thing to do. You must find the appropriate item in `model.wordSubmissions`, and set its `.isRealWord` property accordingly.
 
-<img src="https://media.giphy.com/media/3o7TKw7vcnyQa0Hldu/giphy.gif" style="width: 200px"/>
-<br>
+<img src="https://media.giphy.com/media/3o7TKw7vcnyQa0Hldu/giphy.gif" style="width: 300px"/>
 
 Let's back up a sec. (This will be a long digression, so get comfortable.)
 
@@ -374,12 +371,7 @@ For example, suppose the user is in the middle of a game, and has previously typ
 }
 ```
 
-Makes sense so far?
-
-<img src="http://66.media.tumblr.com/2e96a51d21f3fa17d94af64c8cea61bd/tumblr_ndwyr0McLD1thj99uo4_250.gif" />
-<br>
-
-Good, because it's about to get weirder.
+Makes sense so far? Good, because it's about to get weirder.
 
 The situation is further muddied by the fact that for each word submission, there is a brief period of time during which we *don't yet know* whether or not its string is a real word, because we are still waiting for a response from the dictionary API.
 
@@ -407,7 +399,7 @@ As soon as we *do* determine the answer, we can update the model, so that the li
 
 That is how we want our program to behave. Each word submission object should contain a `.word` property, and *eventually* should also contain a `.isRealWord` property, after a brief delay. The first part is already done for you (go look at the `addNewWordSubmission` function again to see the code). But the second part is your job: you must add a `.isRealWord` property to the objects that don't already have them.
 
-Let's finally turn to the task at hand. You are inside the `success` callback of the AJAX call to Pearson. You have just received the response for some particular word (let's continue pretending it is `"chunk"`), and you even you know the answer now (either `true` or `false`), assuming you did the previous TODO. Your current `model.wordSubmissions` is a list of objects, most of which contain two properties, but at least one (the one we care about, whose `.word` property is `"chunk"`) does not yet contain a `.isRealWord` property. Your job is to find that list entry, and set its `.isRealWord` property to the correct answer (in this case, `true`).
+Let's finally turn to the task at hand. You are inside the `success` callback of the AJAX call to Pearson. You have just received the response for some particular word (let's continue pretending it is `"chunk"`), and you even know the answer now (either `true` or `false`), assuming you did the previous TODO. Your current `model.wordSubmissions` is a list of objects, most of which contain two properties, but at least one (the one we care about, whose `.word` property is `"chunk"`) does not yet contain a `.isRealWord` property. Your job is to find that list entry, and set its `.isRealWord` property to the correct answer (in this case, `true`).
 
 In coding terms, you simply need to iterate over the list of submissions, and for each submission, check if its `.word` property is equal to the string in question. If so, assign the correct value to its `.isRealWord` property.
 
@@ -487,15 +479,9 @@ Just one last loose-end to tie up! Currently the user is able to cheat by submit
 
 You know the drill:
 
-- Commit your changes locally.
-- Push your new commit up to Github.
-- Head over the *Word Up!* Assignment on Vocareum, and clone your repo.
-- Click Submit.
-- Victory!!! And all the haters who didn't believe in you are [sore losers][colbert-gif].
+1. Commit your changes locally.
+2. Push your new commit up to Github.
+3. Demo your code for your TF.
+4. Victory!!! All the haters who didn't believe in you are [having a hard time swallowing defeat][colbert-gif].
 
 [colbert-gif]: http://giphy.com/gifs/OxAMjQW6mmA8g
-
----
-## Extra Credit: All Fired Up
-
-*Coming Soon*

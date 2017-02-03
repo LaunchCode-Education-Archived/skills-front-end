@@ -257,8 +257,5 @@ You are encouraged (but not required) to let [Bootstrap](http://getbootstrap.com
 
 1. In a terminal `add` and `commit` your changes.
 2. Then `push` your local changes up to your remote repo. You should then see your latest code up on Github if you visit your remote repo.
-3. Go to Vocareum and find the assignment called "The AJAXson 5".
-4. In your Vocareum work environment, `clone` the project down from your remote repo.
-5. Click Submit.
-6. Demo for a TF.
-7. Hit the dance floor!
+3. Demo for a TF.
+4. Hit the dance floor!

@@ -59,6 +59,7 @@ In order to submit your work, you will need to push your project up to GitHub. F
     ```
 
     Now if you revisit github.com/bobthebuilder/pyramid-slide in the browser (but substitute your own username in place of "bobthebuilder"), you should see your latest code in there!
+3. Demo your project to your TF.
 
 ## Woo!
 
