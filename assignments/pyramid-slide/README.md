@@ -12,11 +12,14 @@ You've been working at Mario Inc for awhile now, and during Studios you have con
 
 Today your team's designer, Daisy, came to you with a UI idea that you are sure is going to take the company to the next level: a slider component.
 
-Daisy put together a hand-drawn animation (amazingly realistic drawing skills) of the functionality she envisions:
+Daisy has mocked up an animation of the functionality she envisions:
 
-[Click here to see Daisy's vision][daisy-vision]
+<img style="width:300px" src="http://g.recordit.co/MiCFM5uBEr.gif"/>
 
 Your task is to make it real!
+
+> *NOTE:* If the image above fails to load, then [click here to see Daisy's mock-up][daisy-vision].
+
 
 ## Setup
 
@@ -38,9 +41,7 @@ Ok, you are all set. Go forth and code!
 
 ## Submit Your Work
 
-Once you have finished, follow the steps below to submit your work so you can receive credit.
-
-#### Commit and Push
+In order to submit your work, you will need to push your project up to GitHub. Follow the steps below:
 
 1. First, `add` and `commit` your changes.
 2. Now your local repo is one commit ahead of your remote repo (the one that your created on Github.com). To sync them, `push` your local changes up to the remote:
@@ -56,27 +57,7 @@ Once you have finished, follow the steps below to submit your work so you can re
 
     Now if you revisit github.com/bobthebuilder/pyramid-slide in the browser (but substitute your own username in place of "bobthebuilder"), you should see your latest code in there!
 
-
-#### Vocareum
-
-Head over to Vocareum and click the assignment titled "Pyramid Slide". In your "My Work" environment, go to the terminal and clone your repo down:
-
-```nohighlight
-$ git clone https://github.com/bobthebuilder/pyramid-slide.git
-Counting objects: 3, done.
-Writing objects: 100% (3/3), 213 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/bobthebuilder/pyramid-slide.git
- * [new branch]      master -> master
-```
-
-Then click Submit!
-
-#### Demo for a TF
-
-Finally, to receive credit, find a TF and demo your project for them.
-
-#### Woo!
+## Woo!
 
 Congratulations on conquering the Pyramid Slide!
 
@@ -84,8 +65,6 @@ Time to enjoy a cold one:
 
 <img src="http://i.imgur.com/pmC3Kch.gif"/>
 
-
-<img src="http://g.recordit.co/MiCFM5uBEr.gif"/>
 
 
 
