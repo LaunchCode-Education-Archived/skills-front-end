@@ -18,7 +18,6 @@ http://education.launchcode.org/skills-front-end/class-prep/12/index.html
 http://education.launchcode.org/skills-front-end/class-prep/13/index.html
 http://education.launchcode.org/skills-front-end/class-prep/14/index.html
 http://education.launchcode.org/skills-front-end/class-prep/14/now-what/index.html
-http://education.launchcode.org/skills-front-end/course-outline/class5/index.html
 http://education.launchcode.org/skills-front-end/course-outline/index.html
 http://education.launchcode.org/skills-front-end/during-class/class2/index.html
 http://education.launchcode.org/skills-front-end/during-class/class3/index.html
