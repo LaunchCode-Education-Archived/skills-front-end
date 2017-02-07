@@ -1,5 +1,6 @@
 ---
 title: "Pyramid Slide"
+currentMenu: assignments
 ---
 
 <img width="600px" src="https://www.carnival.com/~/media/Images/PreSales/Excursions/Ports_M-Q/NAS/424042/Pictures/atlantis-dolphin-cay-deep-water-swim-and-aquaventure-nassau-the-bahamas-13.jpg"/>
@@ -14,12 +15,13 @@ Today your team's designer, Daisy, came to you with a new UI design and some new
 
 Daisy has mocked up an animation of the functionality she envisions:
 
-<!-- <img style="width:800px" src="http://g.recordit.co/QBknlRbuSe.gif"/> -->
 ![mockup](http://g.recordit.co/QBknlRbuSe.gif)
 
 Your task is to make it real!
 
-> *NOTE:* If the image above fails to load, then [click here to see Daisy's mock-up][daisy-mockup].
+<aside class="aside-note" markdown="1">
+If the image above fails to load, then [click here to see Daisy's mock-up](http://recordit.co/QBknlRbuSe).
+</aside>
 
 
 ## Setup
@@ -27,6 +29,7 @@ Your task is to make it real!
 1. Make sure you are logged into Github.
 2. Make a [new repository on Github][new-repo]. Give it the name `"pyramid-slide"`.
 3. Clone your repository down onto your computer.
+
 
 ## Notes and Tips
 
@@ -42,34 +45,11 @@ A few tips before you start:
 
 Ok, you are all set. Go make that pyramid!
 
+
 ## Submit Your Work
 
-In order to submit your work, you will need to push your project up to GitHub. Follow the steps below:
-
-1. First, `add` and `commit` your changes.
-2. Now your local repo is one commit ahead of your remote repo (the one that your created on Github.com). To sync them, `push` your local changes up to the remote:
-
-    ```nohighlight
-    $ git push
-    Counting objects: 3, done.
-    Writing objects: 100% (3/3), 213 bytes | 0 bytes/s, done.
-    Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/bobthebuilder/pyramid-slide.git
-     * [new branch]      master -> master
-    ```
-
-    Now if you revisit github.com/bobthebuilder/pyramid-slide in the browser (but substitute your own username in place of "bobthebuilder"), you should see your latest code in there!
-3. Demo your project to your TF.
-
-## Woo!
-
-Congratulations on conquering the Pyramid Slide!
-
-Time to enjoy a cold one:
-
-![kool-aid](http://i.imgur.com/pmC3Kch.gif)
-
-
+1. Follow the [submission instructions](..).
+2. Enjoy a [cold one](http://i.imgur.com/pmC3Kch.gif).
 
 
 [new-repo]: https://github.com/new
