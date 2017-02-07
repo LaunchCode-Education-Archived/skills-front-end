@@ -6,7 +6,7 @@ One of the classic problems in computer science is the question of how to optima
 
 ## The Giphy API
 
-You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers.
+You are going to use the [Giphy API](https://github.com/Giphy/GiphyAPI), whose purpose, as you might guess, is to serve up GIFs to developers.
 
 The basic goal of your page will be to fetch a GIF from Giphy, and then insert it into the DOM to display it on your page. We'll get into the details shortly, but first, let's play with Giphy for a minute.
 
@@ -135,8 +135,11 @@ Finally, it is possible that something might go wrong in the proccess of making 
 ## Obtaining the Starter Code
 
 1. Visit our [starter-code repository][starter-repo] on Github.
+
 2. **Fork** our repo by pressing the "Fork" button. You will now have your own version of the project, hosted on your Github profile.
+
 3. Back on your terminal, us `cd` to navigate to the place in your file system where to the place you want this project to live.
+
 4. Clone your remote repo:
 
 	```nohighlight
@@ -255,7 +258,5 @@ You are encouraged (but not required) to let [Bootstrap](http://getbootstrap.com
 
 ## How to Submit
 
-1. In a terminal `add` and `commit` your changes.
-2. Then `push` your local changes up to your remote repo. You should then see your latest code up on Github if you visit your remote repo.
-3. Demo for a TF.
-4. Hit the dance floor!
+1. Follow the [submission instructions](..)
+2. Hit the dance floor!

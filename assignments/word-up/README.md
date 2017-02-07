@@ -1,10 +1,10 @@
 ---
 title: "Word Up!"
+currentMenu: assignments
 ---
 
 As we near the end of a long Skill Track full boring things like movies, GIFs, and pyramids--the practicalities of life that, though perhaps necessary, are rather dull--you deserve some fun and games. So for this assignment, you will make a fun game!
 
-----
 ## The Goal
 
 The game you are trying to build is called *Word Up!*, and it is best described as a cross between Scrabble, Solitaire, and the Hunger Games in Space.
@@ -480,9 +480,7 @@ Just one last loose-end to tie up! Currently the user is able to cheat by submit
 
 You know the drill:
 
-1. Commit your changes locally.
-2. Push your new commit up to Github.
-3. Demo your code for your TF.
-4. Victory!!! All the haters who didn't believe in you are [having a hard time swallowing defeat][colbert-gif].
+1. Follow the [submission instructions](..)
+2. Victory!!! All the haters who didn't believe in you are [having a hard time swallowing defeat][colbert-gif].
 
-[colbert-gif]: http://giphy.com/gifs/OxAMjQW6mmA8g
+[colbert-gif]: https://media.giphy.com/media/OxAMjQW6mmA8g/giphy.gif
