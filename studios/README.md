@@ -11,21 +11,31 @@ In this series, we will build and make incremental additions to a simple page th
 
 ### Mario 1
 
+Practice basic JS syntax by building a dynamically sized pyramid and printing it to the developer console.
+
 [Work on Mario 1](./mario/1/)
 
 ### Mario 2
+
+Display your pyramid for the user by inserting it into the DOM.
 
 [Work on Mario 2](./mario/2/)
 
 ### Mario 3
 
+Use an event handler callback to respond to user input and allow the user to decide the height of the pyramid.
+
 [Work on Mario 3](./mario/3/)
 
 ### Mario 4
 
+Perform client-side validation on the user's form submission.
+
 [Work on Mario 4](./mario/4/)
 
 ### Mario 5
+
+Refactor to use the jQuery library for DOM manipulation.
 
 [Work on Mario 5](./mario/5/)
 
