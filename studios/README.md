@@ -47,24 +47,36 @@ Back by popular demand, it's everybody's favorite movie app. This time, we will 
 
 ### FlickList 0
 
+Grab the starter-code and register for a key for the API we'll be using.
+
 [Work on FlickList 0](./flicklist/0/)
 
 ### FlickList 1
+
+Carve out the main functionality: a browseable list of real movies that can be added to the user's watchlist in a separate section below.
 
 [Work on FlickList 1](./flicklist/1/)
 
 ### FlickList 2
 
+Add some rudimentary CSS, and add a "search by title" feature.
+
 [Work on FlickList 2](./flicklist/2/)
 
 ### FlickList 3
+
+Incorporate Bootstrap to quickly make things responsive and nicer-looking.
 
 [Work on FlickList 3](./flicklist/3/)
 
 ### FlickList 4
 
+Improve the search feature to query for movies by topic rather than title.
+
 [Work on FlickList 4](./flicklist/4/)
 
 ### FlickList 5
+
+Create a Bootstrap grid layout.
 
 [Work on FlickList 5](./flicklist/5/)

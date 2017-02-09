@@ -9,7 +9,9 @@ Along the way, hopefully you will continue to get more comfortable with jQuery, 
 
 ## Demo
 
-Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/f3dae711763c73f56267ac35e076c56383183829/index.html" target="_blank">FlickList 2 Demo</a>. Play around with the demo for a minute and get familiar with its features. You also might want to keep the demo open in a separate window, so you can refer to it while working on the assignment.
+Here is a demo of what you are trying to accomplish: [FlickList 2 Demo][demo]. Play around with the demo for a minute and get familiar with its features. You also might want to keep the demo open in a separate window, so you can refer to it while working on the assignment.
+
+[demo]: http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/f3dae711763c73f56267ac35e076c56383183829/index.html
 
 Note the following additions since last time:
 
@@ -126,11 +128,13 @@ var nuclearReactor = $("#nuclear-reactor");
 nuclearReactor.prop("disabled", true);
 ```
 
-Once you have this working, take a quick note of the CSS rule we used in order to achive the visual effect. We lower the `opacity` property (in otherwords, transparency) of disabled buttons. In order to select for only disabled buttons, we used the `:disabled` <a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">pseudoclass</a>.
+Once you have this working, take a quick note of the CSS rule we used in order to achieve the visual effect. We lower the `opacity` property (in other words, transparency) of disabled buttons. In order to select for only disabled buttons, we used the `:disabled` [pseudoclass][pseudoclass].
+
+[pseudoclass]: http://www.w3schools.com/css/css_pseudo_classes.asp
 
 ### 3. Give Watchlist Items a Class Attribute
 
-Next, it's time to apply some styles to thosewatchlist `<li>`s, so that they are big orange bricks. But first, in order to do that, we'll need to give them a `class` attribute, so that our CSS can select them. Inside the `render` function, within the `forEach` iteration over `model.watchlistItems`, use the jQuery `attr` function to give the `itemView` variable a class of `"item-watchlist"`.
+Next, it's time to apply some styles to those watchlist `<li>`s, so that they are big orange bricks. But first, in order to do that, we'll need to give them a `class` attribute, so that our CSS can select them. Inside the `render` function, within the `forEach` iteration over `model.watchlistItems`, use the jQuery `attr` function to give the `itemView` variable a class of `"item-watchlist"`.
 
 Verify that you succeeded as follows: In your browser window, add some movies to the watchlist. Then, open up the dev tools, go to the Console tab, and type this:
 
@@ -142,15 +146,19 @@ followed by the Enter key. You should see an array with some `<li>`s inside it, 
 
 ### 4. Style the Watchlist Items as Orange Bricks
 
-Now that your watchlist items have a class attribute, you can apply styles to them. Open up `styles.css`, and create a new class selector for elements with the class "item-watchlist" (hint: CSS selectors are the same as jQuery selectors). Add some styles until your watchlist tiems resemble those orange bricks from the demo. One style you'll definitely want to apply is:
+Now that your watchlist items have a class attribute, you can apply styles to them. Open up `styles.css`, and create a new class selector for elements with the class "item-watchlist" (hint: CSS selectors are the same as jQuery selectors). Add some styles until your watchlist items resemble those orange bricks from the demo. One style you'll definitely want to apply is:
 
-```css
+```nohighlight
 display: inline-block;
 ```
 
-This is what enables that left-to-right flow pattern. (See this <a href="http://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block" target="_blank">Stack Overflow post</a> for a nice overview of the differences between `block`, `inline`, and `inline-block`).
+This is what enables that left-to-right flow pattern. (See this [Stack Overflow post][so-post] for a nice overview of the differences between `block`, `inline`, and `inline-block`).
 
-You'll also need to apply a few other styles: a lot of padding, a little bit of margin on <a href="http://stackoverflow.com/questions/356759/a-mnemonic-for-the-order-of-css-margin-and-padding-shorthand-properties" target="_blank">just the right and bottom edges</a>, and the colors obviously need to change.
+[so-post]: http://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
+
+You'll also need to apply a few other styles: a lot of padding, a little bit of margin on [just the right and bottom edges][edges], and the colors obviously need to change.
+
+[edges]: http://stackoverflow.com/questions/356759/a-mnemonic-for-the-order-of-css-margin-and-padding-shorthand-properties
 
 ### 5. Change the Text Color to Gray
 
@@ -257,4 +265,4 @@ To https://github.com/jharvard/flicklist.git
  * [new branch]      studio2 -> studio2
 ```
 
-If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specificially, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio2". Click on that branch, and you should now see the code you just worked on.
+If you go back and revisit github.com/jharvard/flicklist, you should now see your new branch up there! Specifically, near the top-left of the screen, you should see a dropdown menu that says "Branch: master". Click that dropdown and you should see an option for "studio2". Click on that branch, and you should now see the code you just worked on.
