@@ -32,7 +32,7 @@ http://education.launchcode.org/skills-front-end/during-class/class12/index.html
 http://education.launchcode.org/skills-front-end/during-class/class13/index.html
 http://education.launchcode.org/skills-front-end/during-class/class14/index.html
 http://education.launchcode.org/skills-front-end/index.html
-http://education.launchcode.org/skills-front-end/issues/index.html
+http://education.launchcode.org/skills-front-end/reporting-issues/index.html
 http://education.launchcode.org/skills-front-end/studios/flicklist/0/index.html
 http://education.launchcode.org/skills-front-end/studios/flicklist/1/index.html
 http://education.launchcode.org/skills-front-end/studios/flicklist/1/staff-solution/index.html
