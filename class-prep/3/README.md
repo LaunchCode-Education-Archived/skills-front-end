@@ -1,8 +1,9 @@
 ---
 title: Class 3 Prep
+currentMenu: course-outline
 ---
 
-Before coming to [Class 3](../class3), please complete the following tasks:
+Before coming to Class 3, please complete the following tasks:
 
 ### Responding to Events
 

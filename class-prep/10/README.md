@@ -1,5 +1,6 @@
 ---
 title: Class 10 Prep
+currentMenu: course-outline
 ---
 
 Before coming to Class 10, please complete the following tasks:

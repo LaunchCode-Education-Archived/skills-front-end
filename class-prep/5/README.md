@@ -1,8 +1,9 @@
 ---
 title: Class 5 Prep
+currentMenu: course-outline
 ---
 
-Before coming to class 5, please complete the following tasks:
+Before coming to Class 5, please complete the following tasks:
 
 
 

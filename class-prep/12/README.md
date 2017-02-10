@@ -1,5 +1,6 @@
 ---
 title: Class 12 Prep
+currentMenu: course-outline
 ---
 
 Before coming to class 12, please complete the following tasks:

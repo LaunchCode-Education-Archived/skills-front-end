@@ -1,5 +1,6 @@
 ---
 title: Class 14 Prep
+currentMenu: course-outline
 ---
 
 Before coming to class 14, please complete the following tasks:

@@ -1,8 +1,9 @@
 ---
 title: Class 2 Prep
+currentMenu: course-outline
 ---
 
-Before coming to [Class 2](../class2), please complete the following tasks:
+Before coming to Class 2, please complete the following tasks:
 
 ### Javascript and the Browser
 

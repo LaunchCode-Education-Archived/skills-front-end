@@ -1,5 +1,6 @@
 ---
-title: Class 9 Prep 
+title: Class 9 Prep
+currentMenu: course-outline
 ---
 
 Before coming to [Class 9](../class9), please complete the following tasks:

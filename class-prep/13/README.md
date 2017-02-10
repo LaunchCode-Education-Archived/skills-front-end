@@ -1,5 +1,6 @@
 ---
-title: "Class 13 Prep"
+title: Class 13 Prep
+currentMenu: course-outline
 ---
 
 Before coming to class 13, please complete the following tasks:

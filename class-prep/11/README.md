@@ -1,5 +1,6 @@
 ---
-title: Class 5 Prep
+title: Class 11 Prep
+currentMenu: course-outline
 ---
 
 Before coming to Class 11, please complete the following tasks:

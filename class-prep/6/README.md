@@ -1,10 +1,11 @@
 ---
 title: Class 6 Prep
+currentMenu: course-outline
 ---
 
-We are now transitioning to a point in the class where we will be making a bunch of HTTP requests to external servers, and processing the data we receive back. This, of course, is what a browser does every time you visit a webpage. But in fact, there are other ways of making HTTP requests. On the front-end, one very common technique for making requests is using a technique called AJAX, which you will learn about in the Udacity course below.
+We are now transitioning to a point in the class where we will be making a bunch of HTTP requests to external servers, and processing the data we receive back. This, of course, is what a browser does every time you visit a webpage. But it turns out there are other ways, besides "visiting a page", of making HTTP requests. On the front-end, one very common technique for making requests is using a technique called AJAX, which you will learn about in the Udacity course below.
 
-Before coming to [Class 6](../class6), please complete the following tasks:
+Before coming to Class 6, please complete the following tasks:
 
 
 ### cURL

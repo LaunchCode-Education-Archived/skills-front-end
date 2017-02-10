@@ -1,5 +1,6 @@
 ---
 title: Class 4 Prep
+currentMenu: course-outline
 ---
 
 Before coming to Class 4, please complete the following tasks:

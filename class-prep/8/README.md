@@ -1,8 +1,9 @@
 ---
-title: Class 2 Prep 
+title: Class 8 Prep
+currentMenu: course-outline
 ---
 
-Before coming to [Class 8](../class8), please complete the following tasks:
+Before coming to Class 8, please complete the following tasks:
 
 ### Studio Recap
 Task | Resource Type | Link | Time Estimate | Instructions
