@@ -6,7 +6,7 @@ currentMenu: course-outline
 Class # | Prep Work | Studio | New Topics | Start Assignment
 |-------|-----------|--------|------------|-----------------|
 1 | [Class 1 Prep](../class-prep/1) | [Mario 1](../studios/mario/1) | Javascript basics | |
-2 | [Class 2 Prep](../class-prep/2) | [Mario 2](.../studios/mario/2) | Javascript in the Browser; Javascript objects; The DOM | |
+2 | [Class 2 Prep](../class-prep/2) | [Mario 2](../studios/mario/2) | Javascript in the Browser; Javascript objects; The DOM | |
 3 | [Class 3 Prep](../class-prep/3) | [Mario 3](../studios/mario/3) | Higher-order functions in JS; Handling DOM events | Start [🐘 Pyramid Slide][pyramid-slide] |
 4 | [Class 4 Prep](../class-prep/4) | [Mario 4](../studios/mario/4) | Forms; Client-side validation | |
 5 | [Class 5 Prep](../class-prep/5) | [Mario 5](../studios/mario/5) | The jQuery library | |
