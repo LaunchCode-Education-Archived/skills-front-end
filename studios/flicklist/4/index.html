@@ -22,7 +22,7 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-front-end/about-this-unit/">
+                                    <a href="http://education.launchcode.org/skills-front-end/about/">
                                         About This Unit
                                     </a>
                                 </li>
@@ -47,7 +47,7 @@
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-front-end/reporting-issues/">
+                                    <a href="http://education.launchcode.org/skills-front-end/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -112,13 +112,13 @@
                                         <h1>FlickList 4</h1>
                     <p>Today we will make only a few changes, but they are tricky changes.</p>
 <h2 id="demo">Demo</h2>
-<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/aa417bf89d29552d0e825605e99dd5dc1fb8e077/index.html" target="_blank">FlickList 4 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
-<p>Looks the same as last time! But if you have a sharp eye, you might have noticed one difference: the text of the search button has changed from &quot;Search by Title&quot; to &quot;Search by Topic&quot;. And indeed, the underlying functionality has changed as well. Say, for example, you wanted to browse for some vampire movies. In the <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html" target="_blank">prevous version</a>, you could try searching for &quot;vampire&quot;, but you would only get results that literally had the word &quot;vampire&quot; in the title. That means no Twilight!! The new version will return any movies that prominently feature vampires, regardless of whether the word appears in the title or not.</p>
+<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/aa417bf89d29552d0e825605e99dd5dc1fb8e077/index.html">FlickList 4 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
+<p>Looks the same as last time! But if you have a sharp eye, you might have noticed one difference: the text of the search button has changed from &quot;Search by Title&quot; to &quot;Search by Topic&quot;. And indeed, the underlying functionality has changed as well. Say, for example, you wanted to browse for some vampire movies. In the <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html">prevous version</a>, you could try searching for &quot;vampire&quot;, but you would only get results that literally had the word &quot;vampire&quot; in the title. That means no Twilight!! The new version will return any movies that prominently feature vampires, regardless of whether the word appears in the title or not.</p>
 <h2 id="the-api">The API</h2>
 <p>So what are we doing differently under the hood to allow this new Search functionality? We are interacting with TheMovieDB's API a little differently than before.</p>
 <h3 id="read-the-docs">Read the Docs</h3>
 <p>Let's dive into this by interacting more deeply with the API documentation.</p>
-<p>Up till now, we have been sending a request to their <a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to &quot;Search for movies by title.&quot;</p>
+<p>Up till now, we have been sending a request to their <a href="https://developers.themoviedb.org/3/search/search-movies">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to &quot;Search for movies by title.&quot;</p>
 <p>Great, so is there a different search endpoint that allows you to, say, &quot;search for movies by topic&quot;?</p>
 <p>Not exactly. But the <a href="https://developers.themoviedb.org/3/discover">/discover/movie</a> endpoint does have an &quot;optional parameter&quot; that seems promising. Take a minute now, and browse quickly through that long list of optional parameters and see if you can spot it.</p>
 <p>Did you find it?</p>
@@ -196,10 +196,10 @@ Type the following line:</p>
 <h3 id="4-handle-search-response-by-invoking-discover">4. Handle Search Response by Invoking Discover</h3>
 <p>Now that your search function is receiving keywords, the next step is to do something with those keywords. Basically, you want to collect those keywords into a string, and then pass that string over to <code>discoverMovies</code> and let it work its magic, taking advantage of the work you've already done over there.</p>
 <h3 id="4a-get-an-array-of-ids">4a. Get an Array of IDs</h3>
-<p>So we have an array of keywords inside that that <code>response</code> object, but notice that each keyword object contains two properties: a <code>.id</code>, representing the id number, and a <code>.name</code>, representing the actual search term. In this case we don't care about the name, we just want the pure ids. This is the prefect chance to use the array <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">map</a> function, which lets you create a new array from an old one by &quot;mapping&quot; each of its elements to something else. Use the <code>map</code> function to convert <code>response.results</code> into an array of ids, and store the result in a variable called <code>keywordIDs</code>.</p>
+<p>So we have an array of keywords inside that that <code>response</code> object, but notice that each keyword object contains two properties: a <code>.id</code>, representing the id number, and a <code>.name</code>, representing the actual search term. In this case we don't care about the name, we just want the pure ids. This is the prefect chance to use the array <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map</a> function, which lets you create a new array from an old one by &quot;mapping&quot; each of its elements to something else. Use the <code>map</code> function to convert <code>response.results</code> into an array of ids, and store the result in a variable called <code>keywordIDs</code>.</p>
 <h4 id="4b-convert-the-array-to-a-string">4b. Convert the Array to a String</h4>
 <p>So now we have an array of ids. But ultimately what we want is a <em>string</em> containing those ids. Specifically, the API specifies that we need a string in which the id numbers are interleaved with either commas or pipe <code>"|"</code> characters, e.g. <code>"3133,185633,3630,7010"</code> or <code>"3133|185633|3630|7010"</code>.</p>
-<p>There is a quick, fancy way of producing this string: a magic array method called <code>join</code>, which does exactly what we want: creates a string with each element of the array, separated by commas or some other string. Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank">documentation for the join function</a>.</p>
+<p>There is a quick, fancy way of producing this string: a magic array method called <code>join</code>, which does exactly what we want: creates a string with each element of the array, separated by commas or some other string. Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">documentation for the join function</a>.</p>
 <p>Use the join function to create a variable called <code>keywordsString</code> whose value is the string we are trying to produce.</p>
 <h4 id="4c-use-an-quotorquot-string-instead-of-an-quotandquot-string">4c. Use an &quot;Or&quot; String Instead of an &quot;And&quot; String</h4>
 <p>Rather than a comma-separated string, we want to insert a pipe character in between the ids. the secret to accomplishing this is that although the <code>join</code> function uses a comma character as the default content to intersperse between the elements, <code>join</code> also accepts an optional argument, where you can specify some other custom string.</p>

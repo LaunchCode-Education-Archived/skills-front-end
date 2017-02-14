@@ -22,7 +22,7 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-front-end/about-this-unit/">
+                                    <a href="http://education.launchcode.org/skills-front-end/about/">
                                         About This Unit
                                     </a>
                                 </li>
@@ -47,7 +47,7 @@
                                     </a>
                                 </li>
                                                             <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/skills-front-end/reporting-issues/">
+                                    <a href="http://education.launchcode.org/skills-front-end/issues/">
                                         Reporting Issues
                                     </a>
                                 </li>
@@ -112,7 +112,7 @@
                                         <h1>FlickList 5</h1>
                     <p>In today's (final!) studio, you will add some finishing touches to the project. The changes are mostly cosmetic, but they will require you to refactor a significant chunk of your html and javascript code.</p>
 <h2 id="demo">Demo</h2>
-<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/636afdd8442225455cef24ea4a8560705a17313c/index.html" target="_blank">FlickList 5 Demo</a> (note: I noticed some weird behavior with this demo on Safari, so be sure to open it up in Chrome). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
+<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/636afdd8442225455cef24ea4a8560705a17313c/index.html">FlickList 5 Demo</a> (note: I noticed some weird behavior with this demo on Safari, so be sure to open it up in Chrome). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
 <p>Note the following additions since last time:</p>
 <ul>
 <li>The proverbial furniture has been rearranged. The two sections (watchlist and browse) are no longer arranged in side-by-side columns; instead the browse section has moved back to its former home, below the watchlist section.</li>
@@ -163,7 +163,7 @@ Switched to a new branch 'studio5'</code></pre>
 <ul>
 <li>Note that your search form (&quot;Search by Topic&quot;) and header (&quot;Browse Movies&quot;) should be placed inside Container B.</li>
 <li>Give Container A-1 an attribute of <code>id="browse-info"</code></li>
-<li>Place A-1 and A-2 inside a Bootstrap <a href="http://getbootstrap.com/components/#wells" target="_blank">well</a> by wrapping the entire row that holds A-1 and A-2 inside a wrapper div with <code>class="well"</code></li>
+<li>Place A-1 and A-2 inside a Bootstrap <a href="http://getbootstrap.com/components/#wells">well</a> by wrapping the entire row that holds A-1 and A-2 inside a wrapper div with <code>class="well"</code></li>
 <li>Don't be afraid of breaking what you currently have.</li>
 <li>Google &quot;Bootstrap Grid&quot; if you need a refresher.</li>
 <li>Feel free to &quot;cheat&quot; by opening the Studio Demo in your browser and inspecting its HTML with the dev tools.</li>
@@ -177,9 +177,9 @@ Switched to a new branch 'studio5'</code></pre>
 </ul>
 <h3 id="3-create-the-carousel">3. Create the Carousel</h3>
 <p>Now for the fun part: inside Container A-2, create a Bootstrap Carousel. How does one do that? It's essentially just like the other Bootstrap components we've already seen, but more complex, and composed of multiple elements rather than just one. You simply create some elements and wire them up with them the right class and id names and other attributes, and Bootstrap will work behind the scenes to make everything function properly.</p>
-<p>Actually, for this task we are going to need to include Bootstrap's javascript library (we currently only have their CSS). So the first step is to head to <a href="http://getbootstrap.com/getting-started/#download-cdn" target="_blank">the bootstrap site</a> and copy/paste their &quot;Latest compiled and minified JavaScript&quot; into the top of <code>index.html</code>.</p>
-<p>Now it's time to create the carousel. Check out <a href="http://codepen.io/jesselaunchcode/pen/ZWZyeX" target="_blank">this Codepen example</a> (which I made, and which mirrors exactly what you want to do (make sure you expand the &quot;html&quot; window on Codepen so you don't go insane trying to read from a tiny box)), and also <a href="http://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank">this W3 Schools example</a> (which has some extra stuff we don't care about, but provides explanations of the various parts, which you should read).</p>
-<p>Build your carousel, and fill it with 3 movie poster images, using posters from the internet <a href="http://sumnersunsettheatre.com/wp-content/uploads/Minions-poster.jpg" target="_blank">like this</a>. Give your carousel an attribute of <code>id=browse-carousel</code> Make sure to also include the left and right &quot;data slide&quot; buttons, and make sure they work.</p>
+<p>Actually, for this task we are going to need to include Bootstrap's javascript library (we currently only have their CSS). So the first step is to head to <a href="http://getbootstrap.com/getting-started/#download-cdn">the bootstrap site</a> and copy/paste their &quot;Latest compiled and minified JavaScript&quot; into the top of <code>index.html</code>.</p>
+<p>Now it's time to create the carousel. Check out <a href="http://codepen.io/jesselaunchcode/pen/ZWZyeX">this Codepen example</a> (which I made, and which mirrors exactly what you want to do (make sure you expand the &quot;html&quot; window on Codepen so you don't go insane trying to read from a tiny box)), and also <a href="http://www.w3schools.com/bootstrap/bootstrap_carousel.asp">this W3 Schools example</a> (which has some extra stuff we don't care about, but provides explanations of the various parts, which you should read).</p>
+<p>Build your carousel, and fill it with 3 movie poster images, using posters from the internet <a href="http://sumnersunsettheatre.com/wp-content/uploads/Minions-poster.jpg">like this</a>. Give your carousel an attribute of <code>id=browse-carousel</code> Make sure to also include the left and right &quot;data slide&quot; buttons, and make sure they work.</p>
 <p>Finally add this rule to your <code>styles.css</code> file:</p>
 <pre><code class="language-css">#browse-carousel {
     max-width: 300px;
