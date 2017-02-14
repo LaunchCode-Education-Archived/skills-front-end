@@ -19,15 +19,11 @@ Daisy has mocked up an animation of the functionality she envisions:
 
 Your task is to make it real!
 
-<aside class="aside-note" markdown="1">
-If the image above fails to load, then [click here to see Daisy's mock-up](http://recordit.co/QBknlRbuSe).
-</aside>
-
 
 ## Setup
 
 1. Make sure you are logged into Github.
-2. Make a [new repository on Github][new-repo]. Give it the name `"pyramid-slide"`.
+2. Make a [new repository on Github][new-repo]. Give it the name `pyramid-slide`.
 3. Clone your repository down onto your computer.
 
 
