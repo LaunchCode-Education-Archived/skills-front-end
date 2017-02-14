@@ -3,7 +3,7 @@ title: "FlickList 0"
 currentMenu: studios
 ---
 
-Welcome to your first Studio! Today is mostly just about getting set up.
+Welcome to your first Flicklist Studio! Like the Mario Studio, we'll be doing a series of Studios building out our Flicklist project. Today is mostly just about getting set up.
 
 First, you will use Git to grab the starter code for the project.
 
