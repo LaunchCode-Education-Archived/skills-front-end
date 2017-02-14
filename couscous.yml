@@ -29,7 +29,7 @@ menu:
     items:
         about-this-unit:
             text: About This Unit
-            relativeUrl: about-this-unit/
+            relativeUrl: about/
         course-outline:
             text: Course Outline
             relativeUrl: course-outline/
@@ -44,4 +44,4 @@ menu:
             absoluteUrl: http://eloquentjavascript.net
         reporting-issues:
             text: Reporting Issues
-            relativeUrl: reporting-issues/
+            relativeUrl: issues/
