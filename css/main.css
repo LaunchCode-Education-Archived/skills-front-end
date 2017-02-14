@@ -67,6 +67,10 @@ h2, h3, h4, h5, h6 {
     color: rgb(52, 74, 95);
 }
 
+h5, h6 {
+    font-size: 17px;
+}
+
 #content img {
     max-width: 100%;
     box-shadow: 0 0 5px 0 #ddd;
@@ -118,7 +122,7 @@ aside::before {
 }
 
 .aside-hint::before {
-    content: "🤔 Hint";
+    content: "🔎 Hint";
 }
 
 .aside-pro-tip::before {
@@ -126,7 +130,11 @@ aside::before {
 }
 
 .aside-example::before {
-    content: "🔦 Example";
+    content: "💡 Example";
+}
+
+.aside-question::before {
+    content: "🤔 Question";
 }
 
 .aside-custom::before {
@@ -159,13 +167,6 @@ aside::before {
     }
 }
 
-/*.language-nohighlight {
-    display: block;
-    overflow-x: auto;
-    padding: 1.5em;
-    -webkit-text-size-adjust: none;
-}*/
-
 .page-header {
     margin-top: 0;
 }
@@ -176,10 +177,10 @@ aside::before {
 
 pre {
     padding: 0;
-    border-radius: 4px;
     font-size: 15px;
     margin-top: 2em;
     margin-bottom: 0.5em;
+    border: none;
 }
 
 pre code {
@@ -229,8 +230,8 @@ a {
 
 .navbar .site-title {
     margin-left: 12px;
-	padding-top: 25px;
-	padding-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* Home page */
@@ -323,7 +324,6 @@ h1 {
     color: #789;
     margin: 0;
     font-size: 18px;
-    line-height: 1.9em;
 }
 
 /*
@@ -445,9 +445,8 @@ main h3,
 main h4,
 main h5 {
     border-top: 80px solid transparent;
-    margin-top: -80px;
+    margin-top: -44px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
->>>>>>> master
 }
