@@ -15,7 +15,7 @@ Today your team's designer, Daisy, came to you with a new UI design and some new
 
 Daisy has mocked up an animation of the functionality she envisions:
 
-![mockup](http://g.recordit.co/QBknlRbuSe.gif)
+![mockup](pyramid-slide.gif)
 
 Your task is to make it real!
 

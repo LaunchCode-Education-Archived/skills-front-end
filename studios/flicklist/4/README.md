@@ -7,9 +7,9 @@ Today we will make only a few changes, but they are tricky changes.
 
 ## Demo
 
-Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/aa417bf89d29552d0e825605e99dd5dc1fb8e077/index.html" target="_blank">FlickList 4 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
+Here is a demo of what you are trying to accomplish: [FlickList 4 Demo](http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/aa417bf89d29552d0e825605e99dd5dc1fb8e077/index.html). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
 
-Looks the same as last time! But if you have a sharp eye, you might have noticed one difference: the text of the search button has changed from "Search by Title" to "Search by Topic". And indeed, the underlying functionality has changed as well. Say, for example, you wanted to browse for some vampire movies. In the <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html" target="_blank">prevous version</a>, you could try searching for "vampire", but you would only get results that literally had the word "vampire" in the title. That means no Twilight!! The new version will return any movies that prominently feature vampires, regardless of whether the word appears in the title or not.
+Looks the same as last time! But if you have a sharp eye, you might have noticed one difference: the text of the search button has changed from "Search by Title" to "Search by Topic". And indeed, the underlying functionality has changed as well. Say, for example, you wanted to browse for some vampire movies. In the [prevous version](http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html), you could try searching for "vampire", but you would only get results that literally had the word "vampire" in the title. That means no Twilight!! The new version will return any movies that prominently feature vampires, regardless of whether the word appears in the title or not.
 
 ## The API
 
@@ -19,7 +19,7 @@ So what are we doing differently under the hood to allow this new Search functio
 
 Let's dive into this by interacting more deeply with the API documentation.
 
-Up till now, we have been sending a request to their <a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank">/search/movie</a> endpoint, which you can see from the documentation (click that link above), is described as allowing you to "Search for movies by title."
+Up till now, we have been sending a request to their [/search/movie](https://developers.themoviedb.org/3/search/search-movies) endpoint, which you can see from the documentation (click that link above), is described as allowing you to "Search for movies by title."
 
 Great, so is there a different search endpoint that allows you to, say, "search for movies by topic"?
 
@@ -162,13 +162,13 @@ Now that your search function is receiving keywords, the next step is to do some
 
 ### 4a. Get an Array of IDs
 
-So we have an array of keywords inside that that `response` object, but notice that each keyword object contains two properties: a `.id`, representing the id number, and a `.name`, representing the actual search term. In this case we don't care about the name, we just want the pure ids. This is the prefect chance to use the array <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">map</a> function, which lets you create a new array from an old one by "mapping" each of its elements to something else. Use the `map` function to convert `response.results` into an array of ids, and store the result in a variable called `keywordIDs`.
+So we have an array of keywords inside that that `response` object, but notice that each keyword object contains two properties: a `.id`, representing the id number, and a `.name`, representing the actual search term. In this case we don't care about the name, we just want the pure ids. This is the prefect chance to use the array [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) function, which lets you create a new array from an old one by "mapping" each of its elements to something else. Use the `map` function to convert `response.results` into an array of ids, and store the result in a variable called `keywordIDs`.
 
 #### 4b. Convert the Array to a String
 
 So now we have an array of ids. But ultimately what we want is a *string* containing those ids. Specifically, the API specifies that we need a string in which the id numbers are interleaved with either commas or pipe `"|"` characters, e.g. `"3133,185633,3630,7010"` or `"3133|185633|3630|7010"`.
 
-There is a quick, fancy way of producing this string: a magic array method called `join`, which does exactly what we want: creates a string with each element of the array, separated by commas or some other string. Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank">documentation for the join function</a>.
+There is a quick, fancy way of producing this string: a magic array method called `join`, which does exactly what we want: creates a string with each element of the array, separated by commas or some other string. Check out the [documentation for the join function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join).
 
 Use the join function to create a variable called `keywordsString` whose value is the string we are trying to produce.
 

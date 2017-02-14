@@ -7,7 +7,7 @@ Today you will add a little bit more functionality to the project, but the main 
 
 ## Demo
 
-Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html" target="_blank">FlickList 3 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
+Here is a demo of what you are trying to accomplish: [FlickList 3 Demo](http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
 
 Note the following additions since last time:
 * Watchlist items have an "I watched it" button, which allows the user to cross that movie off their list.
@@ -98,7 +98,7 @@ Bootstrap comes with a ton of nice pre-made CSS styles "right out of the box". W
 
 The first step is to simply include the Bootstrap library in our project, at the top of `index.html`.
 
-On their website, Bootstrap even <a href="http://getbootstrap.com/getting-started/" target="_blank">provides us</a> the exact `<link>` tag we need to copy/paste into our project in order to grab the library from their CDN:
+On their website, Bootstrap even [provides us](http://getbootstrap.com/getting-started/) the exact `<link>` tag we need to copy/paste into our project in order to grab the library from their CDN:
 
 ```html
 <!-- Latest compiled and minified CSS -->
@@ -107,7 +107,7 @@ On their website, Bootstrap even <a href="http://getbootstrap.com/getting-starte
 
 #### 2b. Style the Page Header
 
-The first Bootstrap class we'll use is <a href="http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp" target="_blank">Jumbotron</a>, which is used for creating a big, bold, attention-grabbing block of text. Use it to style the `<header>` at the top of the page.
+The first Bootstrap class we'll use is [Jumbotron](http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp), which is used for creating a big, bold, attention-grabbing block of text. Use it to style the `<header>` at the top of the page.
 
 Next, add the "text-muted" class to the subtitle, so it stands out a little less.
 
@@ -125,19 +125,19 @@ Finally, note that this customization only works because in the head of `index.h
 
 This task involves changing code in both `index.html` and `flicklist.js`.
 
-Read more about <a href="http://v4-alpha.getbootstrap.com/components/list-group/" target="_blank">Bootstrap Lists</a> and <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> for guidance.
+Read more about [Bootstrap Lists](http://v4-alpha.getbootstrap.com/components/list-group/) and [Bootstrap Buttons](http://v4-alpha.getbootstrap.com/components/buttons/) for guidance.
 
 #### 2e. Style the Form
 
-For guidance, read more about <a href="http://v4-alpha.getbootstrap.com/components/input-group/" target="_blank">Boostrap Input Groups</a>, especially <a href="http://v4-alpha.getbootstrap.com/components/input-group/#button-addons" target="_blank">Button Addons</a>.
+For guidance, read more about [Boostrap Input Groups](http://v4-alpha.getbootstrap.com/components/input-group/), especially [Button Addons](http://v4-alpha.getbootstrap.com/components/input-group/#button-addons).
 
 #### 2f. Style the Watchlist
 
-This one's very simple. In index.html, just give the watchlist `<ul>` a class of <a href="http://getbootstrap.com/css/#inline" target="_blank">list-inline</a>. Remember that whole `"inline-block"` shenanigans we did last time? This class was made specifically for lists like the kind we're doing here.
+This one's very simple. In index.html, just give the watchlist `<ul>` a class of [list-inline](http://getbootstrap.com/css/#inline). Remember that whole `"inline-block"` shenanigans we did last time? This class was made specifically for lists like the kind we're doing here.
 
 #### 2g. Style the Watchlist Items
 
-In `flicklist.js`, restyle the watchlist items using <a href="http://getbootstrap.com/components/#panels-heading" target="_blank">Bootstrap Panels</a>.
+In `flicklist.js`, restyle the watchlist items using [Bootstrap Panels](http://getbootstrap.com/components/#panels-heading).
 
 #### 2h. Customize the Watchlist Items
 
@@ -148,7 +148,7 @@ Let's customize these things a little more. Each `<li>` should have:
 
 #### 2i. Style the "I watched it" Buttons
 
-Make 'em red. Here is the section on <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> again.
+Make 'em red. Here is the section on [Bootstrap Buttons](http://v4-alpha.getbootstrap.com/components/buttons/) again.
 
 #### 2j. Customize the "I watched it" Buttons
 
@@ -166,7 +166,7 @@ Next, give each section a class of "col-?-?" (the question marks are for oyu to 
 
 Resize your window and see if it's working properly. At a certain point, the layout should switch back and forth.
 
-Read more on <a href="http://getbootstrap.com/css/#grid" target="_blank">Bootstrap Grids</a> for guidance.
+Read more on [Bootstrap Grids](http://getbootstrap.com/css/#grid) for guidance.
 
 #### 3b. Add a Meta Viewport Tag
 

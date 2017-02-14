@@ -104,7 +104,7 @@ Here's how to nab that key:
 
 ### Sign up for an Account
 
-<a href="https://www.themoviedb.org/account/signup" target="_blank">Register here</a>. Then check your email and click the confirmation link.
+[Register here](https://www.themoviedb.org/account/signup). Then check your email and click the confirmation link.
 
 ### Sign up for API Key
 

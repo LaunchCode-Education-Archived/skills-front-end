@@ -31,4 +31,4 @@ Don't type the whole thing at once. Implement one little piece at a time and tes
 
 Keep going until you've completed the whole studio.
 
-<a href="https://youtu.be/elnqgp3J2Ow" target="_blank">Click here</a> for a video walkthrough of the solution.
+[Click here](https://youtu.be/elnqgp3J2Ow) for a video walkthrough of the solution.

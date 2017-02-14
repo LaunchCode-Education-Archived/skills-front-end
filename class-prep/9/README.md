@@ -3,7 +3,7 @@ title: Class 9 Prep
 currentMenu: course-outline
 ---
 
-Before coming to [Class 9](../class9), please complete the following tasks:
+Before coming to [Class 9](../class9/), please complete the following tasks:
 
 ### Studio Recap
 
@@ -18,7 +18,7 @@ Responsiveness is a web-design philosophy and set of practices for dealing with 
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|---------------
-Read | Article | <a href="http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design" target="_blank">2014 Guide to Responsive Web Design</a> | 30 minutes | Read this article for an overview of the recent state of Responsiveness.
+Read | Article | [2014 Guide to Responsive Web Design](http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design) | 30 minutes | Read this article for an overview of the recent state of Responsiveness.
 
 ### Bootstrap
 
@@ -26,6 +26,6 @@ Bootstrap is a front-end framework that handles for you much of the heavy-liftin
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Article | <a href="http://learntocodewith.me/getting-started/topics/bootstrap/" target="_blank">Bootstrap for Beginners</a> | 15 minutes | Read this article for an intro to Bootstrap. |
-Do | Interactive Course | <a href="https://www.freecodecamp.com/challenges/use-responsive-design-with-bootstrap-fluid-containers" target="_blank">FreeCodeCamp / Responsive Design with Bootstrap</a> | 2 hours | The link here will take you to the first exercise in a section titled **Responsive Design with Bootstrap**. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our experience is that students get through it pretty quickly.
-Read | Article |  <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system" target="_blank">Understanding the Bootstrap 3 Grid System</a> | 30 minutes | This article takes a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. `col-sm-6` vs `col-md-6`.
+Read | Article | [Bootstrap for Beginners](http://learntocodewith.me/getting-started/topics/bootstrap/) | 15 minutes | Read this article for an intro to Bootstrap. |
+Do | Interactive Course | [FreeCodeCamp / Responsive Design with Bootstrap](https://www.freecodecamp.com/challenges/use-responsive-design-with-bootstrap-fluid-containers) | 2 hours | The link here will take you to the first exercise in a section titled **Responsive Design with Bootstrap**. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our experience is that students get through it pretty quickly.
+Read | Article |  [Understanding the Bootstrap 3 Grid System](https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system) | 30 minutes | This article takes a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. `col-sm-6` vs `col-md-6`.

@@ -39,7 +39,7 @@ There are a few things we want to point out about the Eloquent Javascript book a
 
 Note that all the code snippets in Eloquent Javascript are "active". Whenever you see a code snippet, you can (and should) run the code and see what happens. You also can (and should) edit the code and then re-run it, to play around and test your understanding:
 
-![Active Code](http://g.recordit.co/dWDRoTUSq2.gif)
+![Active Code](./eloquent-js-editor.gif)
 
 ### Exercises
 

@@ -68,12 +68,12 @@ Stuff we didn't really talk about:
 ### CSS and Design
 
 Stuff we didn't really talk about:
-* CSS Layout frameworks like <a href="http://flexbox.io" target="_blank">Flexbox</a> or <a href="https://gridstylesheets.org" target="_blank">Gride Stylesheets</a>
+* CSS Layout frameworks like [Flexbox](http://flexbox.io) or [Gride Stylesheets](https://gridstylesheets.org)
 * CSS Preprocessors like <a href="http://lesscss.org">LESS</a> and <a>SASS</a>
 * [Material Design][material-design] is a set of graphic design principles set forward by Google. CSS frameworks such as [Materialize CSS][materialize] and [Material Design Lite][mdl] are similar to Bootstrap and make it easy to quickly give your app the Material Design look and feel. Also, check out this [Material version of FlickList][material-flicklist], courtesy of LaunchCode mentor Anthony Stark!
 
 I generally recommend these resources for learning HTML and CSS
-* <a href="http://learn.shayhowe.com/html-css/" target="_blank">Shay How</a>
+* [Shay How](http://learn.shayhowe.com/html-css/)
 
 
 [material-design]: https://material.google.com
@@ -88,16 +88,16 @@ As your project grows from 500 lines of code to 5,000 to 50,000, it becomes expo
 A framework is some technology that provides "scaffolding" around which you can build a project. The idea is that this scaffolding will help / force you into a project architecture that stays maintainable as it grows.
 
 Some popular frameworks are:
-* <a href="https://angularjs.org" target="_blank">AngularJS</a>
-* <a href="https://facebook.github.io/react/" target="_blank">ReactJS</a> (technically is <a href="http://blog.andrewray.me/reactjs-for-stupid-people/" target="_blank">not exactly a framework</a> by itself)
-* <a href="http://emberjs.com" target="_blank">EmberJS</a>
+* [AngularJS](https://angularjs.org)
+* [ReactJS](https://facebook.github.io/react/) (technically is [not exactly a framework](http://blog.andrewray.me/reactjs-for-stupid-people/) by itself)
+* [EmberJS](http://emberjs.com)
 
 Some less popular (but much better, in my own hipster opinion) frameworks are:
 * [Redux](http://redux.js.org)
 * [Elm](https://elm-lang.org) (This is actually an entirely different language that compiles to Javascript)
 * [Cycle](https://cycle.js.org)
 
-This site, <a href="http://todomvc.com" target="_blank">TodoMVC</a> shows you how to build the same Todo List app in a variety of different frameworks.
+[TodoMVC](http://todomvc.com) shows you how to build the same Todo List app in a variety of different frameworks.
 
 ### Build-Tools and Stuff
 

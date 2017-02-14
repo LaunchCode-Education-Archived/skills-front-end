@@ -4,7 +4,7 @@ title: Class 14
 
 ### Before Class
 
-Before coming to class, please complete [Class 14 Prep](../class14-prep).
+Before coming to class, please complete [Class 14 Prep](../class14-prep/).
 
 ### During Class
 

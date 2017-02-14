@@ -7,7 +7,7 @@ In today's (final!) studio, you will add some finishing touches to the project. 
 
 ## Demo
 
-Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/636afdd8442225455cef24ea4a8560705a17313c/index.html" target="_blank">FlickList 5 Demo</a> (note: I noticed some weird behavior with this demo on Safari, so be sure to open it up in Chrome). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
+Here is a demo of what you are trying to accomplish: [FlickList 5 Demo](http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/636afdd8442225455cef24ea4a8560705a17313c/index.html) (note: I noticed some weird behavior with this demo on Safari, so be sure to open it up in Chrome). Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.
 
 Note the following additions since last time:
 
@@ -80,7 +80,7 @@ A few things to point out:
 
 * Note that your search form ("Search by Topic") and header ("Browse Movies") should be placed inside Container B.
 * Give Container A-1 an attribute of `id="browse-info"`
-* Place A-1 and A-2 inside a Bootstrap <a href="http://getbootstrap.com/components/#wells" target="_blank">well</a> by wrapping the entire row that holds A-1 and A-2 inside a wrapper div with `class="well"`
+* Place A-1 and A-2 inside a Bootstrap [well](http://getbootstrap.com/components/#wells) by wrapping the entire row that holds A-1 and A-2 inside a wrapper div with `class="well"`
 * Don't be afraid of breaking what you currently have.
 * Google "Bootstrap Grid" if you need a refresher.
 * Feel free to "cheat" by opening the Studio Demo in your browser and inspecting its HTML with the dev tools.
@@ -98,11 +98,11 @@ In `index.html`, add the following content:
 
 Now for the fun part: inside Container A-2, create a Bootstrap Carousel. How does one do that? It's essentially just like the other Bootstrap components we've already seen, but more complex, and composed of multiple elements rather than just one. You simply create some elements and wire them up with them the right class and id names and other attributes, and Bootstrap will work behind the scenes to make everything function properly.
 
-Actually, for this task we are going to need to include Bootstrap's javascript library (we currently only have their CSS). So the first step is to head to <a href="http://getbootstrap.com/getting-started/#download-cdn" target="_blank">the bootstrap site</a> and copy/paste their "Latest compiled and minified JavaScript" into the top of `index.html`.
+Actually, for this task we are going to need to include Bootstrap's javascript library (we currently only have their CSS). So the first step is to head to [the bootstrap site](http://getbootstrap.com/getting-started/#download-cdn) and copy/paste their "Latest compiled and minified JavaScript" into the top of `index.html`.
 
-Now it's time to create the carousel. Check out <a href="http://codepen.io/jesselaunchcode/pen/ZWZyeX" target="_blank">this Codepen example</a> (which I made, and which mirrors exactly what you want to do (make sure you expand the "html" window on Codepen so you don't go insane trying to read from a tiny box)), and also <a href="http://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank">this W3 Schools example</a> (which has some extra stuff we don't care about, but provides explanations of the various parts, which you should read).
+Now it's time to create the carousel. Check out [this Codepen example](http://codepen.io/jesselaunchcode/pen/ZWZyeX) (which I made, and which mirrors exactly what you want to do (make sure you expand the "html" window on Codepen so you don't go insane trying to read from a tiny box)), and also [this W3 Schools example](http://www.w3schools.com/bootstrap/bootstrap_carousel.asp) (which has some extra stuff we don't care about, but provides explanations of the various parts, which you should read).
 
-Build your carousel, and fill it with 3 movie poster images, using posters from the internet <a href="http://sumnersunsettheatre.com/wp-content/uploads/Minions-poster.jpg" target="_blank">like this</a>. Give your carousel an attribute of `id=browse-carousel` Make sure to also include the left and right "data slide" buttons, and make sure they work.
+Build your carousel, and fill it with 3 movie poster images, using posters from the internet [like this](http://sumnersunsettheatre.com/wp-content/uploads/Minions-poster.jpg). Give your carousel an attribute of `id=browse-carousel` Make sure to also include the left and right "data slide" buttons, and make sure they work.
 
 Finally add this rule to your `styles.css` file:
 
