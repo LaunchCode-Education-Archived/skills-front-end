@@ -16,7 +16,7 @@ Task | Resource Type | Link | Time Estimate | Instructions
 Read | Interactive Book | [EloquentJS: Introduction ][eloquent-intro] | 10 minutes | In the Intro, the author Marijn Haverbeke expounds on the nature of his book, the nature of code, and the nature of the universe.
 Read | Interactive Book | [EloquentJS 1: Values, Types an Operators][eloquent1] | 30 minutes | This chapter covers all the basics: simple math, strings, datatypes, printing, boolean operators, etc.
 Read | Interactive Book | [EloquentJS 2: Program Structure][eloquent2] | 1.5 hours | In chapter 2 you will learn how to build simple programs using control-flow structures like variables, functions, conditionals and loops.
-Read | Interactive Book | [EloquentJS 3: Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on abunhc of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
+Read | Interactive Book | [EloquentJS 3: Functions][eloquent3] | 3 hours | This chapter talks in depth about functions, touching on a bunch of important but tricky concepts including: recursion, side effects vs return values, and the fact that JS functions can be stored in variables just like any other data type.
 
 ## Git Review (optional)
 
