@@ -143,6 +143,10 @@ aside::before {
     content: "🤔 Question";
 }
 
+.aside-definition::before {
+    content: "📖 Definition";
+}
+
 .aside-custom::before {
     content: attr(label);
 }
@@ -455,4 +459,21 @@ main h5 {
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
+}
+
+/* Apply normal margin to first h1 */
+.page-header h1 {
+	border-top: 0;
+    margin-top: 0;
+}
+
+.youtube-wrapper {
+    text-align: center;
+}
+
+.youtube-wrapper::after {
+	content: "To enlarge the video, click on the YouTube icon in the player control bar after starting playback";
+	font-style: italic;
+	display: block;
+	font-size: 12px;
 }

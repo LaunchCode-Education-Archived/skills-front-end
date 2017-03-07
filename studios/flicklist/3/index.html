@@ -112,7 +112,7 @@
                                         <h1>FlickList 3</h1>
                     <p>Today you will add a little bit more functionality to the project, but the main improvements will be aesthetic. You will Bootstrapify the page, using the Bootstrap library to apply a bunch of nice styles, as well as a responsive Bootstrap Grid layout.</p>
 <h2 id="demo">Demo</h2>
-<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html">FlickList 3 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
+<p>Here is a demo of what you are trying to accomplish: <a href="http://htmlpreview.github.io/?https://github.com/LaunchCodeEducation/flicklist/blob/b19ea10df9355f8079047e8b1f48e0a8e31a2ba9/index.html" target="_blank">FlickList 3 Demo</a>. Play around with the demo for a minute and get familiar with its features. Also, keep the demo open in a separate window, so you can refer to it while working on the assignment.</p>
 <p>Note the following additions since last time:</p>
 <ul>
 <li>Watchlist items have an &quot;I watched it&quot; button, which allows the user to cross that movie off their list.</li>
@@ -162,16 +162,16 @@ console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/
 <p>As usual, add your api key to the object near the top of <code>flicklist.js</code>.</p>
 <h3 id="1-an-quoti-watched-itquot-button">1. An &quot;I watched it&quot; Button</h3>
 <p>In flicklist.js, inside the <code>render</code> function, add a button to each Watchlist item. When clicked, the appropriate movie should be removed from <code>model.watchlistItems</code>, and <code>render</code> should be called again.</p>
-<p>To remove the item from the array, you can use a new array function called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice</a>. You'll also need to use <code>indexOf</code> again (you should be familiar with this function from the previous studio), in order to determine where to splice from the array.</p>
+<p>To remove the item from the array, you can use a new array function called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">splice</a>. You'll also need to use <code>indexOf</code> again (you should be familiar with this function from the previous studio), in order to determine where to splice from the array.</p>
 <h3 id="2-bootstrap-makeover-party">2. Bootstrap Makeover Party</h3>
 <p>Bootstrap comes with a ton of nice pre-made CSS styles &quot;right out of the box&quot;. We simply need to give our elements the appropriate class names, and they will automagically change appearence. There are a bunch of places all around the project where you will do this.</p>
 <h4 id="2a-include-the-library">2a. Include the Library</h4>
 <p>The first step is to simply include the Bootstrap library in our project, at the top of <code>index.html</code>.</p>
-<p>On their website, Bootstrap even <a href="http://getbootstrap.com/getting-started/">provides us</a> the exact <code>&lt;link&gt;</code> tag we need to copy/paste into our project in order to grab the library from their CDN:</p>
+<p>On their website, Bootstrap even <a href="http://getbootstrap.com/getting-started/" target="_blank">provides us</a> the exact <code>&lt;link&gt;</code> tag we need to copy/paste into our project in order to grab the library from their CDN:</p>
 <pre><code class="language-html">&lt;!-- Latest compiled and minified CSS --&gt;
 &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"&gt;</code></pre>
 <h4 id="2b-style-the-page-header">2b. Style the Page Header</h4>
-<p>The first Bootstrap class we'll use is <a href="http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp">Jumbotron</a>, which is used for creating a big, bold, attention-grabbing block of text. Use it to style the <code>&lt;header&gt;</code> at the top of the page.</p>
+<p>The first Bootstrap class we'll use is <a href="http://www.w3schools.com/bootstrap/bootstrap_jumbotron_header.asp" target="_blank">Jumbotron</a>, which is used for creating a big, bold, attention-grabbing block of text. Use it to style the <code>&lt;header&gt;</code> at the top of the page.</p>
 <p>Next, add the &quot;text-muted&quot; class to the subtitle, so it stands out a little less.</p>
 <h4 id="2c-customize-the-jumbotron">2c. Customize the Jumbotron</h4>
 <p>In addition to just using Bootstrap classes as they are, we can also customize them to fit our needs. Doing so is as simple as adding our own CSS selector for <code>.jumbotron</code>, and specifying whatever styles we want to overwrite.</p>
@@ -180,13 +180,13 @@ console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/
 <p>Finally, note that this customization only works because in the head of <code>index.html</code>, we include our own stylesheet AFTER including Bootstrap.</p>
 <h4 id="2d-style-the-browse-list">2d. Style the Browse List</h4>
 <p>This task involves changing code in both <code>index.html</code> and <code>flicklist.js</code>.</p>
-<p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/list-group/">Bootstrap Lists</a> and <a href="http://v4-alpha.getbootstrap.com/components/buttons/">Bootstrap Buttons</a> for guidance.</p>
+<p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/list-group/" target="_blank">Bootstrap Lists</a> and <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> for guidance.</p>
 <h4 id="2e-style-the-form">2e. Style the Form</h4>
-<p>For guidance, read more about <a href="http://v4-alpha.getbootstrap.com/components/input-group/">Boostrap Input Groups</a>, especially <a href="http://v4-alpha.getbootstrap.com/components/input-group/#button-addons">Button Addons</a>.</p>
+<p>For guidance, read more about <a href="http://v4-alpha.getbootstrap.com/components/input-group/" target="_blank">Boostrap Input Groups</a>, especially <a href="http://v4-alpha.getbootstrap.com/components/input-group/#button-addons" target="_blank">Button Addons</a>.</p>
 <h4 id="2f-style-the-watchlist">2f. Style the Watchlist</h4>
-<p>This one's very simple. In index.html, just give the watchlist <code>&lt;ul&gt;</code> a class of <a href="http://getbootstrap.com/css/#inline">list-inline</a>. Remember that whole <code>"inline-block"</code> shenanigans we did last time? This class was made specifically for lists like the kind we're doing here.</p>
+<p>This one's very simple. In index.html, just give the watchlist <code>&lt;ul&gt;</code> a class of <a href="http://getbootstrap.com/css/#inline" target="_blank">list-inline</a>. Remember that whole <code>"inline-block"</code> shenanigans we did last time? This class was made specifically for lists like the kind we're doing here.</p>
 <h4 id="2g-style-the-watchlist-items">2g. Style the Watchlist Items</h4>
-<p>In <code>flicklist.js</code>, restyle the watchlist items using <a href="http://getbootstrap.com/components/#panels-heading">Bootstrap Panels</a>.</p>
+<p>In <code>flicklist.js</code>, restyle the watchlist items using <a href="http://getbootstrap.com/components/#panels-heading" target="_blank">Bootstrap Panels</a>.</p>
 <h4 id="2h-customize-the-watchlist-items">2h. Customize the Watchlist Items</h4>
 <p>Let's customize these things a little more. Each <code>&lt;li&gt;</code> should have:</p>
 <ul>
@@ -195,7 +195,7 @@ console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/
 <li>a width of exactly 160 pixels</li>
 </ul>
 <h4 id="2i-style-the-quoti-watched-itquot-buttons">2i. Style the &quot;I watched it&quot; Buttons</h4>
-<p>Make 'em red. Here is the section on <a href="http://v4-alpha.getbootstrap.com/components/buttons/">Bootstrap Buttons</a> again.</p>
+<p>Make 'em red. Here is the section on <a href="http://v4-alpha.getbootstrap.com/components/buttons/" target="_blank">Bootstrap Buttons</a> again.</p>
 <h4 id="2j-customize-the-quoti-watched-itquot-buttons">2j. Customize the &quot;I watched it&quot; Buttons</h4>
 <p>In <code>flicklist.js</code>, add some additional styles to these buttons. We want the button to fill the entire width of its container, and sit 10px below its upper neighbor.</p>
 <h3 id="3-responsive-grid-layout">3. Responsive Grid Layout</h3>
@@ -204,13 +204,13 @@ console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/
 <p>In <code>index.html</code>, add another <code>&lt;div&gt;</code> inside the main content div, but still wrapped around both sections. This new div should have a class of &quot;row&quot;.</p>
 <p>Next, give each section a class of &quot;col-?-?&quot; (the question marks are for oyu to figure out). You want the watchlist to take up 5/12 of the width of the screen, and the browselist to take up the remaining 7/12. The &quot;breakpoint&quot; should be tablet devices-- in other words, if the user is on an iPad or anything smaller, then the column layout switches back to normal, with the browselist on its own block below the watchlist.</p>
 <p>Resize your window and see if it's working properly. At a certain point, the layout should switch back and forth.</p>
-<p>Read more on <a href="http://getbootstrap.com/css/#grid">Bootstrap Grids</a> for guidance.</p>
+<p>Read more on <a href="http://getbootstrap.com/css/#grid" target="_blank">Bootstrap Grids</a> for guidance.</p>
 <h4 id="3b-add-a-meta-viewport-tag">3b. Add a Meta Viewport Tag</h4>
 <p>Open up the developer tools and click the little icon of a tablet and a phone. This will allow you to simiulate varous devices in the browser.</p>
 <p>Uh-oh! Things don't look so great for these devices. Why not? Our layout is responsive...</p>
 <p>It turns out there is one more little tag we need to add to the top of our html file:</p>
 <pre><code class="language-html">&lt;meta name=viewport content="width=device-width, initial-scale=1"&gt;</code></pre>
-<p>From now on, this is another one of those tags that you probably want to include in all your HMTL right from the beginning. This sets the width of the page's viewport to be equal to the width of the user's device. Read more <a href="https://developers.google.com/speed/docs/insights/ConfigureViewport#additional-information">here</a>.</p>
+<p>From now on, this is another one of those tags that you probably want to include in all your HMTL right from the beginning. This sets the width of the page's viewport to be equal to the width of the user's device. Read more <a href="https://developers.google.com/speed/docs/insights/ConfigureViewport#additional-information" target="_blank">here</a>.</p>
 <h4 id="3c-center-items-in-the-watchlist">3c. Center items in the Watchlist</h4>
 <p>Notice how on some really skinny screens, like the iPhone5, there is only enough horizontal space to fit one Watchlist item per block. It looks especially silly because the items are all floating to the left, so there is a lot of space to their right. We can fix this by simply applying a <code>text-align: center</code> style to the <code>&lt;ul&gt;</code> container.</p>
 <p>Now the items center themselves!</p>
@@ -224,9 +224,9 @@ console.log(url); // =&gt; logs http://images5.fanpop.com/image/photos/25100000/
 <p>Now we have to actually implement that function. Currently it just returns a hard-coded url. We want to examine the movie that was passed in, and figure out what the actual url should be.</p>
 <p>To help you figure that out, here are three example urls to real movie posters:</p>
 <ul>
-<li><a href="http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg">http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg</a></li>
-<li><a href="http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg">http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg</a></li>
-<li><a href="http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg">http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg</a></li>
+<li><a href="http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg" target="_blank">http://image.tmdb.org/t/p/w300//jjBgi2r5cRt36xF6iNUEhzscEcb.jpg</a></li>
+<li><a href="http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg" target="_blank">http://image.tmdb.org/t/p/w300//kqjL17yufvn9OVLyXYpvtyrFfak.jpg</a></li>
+<li><a href="http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg" target="_blank">http://image.tmdb.org/t/p/w300//nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg</a></li>
 </ul>
 <p>Use a console.log statement to print a movie object and poke around and see if you can find anything that might help construct the full url for a particular movie.</p>
 <h3 id="5-remove-dead-code">5. Remove Dead Code</h3>

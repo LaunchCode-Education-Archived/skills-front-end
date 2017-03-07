@@ -114,7 +114,7 @@
 <h2 id="the-goal">The Goal</h2>
 <p>The game you are trying to build is called <em>Word Up!</em>, and it is best described as a cross between Scrabble, Solitaire, and the Hunger Games in Space.</p>
 <h4 id="demo">Demo</h4>
-<p>First things first: <a href="http://htmlpreview.github.io/?https://github.com/jesseilev/word-up/blob/demo/index.html">Click here for a demo of what you are trying to accomplish</a>.</p>
+<p>First things first: <a href="http://htmlpreview.github.io/?https://github.com/jesseilev/word-up/blob/demo/index.html" target="_blank">Click here for a demo of what you are trying to accomplish</a>.</p>
 <p>Take note the following:</p>
 <h4 id="rules-of-the-game">Rules of the Game</h4>
 <ul>
@@ -151,7 +151,7 @@
 <p>Before diving into the code, let's take a second to get familiar with the API we'll be using.</p>
 <p>What service do we need an API for? A dictionary. Our way of checking the validity of the user's word submissions will be to look up each word in the dictionary and see if it exists.</p>
 <h4 id="pearson">Pearson</h4>
-<p><a href="http://developer.pearson.com">Pearson</a> is some mysterious organization that provides free tech services, or something... honestly IDK who they are. But their <a href="http://developer.pearson.com/apis/dictionaries">Dictionary API</a> is dead-simple to use. You don't even need to register for a developer key.</p>
+<p><a href="http://developer.pearson.com" target="_blank">Pearson</a> is some mysterious organization that provides free tech services, or something... honestly IDK who they are. But their <a href="http://developer.pearson.com/apis/dictionaries" target="_blank">Dictionary API</a> is dead-simple to use. You don't even need to register for a developer key.</p>
 <p>Let's use Pearson's dictionary to search for the word &quot;cheese&quot;: Open up a terminal make a <code>curl</code> request to this url:</p>
 <pre><code class="language-nohighlight">$ curl "http://api.pearson.com/v2/dictionaries/entries?headword=cheese"</code></pre>
 <p>You should shortly receive a fat wall of JSON about cheese.</p>
@@ -160,13 +160,13 @@
 <p>There is one more complication, which is that their default dictonary is very permissive. For example, pretty much any combination of two or three letters you can imagine will probably turn up a few results as an acronym for something. This is bad, because we don't want our game to reward players who simply hack away at random short combinations of letters.</p>
 <p>Luckily, the API allows you to choose a more specific dictionary by changing the endpoint url to:</p>
 <p><code>http://api.pearson.com/v2/dictionaries/DICTIONARY_CODE/entries</code></p>
-<p>where you substitute a particular dictionary name in for <code>DICTIONARY_CODE</code>. See the <a href="http://developer.pearson.com/apis/dictionaries">API page</a> for more details.</p>
+<p>where you substitute a particular dictionary name in for <code>DICTIONARY_CODE</code>. See the <a href="http://developer.pearson.com/apis/dictionaries" target="_blank">API page</a> for more details.</p>
 <p>I have gotten pretty good results using the &quot;Longman Active Study Dictionary&quot;, whose code name is <code>lasde</code>.</p>
 <p>Great, you should now have all the tools you need to start looking up words in the dictionary! This will come in handy towards the end of the assignment.</p>
 <hr />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <ol>
-<li><a href="https://github.com/launchcodeeducation/word-up">Fork this repository</a>.</li>
+<li><a href="https://github.com/launchcodeeducation/word-up" target="_blank">Fork this repository</a>.</li>
 <li>Clone your forked repo down to your local machine.</li>
 </ol>
 <hr />
@@ -214,7 +214,7 @@
 </ul>
 <h4 id="cssstylescss">css/styles.css</h4>
 <p>Finally, take a look at <code>styles.css</code>. There are no TODOs on this file, but  in order to do some of your Javascript code, you are going to need to be familar with our scheme for applying CSS classes to the various elements of the page.</p>
-<p>Specifically, it is important to understand how we style the various &quot;chips&quot; we are using. All of the different types of chips are some form of the Bootstrap <a href="http://v4-alpha.getbootstrap.com/components/tag/">.tag</a> class (&lt;-- You should keep that link open in another window).</p>
+<p>Specifically, it is important to understand how we style the various &quot;chips&quot; we are using. All of the different types of chips are some form of the Bootstrap <a href="http://v4-alpha.getbootstrap.com/components/tag/" target="_blank">.tag</a> class (&lt;-- You should keep that link open in another window).</p>
 <p>The <code>.tag</code> class is just a little colored rectangle with rounded corners, intended for things like the little red number on Facebook that tells you how many new notifications you have. But one nice aspect of tags is that they have <code>display: inline-block</code>, which means if you put a bunch of them next to each other, they will wrap around to the next line, rather than disappear off the right-hand edge of the screen.</p>
 <p>In our app, we use <code>tag</code> as well as some additional custom classes that we define:</p>
 <ul>
@@ -476,7 +476,7 @@
 <p>You know the drill:</p>
 <ol>
 <li>Follow the <a href="..">submission instructions</a></li>
-<li>Victory!!! All the haters who didn't believe in you are <a href="https://media.giphy.com/media/OxAMjQW6mmA8g/giphy.gif">having a hard time swallowing defeat</a>.</li>
+<li>Victory!!! All the haters who didn't believe in you are <a href="https://media.giphy.com/media/OxAMjQW6mmA8g/giphy.gif" target="_blank">having a hard time swallowing defeat</a>.</li>
 </ol>
                                     </section>
 

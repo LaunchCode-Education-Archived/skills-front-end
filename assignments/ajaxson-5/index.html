@@ -112,7 +112,7 @@
                                         <h1>The AJAXson 5</h1>
                     <p>One of the classic problems in computer science is the question of how to optimally implement a web page that displays GIFs of the Jackson 5. Today you'll take a stab at it.</p>
 <h2 id="the-giphy-api">The Giphy API</h2>
-<p>You are going to use the <a href="https://github.com/Giphy/GiphyAPI">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers.</p>
+<p>You are going to use the <a href="https://github.com/Giphy/GiphyAPI" target="_blank">Giphy API</a>, whose purpose, as you might guess, is to serve up GIFs to developers.</p>
 <p>The basic goal of your page will be to fetch a GIF from Giphy, and then insert it into the DOM to display it on your page. We'll get into the details shortly, but first, let's play with Giphy for a minute.</p>
 <h4 id="the-host">The host</h4>
 <p>The host url we want is <code>https://api.giphy.com/v1/gifs/</code>. Let's try sending a GET request to that url. Try entering the following command into your terminal:</p>
@@ -130,7 +130,7 @@
 <p>We can associate data with our curl request by using the -d flag:</p>
 <pre><code class="language-nohighlight">$ curl -G https://api.giphy.com/v1/gifs/random -d api_key=dc6zaTOxFJmzC
 {"data":{"type":"gif","id":"RBLigAVE0xJte","url":"http:\/\/giphy.com\/gifs\/food-dessert-etc-RBLigAVE0xJte","image_original_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/giphy.gif","image_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/giphy.gif","image_mp4_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/giphy.mp4","image_frames":"35","image_width":"245","image_height":"180","fixed_height_downsampled_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/200_d.gif","fixed_height_downsampled_width":"272","fixed_height_downsampled_height":"200","fixed_width_downsampled_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/200w_d.gif","fixed_width_downsampled_width":"200","fixed_width_downsampled_height":"147","fixed_height_small_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/100.gif","fixed_height_small_still_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/100_s.gif","fixed_height_small_width":"136","fixed_height_small_height":"100","fixed_width_small_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/100w.gif","fixed_width_small_still_url":"http:\/\/media1.giphy.com\/media\/RBLigAVE0xJte\/100w_s.gif","fixed_width_small_width":"100","fixed_width_small_height":"73","username":"","caption":""},"meta":{"status":200,"msg":"OK"}}</code></pre>
-<p>We got some stuff! It's not very readable, but if we paste it into a <a href="http://jsonprettyprint.com">JSON Prettifyier</a>, we can see the structure very clearly:</p>
+<p>We got some stuff! It's not very readable, but if we paste it into a <a href="http://jsonprettyprint.com" target="_blank">JSON Prettifyier</a>, we can see the structure very clearly:</p>
 <pre><code class="language-nohighlight">{
   "data": {
     "type": "gif",
@@ -180,7 +180,7 @@
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <ol>
 <li>
-<p>Visit our <a href="https://github.com/LaunchCodeEducation/the-ajaxson-5">starter-code repository</a> on Github.</p>
+<p>Visit our <a href="https://github.com/LaunchCodeEducation/the-ajaxson-5" target="_blank">starter-code repository</a> on Github.</p>
 </li>
 <li>
 <p><strong>Fork</strong> our repo by pressing the &quot;Fork&quot; button. You will now have your own version of the project, hosted on your Github profile.</p>
@@ -264,7 +264,7 @@ index.html request-gif.js</code></pre>
 <img src="./screenshots/pretty-page-3.png" alt="pretty-page-3" /></p>
 <p>But feel free to get creative and style the page however you want.</p>
 <p>The one requirement is that your page <strong>must be reasonably responsive!</strong>. Specifically, this means that it must be equally functional and non-ugly on mobile phones as it is on larger desktop screens. You should make your browser window really narrow while you design, so as to force yourself to think &quot;mobile first&quot;.</p>
-<p>You are encouraged (but not required) to let <a href="http://getbootstrap.com/css/">Bootstrap</a> do most of the heavy lifting, particularly on the responsiveness aspect.</p>
+<p>You are encouraged (but not required) to let <a href="http://getbootstrap.com/css/" target="_blank">Bootstrap</a> do most of the heavy lifting, particularly on the responsiveness aspect.</p>
 <h2 id="how-to-submit">How to Submit</h2>
 <ol>
 <li>Follow the <a href="..">submission instructions</a></li>
