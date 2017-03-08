@@ -11,6 +11,7 @@ You already have experience working with HTML `<form>` elements, but it is worth
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|--------------
+Watch | Video | [Interacting With Forms in Javascript](https://youtu.be/4sJ1PZQujBc) | 35 minutes | Watch this introduction to some of the ways that you can work with forms in your Javascript code
 Read | Interactive Book | [EloquentJS 18: Forms][eloquent18] | 2.5 hours | This chapters goes over Javascript's historical and current relationship to forms, and the many different types of `<input>` that you can put inside a form.
 
 

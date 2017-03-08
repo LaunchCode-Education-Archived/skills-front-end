@@ -3,41 +3,33 @@ title: Class 6 Prep
 currentMenu: course-outline
 ---
 
-We are now transitioning to a point in the class where we will be making a bunch of HTTP requests to external servers, and processing the data we receive back. This, of course, is what a browser does every time you visit a webpage. But it turns out there are other ways, besides "visiting a page", of making HTTP requests. On the front-end, one very common technique for making requests is using a technique called AJAX, which you will learn about in the Udacity course below.
-
-Before coming to Class 6, please complete the following tasks:
+Before coming to Class 5, please complete the following tasks:
 
 
-### cURL
 
-cURL is a command-line tool that lets you simply make HTTP requests and see the response. This is a helpful tool for debugging, and for playing around the APIs of third-party sources that make their data available (like in the Udacity course below).
+### Quick Review of CSS Selectors
 
-Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|--------------
-Follow-Along | Article | [cURL Tutorial][curl-tutorial] | 30 minutes | As you read this article, make sure to open up a Terminal window follow along with the examples.
+The main topic for this Prep Work is a Javascript library called jQuery. But first, let's quickly review a little bit of CSS. You might have already done the Codecademy lesson below in a previous Unit. But before moving on to jQuery, it will be helpful to review a familiar example of how selectors work.
+
+Task | Resource Type | Link | Time Estimate |Instructions
+-----|---------------|------|---------------|------------
+Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minutes | This lesson introduces "selectors", which allow you to specify exactly *which* elements you want to apply a style to.
 
 
-### JSON
+### jQuery
 
-When sending and receiving data, there are a variety of different standards for the exact syntax of how to structure the data as text. These days, the most common standard is JSON.
+You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but once you start trying to combine a few operations to do something complicated, the "vanilla" way adds up to a clumsy experience. jQuery is a Javascript library that provides a very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations. jQuery does additional things as well, but its biggest role is to make it easier to do fancy things with the DOM.
 
-Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|--------------
-Read | Article | [What is JSON: the 3 minute JSON Tutorial][3-minute-json] | 3 minutes! | This (very old) article gives a quick intro to JSON.
-Read  | Stack Overflow Post | [What is JSON and Why Should I Use it?][what-is-json] | a few more minutes | Quickly read this SO post on JSON.
-
-### AJAX
-
-In Javascript, you can make a request to a server, wait for the response to come back, and then do something with the response, without the user ever having to leave or refresh the page. This technique is called AJAX. This is how Gmail, for example, makes your newly received email appear instantly in your inbox, even without you refreshing the page.
+Eloquent Javascript does not talk about jQuery, so we will use a short Udacity course.
 
 Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|--------------
-Do   | Interactive Course | [Udacity: Intro to AJAX][intro-to-ajax] | 6 hours | This course covers the basics of making AJAX requests. You will see how to build a project that reads data from third-party services like Google Maps and Wikipedia by making AJAX requests to those sites' publicly-facing APIs.
+-----|---------------|------|---------------|-------------
+Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 6 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
 
 
 
 
-[curl-tutorial]: http://www.yilmazhuseyin.com/blog/dev/curl-tutorial-examples-usage/
-[3-minute-json]: http://www.secretgeek.net/json_3mins
-[what-is-json]: http://stackoverflow.com/questions/383692/what-is-json-and-why-would-i-use-it
-[intro-to-ajax]: https://www.udacity.com/course/intro-to-ajax--ud110
+[css-selectors]: https://www.codecademy.com/en/courses/web-beginner-en-WF0CF/resume?curriculum_id=50579fb998b470000202dc8b
+
+
+[udacity-jquery]: https://classroom.udacity.com/courses/ud245/lessons/3314378535/concepts/33166386820923#

@@ -4,7 +4,6 @@ title: Now What?
 
 As we wrap up the Skill Track, you may be finished with your coursework, or you may still be working. In either case, the goal of this page is to give you some guidance as to what comes next.
 
-
 ## What You Should Do Now
 
 Once you have finished all your coursework, there are two things you should do right away:
@@ -92,24 +91,24 @@ Some popular frameworks are:
 * [ReactJS](https://facebook.github.io/react/) (technically is [not exactly a framework](http://blog.andrewray.me/reactjs-for-stupid-people/) by itself)
 * [EmberJS](http://emberjs.com)
 
-Some less popular (but much better, in my own hipster opinion) frameworks are:
+Some less popular (but still very cool) frameworks are:
 * [Redux](http://redux.js.org)
 * [Elm](https://elm-lang.org) (This is actually an entirely different language that compiles to Javascript)
 * [Cycle](https://cycle.js.org)
 
-[TodoMVC](http://todomvc.com) shows you how to build the same Todo List app in a variety of different frameworks.
+[TodoMVC](http://todomvc.com) shows you how to build the same Todo List app in a variety of different frameworks. This is great for gaining a quick understanding of how frameworks are different or similar.
 
 ### Build-Tools and Stuff
 
 e.g. NPM, Gulp, Webpack...
 
-We're not even gonna go there on this. Feel free, if you're interested, to research this on your own, and we're happy to help with questions you have.
+There are a large number of tools that you might use in your project to manage dependencies, bundle your code up into fast-loading files, and cook your eggs runny but not too runny (actually, we haven't found a JS tool to do this last one, but we can hope, right?). We're not even gonna go there on these. Feel free, if you're interested, to research this on your own, and we're happy to help with questions you have. Your instructors and TFs can be great resources and point you in a given direction based on your curiosity and project idea(s).
 
 ## Ways that FlickList could be extended
 
 Just to help give you more of an idea of the types of things a project can have:
 
 * Improve the movie browsing. The API has tons of data that we aren't using, like movie genres, reviews, actors and actresses. Add more features to help the user browse. This will involve making more API calls and presenting the data in various ways.
-* Handle Errors! When our AJAX calls fail to get a response back, our app should handle the failure gracefully, rather than just crap out.
+* Handle Errors! When our AJAX calls fail to get a response back, our app should handle the failure gracefully, rather than just fall on its face.
 * Add some advanced Javascript features like Promises, wrapping your code in a module(s) and so on.
 * Use some advanced CSS technologies like Sass or Less, and Flexbox. Add some nice UI touches like responding to mouse hovers to provide a great user experience.

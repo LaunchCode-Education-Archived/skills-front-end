@@ -9,4 +9,4 @@ Before coming to class 14, please complete the following tasks:
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Read | Article | [Now What?](./now-what/) | 30 minutes | Read this article we have written about next steps after the class ends.
+Read | Article | [Now What?](./now-what/) | 30 minutes | Read this article about some ways to continue building your Javascript and front-end web skills beyond this class.

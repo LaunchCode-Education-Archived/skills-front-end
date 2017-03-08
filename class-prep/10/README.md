@@ -9,19 +9,23 @@ Before coming to Class 10, please complete the following tasks:
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Follow Along | Exercise | 30 minutes | [FlickList 3 Solution](https://github.com/LaunchCodeEducation/flicklist/tree/studio3-staff-solution) | Read over (and maybe even code along with) the staff solution to the previous Studio, so that you're up to speed with the starter code for the upcoming one.
+Follow Along | Exercise | 30 minutes | [FlickList 2 Solution](https://github.com/LaunchCodeEducation/flicklist/tree/studio2-staff-solution) | Read over (and maybe even code along with) the staff solution to the previous Studio, so that you're up to speed with the starter code for the upcoming one.
 
 
-### Catch Up
+### Responsiveness
 
-A Catchup is a special type of Javascript function that takes no arguments, and returns the result of an AJAX call to the Moon, unless the server on the Moon is busy, in which case the Catchup will return another function...
+Responsiveness is a web-design philosophy and set of practices for dealing with the wide variety of screen sizes that a modern website must accommodate.
 
-Just kidding. Take a few days to get caught up on previous work, such as:
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|---------------
+Read | Article | [2014 Guide to Responsive Web Design](http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design) | 30 minutes | Read this article for an overview of the recent state of Responsiveness.
 
-- The [Pyramid Slide](../materials/assignments/pyramid-slide) assignment
-- Previous FlickList studios
-- Previous Prep Work items, such as the [Udacity AJAX course](../class6-prep/index.html#ajax)
-- Continue working on [The AJAXson 5](../materials/assignments/ajaxson-5/)
-- Go back and re-read some Eloquent Javascript chapters (I suspect on the second read you will find more things [clicking into place][gif-epiphany].)
+### Bootstrap
 
-[gif-epiphany]: http://giphy.com/gifs/scott-pilgrim-epiphany-understand-sM4ALgO3D7F8k
+Bootstrap is a front-end framework that handles for you much of the heavy-lifting of implementing responsiveness, and also provides a suite of nice-looking, ready-to-use CSS styles.
+
+Task | Resource Type | Link | Time Estimate | Instructions
+-----|---------------|------|---------------|-------------
+Read | Article | [Bootstrap for Beginners](http://learntocodewith.me/getting-started/topics/bootstrap/) | 15 minutes | Read this article for an intro to Bootstrap. |
+Do | Interactive Course | [FreeCodeCamp / Responsive Design with Bootstrap](https://www.freecodecamp.com/challenges/use-responsive-design-with-bootstrap-fluid-containers) | 2 hours | The link here will take you to the first exercise in a section titled **Responsive Design with Bootstrap**. Do the entire section, 31 (short) exercises in all. FreeCodeCamp estimates this will take 5 hours, but our experience is that students get through it pretty quickly.
+Read | Article |  [Understanding the Bootstrap 3 Grid System](https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system) | 30 minutes | This article takes a more in-depth look at the Bootstrap grid system, and the differences between the various column size classes, e.g. `col-sm-6` vs `col-md-6`.

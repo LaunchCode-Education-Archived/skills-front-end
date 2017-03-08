@@ -3,33 +3,20 @@ title: Class 5 Prep
 currentMenu: course-outline
 ---
 
-Before coming to Class 5, please complete the following tasks:
+Class 5 will be dedicated to solidifying the core Javascript concepts that you've learned to date. We've covered a lot, and some of these concepts are hard, so we want to pause and take a breath to reaffirm the more difficult concepts before moving on.
 
+### Make A List
 
+Make a list of Javascript concepts that are still fuzzy for you, or that confuse you. In class, we'll take some to revisit these and give them another iteration. You will also have the chance to ask questions about the [Pyramid Slide](../materials/assignments/pyramid-slide) assignment.
 
-### Quick Review of CSS Selectors
+### Catch Up
 
-The main topic for this Prep Work is a Javascript library called jQuery. But first, let's quickly review a little bit of CSS. You might have already done the Codecademy lesson below in a previous Unit. But before moving on to jQuery, it will be helpful to review a familiar example of how selectors work.
+A Catchup is a special type of Javascript function that takes no arguments, and returns the result of an AJAX call to the Moon, unless the server on the Moon is busy, in which case the Catchup will return another function...
 
-Task | Resource Type | Link | Time Estimate |Instructions
------|---------------|------|---------------|------------
-Do | Interactive Course | [Codecademy: CSS Selectors][css-selectors] | 30 minutes | This lesson introduces "selectors", which allow you to specify exactly *which* elements you want to apply a style to.
+Just kidding. Take a moment to spend time with the following:
 
+- The [Pyramid Slide](../materials/assignments/pyramid-slide) assignment
+- Previous Mario studios
+- Go back and re-read some Eloquent Javascript chapters (I suspect on the second read you will find more things [clicking into place][gif-epiphany].)
 
-### jQuery
-
-You have seen how to manipulate the DOM using Javascript functions like `document.getElementById()`. That's great, but once you start trying to combine a few operations to do something complicated, the "vanilla" way adds up to a clumsy experience. jQuery is a Javascript library that provides a very flexible syntax for querying and modifying the DOM, and chaining those statements together to form more complicated operations. jQuery does additional things as well, but its biggest role is to make it easier to do fancy things with the DOM.
-
-Eloquent Javascript does not talk about jQuery, so we will use a short Udacity course.
-
-Task | Resource Type | Link | Time Estimate | Instructions
------|---------------|------|---------------|-------------
-Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 6 hours | Go through the entire course. (This one is very short compared to other Udacity courses.)
-
-
-
-
-[css-selectors]: https://www.codecademy.com/en/courses/web-beginner-en-WF0CF/resume?curriculum_id=50579fb998b470000202dc8b
-
-
-[udacity-jquery]: https://classroom.udacity.com/courses/ud245/lessons/3314378535/concepts/33166386820923#
+[gif-epiphany]: http://giphy.com/gifs/scott-pilgrim-epiphany-understand-sM4ALgO3D7F8k
