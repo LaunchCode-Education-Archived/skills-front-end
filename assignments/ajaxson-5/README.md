@@ -20,7 +20,7 @@ $ curl -G https://api.giphy.com/v1/gifs/
 {"meta":{"status":404,"msg":"Not Found!"}}
 ```
 
-We recieved a 404 Not Found response from Giphy. Maybe they ran out of GIFs?
+We received a 404 Not Found response from Giphy. Maybe they ran out of GIFs?
 
 #### The Endpoint
 
@@ -93,7 +93,7 @@ the result will be a GIF on our page!
 
 #### Adding Params: tag
 
-But artisan lollipops is a topic for another time, beacause today is all about the Jacksons. To specify the topic of interest, we simply need to add another data parameter with the key "tag" and the value "jackson+5":
+But artisan lollipops is a topic for another time, because today is all about the Jacksons. To specify the topic of interest, we simply need to add another data parameter with the key "tag" and the value "jackson+5":
 
 ```nohighlight
 $ curl -G https://api.giphy.com/v1/gifs/random -d api_key=dc6zaTOxFJmzC -d tag=jackson+5
@@ -129,7 +129,7 @@ The gif should ideally be relevant to both the user's search term ("dance" in th
 
 Dance: check. Jacksons: not so much. That's OK if the results don't quite work out, as long as you put in the effort and heart and soul (where "effort and heart and soul" means your form submitted to Giphy a request in which the "tag" key had a value of `"Jackson 5 dance"`).
 
-Finally, it is possible that something might go wrong in the proccess of making the request. If so, you should report an error to the user, like so:
+Finally, it is possible that something might go wrong in the process of making the request. If so, you should report an error to the user, like so:
 
 <img src="screenshots/error.png" />
 
@@ -139,7 +139,7 @@ Finally, it is possible that something might go wrong in the proccess of making 
 
 2. **Fork** our repo by pressing the "Fork" button. You will now have your own version of the project, hosted on your Github profile.
 
-3. Back on your terminal, us `cd` to navigate to the place in your file system where to the place you want this project to live.
+3. Back on your terminal, use `cd` to navigate to the place in your file system where to the place you want this project to live.
 
 4. Clone your remote repo:
 
@@ -168,7 +168,7 @@ You should see only two files: `index.html` and `request-gif.js`.
 In `index.html` we have four main things:
 * a `<form>` where the user can type a search query and request a new GIF
 * an `<img>` where the GIF will be displayed
-* a `<p>` that we can use to report feedback about the image loading or an error having occured.
+* a `<p>` that we can use to report feedback about the image loading or an error having occurred.
 * a couple `<script>` tags to load jQuery and our own `request-gif.js` script.
 
 #### request-gif.js
@@ -185,12 +185,12 @@ $("#form-gif-request").submit(fetchAndDisplayGif);
 ```
 which uses jQuery to search the DOM for our form (by querying for an element whose `id` is `"form-gif-request"`), and then attaches, to that form's `submit` event, a "callback" function named `fetchAndDisplayGif`, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our `fetchAndDisplayGif` function will be invoked.
 
-The above line is, itself, inside of another callback, an annonymous function that we pass to jQuery's `document.ready()` function. This ensures that we do not execute that line until the HTML document has finished loading and is "ready" (because if we don't wait, then this code might execute before the `<form>` has loaded, in which case our `$("#form-gif-request")` query will fail to find anything).
+The above line is, itself, inside of another callback, an anonymous function that we pass to jQuery's `document.ready()` function. This ensures that we do not execute that line until the HTML document has finished loading and is "ready" (because if we don't wait, then this code might execute before the `<form>` has loaded, in which case our `$("#form-gif-request")` query will fail to find anything).
 
-Let's continue on to the `fetchAndDisplayGif()` function. This is where you will do all your work. You will see a handful of TODOs sprinkled throughout the body of this function. The code that is in there currently provides a skeleton for the following gameplan:
+Let's continue on to the `fetchAndDisplayGif()` function. This is where you will do all your work. You will see a handful of TODOs sprinkled throughout the body of this function. The code that is in there currently provides a skeleton for the following game plan:
 
 1. query the DOM to figure out what the user typed
-2. make an ajax request
+2. make an AJAX request
 3. when the request comes back, modify the DOM so that the new GIF is shown.
 
 To make the AJAX request, we use jQuery's `ajax()` function. In some of the CS50 examples so far, you might have seen David Malan and co. using a similar jQuery function called `getJson()`. Both functions do the exact same thing. The only difference is that `ajax()` lets you customize a little more (with the downside of being a little more complicated). But it's actually not so bad. The gist is that we are calling the `ajax()` function and passing it a big object to specify all the settings we want to configure:
@@ -226,7 +226,7 @@ You may find the following jQuery functions helpful:
 
 Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz.
 
-You know those "Prove you are not a robot" CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows:
+You know those "Prove you are not a robot" CAPTCHA widgets? Your  job is to create one of those, albeit a nontraditional one. Specifically,  the task is as follows:
 
 Add a second field to your form. It should look like this:
 
