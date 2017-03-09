@@ -118,7 +118,7 @@
 <p>The host url we want is <code>https://api.giphy.com/v1/gifs/</code>. Let's try sending a GET request to that url. Try entering the following command into your terminal:</p>
 <pre><code class="language-nohighlight">$ curl -G https://api.giphy.com/v1/gifs/
 {"meta":{"status":404,"msg":"Not Found!"}}</code></pre>
-<p>We recieved a 404 Not Found response from Giphy. Maybe they ran out of GIFs?</p>
+<p>We received a 404 Not Found response from Giphy. Maybe they ran out of GIFs?</p>
 <h4 id="the-endpoint">The Endpoint</h4>
 <p>Actually, the problem is that we need to choose an &quot;endpoint&quot; to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a <em>very</em> random GIF).</p>
 <p>The url for the Random endpoint is simply <code>/random</code>, so let's try this:</p>
@@ -158,7 +158,7 @@
 <p>the result will be a GIF on our page!</p>
 <img src="http://media3.giphy.com/media/RBLigAVE0xJte/giphy.gif"/>
 <h4 id="adding-params-tag">Adding Params: tag</h4>
-<p>But artisan lollipops is a topic for another time, beacause today is all about the Jacksons. To specify the topic of interest, we simply need to add another data parameter with the key &quot;tag&quot; and the value &quot;jackson+5&quot;:</p>
+<p>But artisan lollipops is a topic for another time, because today is all about the Jacksons. To specify the topic of interest, we simply need to add another data parameter with the key &quot;tag&quot; and the value &quot;jackson+5&quot;:</p>
 <pre><code class="language-nohighlight">$ curl -G https://api.giphy.com/v1/gifs/random -d api_key=dc6zaTOxFJmzC -d tag=jackson+5</code></pre>
 <p>which should respond with a GIF like this one:</p>
 <img src="http://media2.giphy.com/media/BrzAAl0VMNkk/giphy.gif" />
@@ -175,7 +175,7 @@
 <p>The gif should ideally be relevant to both the user's search term (&quot;dance&quot; in this case) and the Jackson 5 (or at least Michael), but depending on the search term, and just luck-of-the-draw, you might find that only one or the other could be satisfied. For example, a third click might yield this:</p>
 <img src="screenshots/dance3.png"/>
 <p>Dance: check. Jacksons: not so much. That's OK if the results don't quite work out, as long as you put in the effort and heart and soul (where &quot;effort and heart and soul&quot; means your form submitted to Giphy a request in which the &quot;tag&quot; key had a value of <code>"Jackson 5 dance"</code>).</p>
-<p>Finally, it is possible that something might go wrong in the proccess of making the request. If so, you should report an error to the user, like so:</p>
+<p>Finally, it is possible that something might go wrong in the process of making the request. If so, you should report an error to the user, like so:</p>
 <img src="screenshots/error.png" />
 <h2 id="obtaining-the-starter-code">Obtaining the Starter Code</h2>
 <ol>
@@ -186,7 +186,7 @@
 <p><strong>Fork</strong> our repo by pressing the &quot;Fork&quot; button. You will now have your own version of the project, hosted on your Github profile.</p>
 </li>
 <li>
-<p>Back on your terminal, us <code>cd</code> to navigate to the place in your file system where to the place you want this project to live.</p>
+<p>Back on your terminal, use <code>cd</code> to navigate to the place in your file system where to the place you want this project to live.</p>
 </li>
 <li>
 <p>Clone your remote repo:</p>
@@ -205,7 +205,7 @@ index.html request-gif.js</code></pre>
 <ul>
 <li>a <code>&lt;form&gt;</code> where the user can type a search query and request a new GIF</li>
 <li>an <code>&lt;img&gt;</code> where the GIF will be displayed</li>
-<li>a <code>&lt;p&gt;</code> that we can use to report feedback about the image loading or an error having occured.</li>
+<li>a <code>&lt;p&gt;</code> that we can use to report feedback about the image loading or an error having occurred.</li>
 <li>a couple <code>&lt;script&gt;</code> tags to load jQuery and our own <code>request-gif.js</code> script.</li>
 </ul>
 <h4 id="request-gifjs">request-gif.js</h4>
@@ -218,11 +218,11 @@ index.html request-gif.js</code></pre>
 <p>The first block of code in the file contains this line:</p>
 <pre><code class="language-js">$("#form-gif-request").submit(fetchAndDisplayGif);</code></pre>
 <p>which uses jQuery to search the DOM for our form (by querying for an element whose <code>id</code> is <code>"form-gif-request"</code>), and then attaches, to that form's <code>submit</code> event, a &quot;callback&quot; function named <code>fetchAndDisplayGif</code>, which we have defined elsewhere in the file. The result is that whenever the form is submitted, our <code>fetchAndDisplayGif</code> function will be invoked.</p>
-<p>The above line is, itself, inside of another callback, an annonymous function that we pass to jQuery's <code>document.ready()</code> function. This ensures that we do not execute that line until the HTML document has finished loading and is &quot;ready&quot; (because if we don't wait, then this code might execute before the <code>&lt;form&gt;</code> has loaded, in which case our <code>$("#form-gif-request")</code> query will fail to find anything).</p>
-<p>Let's continue on to the <code>fetchAndDisplayGif()</code> function. This is where you will do all your work. You will see a handful of TODOs sprinkled throughout the body of this function. The code that is in there currently provides a skeleton for the following gameplan:</p>
+<p>The above line is, itself, inside of another callback, an anonymous function that we pass to jQuery's <code>document.ready()</code> function. This ensures that we do not execute that line until the HTML document has finished loading and is &quot;ready&quot; (because if we don't wait, then this code might execute before the <code>&lt;form&gt;</code> has loaded, in which case our <code>$("#form-gif-request")</code> query will fail to find anything).</p>
+<p>Let's continue on to the <code>fetchAndDisplayGif()</code> function. This is where you will do all your work. You will see a handful of TODOs sprinkled throughout the body of this function. The code that is in there currently provides a skeleton for the following game plan:</p>
 <ol>
 <li>query the DOM to figure out what the user typed</li>
-<li>make an ajax request</li>
+<li>make an AJAX request</li>
 <li>when the request comes back, modify the DOM so that the new GIF is shown.</li>
 </ol>
 <p>To make the AJAX request, we use jQuery's <code>ajax()</code> function. In some of the CS50 examples so far, you might have seen David Malan and co. using a similar jQuery function called <code>getJson()</code>. Both functions do the exact same thing. The only difference is that <code>ajax()</code> lets you customize a little more (with the downside of being a little more complicated). But it's actually not so bad. The gist is that we are calling the <code>ajax()</code> function and passing it a big object to specify all the settings we want to configure:</p>
@@ -249,7 +249,7 @@ index.html request-gif.js</code></pre>
 </ul>
 <h4 id="part-2-validation">Part 2: Validation</h4>
 <p>Next, it is time to add some validation to the page. We are going to create a contrived scenario here, just to make you practice your skillz.</p>
-<p>You know those &quot;Prove you are not a robot&quot; CAPTCHA widgets? Your  job is to create one of those, albiet a nontraditional one. Specifically,  the task is as follows:</p>
+<p>You know those &quot;Prove you are not a robot&quot; CAPTCHA widgets? Your  job is to create one of those, albeit a nontraditional one. Specifically,  the task is as follows:</p>
 <p>Add a second field to your form. It should look like this:</p>
 <p><img src="./screenshots/captcha.png" alt="captcha" /></p>
 <p>If the user gets the answer right, then go ahead and load the GIF like normal.</p>
