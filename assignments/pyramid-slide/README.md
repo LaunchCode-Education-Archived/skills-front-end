@@ -3,7 +3,7 @@ title: "Pyramid Slide"
 currentMenu: assignments
 ---
 
-<img width="600px" src="https://www.carnival.com/~/media/Images/PreSales/Excursions/Ports_M-Q/NAS/424042/Pictures/atlantis-dolphin-cay-deep-water-swim-and-aquaventure-nassau-the-bahamas-13.jpg"/>
+![Mayan Temple Pyramid Slide](MayanTemple.jpg)
 
 ^ That's how much fun you are about to have.
 
