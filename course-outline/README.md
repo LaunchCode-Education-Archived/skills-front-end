@@ -21,5 +21,5 @@ Class # | Prep Work | Studio | New Topics | Begin Assignment✶
 14 | [Class 14 Prep](../class-prep/14/) | (no studio) | Web Programming Beyond LC101 | |
 
 <aside class="aside-note" markdown="1">
-For assignment due dates, see your course page on [learn.launchcode.org](learn.launchcode.org).
+For assignment due dates, see your course page on [learn.launchcode.org](https://learn.launchcode.org).
 </aside>
