@@ -30,7 +30,7 @@ The url for the Random endpoint is simply `/random`, so let's try this:
 
 ```nohighight
 $ curl -G https://api.giphy.com/v1/gifs/random
-{"meta":{"status":403,"msg":"Forbidden"}}
+{"message":"No API key found in request"}
 ```
 
 This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public "Beta" key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is "dc6zaTOxFJmzC".
