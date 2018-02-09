@@ -123,7 +123,7 @@
 <p>Actually, the problem is that we need to choose an &quot;endpoint&quot; to indicate which specific service we want. The endpoints are all listed in the documentation linked above, so check them out if you are interested. For this assignment, we will use the Random endpoint, which, upon receiving a request, responds with a randomly chosen GIF related to a particular topic (unless you don't provide a specific topic, in which case you'll get back a <em>very</em> random GIF).</p>
 <p>The url for the Random endpoint is simply <code>/random</code>, so let's try this:</p>
 <pre><code class="language-nohighight">$ curl -G https://api.giphy.com/v1/gifs/random
-{"meta":{"status":403,"msg":"Forbidden"}}</code></pre>
+{"message":"No API key found in request"}</code></pre>
 <p>This time we got a different error, 403 Forbidden. Like most APIs, Giphy requires us to authorize ourselves with a key. Luckily, they make a public &quot;Beta&quot; key available for people like us who are just testing, playing around, or doing LaunchCode Assignments. The key is &quot;dc6zaTOxFJmzC&quot;.</p>
 <h4 id="adding-params-api_key">Adding Params: api_key</h4>
 <p>Let's authorize ourselves by including in our request a parameter whose value is that magic string and whose key name is &quot;api_key&quot;.</p>
