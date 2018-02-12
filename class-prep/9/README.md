@@ -17,10 +17,8 @@ These days it is considered best-practice to structure your HTML content by alwa
 
 Task | Resource Type | Link | Time Estimate | Instructions
 -----|---------------|------|---------------|-------------
-Do | Interactive Course | 1 hour | [Tuts Plus / Semantic HTML][semantic-tutorial] | This tutorial course introduces the new HTML5 tags that help you write more semantic HTML. You will need to create an account in order to unlock most of the chapters.
-
-[semantic-tutorial]: http://webdesign.tutsplus.com/courses/semantic-html-how-to-structure-web-pages
-
+Do | Tutorial | 1 hour | [Semantic HTML](https://internetingishard.com/html-and-css/semantic-html/) | This tutorial the HTML5 tags that help you write more semantic HTML. It is part of a series, but you can follow along with this without doing prior parts. When they reference Atom, know that you can use any code editor (e.g. VS Code).
+Browse | Reference | 10 minutes | [HTML5 Doctor](http://html5doctor.com/element-index/) | HTML5 Doctor is a great reference for understanding the semantic purpose of HTML elements. Familiarize yourself with this resource, and bookmark it for later!
 
 ### CSS
 
