@@ -29,7 +29,7 @@ Do | Interactive Course | [Udacity: Intro to jQuery][udacity-jquery] | 6 hours |
 
 
 
-[css-selectors]: https://www.codecademy.com/en/courses/web-beginner-en-WF0CF/resume?curriculum_id=50579fb998b470000202dc8b
+[css-selectors]: https://www.codecademy.com/courses/learn-css/lessons/css-setup-selectors/
 
 
 [udacity-jquery]: https://classroom.udacity.com/courses/ud245/lessons/3314378535/concepts/33166386820923#
